@@ -1,0 +1,88 @@
+{
+  "curves": {
+    "replay-first-totalization-minute.csv": {
+      "conservation": "passed",
+      "rows": 10373,
+      "final_groups": 19
+    },
+    "replay-bu-received-minute.csv": {
+      "conservation": "passed",
+      "rows": 10373,
+      "final_groups": 19
+    }
+  },
+  "details_only": [
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "sections": 41,
+      "nominal_votes": 0,
+      "blank_votes": 0,
+      "null_votes": 0,
+      "separate_votes": 0,
+      "turnout": 0,
+      "installed": "Não",
+      "cancelled": "Não",
+      "origin": "Totalização"
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "sections": 1,
+      "nominal_votes": 0,
+      "blank_votes": 0,
+      "null_votes": 0,
+      "separate_votes": 0,
+      "turnout": 0,
+      "installed": "Sim",
+      "cancelled": "Não",
+      "origin": "Sistema de apuração"
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "sections": 41,
+      "nominal_votes": 0,
+      "blank_votes": 0,
+      "null_votes": 0,
+      "separate_votes": 0,
+      "turnout": 0,
+      "installed": "Não",
+      "cancelled": "Não",
+      "origin": "Totalização"
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "sections": 2,
+      "nominal_votes": 0,
+      "blank_votes": 0,
+      "null_votes": 0,
+      "separate_votes": 0,
+      "turnout": 0,
+      "installed": "Sim",
+      "cancelled": "Não",
+      "origin": "Sistema de apuração"
+    }
+  ],
+  "latency": [
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "sections": 499248,
+      "mean_seconds": 147.876,
+      "min_seconds": 0.0,
+      "max_seconds": 2038.0,
+      "negative_count": 0
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "sections": 499248,
+      "mean_seconds": 25.697,
+      "min_seconds": 0.0,
+      "max_seconds": 6755.0,
+      "negative_count": 0
+    }
+  ]
+}

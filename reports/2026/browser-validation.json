@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "elections": [
+    "Eleição 6257 · 1º turno",
+    "Eleição 6258 · 2º turno"
+  ],
+  "first_summary": "Eleição 6257 · 1º turno · 04/10/2026 17:08 a 05/10/2026 02:58 · Brasil, incluindo exterior quando presente · 15.366 pontos visuais de 15.366 registros nominais.",
+  "last_summary": "Eleição 6258 · 2º turno · 25/10/2026 17:05 a 25/10/2026 23:21 · Brasil, incluindo exterior quando presente · 1.508 pontos visuais de 1.508 registros nominais.",
+  "checks": [
+    "two election/round options",
+    "source switching",
+    "cumulative votes/percent switching",
+    "real hover values",
+    "Lula red and Flávio Bolsonaro blue across rounds and sources",
+    "no page JS errors"
+  ],
+  "screenshot": "report-preview.png"
+}

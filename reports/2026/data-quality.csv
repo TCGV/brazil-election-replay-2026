@@ -1,0 +1,496 @@
+category,election_code,turno,uf,metric,value
+coverage,6257,1,AC,vote_sections,2270
+coverage,6257,1,AL,vote_sections,7101
+coverage,6257,1,AM,vote_sections,8157
+coverage,6257,1,AP,vote_sections,1914
+coverage,6257,1,BA,vote_sections,35476
+coverage,6257,1,CE,vote_sections,23765
+coverage,6257,1,DF,vote_sections,6969
+coverage,6257,1,ES,vote_sections,9844
+coverage,6257,1,GO,vote_sections,15686
+coverage,6257,1,MA,vote_sections,18093
+coverage,6257,1,MG,vote_sections,52062
+coverage,6257,1,MS,vote_sections,7106
+coverage,6257,1,MT,vote_sections,8287
+coverage,6257,1,PA,vote_sections,20827
+coverage,6257,1,PB,vote_sections,10712
+coverage,6257,1,PE,vote_sections,21418
+coverage,6257,1,PI,vote_sections,10225
+coverage,6257,1,PR,vote_sections,27142
+coverage,6257,1,RJ,vote_sections,37675
+coverage,6257,1,RN,vote_sections,8115
+coverage,6257,1,RO,vote_sections,4698
+coverage,6257,1,RR,vote_sections,1519
+coverage,6257,1,RS,vote_sections,27547
+coverage,6257,1,SC,vote_sections,17326
+coverage,6257,1,SE,vote_sections,5923
+coverage,6257,1,SP,vote_sections,103656
+coverage,6257,1,TO,vote_sections,4384
+coverage,6257,1,ZZ,vote_sections,1309
+coverage,6258,2,AC,vote_sections,2270
+coverage,6258,2,AL,vote_sections,7101
+coverage,6258,2,AM,vote_sections,8157
+coverage,6258,2,AP,vote_sections,1914
+coverage,6258,2,BA,vote_sections,35476
+coverage,6258,2,CE,vote_sections,23765
+coverage,6258,2,DF,vote_sections,6969
+coverage,6258,2,ES,vote_sections,9844
+coverage,6258,2,GO,vote_sections,15686
+coverage,6258,2,MA,vote_sections,18093
+coverage,6258,2,MG,vote_sections,52062
+coverage,6258,2,MS,vote_sections,7106
+coverage,6258,2,MT,vote_sections,8287
+coverage,6258,2,PA,vote_sections,20827
+coverage,6258,2,PB,vote_sections,10712
+coverage,6258,2,PE,vote_sections,21418
+coverage,6258,2,PI,vote_sections,10225
+coverage,6258,2,PR,vote_sections,27142
+coverage,6258,2,RJ,vote_sections,37675
+coverage,6258,2,RN,vote_sections,8115
+coverage,6258,2,RO,vote_sections,4698
+coverage,6258,2,RR,vote_sections,1519
+coverage,6258,2,RS,vote_sections,27547
+coverage,6258,2,SC,vote_sections,17326
+coverage,6258,2,SE,vote_sections,5923
+coverage,6258,2,SP,vote_sections,103656
+coverage,6258,2,TO,vote_sections,4384
+coverage,6258,2,ZZ,vote_sections,1308
+coverage,6257,1,AC,detail_sections,2270
+coverage,6257,1,AL,detail_sections,7101
+coverage,6257,1,AM,detail_sections,8157
+coverage,6257,1,AP,detail_sections,1914
+coverage,6257,1,BA,detail_sections,35476
+coverage,6257,1,CE,detail_sections,23765
+coverage,6257,1,DF,detail_sections,6969
+coverage,6257,1,ES,detail_sections,9844
+coverage,6257,1,GO,detail_sections,15686
+coverage,6257,1,MA,detail_sections,18093
+coverage,6257,1,MG,detail_sections,52062
+coverage,6257,1,MS,detail_sections,7106
+coverage,6257,1,MT,detail_sections,8287
+coverage,6257,1,PA,detail_sections,20827
+coverage,6257,1,PB,detail_sections,10712
+coverage,6257,1,PE,detail_sections,21418
+coverage,6257,1,PI,detail_sections,10225
+coverage,6257,1,PR,detail_sections,27142
+coverage,6257,1,RJ,detail_sections,37675
+coverage,6257,1,RN,detail_sections,8115
+coverage,6257,1,RO,detail_sections,4698
+coverage,6257,1,RR,detail_sections,1519
+coverage,6257,1,RS,detail_sections,27547
+coverage,6257,1,SC,detail_sections,17326
+coverage,6257,1,SE,detail_sections,5923
+coverage,6257,1,SP,detail_sections,103656
+coverage,6257,1,TO,detail_sections,4384
+coverage,6257,1,ZZ,detail_sections,1351
+coverage,6258,2,AC,detail_sections,2270
+coverage,6258,2,AL,detail_sections,7101
+coverage,6258,2,AM,detail_sections,8157
+coverage,6258,2,AP,detail_sections,1914
+coverage,6258,2,BA,detail_sections,35476
+coverage,6258,2,CE,detail_sections,23765
+coverage,6258,2,DF,detail_sections,6969
+coverage,6258,2,ES,detail_sections,9844
+coverage,6258,2,GO,detail_sections,15686
+coverage,6258,2,MA,detail_sections,18093
+coverage,6258,2,MG,detail_sections,52062
+coverage,6258,2,MS,detail_sections,7106
+coverage,6258,2,MT,detail_sections,8287
+coverage,6258,2,PA,detail_sections,20827
+coverage,6258,2,PB,detail_sections,10712
+coverage,6258,2,PE,detail_sections,21418
+coverage,6258,2,PI,detail_sections,10225
+coverage,6258,2,PR,detail_sections,27142
+coverage,6258,2,RJ,detail_sections,37675
+coverage,6258,2,RN,detail_sections,8115
+coverage,6258,2,RO,detail_sections,4698
+coverage,6258,2,RR,detail_sections,1519
+coverage,6258,2,RS,detail_sections,27547
+coverage,6258,2,SC,detail_sections,17326
+coverage,6258,2,SE,detail_sections,5923
+coverage,6258,2,SP,detail_sections,103656
+coverage,6258,2,TO,detail_sections,4384
+coverage,6258,2,ZZ,detail_sections,1351
+coverage,6257,1,AC,matched_unique_sections,2270
+coverage,6257,1,AL,matched_unique_sections,7101
+coverage,6257,1,AM,matched_unique_sections,8157
+coverage,6257,1,AP,matched_unique_sections,1914
+coverage,6257,1,BA,matched_unique_sections,35476
+coverage,6257,1,CE,matched_unique_sections,23765
+coverage,6257,1,DF,matched_unique_sections,6969
+coverage,6257,1,ES,matched_unique_sections,9844
+coverage,6257,1,GO,matched_unique_sections,15686
+coverage,6257,1,MA,matched_unique_sections,18093
+coverage,6257,1,MG,matched_unique_sections,52062
+coverage,6257,1,MS,matched_unique_sections,7106
+coverage,6257,1,MT,matched_unique_sections,8287
+coverage,6257,1,PA,matched_unique_sections,20827
+coverage,6257,1,PB,matched_unique_sections,10712
+coverage,6257,1,PE,matched_unique_sections,21418
+coverage,6257,1,PI,matched_unique_sections,10225
+coverage,6257,1,PR,matched_unique_sections,27142
+coverage,6257,1,RJ,matched_unique_sections,37675
+coverage,6257,1,RN,matched_unique_sections,8115
+coverage,6257,1,RO,matched_unique_sections,4698
+coverage,6257,1,RR,matched_unique_sections,1519
+coverage,6257,1,RS,matched_unique_sections,27547
+coverage,6257,1,SC,matched_unique_sections,17326
+coverage,6257,1,SE,matched_unique_sections,5923
+coverage,6257,1,SP,matched_unique_sections,103656
+coverage,6257,1,TO,matched_unique_sections,4384
+coverage,6257,1,ZZ,matched_unique_sections,1309
+coverage,6258,2,AC,matched_unique_sections,2270
+coverage,6258,2,AL,matched_unique_sections,7101
+coverage,6258,2,AM,matched_unique_sections,8157
+coverage,6258,2,AP,matched_unique_sections,1914
+coverage,6258,2,BA,matched_unique_sections,35476
+coverage,6258,2,CE,matched_unique_sections,23765
+coverage,6258,2,DF,matched_unique_sections,6969
+coverage,6258,2,ES,matched_unique_sections,9844
+coverage,6258,2,GO,matched_unique_sections,15686
+coverage,6258,2,MA,matched_unique_sections,18093
+coverage,6258,2,MG,matched_unique_sections,52062
+coverage,6258,2,MS,matched_unique_sections,7106
+coverage,6258,2,MT,matched_unique_sections,8287
+coverage,6258,2,PA,matched_unique_sections,20827
+coverage,6258,2,PB,matched_unique_sections,10712
+coverage,6258,2,PE,matched_unique_sections,21418
+coverage,6258,2,PI,matched_unique_sections,10225
+coverage,6258,2,PR,matched_unique_sections,27142
+coverage,6258,2,RJ,matched_unique_sections,37675
+coverage,6258,2,RN,matched_unique_sections,8115
+coverage,6258,2,RO,matched_unique_sections,4698
+coverage,6258,2,RR,matched_unique_sections,1519
+coverage,6258,2,RS,matched_unique_sections,27547
+coverage,6258,2,SC,matched_unique_sections,17326
+coverage,6258,2,SE,matched_unique_sections,5923
+coverage,6258,2,SP,matched_unique_sections,103656
+coverage,6258,2,TO,matched_unique_sections,4384
+coverage,6258,2,ZZ,matched_unique_sections,1308
+coverage,6257,1,ZZ,detail_only_sections,42
+coverage,6258,2,ZZ,detail_only_sections,43
+first_partial_totalization,6257,1,AC,timestamp_valid,2270
+first_partial_totalization,6257,1,AL,timestamp_valid,7101
+first_partial_totalization,6257,1,AM,timestamp_valid,8157
+first_partial_totalization,6257,1,AP,timestamp_valid,1914
+first_partial_totalization,6257,1,BA,timestamp_valid,35476
+first_partial_totalization,6257,1,CE,timestamp_valid,23765
+first_partial_totalization,6257,1,DF,timestamp_valid,6969
+first_partial_totalization,6257,1,ES,timestamp_valid,9844
+first_partial_totalization,6257,1,GO,timestamp_valid,15686
+first_partial_totalization,6257,1,MA,timestamp_valid,18093
+first_partial_totalization,6257,1,MG,timestamp_valid,52062
+first_partial_totalization,6257,1,MS,timestamp_valid,7106
+first_partial_totalization,6257,1,MT,timestamp_valid,8287
+first_partial_totalization,6257,1,PA,timestamp_valid,20827
+first_partial_totalization,6257,1,PB,timestamp_valid,10712
+first_partial_totalization,6257,1,PE,timestamp_valid,21418
+first_partial_totalization,6257,1,PI,timestamp_valid,10225
+first_partial_totalization,6257,1,PR,timestamp_valid,27142
+first_partial_totalization,6257,1,RJ,timestamp_valid,37675
+first_partial_totalization,6257,1,RN,timestamp_valid,8115
+first_partial_totalization,6257,1,RO,timestamp_valid,4698
+first_partial_totalization,6257,1,RR,timestamp_valid,1519
+first_partial_totalization,6257,1,RS,timestamp_valid,27547
+first_partial_totalization,6257,1,SC,timestamp_valid,17326
+first_partial_totalization,6257,1,SE,timestamp_valid,5923
+first_partial_totalization,6257,1,SP,timestamp_valid,103656
+first_partial_totalization,6257,1,TO,timestamp_valid,4384
+first_partial_totalization,6257,1,ZZ,timestamp_valid,1351
+first_partial_totalization,6258,2,AC,timestamp_valid,2270
+first_partial_totalization,6258,2,AL,timestamp_valid,7101
+first_partial_totalization,6258,2,AM,timestamp_valid,8157
+first_partial_totalization,6258,2,AP,timestamp_valid,1914
+first_partial_totalization,6258,2,BA,timestamp_valid,35476
+first_partial_totalization,6258,2,CE,timestamp_valid,23765
+first_partial_totalization,6258,2,DF,timestamp_valid,6969
+first_partial_totalization,6258,2,ES,timestamp_valid,9844
+first_partial_totalization,6258,2,GO,timestamp_valid,15686
+first_partial_totalization,6258,2,MA,timestamp_valid,18093
+first_partial_totalization,6258,2,MG,timestamp_valid,52062
+first_partial_totalization,6258,2,MS,timestamp_valid,7106
+first_partial_totalization,6258,2,MT,timestamp_valid,8287
+first_partial_totalization,6258,2,PA,timestamp_valid,20827
+first_partial_totalization,6258,2,PB,timestamp_valid,10712
+first_partial_totalization,6258,2,PE,timestamp_valid,21418
+first_partial_totalization,6258,2,PI,timestamp_valid,10225
+first_partial_totalization,6258,2,PR,timestamp_valid,27142
+first_partial_totalization,6258,2,RJ,timestamp_valid,37675
+first_partial_totalization,6258,2,RN,timestamp_valid,8115
+first_partial_totalization,6258,2,RO,timestamp_valid,4698
+first_partial_totalization,6258,2,RR,timestamp_valid,1519
+first_partial_totalization,6258,2,RS,timestamp_valid,27547
+first_partial_totalization,6258,2,SC,timestamp_valid,17326
+first_partial_totalization,6258,2,SE,timestamp_valid,5923
+first_partial_totalization,6258,2,SP,timestamp_valid,103656
+first_partial_totalization,6258,2,TO,timestamp_valid,4384
+first_partial_totalization,6258,2,ZZ,timestamp_valid,1351
+bu_received,6257,1,AC,timestamp_valid,2270
+bu_received,6257,1,AL,timestamp_valid,7101
+bu_received,6257,1,AM,timestamp_valid,8157
+bu_received,6257,1,AP,timestamp_valid,1914
+bu_received,6257,1,BA,timestamp_valid,35476
+bu_received,6257,1,CE,timestamp_valid,23765
+bu_received,6257,1,DF,timestamp_valid,6969
+bu_received,6257,1,ES,timestamp_valid,9844
+bu_received,6257,1,GO,timestamp_valid,15686
+bu_received,6257,1,MA,timestamp_valid,18093
+bu_received,6257,1,MG,timestamp_valid,52062
+bu_received,6257,1,MS,timestamp_valid,7106
+bu_received,6257,1,MT,timestamp_valid,8287
+bu_received,6257,1,PA,timestamp_valid,20827
+bu_received,6257,1,PB,timestamp_valid,10712
+bu_received,6257,1,PE,timestamp_valid,21418
+bu_received,6257,1,PI,timestamp_valid,10225
+bu_received,6257,1,PR,timestamp_valid,27142
+bu_received,6257,1,RJ,timestamp_valid,37675
+bu_received,6257,1,RN,timestamp_valid,8115
+bu_received,6257,1,RO,timestamp_valid,4698
+bu_received,6257,1,RR,timestamp_valid,1519
+bu_received,6257,1,RS,timestamp_valid,27547
+bu_received,6257,1,SC,timestamp_valid,17326
+bu_received,6257,1,SE,timestamp_valid,5923
+bu_received,6257,1,SP,timestamp_valid,103656
+bu_received,6257,1,TO,timestamp_valid,4384
+bu_received,6257,1,ZZ,timestamp_valid,1351
+bu_received,6258,2,AC,timestamp_valid,2270
+bu_received,6258,2,AL,timestamp_valid,7101
+bu_received,6258,2,AM,timestamp_valid,8157
+bu_received,6258,2,AP,timestamp_valid,1914
+bu_received,6258,2,BA,timestamp_valid,35476
+bu_received,6258,2,CE,timestamp_valid,23765
+bu_received,6258,2,DF,timestamp_valid,6969
+bu_received,6258,2,ES,timestamp_valid,9844
+bu_received,6258,2,GO,timestamp_valid,15686
+bu_received,6258,2,MA,timestamp_valid,18093
+bu_received,6258,2,MG,timestamp_valid,52062
+bu_received,6258,2,MS,timestamp_valid,7106
+bu_received,6258,2,MT,timestamp_valid,8287
+bu_received,6258,2,PA,timestamp_valid,20827
+bu_received,6258,2,PB,timestamp_valid,10712
+bu_received,6258,2,PE,timestamp_valid,21418
+bu_received,6258,2,PI,timestamp_valid,10225
+bu_received,6258,2,PR,timestamp_valid,27142
+bu_received,6258,2,RJ,timestamp_valid,37675
+bu_received,6258,2,RN,timestamp_valid,8115
+bu_received,6258,2,RO,timestamp_valid,4698
+bu_received,6258,2,RR,timestamp_valid,1519
+bu_received,6258,2,RS,timestamp_valid,27547
+bu_received,6258,2,SC,timestamp_valid,17326
+bu_received,6258,2,SE,timestamp_valid,5923
+bu_received,6258,2,SP,timestamp_valid,103656
+bu_received,6258,2,TO,timestamp_valid,4384
+bu_received,6258,2,ZZ,timestamp_valid,1351
+consistency,6257,1,ZZ,aptos_turnout_abstentions_mismatch,41
+consistency,6258,2,ZZ,aptos_turnout_abstentions_mismatch,41
+section_flags,6257,1,AC,installed=Sim,2270
+section_flags,6257,1,AL,installed=Sim,7101
+section_flags,6257,1,AM,installed=Sim,8157
+section_flags,6257,1,AP,installed=Sim,1914
+section_flags,6257,1,BA,installed=Sim,35476
+section_flags,6257,1,CE,installed=Sim,23765
+section_flags,6257,1,DF,installed=Sim,6969
+section_flags,6257,1,ES,installed=Sim,9844
+section_flags,6257,1,GO,installed=Sim,15686
+section_flags,6257,1,MA,installed=Sim,18093
+section_flags,6257,1,MG,installed=Sim,52062
+section_flags,6257,1,MS,installed=Sim,7106
+section_flags,6257,1,MT,installed=Sim,8287
+section_flags,6257,1,PA,installed=Sim,20827
+section_flags,6257,1,PB,installed=Sim,10712
+section_flags,6257,1,PE,installed=Sim,21418
+section_flags,6257,1,PI,installed=Sim,10225
+section_flags,6257,1,PR,installed=Sim,27142
+section_flags,6257,1,RJ,installed=Sim,37675
+section_flags,6257,1,RN,installed=Sim,8115
+section_flags,6257,1,RO,installed=Sim,4698
+section_flags,6257,1,RR,installed=Sim,1519
+section_flags,6257,1,RS,installed=Sim,27547
+section_flags,6257,1,SC,installed=Sim,17326
+section_flags,6257,1,SE,installed=Sim,5923
+section_flags,6257,1,SP,installed=Sim,103656
+section_flags,6257,1,TO,installed=Sim,4384
+section_flags,6257,1,ZZ,installed=Não,41
+section_flags,6257,1,ZZ,installed=Sim,1310
+section_flags,6258,2,AC,installed=Sim,2270
+section_flags,6258,2,AL,installed=Sim,7101
+section_flags,6258,2,AM,installed=Sim,8157
+section_flags,6258,2,AP,installed=Sim,1914
+section_flags,6258,2,BA,installed=Sim,35476
+section_flags,6258,2,CE,installed=Sim,23765
+section_flags,6258,2,DF,installed=Sim,6969
+section_flags,6258,2,ES,installed=Sim,9844
+section_flags,6258,2,GO,installed=Sim,15686
+section_flags,6258,2,MA,installed=Sim,18093
+section_flags,6258,2,MG,installed=Sim,52062
+section_flags,6258,2,MS,installed=Sim,7106
+section_flags,6258,2,MT,installed=Sim,8287
+section_flags,6258,2,PA,installed=Sim,20827
+section_flags,6258,2,PB,installed=Sim,10712
+section_flags,6258,2,PE,installed=Sim,21418
+section_flags,6258,2,PI,installed=Sim,10225
+section_flags,6258,2,PR,installed=Sim,27142
+section_flags,6258,2,RJ,installed=Sim,37675
+section_flags,6258,2,RN,installed=Sim,8115
+section_flags,6258,2,RO,installed=Sim,4698
+section_flags,6258,2,RR,installed=Sim,1519
+section_flags,6258,2,RS,installed=Sim,27547
+section_flags,6258,2,SC,installed=Sim,17326
+section_flags,6258,2,SE,installed=Sim,5923
+section_flags,6258,2,SP,installed=Sim,103656
+section_flags,6258,2,TO,installed=Sim,4384
+section_flags,6258,2,ZZ,installed=Não,41
+section_flags,6258,2,ZZ,installed=Sim,1310
+section_flags,6257,1,AC,cancelled=Não,2270
+section_flags,6257,1,AL,cancelled=Não,7101
+section_flags,6257,1,AM,cancelled=Não,8157
+section_flags,6257,1,AP,cancelled=Não,1914
+section_flags,6257,1,BA,cancelled=Não,35476
+section_flags,6257,1,CE,cancelled=Não,23765
+section_flags,6257,1,DF,cancelled=Não,6969
+section_flags,6257,1,ES,cancelled=Não,9844
+section_flags,6257,1,GO,cancelled=Não,15686
+section_flags,6257,1,MA,cancelled=Não,18093
+section_flags,6257,1,MG,cancelled=Não,52062
+section_flags,6257,1,MS,cancelled=Não,7106
+section_flags,6257,1,MT,cancelled=Não,8287
+section_flags,6257,1,PA,cancelled=Não,20827
+section_flags,6257,1,PB,cancelled=Não,10712
+section_flags,6257,1,PE,cancelled=Não,21418
+section_flags,6257,1,PI,cancelled=Não,10225
+section_flags,6257,1,PR,cancelled=Não,27142
+section_flags,6257,1,RJ,cancelled=Não,37675
+section_flags,6257,1,RN,cancelled=Não,8115
+section_flags,6257,1,RO,cancelled=Não,4698
+section_flags,6257,1,RR,cancelled=Não,1519
+section_flags,6257,1,RS,cancelled=Não,27547
+section_flags,6257,1,SC,cancelled=Não,17326
+section_flags,6257,1,SE,cancelled=Não,5923
+section_flags,6257,1,SP,cancelled=Não,103656
+section_flags,6257,1,TO,cancelled=Não,4384
+section_flags,6257,1,ZZ,cancelled=Não,1351
+section_flags,6258,2,AC,cancelled=Não,2270
+section_flags,6258,2,AL,cancelled=Não,7101
+section_flags,6258,2,AM,cancelled=Não,8157
+section_flags,6258,2,AP,cancelled=Não,1914
+section_flags,6258,2,BA,cancelled=Não,35476
+section_flags,6258,2,CE,cancelled=Não,23765
+section_flags,6258,2,DF,cancelled=Não,6969
+section_flags,6258,2,ES,cancelled=Não,9844
+section_flags,6258,2,GO,cancelled=Não,15686
+section_flags,6258,2,MA,cancelled=Não,18093
+section_flags,6258,2,MG,cancelled=Não,52062
+section_flags,6258,2,MS,cancelled=Não,7106
+section_flags,6258,2,MT,cancelled=Não,8287
+section_flags,6258,2,PA,cancelled=Não,20827
+section_flags,6258,2,PB,cancelled=Não,10712
+section_flags,6258,2,PE,cancelled=Não,21418
+section_flags,6258,2,PI,cancelled=Não,10225
+section_flags,6258,2,PR,cancelled=Não,27142
+section_flags,6258,2,RJ,cancelled=Não,37675
+section_flags,6258,2,RN,cancelled=Não,8115
+section_flags,6258,2,RO,cancelled=Não,4698
+section_flags,6258,2,RR,cancelled=Não,1519
+section_flags,6258,2,RS,cancelled=Não,27547
+section_flags,6258,2,SC,cancelled=Não,17326
+section_flags,6258,2,SE,cancelled=Não,5923
+section_flags,6258,2,SP,cancelled=Não,103656
+section_flags,6258,2,TO,cancelled=Não,4384
+section_flags,6258,2,ZZ,cancelled=Não,1351
+section_flags,6257,1,AC,origin=Urna Eletrônica,2270
+section_flags,6257,1,AL,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6257,1,AL,origin=Urna Eletrônica,7099
+section_flags,6257,1,AM,origin=Urna Eletrônica,8157
+section_flags,6257,1,AP,origin=Urna Eletrônica,1914
+section_flags,6257,1,BA,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,5
+section_flags,6257,1,BA,origin=Urna Eletrônica,35471
+section_flags,6257,1,CE,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6257,1,CE,origin=Urna Eletrônica,23764
+section_flags,6257,1,DF,origin=Urna Eletrônica,6969
+section_flags,6257,1,ES,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,7
+section_flags,6257,1,ES,origin=Urna Eletrônica,9837
+section_flags,6257,1,GO,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6257,1,GO,origin=Urna Eletrônica,15685
+section_flags,6257,1,MA,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,3
+section_flags,6257,1,MA,origin=Urna Eletrônica,18090
+section_flags,6257,1,MG,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6257,1,MG,origin=Sistema de apuração,2
+section_flags,6257,1,MG,origin=Urna Eletrônica,52058
+section_flags,6257,1,MS,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6257,1,MS,origin=Urna Eletrônica,7104
+section_flags,6257,1,MT,origin=Urna Eletrônica,8287
+section_flags,6257,1,PA,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,6
+section_flags,6257,1,PA,origin=Urna Eletrônica,20821
+section_flags,6257,1,PB,origin=Urna Eletrônica,10712
+section_flags,6257,1,PE,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6257,1,PE,origin=Urna Eletrônica,21417
+section_flags,6257,1,PI,origin=Urna Eletrônica,10225
+section_flags,6257,1,PR,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,3
+section_flags,6257,1,PR,origin=Urna Eletrônica,27139
+section_flags,6257,1,RJ,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,3
+section_flags,6257,1,RJ,origin=Urna Eletrônica,37672
+section_flags,6257,1,RN,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6257,1,RN,origin=Urna Eletrônica,8114
+section_flags,6257,1,RO,origin=Urna Eletrônica,4698
+section_flags,6257,1,RR,origin=Urna Eletrônica,1519
+section_flags,6257,1,RS,origin=Urna Eletrônica,27547
+section_flags,6257,1,SC,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6257,1,SC,origin=Urna Eletrônica,17324
+section_flags,6257,1,SE,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,3
+section_flags,6257,1,SE,origin=Urna Eletrônica,5920
+section_flags,6257,1,SP,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,7
+section_flags,6257,1,SP,origin=Urna Eletrônica,103649
+section_flags,6257,1,TO,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6257,1,TO,origin=Urna Eletrônica,4383
+section_flags,6257,1,ZZ,origin=Sistema de apuração,29
+section_flags,6257,1,ZZ,origin=Totalização,41
+section_flags,6257,1,ZZ,origin=Urna Eletrônica,1281
+section_flags,6258,2,AC,origin=Urna Eletrônica,2270
+section_flags,6258,2,AL,origin=Urna Eletrônica,7101
+section_flags,6258,2,AM,origin=Urna Eletrônica,8157
+section_flags,6258,2,AP,origin=Urna Eletrônica,1914
+section_flags,6258,2,BA,origin=Urna Eletrônica,35476
+section_flags,6258,2,CE,origin=Urna Eletrônica,23765
+section_flags,6258,2,DF,origin=Urna Eletrônica,6969
+section_flags,6258,2,ES,origin=BU gerado por RED em urna de contingência,1
+section_flags,6258,2,ES,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6258,2,ES,origin=Urna Eletrônica,9841
+section_flags,6258,2,GO,origin=Urna Eletrônica,15686
+section_flags,6258,2,MA,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,MA,origin=Urna Eletrônica,18092
+section_flags,6258,2,MG,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,4
+section_flags,6258,2,MG,origin=Urna Eletrônica,52058
+section_flags,6258,2,MS,origin=Urna Eletrônica,7106
+section_flags,6258,2,MT,origin=Urna Eletrônica,8287
+section_flags,6258,2,PA,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,PA,origin=Urna Eletrônica,20826
+section_flags,6258,2,PB,origin=Urna Eletrônica,10712
+section_flags,6258,2,PE,origin=Urna Eletrônica,21418
+section_flags,6258,2,PI,origin=Urna Eletrônica,10225
+section_flags,6258,2,PR,origin=Urna Eletrônica,27142
+section_flags,6258,2,RJ,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,RJ,origin=Urna Eletrônica,37674
+section_flags,6258,2,RN,origin=Urna Eletrônica,8115
+section_flags,6258,2,RO,origin=Urna Eletrônica,4698
+section_flags,6258,2,RR,origin=Urna Eletrônica,1519
+section_flags,6258,2,RS,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,RS,origin=Urna Eletrônica,27546
+section_flags,6258,2,SC,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,SC,origin=Urna Eletrônica,17325
+section_flags,6258,2,SE,origin=Urna Eletrônica,5923
+section_flags,6258,2,SP,origin=BU gerado por RED em urna de contingência,1
+section_flags,6258,2,SP,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,2
+section_flags,6258,2,SP,origin=Urna Eletrônica,103653
+section_flags,6258,2,TO,origin=Urna Eletrônica,4384
+section_flags,6258,2,ZZ,origin=BU gerado por RED em urna de seção *** RED - Recuperador de dados,1
+section_flags,6258,2,ZZ,origin=Sistema de apuração,29
+section_flags,6258,2,ZZ,origin=Totalização,41
+section_flags,6258,2,ZZ,origin=Urna Eletrônica,1280
+reconciliation,,,,nominal_compared_sections,998411
+reconciliation,,,,nominal_missing_metric_sections,0
+reconciliation,,,,blank_compared_sections,998411
+reconciliation,,,,blank_missing_metric_sections,0
+reconciliation,,,,null_compared_sections,998411
+reconciliation,,,,null_missing_metric_sections,0
+reconciliation,,,,separate_compared_sections,998411
+reconciliation,,,,separate_missing_metric_sections,0

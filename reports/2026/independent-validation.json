@@ -1,0 +1,852 @@
+{
+  "method": "Independent Python csv.DictReader sums; no pipeline or database code imported",
+  "inputs": [
+    {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8",
+      "size_bytes": 1572813473,
+      "lfs_integrity": "passed",
+      "rows": 5731614,
+      "selected_rows": 5731614,
+      "scopes": [
+        {
+          "year": "2026",
+          "election_code": "6257",
+          "turno": "1",
+          "cargo": "1",
+          "office": "Presidente",
+          "rows": 3800511
+        },
+        {
+          "year": "2026",
+          "election_code": "6258",
+          "turno": "2",
+          "cargo": "1",
+          "office": "Presidente",
+          "rows": 1931103
+        }
+      ],
+      "coverage": [
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AC",
+          "rows": 16145
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AL",
+          "rows": 50972
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AM",
+          "rows": 58575
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AP",
+          "rows": 13996
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "BA",
+          "rows": 251417
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "CE",
+          "rows": 167164
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "DF",
+          "rows": 55819
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "ES",
+          "rows": 75629
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "GO",
+          "rows": 112157
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MA",
+          "rows": 124673
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MG",
+          "rows": 415799
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MS",
+          "rows": 52380
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MT",
+          "rows": 60750
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PA",
+          "rows": 143701
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PB",
+          "rows": 76265
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PE",
+          "rows": 156699
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PI",
+          "rows": 69308
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PR",
+          "rows": 211052
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RJ",
+          "rows": 301535
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RN",
+          "rows": 58164
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RO",
+          "rows": 33649
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RR",
+          "rows": 10588
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RS",
+          "rows": 213540
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SC",
+          "rows": 136979
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SE",
+          "rows": 43373
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SP",
+          "rows": 848063
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "TO",
+          "rows": 30084
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "ZZ",
+          "rows": 12035
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AC",
+          "rows": 8697
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AL",
+          "rows": 27419
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AM",
+          "rows": 30991
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AP",
+          "rows": 6973
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "BA",
+          "rows": 137040
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "CE",
+          "rows": 91087
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "DF",
+          "rows": 27453
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "ES",
+          "rows": 38829
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "GO",
+          "rows": 61031
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MA",
+          "rows": 66190
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MG",
+          "rows": 203235
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MS",
+          "rows": 26734
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MT",
+          "rows": 30873
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PA",
+          "rows": 76003
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PB",
+          "rows": 41416
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PE",
+          "rows": 83243
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PI",
+          "rows": 37819
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PR",
+          "rows": 105761
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RJ",
+          "rows": 147600
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RN",
+          "rows": 31496
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RO",
+          "rows": 17265
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RR",
+          "rows": 5332
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RS",
+          "rows": 106789
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SC",
+          "rows": 67266
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SE",
+          "rows": 22732
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SP",
+          "rows": 410145
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "TO",
+          "rows": 16709
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "ZZ",
+          "rows": 4975
+        }
+      ]
+    },
+    {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd",
+      "size_bytes": 350832764,
+      "lfs_integrity": "passed",
+      "rows": 998496,
+      "selected_rows": 998496,
+      "scopes": [
+        {
+          "year": "2026",
+          "election_code": "6257",
+          "turno": "1",
+          "cargo": "1",
+          "office": "Presidente",
+          "rows": 499248
+        },
+        {
+          "year": "2026",
+          "election_code": "6258",
+          "turno": "2",
+          "cargo": "1",
+          "office": "Presidente",
+          "rows": 499248
+        }
+      ],
+      "coverage": [
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AC",
+          "rows": 2270
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AL",
+          "rows": 7101
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AM",
+          "rows": 8157
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "AP",
+          "rows": 1914
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "BA",
+          "rows": 35476
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "CE",
+          "rows": 23765
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "DF",
+          "rows": 6969
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "ES",
+          "rows": 9844
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "GO",
+          "rows": 15686
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MA",
+          "rows": 18093
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MG",
+          "rows": 52062
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MS",
+          "rows": 7106
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "MT",
+          "rows": 8287
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PA",
+          "rows": 20827
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PB",
+          "rows": 10712
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PE",
+          "rows": 21418
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PI",
+          "rows": 10225
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "PR",
+          "rows": 27142
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RJ",
+          "rows": 37675
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RN",
+          "rows": 8115
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RO",
+          "rows": 4698
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RR",
+          "rows": 1519
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "RS",
+          "rows": 27547
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SC",
+          "rows": 17326
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SE",
+          "rows": 5923
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "SP",
+          "rows": 103656
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "TO",
+          "rows": 4384
+        },
+        {
+          "election_code": "6257",
+          "turno": "1",
+          "uf": "ZZ",
+          "rows": 1351
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AC",
+          "rows": 2270
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AL",
+          "rows": 7101
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AM",
+          "rows": 8157
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "AP",
+          "rows": 1914
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "BA",
+          "rows": 35476
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "CE",
+          "rows": 23765
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "DF",
+          "rows": 6969
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "ES",
+          "rows": 9844
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "GO",
+          "rows": 15686
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MA",
+          "rows": 18093
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MG",
+          "rows": 52062
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MS",
+          "rows": 7106
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "MT",
+          "rows": 8287
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PA",
+          "rows": 20827
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PB",
+          "rows": 10712
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PE",
+          "rows": 21418
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PI",
+          "rows": 10225
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "PR",
+          "rows": 27142
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RJ",
+          "rows": 37675
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RN",
+          "rows": 8115
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RO",
+          "rows": 4698
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RR",
+          "rows": 1519
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "RS",
+          "rows": 27547
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SC",
+          "rows": 17326
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SE",
+          "rows": 5923
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "SP",
+          "rows": 103656
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "TO",
+          "rows": 4384
+        },
+        {
+          "election_code": "6258",
+          "turno": "2",
+          "uf": "ZZ",
+          "rows": 1351
+        }
+      ]
+    }
+  ],
+  "vote_totals": [
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "13",
+      "votes": 53879538
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "14",
+      "votes": 2675887
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "16",
+      "votes": 43103
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "21",
+      "votes": 22693
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "22",
+      "votes": 56104503
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "27",
+      "votes": 40043
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "28",
+      "votes": 5246
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "29",
+      "votes": 15024
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "30",
+      "votes": 326488
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "35",
+      "votes": 16881
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "55",
+      "votes": 2605148
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "70",
+      "votes": 3448569
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "80",
+      "votes": 122911
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "95",
+      "votes": 2300798
+    },
+    {
+      "election_code": "6257",
+      "turno": "1",
+      "nr_votavel": "96",
+      "votes": 3669003
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "nr_votavel": "13",
+      "votes": 64256232
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "nr_votavel": "22",
+      "votes": 59826041
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "nr_votavel": "95",
+      "votes": 1430496
+    },
+    {
+      "election_code": "6258",
+      "turno": "2",
+      "nr_votavel": "96",
+      "votes": 2723305
+    }
+  ],
+  "final_result_comparison": "passed",
+  "final_result_compared_groups": 19,
+  "final_result_differences": []
+}

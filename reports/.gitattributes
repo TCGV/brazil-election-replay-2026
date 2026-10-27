@@ -1,0 +1,2 @@
+# Keep compact report CSVs directly readable in Git; raw data keeps using LFS.
+*.csv -filter diff merge text eol=lf

@@ -1,0 +1,664 @@
+{
+  "status": "completed",
+  "year": 2026,
+  "synthetic": false,
+  "started_at_utc": "2026-10-27T15:55:38.567452+00:00",
+  "time_convention": "Hora TSE, local wall clock; UTC offset unverified; no conversion",
+  "nature": "Retrospective approximate reconstruction, not the official publication history",
+  "inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8",
+      "collection_date": null,
+      "columns": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "NR_SECAO",
+        "CD_CARGO",
+        "DS_CARGO",
+        "NR_VOTAVEL",
+        "NM_VOTAVEL",
+        "QT_VOTOS",
+        "NR_LOCAL_VOTACAO",
+        "SQ_CANDIDATO",
+        "NM_LOCAL_VOTACAO",
+        "DS_LOCAL_VOTACAO_ENDERECO"
+      ],
+      "optional_columns_missing": [],
+      "ingestion": {
+        "rows_read": 5731614,
+        "selected_rows": 5731614
+      },
+      "observed_scopes": [
+        {
+          "year": "2026",
+          "election_code": "6257",
+          "turno": "1",
+          "cargo": "1",
+          "office": "Presidente",
+          "sg_ue": "BR",
+          "rows": 3800511
+        },
+        {
+          "year": "2026",
+          "election_code": "6258",
+          "turno": "2",
+          "cargo": "1",
+          "office": "Presidente",
+          "sg_ue": "BR",
+          "rows": 1931103
+        }
+      ],
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "timestamp_formats": []
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd",
+      "collection_date": null,
+      "columns": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "NR_SECAO",
+        "CD_CARGO",
+        "DS_CARGO",
+        "QT_APTOS",
+        "QT_COMPARECIMENTO",
+        "QT_ABSTENCOES",
+        "QT_VOTOS_NOMINAIS",
+        "QT_VOTOS_BRANCOS",
+        "QT_VOTOS_NULOS",
+        "QT_VOTOS_LEGENDA",
+        "QT_VOTOS_ANULADOS_APU_SEP",
+        "NR_LOCAL_VOTACAO",
+        "NM_LOCAL_VOTACAO",
+        "DS_LOCAL_VOTACAO_ENDERECO",
+        "DT_RECEBIMENTO_BU_HOR_TSE",
+        "DT_PRIM_TOT_PARCIAL_HOR_TSE",
+        "DS_ORIGEM_VOTO",
+        "ST_SECAO_INSTALADA",
+        "ST_SECAO_ANULADA",
+        "CD_MODELO_URNA",
+        "DS_MODELO_URNA"
+      ],
+      "optional_columns_missing": [],
+      "ingestion": {
+        "rows_read": 998496,
+        "selected_rows": 998496
+      },
+      "observed_scopes": [
+        {
+          "year": "2026",
+          "election_code": "6257",
+          "turno": "1",
+          "cargo": "1",
+          "office": "Presidente",
+          "sg_ue": "BR",
+          "rows": 499248
+        },
+        {
+          "year": "2026",
+          "election_code": "6258",
+          "turno": "2",
+          "cargo": "1",
+          "office": "Presidente",
+          "sg_ue": "BR",
+          "rows": 499248
+        }
+      ],
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "timestamp_formats": [
+        {
+          "source": "bu_received",
+          "format_or_status": "day_first",
+          "rows": 998496
+        },
+        {
+          "source": "first_partial_totalization",
+          "format_or_status": "day_first",
+          "rows": 998496
+        }
+      ]
+    }
+  },
+  "git_commit": "65d5f5cfe782154887c3d32499de698535c88fc3",
+  "git_dirty": true,
+  "quality": {
+    "reconciliation_comparability": {
+      "nominal": {
+        "compared_sections": 998411,
+        "missing_metric_sections": 0
+      },
+      "blank": {
+        "compared_sections": 998411,
+        "missing_metric_sections": 0
+      },
+      "null": {
+        "compared_sections": 998411,
+        "missing_metric_sections": 0
+      },
+      "separate": {
+        "compared_sections": 998411,
+        "missing_metric_sections": 0
+      }
+    },
+    "vote_sections": 998411,
+    "detail_sections": 998496,
+    "duplicate_detail_sections": 0,
+    "matched_unique_sections": 998411,
+    "reconciliation_mismatches": 0,
+    "coverage_by_uf": [
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "AC",
+        "sections": 2270,
+        "votes": 488330
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "AL",
+        "sections": 7101,
+        "votes": 1938428
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "AM",
+        "sections": 8157,
+        "votes": 2234549
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "AP",
+        "sections": 1914,
+        "votes": 476562
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "BA",
+        "sections": 35476,
+        "votes": 9053601
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "CE",
+        "sections": 23765,
+        "votes": 5910471
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "DF",
+        "sections": 6969,
+        "votes": 1831396
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "ES",
+        "sections": 9844,
+        "votes": 2352282
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "GO",
+        "sections": 15686,
+        "votes": 3971587
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "MA",
+        "sections": 18093,
+        "votes": 4160343
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "MG",
+        "sections": 52062,
+        "votes": 12637274
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "MS",
+        "sections": 7106,
+        "votes": 1541220
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "MT",
+        "sections": 8287,
+        "votes": 2052133
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "PA",
+        "sections": 20827,
+        "votes": 5066504
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "PB",
+        "sections": 10712,
+        "votes": 2683988
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "PE",
+        "sections": 21418,
+        "votes": 5911062
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "PI",
+        "sections": 10225,
+        "votes": 2240883
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "PR",
+        "sections": 27142,
+        "votes": 6841457
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "RJ",
+        "sections": 37675,
+        "votes": 9859802
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "RN",
+        "sections": 8115,
+        "votes": 2171013
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "RO",
+        "sections": 4698,
+        "votes": 991080
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "RR",
+        "sections": 1519,
+        "votes": 332772
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "RS",
+        "sections": 27547,
+        "votes": 6702903
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "SC",
+        "sections": 17326,
+        "votes": 4648159
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "SE",
+        "sections": 5923,
+        "votes": 1439082
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "SP",
+        "sections": 103656,
+        "votes": 26431992
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "TO",
+        "sections": 4384,
+        "votes": 965196
+      },
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "uf": "ZZ",
+        "sections": 1309,
+        "votes": 341766
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "AC",
+        "sections": 2270,
+        "votes": 453654
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "AL",
+        "sections": 7101,
+        "votes": 1951632
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "AM",
+        "sections": 8157,
+        "votes": 2192059
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "AP",
+        "sections": 1914,
+        "votes": 429975
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "BA",
+        "sections": 35476,
+        "votes": 9422047
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "CE",
+        "sections": 23765,
+        "votes": 6024843
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "DF",
+        "sections": 6969,
+        "votes": 1868280
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "ES",
+        "sections": 9844,
+        "votes": 2409214
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "GO",
+        "sections": 15686,
+        "votes": 4047280
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "MA",
+        "sections": 18093,
+        "votes": 4127771
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "MG",
+        "sections": 52062,
+        "votes": 13044203
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "MS",
+        "sections": 7106,
+        "votes": 1594460
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "MT",
+        "sections": 8287,
+        "votes": 2085334
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "PA",
+        "sections": 20827,
+        "votes": 4989573
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "PB",
+        "sections": 10712,
+        "votes": 2743560
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "PE",
+        "sections": 21418,
+        "votes": 6126467
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "PI",
+        "sections": 10225,
+        "votes": 2239830
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "PR",
+        "sections": 27142,
+        "votes": 7059339
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "RJ",
+        "sections": 37675,
+        "votes": 10077449
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "RN",
+        "sections": 8115,
+        "votes": 2232823
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "RO",
+        "sections": 4698,
+        "votes": 988489
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "RR",
+        "sections": 1519,
+        "votes": 308597
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "RS",
+        "sections": 27547,
+        "votes": 6889638
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "SC",
+        "sections": 17326,
+        "votes": 4762303
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "SE",
+        "sections": 5923,
+        "votes": 1466659
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "SP",
+        "sections": 103656,
+        "votes": 27364389
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "TO",
+        "sections": 4384,
+        "votes": 954763
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "uf": "ZZ",
+        "sections": 1308,
+        "votes": 381443
+      }
+    ]
+  },
+  "replays": [
+    {
+      "source": "first_partial_totalization",
+      "election_code": "6257",
+      "turno": "1",
+      "first_minute": "2026-10-04 17:08:00",
+      "last_minute": "2026-10-05 02:58:00",
+      "timed_votes": 125275835,
+      "untimed_votes": 0,
+      "timed_sections": 499206,
+      "vote_conservation": "passed"
+    },
+    {
+      "source": "first_partial_totalization",
+      "election_code": "6258",
+      "turno": "2",
+      "first_minute": "2026-10-25 17:05:00",
+      "last_minute": "2026-10-25 23:21:00",
+      "timed_votes": 128236074,
+      "untimed_votes": 0,
+      "timed_sections": 499205,
+      "vote_conservation": "passed"
+    },
+    {
+      "source": "bu_received",
+      "election_code": "6257",
+      "turno": "1",
+      "first_minute": "2026-10-04 17:08:00",
+      "last_minute": "2026-10-05 02:58:00",
+      "timed_votes": 125275835,
+      "untimed_votes": 0,
+      "timed_sections": 499206,
+      "vote_conservation": "passed"
+    },
+    {
+      "source": "bu_received",
+      "election_code": "6258",
+      "turno": "2",
+      "first_minute": "2026-10-25 17:05:00",
+      "last_minute": "2026-10-25 23:21:00",
+      "timed_votes": 128236074,
+      "untimed_votes": 0,
+      "timed_sections": 499205,
+      "vote_conservation": "passed"
+    }
+  ],
+  "charts": [
+    "charts/election-6257-turn-1-bu_received.svg",
+    "charts/election-6257-turn-1-first_partial_totalization.svg",
+    "charts/election-6258-turn-2-bu_received.svg",
+    "charts/election-6258-turn-2-first_partial_totalization.svg",
+    "replay-report.html"
+  ],
+  "completed_at_utc": "2026-10-27T16:01:02.326914+00:00",
+  "artifacts": [
+    "candidate-names.csv",
+    "charts/election-6257-turn-1-bu_received.svg",
+    "charts/election-6257-turn-1-first_partial_totalization.svg",
+    "charts/election-6258-turn-2-bu_received.svg",
+    "charts/election-6258-turn-2-first_partial_totalization.svg",
+    "data-quality.csv",
+    "duplicate-details.csv",
+    "final-results-municipality.csv",
+    "final-results-section.csv",
+    "final-results-uf.csv",
+    "final-results.csv",
+    "input-manifest.json",
+    "reconciliation.csv",
+    "replay-bu-received-minute.csv",
+    "replay-first-totalization-minute.csv",
+    "replay-report.html",
+    "replay.sqlite",
+    "report.md",
+    "section-coverage.csv",
+    "section-exceptions.csv",
+    "timestamp-latency.csv",
+    "untimed-votes.csv",
+    "vote-aggregation.csv"
+  ]
+}
