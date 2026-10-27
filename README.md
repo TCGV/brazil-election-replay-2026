@@ -21,7 +21,7 @@ The findings and validation evidence are summarized in [docs/results-2026.md (Po
 
 ## Run locally
 
-Requirements: Python **3.12+**, SQLite **3.39+** (bundled with Python in this environment), and Git LFS to retrieve the input files. There are no external Python packages or services to install. Run commands from the existing repository root; a Git worktree is not required.
+Requirements: Python **3.12+**, SQLite **3.39+** (bundled with Python in this environment), and Git LFS to retrieve the input files. The original replay pipeline has no external Python packages or services to install. Run commands from the existing repository root; a Git worktree is not required.
 
 ```bash
 # Initialize LFS for this checkout, then retrieve only the two required inputs:
@@ -52,6 +52,21 @@ PYTHONPATH=src python3 -m election_replay --year 2026 \
 ```
 
 `--max-minutes` defaults to 600,000 minutes per election/round/reference. Exceeding the limit **aborts** the run rather than truncating the timeline. Inspect timestamps before increasing it. Use `--synthetic` to label demonstrations visually; test fixtures are not election results.
+
+## Geographic timing analysis
+
+The analysis of regions, states, capitals, municipality size, and São Paulo is consolidated in [the Portuguese report](reports/2026/geography/REPORT.pt-BR.md), with [figures and evidence tables](reports/2026/geography/). It compares both rounds at equivalent national/state section-count progress and at fixed clock times. Municipality size means **registered electorate**, not resident population; the analysis does not infer individual demographics or causal mechanisms.
+
+Reproduce the analysis after generating the replay database above:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-analysis.txt
+PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-new
+```
+
+This optional workflow adds Matplotlib and NumPy for figures and descriptive controls. It validates source hashes, reuses `output/replay/replay.sqlite` read-only, and writes a separate analysis database, evidence CSVs, PNG/SVG figures, Markdown, and a self-contained HTML report. Previous nonempty output folders are preserved. The versioned report records this particular run; rerun the calculations and review conclusions before applying them to updated source files.
 
 ## Outputs
 

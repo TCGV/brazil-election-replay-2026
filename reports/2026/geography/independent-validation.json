@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "replay_database": "output/replay/replay.sqlite",
+  "analysis_directory": "output/geography-final",
+  "validation_script": "scripts/validate_geography.py",
+  "validation_script_sha256": "380845d4c1e11381c9c48087b4f750bc8e0de2cb1e44d04f108874fb6615bf7d",
+  "checks": {
+    "core": 864,
+    "fixed_clock": 1632,
+    "ols_coefficients": 8
+  },
+  "mismatches": 0,
+  "absolute_numeric_tolerance": 1e-09,
+  "maximum_absolute_numeric_difference": 6.572520305780927e-13,
+  "coefficient_checks": [
+    {
+      "source": "first_partial_totalization",
+      "election_code": "6257",
+      "turno": "1",
+      "independent_size_minutes_per_10x_electorate": 0.14004398446684385,
+      "independent_capital_minutes": -17.726163428916184,
+      "size_absolute_difference": 6.161737786669619e-14,
+      "capital_absolute_difference": 6.572520305780927e-13
+    },
+    {
+      "source": "first_partial_totalization",
+      "election_code": "6258",
+      "turno": "2",
+      "independent_size_minutes_per_10x_electorate": 6.4321413885852685,
+      "independent_capital_minutes": -18.04896975896475,
+      "size_absolute_difference": 7.815970093361102e-14,
+      "capital_absolute_difference": 5.471179065352771e-13
+    },
+    {
+      "source": "bu_received",
+      "election_code": "6257",
+      "turno": "1",
+      "independent_size_minutes_per_10x_electorate": 0.34455451670000004,
+      "independent_capital_minutes": -17.15907013090604,
+      "size_absolute_difference": 5.4511950509095186e-14,
+      "capital_absolute_difference": 6.146194664324867e-13
+    },
+    {
+      "source": "bu_received",
+      "election_code": "6258",
+      "turno": "2",
+      "independent_size_minutes_per_10x_electorate": 6.394133295683846,
+      "independent_capital_minutes": -18.026931926877374,
+      "size_absolute_difference": 4.884981308350689e-14,
+      "capital_absolute_difference": 6.536993168992922e-13
+    }
+  ],
+  "method": "Independent read-only aggregation from the original replay database; exact timestamp ties included; OLS rechecked via within-UF demeaning and standard-library 2x2 normal equations.",
+  "interpretation": "Descriptive accounting and conditional associations, not causal effects or individual demographic inference; municipal size is registered electorate, not population. No inference p-values are claimed."
+}

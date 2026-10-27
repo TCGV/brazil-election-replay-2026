@@ -1,0 +1,4 @@
+# Optional dependencies for geographic figures and descriptive controls.
+# The original replay pipeline remains standard-library only.
+matplotlib==3.10.8
+numpy==2.3.5

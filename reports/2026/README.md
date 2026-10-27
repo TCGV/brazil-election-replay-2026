@@ -18,4 +18,6 @@ Candidate 13 (Lula) is red; candidate 22 (Flávio Bolsonaro) is blue in HTML and
 
 The manifest describes the **full original processing run**, including its original commit/dirty-state observations and artifacts. Large intermediates, section-level exports, and the complete section-coverage and latency files listed there are not part of this compact snapshot. They can be reproduced using the commands in the project README. Chart colors and the browser validation/preview were refreshed after that processing run.
 
+For the follow-up analysis of regional timing, capitals, municipality size, and São Paulo, see the [geographic report](geography/REPORT.pt-BR.md) and its [PDF version](geography/REPORT.pt-BR.pdf).
+
 The timelines are retrospective approximations based on the supplied snapshots, not a certified history of TSE public updates. Independent validation checks file integrity and arithmetic, not external authenticity of the election results.

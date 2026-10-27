@@ -1,0 +1,54 @@
+[
+  {
+    "source": "first_partial_totalization",
+    "election_code": "6257",
+    "turno": "1",
+    "municipalities": 5571,
+    "spearman_size_vs_t50": 0.11657778541819808,
+    "within_uf_rank_correlation": -0.002481708740527103,
+    "ols_minutes_per_10x_electorate": 0.14004398446678223,
+    "ols_capital_minutes_vs_noncapital": -17.726163428915527,
+    "ols_rank": 29,
+    "ols_columns": 29,
+    "model": "municipality t50 = intercept + log10(electorate) + capital indicator + UF intercepts; equal municipality weights; descriptive, not causal"
+  },
+  {
+    "source": "first_partial_totalization",
+    "election_code": "6258",
+    "turno": "2",
+    "municipalities": 5571,
+    "spearman_size_vs_t50": 0.1358185520318526,
+    "within_uf_rank_correlation": 0.08685073422730703,
+    "ols_minutes_per_10x_electorate": 6.43214138858519,
+    "ols_capital_minutes_vs_noncapital": -18.0489697589642,
+    "ols_rank": 29,
+    "ols_columns": 29,
+    "model": "municipality t50 = intercept + log10(electorate) + capital indicator + UF intercepts; equal municipality weights; descriptive, not causal"
+  },
+  {
+    "source": "bu_received",
+    "election_code": "6257",
+    "turno": "1",
+    "municipalities": 5571,
+    "spearman_size_vs_t50": 0.11966527438265799,
+    "within_uf_rank_correlation": 0.0016932600227477093,
+    "ols_minutes_per_10x_electorate": 0.3445545166999455,
+    "ols_capital_minutes_vs_noncapital": -17.159070130905427,
+    "ols_rank": 29,
+    "ols_columns": 29,
+    "model": "municipality t50 = intercept + log10(electorate) + capital indicator + UF intercepts; equal municipality weights; descriptive, not causal"
+  },
+  {
+    "source": "bu_received",
+    "election_code": "6258",
+    "turno": "2",
+    "municipalities": 5571,
+    "spearman_size_vs_t50": 0.13536909789990356,
+    "within_uf_rank_correlation": 0.08624136950176169,
+    "ols_minutes_per_10x_electorate": 6.3941332956837975,
+    "ols_capital_minutes_vs_noncapital": -18.02693192687672,
+    "ols_rank": 29,
+    "ols_columns": 29,
+    "model": "municipality t50 = intercept + log10(electorate) + capital indicator + UF intercepts; equal municipality weights; descriptive, not causal"
+  }
+]

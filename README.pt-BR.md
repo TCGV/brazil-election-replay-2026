@@ -19,7 +19,7 @@ O candidato **13 (Lula) usa vermelho**, e o candidato **22 (Flávio Bolsonaro) u
 
 ## Executar
 
-Requisitos: Python **3.12+**, SQLite **3.39+** (incluído no Python deste ambiente) e Git LFS para recuperar os arquivos de entrada. Não há pacotes externos, servidor, token adicional ou banco de dados a instalar. Execute na raiz do checkout existente; não é necessário criar um worktree.
+Requisitos: Python **3.12+**, SQLite **3.39+** (incluído no Python deste ambiente) e Git LFS para recuperar os arquivos de entrada. O replay original não exige pacotes externos, servidor, token adicional ou banco de dados a instalar. Execute na raiz do checkout existente; não é necessário criar um worktree.
 
 ```bash
 # Inicialize o LFS neste checkout e recupere somente as duas entradas necessárias:
@@ -52,6 +52,21 @@ PYTHONPATH=src python3 -m election_replay --year 2026 \
 `--max-minutes` limita o intervalo por eleição/turno/fonte a 600.000 minutos por padrão; excedê-lo **aborta**, sem truncar a série. Inspecione horários antes de aumentar o limite. `--synthetic` identifica visualmente dados artificiais e deve ser usado em demonstrações; os testes não representam resultados eleitorais.
 
 O registro da execução validada dos dois turnos está em [docs/results-2026.md](docs/results-2026.md).
+
+## Análise geográfica do ritmo da apuração
+
+A análise de regiões, UFs, capitais, porte municipal e São Paulo está consolidada no [relatório em português](reports/2026/geography/REPORT.pt-BR.md), com [gráficos e tabelas de evidências](reports/2026/geography/). Comparam-se os dois turnos tanto em progresso nacional/estadual equivalente quanto em horários fixos. Porte municipal significa **eleitorado registrado**, não população residente; não se inferem características demográficas individuais ou mecanismos causais.
+
+Para reproduzir, primeiro gere a base do replay conforme os comandos acima:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-analysis.txt
+PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-new
+```
+
+Esse fluxo opcional utiliza Matplotlib e NumPy para figuras e controles descritivos. Ele verifica os hashes das fontes, reutiliza `output/replay/replay.sqlite` somente para leitura e gera uma base separada, CSVs de evidências, figuras PNG/SVG, Markdown e HTML autônomo. Pastas anteriores não vazias são preservadas. O relatório versionado registra esta execução; em fontes atualizadas, refaça os cálculos e revise as conclusões.
 
 ## Saídas
 

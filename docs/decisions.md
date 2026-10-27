@@ -48,3 +48,15 @@ O acesso Git inicial funcionou, mas o Git LFS retornou `Resource not accessible 
 Por solicitação do usuário, o candidato 13 (Lula) usa vermelho `#c62828` e o candidato 22 (Flávio Bolsonaro) usa azul `#1565c0`. O mapeamento é explícito por número e vale para HTML, SVG, turnos, referências temporais e medidas. Os demais candidatos recebem cores de uma paleta separada; não há inferência automática de orientação política.
 
 `README.md` é a versão principal em inglês dos EUA; `README.pt-BR.md` contém a versão em português do Brasil. Links no topo permitem alternar entre elas, pois o GitHub exibe o README principal sem selecionar automaticamente uma tradução.
+
+## Análise geográfica do ritmo da apuração
+
+A análise complementar está em `reports/2026/geography/`. Sua implementação separa preparação dos dados (`geography_data.py`), cálculos (`geography.py`), controles municipais (`geography_controls.py`), figuras (`geography_charts.py`) e consolidação do relatório (`geography_report.py`). O comando `geography_run.py` orquestra a reprodução e executa também a validação independente de `scripts/validate_geography.py`.
+
+- O banco original do replay é aberto somente para leitura e as duas fontes têm seus hashes conferidos antes do novo processamento. Uma nova base analítica fica em `output/`, fora dos artefatos compactos versionados.
+- Capitais são identificadas por nome normalizado e UF, com uma lista explícita das 27 capitais conferida nas duas eleições. Brasília/DF é tratada como capital, sem contraparte de interior. Exterior permanece na análise nacional e fora dos grupos domésticos de porte/capital.
+- Porte é o número de eleitores aptos agregado por município na primeira rodada disponível, mantido fixo entre turnos. Faixas: até 10 mil, 10–50 mil, 50–200 mil, 200 mil–1 milhão e acima de 1 milhão. Não foi acrescentado dado populacional ou demográfico externo.
+- Horário absoluto e estágio relativo são réguas diferentes. Marcos nacionais e paulistas são definidos por número de seções, com todos os empates incluídos; pesos geográficos e percentuais de candidatos usam votos nominais. Os cortes de relógio incluem eventos até HH:MM:00; séries por minuto chegam ao fim do minuto.
+- A decomposição substitui a participação interna corrente de cada grupo pela final, mantendo os pesos geográficos correntes. É uma identidade contábil, não identificação causal. Contribuições municipais interpretáveis são centradas na participação final estadual; termos não centrados ficam disponíveis para auditoria.
+- Correlações e ajustes municipais dão peso igual a cada município, diferentemente das medianas nacionais por seção. O ajuste com UF e log10 do eleitorado é descritivo e tem suporte limitado para comparações de capitais e não capitais de porte semelhante. Não se inferem renda, idade, escolaridade, perfil urbano/rural ou preferência individual.
+- A análise completa requer Matplotlib/NumPy, listados separadamente em `requirements-analysis.txt`. O replay original permanece sem dependências Python externas. A exportação opcional de HTML autônomo para PDF utiliza Playwright/Chromium, sem alterar os cálculos.
