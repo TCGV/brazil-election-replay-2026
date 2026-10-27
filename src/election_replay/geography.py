@@ -126,7 +126,8 @@ def _timing(db, election, turn, source, column, origin, final_municipalities, ti
                     total_sections=final['sections'], cumulative_sections=cumulative['sections'],
                     section_completion_percentage=percentage(cumulative['sections'], final['sections']),
                     cumulative_nominal_votes=cumulative['nominal'], nominal_completion_percentage=percentage(cumulative['nominal'], final['nominal']),
-                    lula_percentage=percentage(cumulative['lula'], cumulative['nominal'])))
+                    lula_percentage=percentage(cumulative['lula'], cumulative['nominal']),
+                    flavio_percentage=percentage(cumulative['flavio'], cumulative['nominal'])))
 
             while event and event['group_label'] == group:
                 timestamp = event['event']
@@ -144,7 +145,8 @@ def _timing(db, election, turn, source, column, origin, final_municipalities, ti
             row = dict(source_timestamp=source, election_code=election, turno=turn,
                        dimension=dimension, group=group,total_sections=final['sections'],
                        total_electorate=final['electorate'],total_nominal_votes=final['nominal'],
-                       lula_final_percentage=percentage(final['lula'], final['nominal']))
+                       lula_final_percentage=percentage(final['lula'], final['nominal']),
+                       flavio_final_percentage=percentage(final['flavio'], final['nominal']))
             for target in (10, 50, 90, 99):
                 row[f't{target}'] = quantiles.get(target)
                 row[f't{target}_minutes'] = _minutes(quantiles.get(target), origin)
@@ -187,7 +189,10 @@ def _geographic_minutes(db, election, turn, source, column, origin, final_munici
                     nominal_completion_percentage=percentage(cumulative['nominal'],final['nominal']),
                     lula_votes_in_minute=incoming['lula'],cumulative_lula_votes=cumulative['lula'],
                     lula_percentage=percentage(cumulative['lula'],cumulative['nominal']),
-                    incoming_lula_percentage=percentage(incoming['lula'],incoming['nominal'])))
+                    incoming_lula_percentage=percentage(incoming['lula'],incoming['nominal']),
+                    flavio_votes_in_minute=incoming['flavio'],cumulative_flavio_votes=cumulative['flavio'],
+                    flavio_percentage=percentage(cumulative['flavio'],cumulative['nominal']),
+                    incoming_flavio_percentage=percentage(incoming['flavio'],incoming['nominal'])))
                 minute += timedelta(minutes=1)
 
 
@@ -211,6 +216,49 @@ def _milestone_cutoffs(db, election, turn, column, total_sections, scope='BR'):
     for target in MILESTONES:
         result.setdefault(target,(last,False))
     return result
+
+
+def _uf_milestones(db, election, turn, source, column, final_municipalities, writer):
+    """Stream each UF's timestamp groups once; thresholds use its own sections.
+
+    Complete timestamp ties enter together. All source sections remain in the
+    denominator, so missing timestamps cannot silently produce 100% coverage.
+    ZZ is exported as its own scope, separate from the 27 domestic UFs.
+    """
+    totals = _aggregate_municipalities(final_municipalities, 'uf')
+    sql = f'''SELECT uf,{column} AS event,COUNT(*) AS sections,
+        SUM(COALESCE(aptos,0)) AS electorate,SUM(nominal_votes) AS nominal,
+        SUM(lula_votes) AS lula,SUM(flavio_votes) AS flavio FROM section_events
+        WHERE election_code=? AND turno=? AND {column} IS NOT NULL
+        GROUP BY uf,event ORDER BY uf,event'''
+    events = iter(db.execute(sql, (election,turn)))
+    event = next(events,None)
+    for uf,final in sorted(totals.items()):
+        cumulative = _blank()
+        pending = list(MILESTONES)
+        last = None
+
+        def emit(target,reached):
+            writer.writerow(dict(source_timestamp=source,election_code=election,turno=turn,
+                scope=uf,requested_sections_percentage=target,cutoff_timestamp=last,
+                actual_sections_percentage=percentage(cumulative['sections'],final['sections']),
+                target_reached=int(reached),total_sections=final['sections'],
+                cumulative_sections=cumulative['sections'],total_nominal_votes=final['nominal'],
+                cumulative_nominal_votes=cumulative['nominal'],
+                nominal_completion_percentage=percentage(cumulative['nominal'],final['nominal']),
+                lula_percentage=percentage(cumulative['lula'],cumulative['nominal']),
+                flavio_percentage=percentage(cumulative['flavio'],cumulative['nominal']),
+                lula_final_percentage=percentage(final['lula'],final['nominal']),
+                flavio_final_percentage=percentage(final['flavio'],final['nominal'])))
+
+        while event and event['uf']==uf:
+            last = event['event']
+            _add(cumulative,_row_totals(event))
+            while pending and cumulative['sections']>=math.ceil(final['sections']*pending[0]/100):
+                emit(pending.pop(0),True)
+            event = next(events,None)
+        for target in pending:
+            emit(target,False)
 
 
 def _decomposition(final, current, total_final, total_current):
@@ -282,7 +330,9 @@ def _milestones(db, election, turn, source, column, final_municipalities, nation
                             current_nominal_weight_percentage=percentage(observed['nominal'],current_total['nominal']),
                             final_nominal_weight_percentage=percentage(ref['nominal'],total_final['nominal']),
                             lula_percentage=percentage(observed['lula'],observed['nominal']),
-                            lula_final_percentage=percentage(ref['lula'],ref['nominal'])))
+                            lula_final_percentage=percentage(ref['lula'],ref['nominal']),
+                            flavio_percentage=percentage(observed['flavio'],observed['nominal']),
+                            flavio_final_percentage=percentage(ref['flavio'],ref['nominal'])))
             decompositions = ('region','uf') if scope=='BR' else ('municipality',)
             for dimension in decompositions:
                 final_dimension = _aggregate_municipalities(final_munis,dimension)
@@ -324,12 +374,13 @@ def analyze(db_path:Path,output_dir:Path)->dict:
         handles.append(stream)
         return result
     try:
-        timing=writer('timing-summary.csv',['source_timestamp','election_code','turno','dimension','group','total_sections','total_electorate','total_nominal_votes','lula_final_percentage','t10','t50','t90','t99','t10_minutes','t50_minutes','t90_minutes','t99_minutes'])
-        clock=writer('clock-completion.csv',['source_timestamp','election_code','turno','dimension','group','clock','cutoff_timestamp','total_sections','cumulative_sections','section_completion_percentage','cumulative_nominal_votes','nominal_completion_percentage','lula_percentage'])
-        minute=writer('geographic-minute.csv',['source_timestamp','election_code','turno','dimension','group','minute','minutes_after_1700','sections_in_minute','cumulative_sections','section_completion_percentage','nominal_votes_in_minute','cumulative_nominal_votes','nominal_completion_percentage','lula_votes_in_minute','cumulative_lula_votes','lula_percentage','incoming_lula_percentage'])
+        timing=writer('timing-summary.csv',['source_timestamp','election_code','turno','dimension','group','total_sections','total_electorate','total_nominal_votes','lula_final_percentage','t10','t50','t90','t99','t10_minutes','t50_minutes','t90_minutes','t99_minutes','flavio_final_percentage'])
+        clock=writer('clock-completion.csv',['source_timestamp','election_code','turno','dimension','group','clock','cutoff_timestamp','total_sections','cumulative_sections','section_completion_percentage','cumulative_nominal_votes','nominal_completion_percentage','lula_percentage','flavio_percentage'])
+        minute=writer('geographic-minute.csv',['source_timestamp','election_code','turno','dimension','group','minute','minutes_after_1700','sections_in_minute','cumulative_sections','section_completion_percentage','nominal_votes_in_minute','cumulative_nominal_votes','nominal_completion_percentage','lula_votes_in_minute','cumulative_lula_votes','lula_percentage','incoming_lula_percentage','flavio_votes_in_minute','cumulative_flavio_votes','flavio_percentage','incoming_flavio_percentage'])
         common=['source_timestamp','election_code','turno','scope','requested_sections_percentage','cutoff_timestamp','actual_sections_percentage']
         national=writer('national-milestones.csv',common+['target_reached','cumulative_sections','cumulative_nominal_votes','nominal_completion_percentage','lula_percentage','flavio_percentage','lula_final_percentage','flavio_final_percentage','ne_weight_percentage','ne_final_weight_percentage','ne_sections_completion_percentage'])
-        composition=writer('milestone-composition.csv',common+['dimension','group','total_sections','cumulative_sections','section_completion_percentage','current_section_weight_percentage','final_section_weight_percentage','cumulative_nominal_votes','total_nominal_votes','current_nominal_weight_percentage','final_nominal_weight_percentage','lula_percentage','lula_final_percentage'])
+        composition=writer('milestone-composition.csv',common+['dimension','group','total_sections','cumulative_sections','section_completion_percentage','current_section_weight_percentage','final_section_weight_percentage','cumulative_nominal_votes','total_nominal_votes','current_nominal_weight_percentage','final_nominal_weight_percentage','lula_percentage','lula_final_percentage','flavio_percentage','flavio_final_percentage'])
+        uf_milestones=writer('uf-milestones.csv',common+['target_reached','total_sections','cumulative_sections','total_nominal_votes','cumulative_nominal_votes','nominal_completion_percentage','lula_percentage','flavio_percentage','lula_final_percentage','flavio_final_percentage'])
         decomposition=writer('composition-decomposition.csv',common+['dimension','current_lula_percentage','final_lula_percentage','counterfactual_lula_percentage','composition_effect_pp','within_group_effect_pp','total_gap_pp'])
         municipal=writer('sp-municipality-contributions.csv',common+['uf','municipality','municipality_name','is_capital','size_band','section_completion_percentage','current_nominal_weight_percentage','final_nominal_weight_percentage','lula_percentage','lula_final_percentage','composition_contribution_pp','within_contribution_pp','centered_composition_contribution_pp'])
         summary={'method':'Descriptive census of recorded section arrivals; no causal or individual-demographic inference',
@@ -356,6 +407,7 @@ def analyze(db_path:Path,output_dir:Path)->dict:
                 _timing(db,election,turn,source,column,origin,final_municipalities,timing,clock)
                 _geographic_minutes(db,election,turn,source,column,origin,final_municipalities,minute)
                 summary['national_milestones'].extend(_milestones(db,election,turn,source,column,final_municipalities,national,composition,decomposition,municipal))
+                _uf_milestones(db,election,turn,source,column,final_municipalities,uf_milestones)
         summary['status']='completed'
         (output_dir/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         return summary

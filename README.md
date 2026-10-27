@@ -4,9 +4,11 @@
 
 A **retrospective, approximate reconstruction** of the minute-by-minute vote count using the two nationwide CSV files in `data/`. Votes available in the source snapshot are assigned to each polling section's recorded timestamp. This does not necessarily reproduce revisions or the sequence of updates published on the TSE dashboard.
 
+The study has two stages: [reconstruction](#step-1--minute-by-minute-reconstruction) and [composition analysis](#step-2--counting-composition-and-demographic-patterns).
+
 The pipeline discovers the rounds and election codes present in the files, includes overseas voting (`ZZ`), and produces two separate timelines: **first partial totalization** and **ballot report (BU) receipt**. It does not create rounds absent from the input.
 
-## Published results
+## Step 1 — Minute-by-minute reconstruction
 
 The compact results from the validated two-round run are versioned in [reports/2026/](reports/2026/):
 
@@ -32,7 +34,7 @@ git lfs pull --include='data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv,dat
 PYTHONPATH=src python3 -m election_replay --output output/replay
 
 # Run integration tests with small, explicitly synthetic fixtures:
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_replay.py' -v
 ```
 
 Open `output/replay/replay-report.html` in a browser to explore the curves. It is self-contained and requires no CDN or web server. The text report is `output/replay/report.md`; exportable charts are in `output/replay/charts/*.svg`.
@@ -53,7 +55,7 @@ PYTHONPATH=src python3 -m election_replay --year 2026 \
 
 `--max-minutes` defaults to 600,000 minutes per election/round/reference. Exceeding the limit **aborts** the run rather than truncating the timeline. Inspect timestamps before increasing it. Use `--synthetic` to label demonstrations visually; test fixtures are not election results.
 
-## Geographic timing analysis
+## Step 2 — Counting composition and demographic patterns
 
 The analysis of regions, states, capitals, municipality size, and São Paulo is consolidated in [the Portuguese report](reports/2026/geography/REPORT.pt-BR.md), with [figures and evidence tables](reports/2026/geography/). It compares both rounds at equivalent national/state section-count progress and at fixed clock times. Municipality size means **registered electorate**, not resident population; the analysis does not infer individual demographics or causal mechanisms.
 
@@ -63,10 +65,10 @@ Reproduce the analysis after generating the replay database above:
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
-PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-new
+PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-step2 --randomizations 4999 --seed 20261027
 ```
 
-This optional workflow adds Matplotlib and NumPy for figures and descriptive controls. It validates source hashes, reuses `output/replay/replay.sqlite` read-only, and writes a separate analysis database, evidence CSVs, PNG/SVG figures, Markdown, and a self-contained HTML report. Previous nonempty output folders are preserved. The versioned report records this particular run; rerun the calculations and review conclusions before applying them to updated source files.
+This optional workflow adds Matplotlib and NumPy for figures, descriptive controls, and formal section-order randomization tests. The Markdown report is the primary record of step 2; HTML and PDF are companion formats. It validates source hashes, reuses `output/replay/replay.sqlite` read-only, and writes a separate analysis database, evidence CSVs, PNG/SVG figures, Markdown, and a self-contained HTML report. Previous nonempty output folders are preserved. Randomization is opt-in (`--randomizations 0` is the default). The published run uses 4,999 permutations, seed `20261027`, global and within-state references, and Holm-adjusted primary tests. Non-rejection is not proof of random ordering; statistical detection and effect magnitude are reported separately. Run the full suite after installing analysis dependencies: `PYTHONPATH=src python3 -m unittest discover -s tests -v`. The versioned report records this particular run; rerun the calculations and review conclusions before applying them to updated source files.
 
 ## Outputs
 

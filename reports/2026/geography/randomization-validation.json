@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "replay_database": "output/replay/replay.sqlite",
+  "analysis_directory": "output/geography-step2",
+  "validation_script": "scripts/validate_randomization.py",
+  "validation_script_sha256": "ab386f4137db8656cb31161a9499c66b1256112ec9560f1cbaa5fec26c693e68",
+  "checks": {
+    "observed_curve_values": 3360,
+    "observed_progress": 3360,
+    "deviation_identity": 3360,
+    "plus_one_p": 396,
+    "observed_score": 396,
+    "holm_adjusted_p": 198,
+    "cached_observation": 3360,
+    "pooled_center": 3360,
+    "cached_score": 396,
+    "cached_exceedance_counts": 396,
+    "simulation_cache_files": 4
+  },
+  "primary_hypotheses": 198,
+  "mismatches": 0,
+  "maximum_absolute_numeric_difference": 6.778577699151356e-12,
+  "absolute_numeric_tolerance": 1e-09,
+  "classification_scope": "Capital and electorate-size labels reused as fixed covariates from municipality_metadata; original section timestamps and vote counts independently aggregated from replay.sqlite.",
+  "simulation_scope": "Pooled centers, observed scores, plus-one ranks and family adjustment audited from retained NPY curve caches using the standard library; permutation assignment generation is not independently repeated.",
+  "interpretation": "A reference-order test, not proof of randomness, causal attribution or population-confidence inference."
+}

@@ -4,9 +4,11 @@
 
 Reconstrução **retrospectiva e aproximada** da evolução minuto a minuto a partir dos dois CSVs nacionais presentes em `data/`. Os votos disponíveis na extração são atribuídos ao horário da seção: isso não reproduz necessariamente revisões nem a sequência de publicações do painel do TSE.
 
+O estudo está dividido em [reconstrução](#etapa-1--reconstrução-minuto-a-minuto) e [análise da composição](#etapa-2--composição-das-seções-e-evolução-da-apuração).
+
 O processamento identifica os turnos e códigos de eleição presentes, inclui o exterior (`ZZ`) e produz duas séries separadas: **primeira totalização parcial** e **recebimento do BU**. Não cria um turno que não exista nos arquivos.
 
-## Resultados publicados
+## Etapa 1 — Reconstrução minuto a minuto
 
 Os resultados compactos da execução validada dos dois turnos estão versionados em [reports/2026/](reports/2026/):
 
@@ -30,7 +32,7 @@ git lfs pull --include='data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv,dat
 PYTHONPATH=src python3 -m election_replay --output output/replay
 
 # Validação automatizada com pequenos dados sintéticos:
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_replay.py' -v
 ```
 
 Abra `output/replay/replay-report.html` no navegador para explorar as curvas (arquivo autônomo, sem CDN ou servidor). O relatório textual está em `output/replay/report.md` e os gráficos exportáveis em `output/replay/charts/*.svg`.
@@ -53,7 +55,7 @@ PYTHONPATH=src python3 -m election_replay --year 2026 \
 
 O registro da execução validada dos dois turnos está em [docs/results-2026.md](docs/results-2026.md).
 
-## Análise geográfica do ritmo da apuração
+## Etapa 2 — Composição das seções e evolução da apuração
 
 A análise de regiões, UFs, capitais, porte municipal e São Paulo está consolidada no [relatório em português](reports/2026/geography/REPORT.pt-BR.md), com [gráficos e tabelas de evidências](reports/2026/geography/). Comparam-se os dois turnos tanto em progresso nacional/estadual equivalente quanto em horários fixos. Porte municipal significa **eleitorado registrado**, não população residente; não se inferem características demográficas individuais ou mecanismos causais.
 
@@ -63,10 +65,10 @@ Para reproduzir, primeiro gere a base do replay conforme os comandos acima:
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
-PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-new
+PYTHONPATH=src python3 -m election_replay.geography_run --output output/geography-step2 --randomizations 4999 --seed 20261027
 ```
 
-Esse fluxo opcional utiliza Matplotlib e NumPy para figuras e controles descritivos. Ele verifica os hashes das fontes, reutiliza `output/replay/replay.sqlite` somente para leitura e gera uma base separada, CSVs de evidências, figuras PNG/SVG, Markdown e HTML autônomo. Pastas anteriores não vazias são preservadas. O relatório versionado registra esta execução; em fontes atualizadas, refaça os cálculos e revise as conclusões.
+Esse fluxo opcional utiliza Matplotlib e NumPy para figuras, controles descritivos e testes formais de aleatoriedade da ordem de entrada. O Markdown é o registro principal da etapa 2; HTML e PDF são formatos complementares. Ele verifica os hashes das fontes, reutiliza `output/replay/replay.sqlite` somente para leitura e gera uma base separada, CSVs de evidências, figuras PNG/SVG, Markdown e HTML autônomo. Pastas anteriores não vazias são preservadas. Os embaralhamentos são opcionais (`--randomizations 0` por padrão). A execução publicada usa 4.999 permutações, semente `20261027`, referências nacional e dentro de cada UF, e ajuste de Holm nos testes primários. Não rejeitar o teste não prova ordem aleatória; a evidência estatística é apresentada separadamente da magnitude. Após instalar as dependências de análise, rode a suíte completa com `PYTHONPATH=src python3 -m unittest discover -s tests -v`. O relatório versionado registra esta execução; em fontes atualizadas, refaça os cálculos e revise as conclusões.
 
 ## Saídas
 

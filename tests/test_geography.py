@@ -180,6 +180,59 @@ class GeographicAnalysisTests(unittest.TestCase):
                           election_code="101", dimension="capital_status", group="non_capital")
         self.assertEqual(empty[0]["lula_final_percentage"], "")
 
+    def test_flavio_geographic_fields_use_votes_not_lula_complement(self):
+        first = event(1, 100, 30, "2026-10-04 17:00:00.000000")
+        second = event(2, 200, 80, "2026-10-04 18:00:00.000000",
+                       municipality="2", capital=0, band="<=10k")
+        # The rest belong to other first-round candidates.
+        first["flavio_votes"], second["flavio_votes"] = 20, 60
+        self.execute([first, second])
+        [timing] = self.rows("timing-summary.csv", source_timestamp="first_partial_totalization",
+                             dimension="uf", group="SP")
+        self.assertAlmostEqual(float(timing["flavio_final_percentage"]), 100 * 80 / 300)
+        self.assertNotAlmostEqual(float(timing["flavio_final_percentage"]),
+                                  100 - float(timing["lula_final_percentage"]))
+        [clock] = self.rows("clock-completion.csv", source_timestamp="first_partial_totalization",
+                            dimension="uf", group="SP", clock="17:30")
+        self.assertEqual(float(clock["flavio_percentage"]), 20)
+        [minute] = self.rows("geographic-minute.csv", source_timestamp="first_partial_totalization",
+                             dimension="uf", group="SP", minute="2026-10-04 17:00:00")
+        self.assertEqual(int(minute["flavio_votes_in_minute"]), 20)
+        self.assertEqual(int(minute["cumulative_flavio_votes"]), 20)
+        self.assertEqual(float(minute["flavio_percentage"]), 20)
+        self.assertEqual(float(minute["incoming_flavio_percentage"]), 20)
+        [composition] = self.rows("milestone-composition.csv",
+                                  source_timestamp="first_partial_totalization", scope="BR",
+                                  dimension="uf", group="SP", requested_sections_percentage="50")
+        self.assertEqual(float(composition["flavio_percentage"]), 20)
+        self.assertAlmostEqual(float(composition["flavio_final_percentage"]), 100 * 80 / 300)
+
+    def test_uf_milestones_use_own_progress_include_ties_and_keep_zz_separate(self):
+        events = self.fixture() + [
+            event(5, 40, 10, "2026-10-04 17:30:30.000000", municipality="3", capital=0),
+            event(1, 50, 5, "2026-10-04 18:10:00.000000", municipality="4",
+                  uf="BA", region="Nordeste"),
+        ]
+        self.execute(events)
+        primary = self.rows("uf-milestones.csv", source_timestamp="first_partial_totalization")
+        self.assertEqual({r["scope"] for r in primary}, {"SP", "BA", "ZZ"})
+        self.assertEqual(len(primary), 3 * 8)
+        [half] = self.rows("uf-milestones.csv", source_timestamp="first_partial_totalization",
+                           scope="SP", requested_sections_percentage="50")
+        self.assertEqual(datetime.fromisoformat(half["cutoff_timestamp"]),
+                         datetime(2026, 10, 4, 17, 30, 30))
+        self.assertEqual(int(half["total_sections"]), 4)
+        self.assertEqual(int(half["cumulative_sections"]), 3)
+        self.assertEqual(float(half["actual_sections_percentage"]), 75)
+        self.assertEqual(int(half["cumulative_nominal_votes"]), 70)
+        self.assertEqual(int(half["total_nominal_votes"]), 100)
+        self.assertAlmostEqual(float(half["lula_percentage"]), 400 / 7)
+        self.assertAlmostEqual(float(half["flavio_percentage"]), 300 / 7)
+        for row in self.rows("uf-milestones.csv", requested_sections_percentage="100"):
+            self.assertEqual(int(row["target_reached"]), 1)
+            self.assertEqual(float(row["actual_sections_percentage"]), 100)
+            self.assertEqual(int(row["cumulative_nominal_votes"]), int(row["total_nominal_votes"]))
+
 
 if __name__ == "__main__":
     unittest.main()

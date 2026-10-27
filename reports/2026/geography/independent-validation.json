@@ -1,13 +1,15 @@
 {
   "status": "passed",
   "replay_database": "output/replay/replay.sqlite",
-  "analysis_directory": "output/geography-final",
+  "analysis_directory": "output/geography-step2",
   "validation_script": "scripts/validate_geography.py",
-  "validation_script_sha256": "380845d4c1e11381c9c48087b4f750bc8e0de2cb1e44d04f108874fb6615bf7d",
+  "validation_script_sha256": "9ae4eb6581d8a9172078cfcd8c335fcbc64be53455eea14a02fa6d81f342e644",
   "checks": {
     "core": 864,
     "fixed_clock": 1632,
-    "ols_coefficients": 8
+    "ols_coefficients": 8,
+    "candidate_22": 3028,
+    "uf_milestones": 8960
   },
   "mismatches": 0,
   "absolute_numeric_tolerance": 1e-09,
@@ -51,5 +53,5 @@
     }
   ],
   "method": "Independent read-only aggregation from the original replay database; exact timestamp ties included; OLS rechecked via within-UF demeaning and standard-library 2x2 normal equations.",
-  "interpretation": "Descriptive accounting and conditional associations, not causal effects or individual demographic inference; municipal size is registered electorate, not population. No inference p-values are claimed."
+  "interpretation": "Descriptive accounting and conditional associations, not causal effects or individual demographic inference; municipal size is registered electorate, not population. This validator does not assess randomization-test results."
 }

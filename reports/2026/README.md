@@ -1,6 +1,17 @@
-# Validated 2026 replay: compact results
+# 2026 study — stages and evidence
 
 [English project README](../../README.md) · [Leia em português](../../README.pt-BR.md)
+
+## Study stages
+
+| Stage | Question | Primary record |
+|---|---|---|
+| **1. Minute-by-minute reconstruction** | How can the supplied final section votes be associated retrospectively with recorded arrival times? | [Reconstruction report](report.md), [minute CSVs](replay-first-totalization-minute.csv), and [interactive chart](replay-report.html) |
+| **2. Counting composition and demographic patterns** | Which regions, states, capitals, and municipality-size groups entered first, and how did that composition relate to accumulated vote shares? | [Consolidated Markdown report (Portuguese)](geography/REPORT.pt-BR.md), with [evidence tables](geography/) |
+
+Stage 2 includes formal section-order randomization benchmarks. Geography and registered electorate are observable proxies; individual demographic characteristics are not inferred. HTML and PDF are companion formats, while Markdown is the main repository record.
+
+## Stage 1 artifacts
 
 This directory contains selected outputs from the validated two-round replay of the repository's nationwide input CSVs. It includes the minute timelines, final nationwide totals, data-quality summaries, provenance manifest, validation evidence, and charts. The full generated run remains in the Git-ignored `output/replay/` directory.
 
@@ -18,6 +29,6 @@ Candidate 13 (Lula) is red; candidate 22 (Flávio Bolsonaro) is blue in HTML and
 
 The manifest describes the **full original processing run**, including its original commit/dirty-state observations and artifacts. Large intermediates, section-level exports, and the complete section-coverage and latency files listed there are not part of this compact snapshot. They can be reproduced using the commands in the project README. Chart colors and the browser validation/preview were refreshed after that processing run.
 
-For the follow-up analysis of regional timing, capitals, municipality size, and São Paulo, see the [geographic report](geography/REPORT.pt-BR.md) and its [PDF version](geography/REPORT.pt-BR.pdf).
+For **stage 2**, start with the [Markdown report](geography/REPORT.pt-BR.md). The [PDF](geography/REPORT.pt-BR.pdf), [HTML](geography/report.html), figures, and CSVs are complementary reading and audit formats.
 
 The timelines are retrospective approximations based on the supplied snapshots, not a certified history of TSE public updates. Independent validation checks file integrity and arithmetic, not external authenticity of the election results.

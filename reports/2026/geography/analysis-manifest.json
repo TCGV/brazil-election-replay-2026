@@ -210,17 +210,23 @@
   "time_convention": "Hora TSE, local wall clock; UTC offset unverified; no conversion",
   "geographic_fields_source": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
   "municipalities": 11514,
-  "database": "output/geography-final/analysis.sqlite",
-  "started_at_utc": "2026-10-27T18:04:48.987368+00:00",
-  "git_commit": "f43b454bdeb4be27444948fa337e4d88bb13dc53",
+  "database": "output/geography-step2/analysis.sqlite",
+  "randomization_config": {
+    "permutations": 4999,
+    "seed": 20261027
+  },
+  "started_at_utc": "2026-10-27T21:08:56.423247+00:00",
+  "git_commit": "1326445ce60b4b07648ed7eb6fc78fc6b1a54dbb",
   "git_dirty": true,
   "implementation_sha256": {
-    "geography.py": "7b32a48606a0cc081c0b98ca62046ea26befacc995194c75887b6ef4116a4aea",
+    "geography.py": "4036e4649b07c071324aabc077baf192b47d6d5c8e2db823c8547a4a2e33230b",
     "geography_charts.py": "ae1343d3a513d2e564081c7f68efce105235508b67e37148d316d3ac4adcd79c",
     "geography_controls.py": "9bd8f2fe164b2f86f8acd11594f7456d890f3c23de91fd452111f84e7778cb8a",
     "geography_data.py": "ca8d191ab24c1c68ad04491a0cc928154456773551ce6e62e007027b82084988",
-    "geography_report.py": "29080ed70b59ae00aaeb630b83f966a870dfa71926eb2c8e57fedebb8050f510",
-    "geography_run.py": "d1c409ae2fe72a4ef19037e711bc8487eff248e1e22f43d2f337d3604a83147c"
+    "geography_randomization.py": "d5e068337837c2106c2d8ccf81256e8f890453916e49888eac8a21f21428fd50",
+    "geography_randomization_charts.py": "6366f86e9042551054d409f3ab4762d1a577c86c6bc5879cd40a085bd2aed60e",
+    "geography_report.py": "1c4e8fef71aa35d70b12a95b28f1dc56c5e961969a333dd00064c91f41f8808f",
+    "geography_run.py": "a48af97244cdab36f85036c08647e602823ed12734241032bebb30d5c14ca8d5"
   },
   "dependencies": {
     "matplotlib": "3.10.8",
@@ -283,13 +289,15 @@
   "independent_validation": {
     "status": "passed",
     "replay_database": "output/replay/replay.sqlite",
-    "analysis_directory": "output/geography-final",
+    "analysis_directory": "output/geography-step2",
     "validation_script": "scripts/validate_geography.py",
-    "validation_script_sha256": "380845d4c1e11381c9c48087b4f750bc8e0de2cb1e44d04f108874fb6615bf7d",
+    "validation_script_sha256": "9ae4eb6581d8a9172078cfcd8c335fcbc64be53455eea14a02fa6d81f342e644",
     "checks": {
       "core": 864,
       "fixed_clock": 1632,
-      "ols_coefficients": 8
+      "ols_coefficients": 8,
+      "candidate_22": 3028,
+      "uf_milestones": 8960
     },
     "mismatches": 0,
     "absolute_numeric_tolerance": 1e-09,
@@ -333,7 +341,258 @@
       }
     ],
     "method": "Independent read-only aggregation from the original replay database; exact timestamp ties included; OLS rechecked via within-UF demeaning and standard-library 2x2 normal equations.",
-    "interpretation": "Descriptive accounting and conditional associations, not causal effects or individual demographic inference; municipal size is registered electorate, not population. No inference p-values are claimed."
+    "interpretation": "Descriptive accounting and conditional associations, not causal effects or individual demographic inference; municipal size is registered electorate, not population. This validator does not assess randomization-test results."
+  },
+  "randomization": {
+    "status": "completed",
+    "algorithm": "section-slot-permutation-v1",
+    "engine_sha256": "d5e068337837c2106c2d8ccf81256e8f890453916e49888eac8a21f21428fd50",
+    "permutations": 4999,
+    "seed": 20261027,
+    "rng": "NumPy default_rng PCG64",
+    "numpy_version": "2.3.5",
+    "stages": [
+      10,
+      25,
+      50,
+      75,
+      90,
+      99
+    ],
+    "sources": [
+      "first_partial_totalization",
+      "bu_received"
+    ],
+    "primary_source": "first_partial_totalization",
+    "null_models": {
+      "global": "Exchange complete section payloads nationally over fixed timestamp slots.",
+      "within_uf": "Exchange payloads only within UF; preserve UF section arrivals at every timestamp."
+    },
+    "unit": "section payload including geography, municipal electorate band and all candidate/nominal votes",
+    "ties": "Retain timestamp-slot multiset; include all events tied at a checkpoint cutoff.",
+    "paired_sensitivity": "The identical section-to-slot permutation is applied to first-totalization and BU-receipt timestamp pairs.",
+    "test": "Symmetric pooled observed+B mean at each checkpoint; maximum absolute deviation over the six checkpoints.",
+    "p_value": "(1 + null statistics >= observed statistic, tolerance 1e-12 pp) / (B + 1)",
+    "multiplicity": "Holm FWER 0.05 across applicable primary curves of both rounds; no checkpoint-by-checkpoint tests.",
+    "envelopes": "2.5/97.5 percentiles of permutation curves, pointwise; not simultaneous bands or population confidence intervals.",
+    "interpretation": "A census random-order reference, not a population sampling or causal test. Nonrejection does not establish randomness.",
+    "not_applicable": 0,
+    "operational_limit": "Timestamp batch sizes remain fixed, but the geographic/operational membership of batches is not preserved.",
+    "source_database": "output/geography-step2/analysis.sqlite",
+    "started_at_utc": "2026-10-27T21:10:12.945130+00:00",
+    "rounds": [
+      {
+        "election_code": "6257",
+        "turno": "1",
+        "sections": 499206
+      },
+      {
+        "election_code": "6258",
+        "turno": "2",
+        "sections": 499205
+      }
+    ],
+    "source_inputs": {
+      "votes": {
+        "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+        "size_bytes": 1572813473,
+        "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8",
+        "collection_date": null,
+        "columns": [
+          "DT_GERACAO",
+          "HH_GERACAO",
+          "ANO_ELEICAO",
+          "CD_TIPO_ELEICAO",
+          "NM_TIPO_ELEICAO",
+          "NR_TURNO",
+          "CD_ELEICAO",
+          "DS_ELEICAO",
+          "DT_ELEICAO",
+          "TP_ABRANGENCIA",
+          "SG_UF",
+          "SG_UE",
+          "NM_UE",
+          "CD_MUNICIPIO",
+          "NM_MUNICIPIO",
+          "NR_ZONA",
+          "NR_SECAO",
+          "CD_CARGO",
+          "DS_CARGO",
+          "NR_VOTAVEL",
+          "NM_VOTAVEL",
+          "QT_VOTOS",
+          "NR_LOCAL_VOTACAO",
+          "SQ_CANDIDATO",
+          "NM_LOCAL_VOTACAO",
+          "DS_LOCAL_VOTACAO_ENDERECO"
+        ],
+        "optional_columns_missing": [],
+        "ingestion": {
+          "rows_read": 5731614,
+          "selected_rows": 5731614
+        },
+        "observed_scopes": [
+          {
+            "year": "2026",
+            "election_code": "6257",
+            "turno": "1",
+            "cargo": "1",
+            "office": "Presidente",
+            "sg_ue": "BR",
+            "rows": 3800511
+          },
+          {
+            "year": "2026",
+            "election_code": "6258",
+            "turno": "2",
+            "cargo": "1",
+            "office": "Presidente",
+            "sg_ue": "BR",
+            "rows": 1931103
+          }
+        ],
+        "extraction_values": [
+          [
+            "26/10/2026",
+            "12:07:25"
+          ]
+        ],
+        "timestamp_formats": []
+      },
+      "details": {
+        "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+        "size_bytes": 350832764,
+        "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd",
+        "collection_date": null,
+        "columns": [
+          "DT_GERACAO",
+          "HH_GERACAO",
+          "ANO_ELEICAO",
+          "CD_TIPO_ELEICAO",
+          "NM_TIPO_ELEICAO",
+          "NR_TURNO",
+          "CD_ELEICAO",
+          "DS_ELEICAO",
+          "DT_ELEICAO",
+          "TP_ABRANGENCIA",
+          "SG_UF",
+          "SG_UE",
+          "NM_UE",
+          "CD_MUNICIPIO",
+          "NM_MUNICIPIO",
+          "NR_ZONA",
+          "NR_SECAO",
+          "CD_CARGO",
+          "DS_CARGO",
+          "QT_APTOS",
+          "QT_COMPARECIMENTO",
+          "QT_ABSTENCOES",
+          "QT_VOTOS_NOMINAIS",
+          "QT_VOTOS_BRANCOS",
+          "QT_VOTOS_NULOS",
+          "QT_VOTOS_LEGENDA",
+          "QT_VOTOS_ANULADOS_APU_SEP",
+          "NR_LOCAL_VOTACAO",
+          "NM_LOCAL_VOTACAO",
+          "DS_LOCAL_VOTACAO_ENDERECO",
+          "DT_RECEBIMENTO_BU_HOR_TSE",
+          "DT_PRIM_TOT_PARCIAL_HOR_TSE",
+          "DS_ORIGEM_VOTO",
+          "ST_SECAO_INSTALADA",
+          "ST_SECAO_ANULADA",
+          "CD_MODELO_URNA",
+          "DS_MODELO_URNA"
+        ],
+        "optional_columns_missing": [],
+        "ingestion": {
+          "rows_read": 998496,
+          "selected_rows": 998496
+        },
+        "observed_scopes": [
+          {
+            "year": "2026",
+            "election_code": "6257",
+            "turno": "1",
+            "cargo": "1",
+            "office": "Presidente",
+            "sg_ue": "BR",
+            "rows": 499248
+          },
+          {
+            "year": "2026",
+            "election_code": "6258",
+            "turno": "2",
+            "cargo": "1",
+            "office": "Presidente",
+            "sg_ue": "BR",
+            "rows": 499248
+          }
+        ],
+        "extraction_values": [
+          [
+            "26/10/2026",
+            "09:49:06"
+          ]
+        ],
+        "timestamp_formats": [
+          {
+            "source": "bu_received",
+            "format_or_status": "day_first",
+            "rows": 998496
+          },
+          {
+            "source": "first_partial_totalization",
+            "format_or_status": "day_first",
+            "rows": 998496
+          }
+        ]
+      }
+    },
+    "analysis_sections": 998411,
+    "workers": 4,
+    "checkpoint_fingerprints": {
+      "6257:1:global": "9f219c44e83abcd9883fa0ca3fdf9aed74b0774b1610016140f260f091b19426",
+      "6257:1:within_uf": "ff68978f95301577545b88092669f2666b24369c6a8d0d2d7f4a7f1a07d4b8ba",
+      "6258:2:global": "36d740910f3095a32e6dbe62c16959313560915f74cbda083e416bc5a7075c6e",
+      "6258:2:within_uf": "862d87e979974aecbae472ec5b00e74e46e5e93fc30019a7047a2263a20cc114"
+    },
+    "primary_hypotheses": 198,
+    "primary_detected": 191,
+    "primary_not_detected": 7,
+    "minimum_p_value": 0.0002,
+    "completed_at_utc": "2026-10-27T21:13:36.854834+00:00",
+    "artifacts": [
+      "randomization-results.csv",
+      "randomization-bands.csv",
+      "randomization-manifest.json"
+    ]
+  },
+  "randomization_validation": {
+    "status": "passed",
+    "replay_database": "output/replay/replay.sqlite",
+    "analysis_directory": "output/geography-step2",
+    "validation_script": "scripts/validate_randomization.py",
+    "validation_script_sha256": "ab386f4137db8656cb31161a9499c66b1256112ec9560f1cbaa5fec26c693e68",
+    "checks": {
+      "observed_curve_values": 3360,
+      "observed_progress": 3360,
+      "deviation_identity": 3360,
+      "plus_one_p": 396,
+      "observed_score": 396,
+      "holm_adjusted_p": 198,
+      "cached_observation": 3360,
+      "pooled_center": 3360,
+      "cached_score": 396,
+      "cached_exceedance_counts": 396,
+      "simulation_cache_files": 4
+    },
+    "primary_hypotheses": 198,
+    "mismatches": 0,
+    "maximum_absolute_numeric_difference": 6.778577699151356e-12,
+    "absolute_numeric_tolerance": 1e-09,
+    "classification_scope": "Capital and electorate-size labels reused as fixed covariates from municipality_metadata; original section timestamps and vote counts independently aggregated from replay.sqlite.",
+    "simulation_scope": "Pooled centers, observed scores, plus-one ranks and family adjustment audited from retained NPY curve caches using the standard library; permutation assignment generation is not independently repeated.",
+    "interpretation": "A reference-order test, not proof of randomness, causal attribution or population-confidence inference."
   },
   "figures": [
     "figures/regional-completion.png",
@@ -347,15 +606,28 @@
     "figures/northeast-composition.png",
     "figures/northeast-composition.svg",
     "figures/composition-decomposition.png",
-    "figures/composition-decomposition.svg"
+    "figures/composition-decomposition.svg",
+    "figures/randomization-candidate-reference.png",
+    "figures/randomization-candidate-reference.svg",
+    "figures/randomization-city-reference.png",
+    "figures/randomization-city-reference.svg"
   ],
   "reports": [
     "REPORT.pt-BR.md",
     "report.html"
   ],
-  "completed_at_utc": "2026-10-27T18:06:05.737610+00:00",
+  "completed_at_utc": "2026-10-27T21:14:04.759613+00:00",
   "artifacts": [
+    ".randomization-cache/6257-1-global-4999-20261027.json",
+    ".randomization-cache/6257-1-global-4999-20261027.npy",
+    ".randomization-cache/6257-1-within_uf-4999-20261027.json",
+    ".randomization-cache/6257-1-within_uf-4999-20261027.npy",
+    ".randomization-cache/6258-2-global-4999-20261027.json",
+    ".randomization-cache/6258-2-global-4999-20261027.npy",
+    ".randomization-cache/6258-2-within_uf-4999-20261027.json",
+    ".randomization-cache/6258-2-within_uf-4999-20261027.npy",
     "REPORT.pt-BR.md",
+    "REPORT.pt-BR.pdf",
     "analysis-manifest.json",
     "clock-completion.csv",
     "composition-decomposition.csv",
@@ -367,6 +639,10 @@
     "figures/composition-decomposition.svg",
     "figures/northeast-composition.png",
     "figures/northeast-composition.svg",
+    "figures/randomization-candidate-reference.png",
+    "figures/randomization-candidate-reference.svg",
+    "figures/randomization-city-reference.png",
+    "figures/randomization-city-reference.svg",
     "figures/regional-completion.png",
     "figures/regional-completion.svg",
     "figures/state-timing.png",
@@ -377,9 +653,18 @@
     "municipality-controls.json",
     "municipality-timing.csv",
     "national-milestones.csv",
+    "randomization-bands.csv",
+    "randomization-manifest.json",
+    "randomization-results.csv",
+    "randomization-validation.json",
     "report.html",
     "sp-municipality-contributions.csv",
     "summary.json",
-    "timing-summary.csv"
-  ]
+    "timing-summary.csv",
+    "uf-milestones.csv"
+  ],
+  "report_regeneration": {
+    "at_utc": "2026-10-27T21:19:08.550867+00:00",
+    "reason": "Markdown navigation, readable labels and independent-audit summary; numerical outputs unchanged."
+  }
 }

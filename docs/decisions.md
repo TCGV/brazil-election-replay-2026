@@ -60,3 +60,23 @@ A análise complementar está em `reports/2026/geography/`. Sua implementação 
 - A decomposição substitui a participação interna corrente de cada grupo pela final, mantendo os pesos geográficos correntes. É uma identidade contábil, não identificação causal. Contribuições municipais interpretáveis são centradas na participação final estadual; termos não centrados ficam disponíveis para auditoria.
 - Correlações e ajustes municipais dão peso igual a cada município, diferentemente das medianas nacionais por seção. O ajuste com UF e log10 do eleitorado é descritivo e tem suporte limitado para comparações de capitais e não capitais de porte semelhante. Não se inferem renda, idade, escolaridade, perfil urbano/rural ou preferência individual.
 - A análise completa requer Matplotlib/NumPy, listados separadamente em `requirements-analysis.txt`. O replay original permanece sem dependências Python externas. A exportação opcional de HTML autônomo para PDF utiliza Playwright/Chromium, sem alterar os cálculos.
+
+## Etapa 2 como registro principal em Markdown
+
+O índice de `reports/2026/` e os READMEs distinguem explicitamente a etapa 1 (reconstrução minuto a minuto) da etapa 2 (composição territorial e porte eleitoral das seções contabilizadas). O caminho já publicado `reports/2026/geography/REPORT.pt-BR.md` é mantido como registro principal da etapa 2; PDF e HTML são complementares. O gerador do relatório produz a mesma organização para evitar divergência entre documentação e novas execuções.
+
+A consolidação cobre todas as cinco regiões e as 27 UFs, com exterior em separado. Percentuais de Lula e Flávio são calculados diretamente para os recortes e os marcos próprios de cada UF; não se infere o segundo candidato como complemento do primeiro no primeiro turno. A análise distingue os marcos do país dos de cada UF, o avanço por número de seções dos pesos por votos nominais, e a magnitude descritiva da evidência estatística.
+
+### Referências formais de ordem aleatória
+
+A pedido do usuário, a consolidação inclui testes formais, não apenas a frase “não foi encontrado um padrão forte”. O desenho foi definido antes da execução:
+
+- 4.999 permutações por eleição/nulo, semente `20261027`, marcos de 10%, 25%, 50%, 75%, 90% e 99%. A unidade trocada é o payload da seção; o conjunto de slots de horário e seus empates fica fixo.
+- Nulo global para curvas de avanço por região/UF; nulo dentro de UF para capital/porte e curvas dos candidatos. Percentuais nacionais dos candidatos são avaliados nos dois nulos; percentuais estaduais usam o avanço próprio da UF e o nulo dentro da UF. Contagens de UF/região fixas por construção não geram testes condicionais redundantes.
+- A estatística é o maior desvio absoluto da curva em relação à média ponto a ponto das B+1 realizações, incluindo a observada. Essa regra simétrica é aplicada à curva observada e a cada permutação. P-valores usam `(1 + excedências)/(B + 1)`, com resolução mínima `0,0002`; nunca se reporta p igual a zero.
+- Holm controla a família primária conjunta dos dois turnos a 5%, sem pressupor independência entre recortes. Primeira totalização é a referência primária. BU reutiliza os mesmos embaralhamentos como sensibilidade e não é outra família para selecionar resultados pelo menor p.
+- Envelopes de 2,5–97,5% são ponto a ponto, não simultâneos ou intervalos de confiança populacionais. Pesos nominais por grupo têm envelopes descritivos; os testes primários dos grupos usam conclusão por seções. A decisão formal vem da curva inteira, não da inspeção isolada de pontos fora do envelope.
+- “Desvio detectado”, “desvio não detectado” e “não aplicável” são categorias distintas. Ausência de rejeição não prova aleatoriedade ou equivalência; uma magnitude pequena pode ser detectável. Diferença de rejeição entre turnos não é um teste da diferença entre turnos.
+- Troca livre de seções preserva tamanho dos lotes temporais, mas não sua composição geográfica/operacional. Rejeitar essa referência não identifica uma causa técnica ou um efeito demográfico individual.
+
+O motor usa arrays numéricos contíguos e até quatro processos independentes, respeitando a cota de CPU. Cada combinação turno/nulo tem seu RNG determinístico e checkpoint próprio, com hashes do código, dados e parâmetros; paralelismo e retomada não reduzem o número de permutações. Os caches de curvas ficam em `output/`, fora do Git. A validação independente reconstrói as observações do banco do replay e audita centros, estatísticas, excedências e Holm a partir desses caches, sem importar o motor ou NumPy.
