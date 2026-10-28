@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-28T23:00:59.221351+00:00",
+  "generator_sha256": "187bc6faeecb44376cbb18488d8076f776d5ea6ac422560720b649d9ecc44028",
+  "analysis_manifest_sha256": "da44a049a5d8271bbe730a30add97e318fdf3cf4629a5d2a4a7fe4d9a6b9d308",
+  "inputs": [
+    {
+      "path": "curves.csv.gz",
+      "sha256": "c9dd7abcab3cc9eaa7c844b7b703cf55271d4734bb42e745ffeb8b3aa40d9322",
+      "size_bytes": 1611595
+    },
+    {
+      "path": "bands.csv",
+      "sha256": "d5a0fa11eba280a22dd9908a3e5021d00e4d07d0f0b71c4ccbeb98031417bf16",
+      "size_bytes": 970782
+    },
+    {
+      "path": "tests.csv",
+      "sha256": "a127b4916f9b37c951d72a2211b65164a51b8acce2e8c4b440da0afd6e9ba936",
+      "size_bytes": 20145
+    },
+    {
+      "path": "coverage.csv",
+      "sha256": "dd529595f540a0f46228c28628e1874b7cfa8fd9c9c152a9e84028c4f6e602a8",
+      "size_bytes": 143897
+    }
+  ],
+  "figures": [
+    {
+      "path": "observed-composition.png",
+      "sha256": "9c4e9eb1bf34af23431171adb40e78dea5b598ce1e1f90ee371e1dd73ddb092b",
+      "size_bytes": 259047
+    },
+    {
+      "path": "observed-composition.svg",
+      "sha256": "e0db73f221636a6c9a8ea841e5f3ee17aba666b134ce0230b3b8dfe7f473f3ac",
+      "size_bytes": 64269
+    },
+    {
+      "path": "conditional-residuals.png",
+      "sha256": "c5812f8b64afed4ffa2e5340001368aaa2fb84b236bd04f78d35e08165f90fb9",
+      "size_bytes": 283107
+    },
+    {
+      "path": "conditional-residuals.svg",
+      "sha256": "30a6d2ecdbd235beed04d201f767970bbca671d9ec1ce7caa0a85ed7edc92a50",
+      "size_bytes": 95962
+    },
+    {
+      "path": "temporal-test-reference.png",
+      "sha256": "95586742c646c3b647ba98cd7ec3e924892a083e1fa177c47b3d36ad459cb612",
+      "size_bytes": 220171
+    },
+    {
+      "path": "temporal-test-reference.svg",
+      "sha256": "d1791aae7743591eb9fb33bbdaab65f96c9ebc521ae805cb830c4116361bc5e0",
+      "size_bytes": 55749
+    },
+    {
+      "path": "temporal-reference-support.png",
+      "sha256": "a3e699823d900f720fe71ec96c4bd40bcff1291e6fc0bd51935599b9457560b4",
+      "size_bytes": 142201
+    },
+    {
+      "path": "temporal-reference-support.svg",
+      "sha256": "6cfabc5b63b394dc29c1595c8c276f3217fc23633371f34d5d1b58dd1afa4eb3",
+      "size_bytes": 20047
+    }
+  ],
+  "scope": "Finalists shown for readability; all 15 candidate/round combinations remain in the fixed 90-test family.",
+  "interpretation": "Conditional statistical references; no inference of manipulation or independent source authenticity."
+}

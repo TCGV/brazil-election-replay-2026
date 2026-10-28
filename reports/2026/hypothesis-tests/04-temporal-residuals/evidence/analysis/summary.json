@@ -1,0 +1,178 @@
+{
+  "family_size": 90,
+  "primary_detected": 40,
+  "primary_not_detected": 50,
+  "primary_not_applicable": 0,
+  "candidate_numbers": {
+    "1": [
+      13,
+      14,
+      16,
+      21,
+      22,
+      27,
+      28,
+      29,
+      30,
+      35,
+      55,
+      70,
+      80
+    ],
+    "2": [
+      13,
+      22
+    ]
+  },
+  "primary_source": "first_time",
+  "paired_sensitivity": "bu_time; no additional p-values",
+  "models": {
+    "zone_size": 0,
+    "place_size": 1
+  },
+  "source_counts": {
+    "detail_key_uniqueness": "Checked directly during this source scan",
+    "details": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "missing_model_urna": 82,
+      "rows_read": 998496,
+      "selected_rows": 998496
+    },
+    "missing_candidate_rows": "Zero-filled only for existing detail keys; all section/category totals reconciled exactly",
+    "missing_model_urna": "Represented as -1; optional source column, never inferred from another field",
+    "missing_place_ids": "Represented as -1, never replaced by an existing polling place",
+    "rounds": [
+      {
+        "candidate_numbers": [
+          13,
+          14,
+          16,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          55,
+          70,
+          80
+        ],
+        "candidate_vote_totals": {
+          "13": 53879538,
+          "14": 2675887,
+          "16": 43103,
+          "21": 22693,
+          "22": 56104503,
+          "27": 40043,
+          "28": 5246,
+          "29": 15024,
+          "30": 326488,
+          "35": 16881,
+          "55": 2605148,
+          "70": 3448569,
+          "80": 122911
+        },
+        "detail_only_sections": 42,
+        "detail_rows": 499248,
+        "election_code": 6257,
+        "missing_model_urna": 41,
+        "timing": {
+          "bu_time": {
+            "max_local": "2026-10-05 02:58:30",
+            "max_seconds": 1791169110,
+            "min_local": "2026-10-04 17:08:44",
+            "min_seconds": 1791133724,
+            "missing": 0,
+            "valid": 499248
+          },
+          "first_time": {
+            "max_local": "2026-10-05 02:58:39",
+            "max_seconds": 1791169119,
+            "min_local": "2026-10-04 17:08:57",
+            "min_seconds": 1791133737,
+            "missing": 0,
+            "valid": 499248
+          }
+        },
+        "totals": {
+          "abstentions": 33469244,
+          "aptos": 158745502,
+          "blank": 2300798,
+          "legend": 0,
+          "nominal": 119306034,
+          "null_votes": 3669003,
+          "separate": 0,
+          "turnout": 125275835
+        },
+        "turno": 1,
+        "vote_rows": 3800511,
+        "vote_sections": 499206
+      },
+      {
+        "candidate_numbers": [
+          13,
+          22
+        ],
+        "candidate_vote_totals": {
+          "13": 64256232,
+          "22": 59826041
+        },
+        "detail_only_sections": 43,
+        "detail_rows": 499248,
+        "election_code": 6258,
+        "missing_model_urna": 41,
+        "timing": {
+          "bu_time": {
+            "max_local": "2026-10-25 23:21:40",
+            "max_seconds": 1792970500,
+            "min_local": "2026-10-25 17:03:25",
+            "min_seconds": 1792947805,
+            "missing": 0,
+            "valid": 499248
+          },
+          "first_time": {
+            "max_local": "2026-10-25 23:21:51",
+            "max_seconds": 1792970511,
+            "min_local": "2026-10-25 17:05:21",
+            "min_seconds": 1792947921,
+            "missing": 0,
+            "valid": 499248
+          }
+        },
+        "totals": {
+          "abstentions": 30509005,
+          "aptos": 158745502,
+          "blank": 1430496,
+          "legend": 0,
+          "nominal": 124082273,
+          "null_votes": 2723305,
+          "separate": 0,
+          "turnout": 128236074
+        },
+        "turno": 2,
+        "vote_rows": 1931103,
+        "vote_sections": 499205
+      }
+    ],
+    "time_convention": "Hora TSE wall-clock seconds since a naive 1970-01-01 epoch; not UTC or POSIX instants; no timezone conversion; missing=-1",
+    "vote_key_uniqueness": "Asserted from zero-violation completed H1 unique_vote_key checks for exactly these source hashes; not re-inferred from summed candidate vectors",
+    "votes": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "rows_read": 5731614,
+      "selected_rows": 5731614
+    }
+  },
+  "interpretation": "Conditional time-order associations, not causal attribution or external authenticity",
+  "sensitivity_validation": "See independent-validation.json for the scope of separate validation of descriptive alternatives"
+}

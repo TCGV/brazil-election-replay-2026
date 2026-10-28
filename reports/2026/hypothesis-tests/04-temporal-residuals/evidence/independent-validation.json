@@ -1,0 +1,183 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-28T23:02:39.378782+00:00",
+  "script_sha256": "c9447394f04ca0aabad7282c4f6af5e9775e39724453853bf97aa878be15743e",
+  "independent_parser_fingerprint": "f555ed85ab992e4ffc5ba23995c79c8c21bf4a8b4683353a96c5f5c5f491b6a9",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    }
+  },
+  "independent_source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "parameters": {
+    "simulations": 4999,
+    "seed": 20261028,
+    "primary_family_size": 90,
+    "p_resolution": 0.0002
+  },
+  "comparisons": {
+    "provenance": 6,
+    "publication_integrity": 28,
+    "configuration": 5,
+    "simulation_cache": 56,
+    "simulation_assignment": 32,
+    "family": 1,
+    "group-totals.csv.gz": 5909233,
+    "curves.csv.gz": 607465,
+    "coverage.csv": 29581,
+    "tests.csv": 1891,
+    "bands.csv": 84841,
+    "sensitivity.csv": 2551,
+    "milestones.csv": 9601,
+    "uf-summary.csv": 26881,
+    "group-spans.csv": 433,
+    "span-summary.csv": 105,
+    "eligibility.csv": 813,
+    "mc-quantiles.csv": 2701,
+    "summary": 5,
+    "source_immutability": 2
+  },
+  "mismatches": 0,
+  "maximum_absolute_numeric_difference": 3.3306690738754696e-16,
+  "numeric_tolerances": {
+    "cumulative_vote_scale": 1e-07,
+    "shares_scores_and_quantiles": 1e-09,
+    "p_value_comparisons": 1e-09
+  },
+  "rows_validated": {
+    "group-totals.csv.gz": 281392,
+    "curves.csv.gz": 33748,
+    "coverage.csv": 1740,
+    "tests.csv": 90,
+    "bands.csv": 6060,
+    "sensitivity.csv": 150,
+    "milestones.csv": 600,
+    "uf-summary.csv": 1680,
+    "group-spans.csv": 48,
+    "span-summary.csv": 8,
+    "eligibility.csv": 58,
+    "mc-quantiles.csv": 180
+  },
+  "independent_models": [
+    {
+      "model": "zone_size",
+      "turno": 1,
+      "cohort_sections": 498484,
+      "groups": 25549,
+      "candidate_numbers": [
+        13,
+        14,
+        16,
+        21,
+        22,
+        27,
+        28,
+        29,
+        30,
+        35,
+        55,
+        70,
+        80
+      ]
+    },
+    {
+      "model": "place_size",
+      "turno": 1,
+      "cohort_sections": 498484,
+      "groups": 115108,
+      "candidate_numbers": [
+        13,
+        14,
+        16,
+        21,
+        22,
+        27,
+        28,
+        29,
+        30,
+        35,
+        55,
+        70,
+        80
+      ]
+    },
+    {
+      "model": "zone_size",
+      "turno": 2,
+      "cohort_sections": 498528,
+      "groups": 25586,
+      "candidate_numbers": [
+        13,
+        22
+      ]
+    },
+    {
+      "model": "place_size",
+      "turno": 2,
+      "cohort_sections": 498528,
+      "groups": 115149,
+      "candidate_numbers": [
+        13,
+        22
+      ]
+    }
+  ],
+  "failures": [],
+  "simulation_scope": {
+    "all_retained_scores_and_grid_curves": "SHA-256 verified; all published ranks, Holm adjustments, means and quantiles recomputed",
+    "assignment_generation": "Two full assignments per round/reference repeated independently, for both timestamp sources and every candidate",
+    "repeated_assignments": [
+      {
+        "model": "zone_size",
+        "turno": 1,
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_primary_scores_differ_between_independently_repeated_assignments": true
+      },
+      {
+        "model": "place_size",
+        "turno": 1,
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_primary_scores_differ_between_independently_repeated_assignments": true
+      },
+      {
+        "model": "zone_size",
+        "turno": 2,
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_primary_scores_differ_between_independently_repeated_assignments": true
+      },
+      {
+        "model": "place_size",
+        "turno": 2,
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_primary_scores_differ_between_independently_repeated_assignments": true
+      }
+    ],
+    "full_simulation_repeated": false
+  },
+  "sensitivity_scope": "All declared descriptive alternatives independently reconstructed from original sources",
+  "interpretation": "Internal conditional-order validation; neither causal attribution nor independent authentication of source records"
+}

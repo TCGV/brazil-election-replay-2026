@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-28T23:05:03.526330+00:00",
+  "scope": "All published H4 files except this inventory; .work and Python caches excluded",
+  "nature": "Integrity inventory, not an external authenticity signature",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 7,
+      "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
+    },
+    {
+      "path": "METHOD.pt-BR.md",
+      "size_bytes": 13537,
+      "sha256": "8848241e631bf8f714877d215a5276bc46afa1fc59042b66815a06122bb476e9"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 9467,
+      "sha256": "c37a762e347e2cb5608a115e4087f7179d3401fa31c17333b41070c24b85984f"
+    },
+    {
+      "path": "REPORT.pt-BR.md",
+      "size_bytes": 22794,
+      "sha256": "9838b6dadd806c096dd246df452381dd0becee0f477cc6cf5cb7f9685227889d"
+    },
+    {
+      "path": "code/generate_figures.py",
+      "size_bytes": 16362,
+      "sha256": "187bc6faeecb44376cbb18488d8076f776d5ea6ac422560720b649d9ecc44028"
+    },
+    {
+      "path": "code/inventory_artifacts.py",
+      "size_bytes": 2124,
+      "sha256": "1b828ae6b25e61dbacd38a83990d65cf361faca4f8c580e6c75391e4ac42bc2c"
+    },
+    {
+      "path": "code/load_data.py",
+      "size_bytes": 24907,
+      "sha256": "7a1662496b44d781b95cd766144aa8b2e151c7f9395926b3f21905669363dc06"
+    },
+    {
+      "path": "code/run_analysis.py",
+      "size_bytes": 26057,
+      "sha256": "ea45b435cdb8f4a8cd0f6576ac054a0da82f990915b06f71febf706f223590d5"
+    },
+    {
+      "path": "code/temporal_statistics.py",
+      "size_bytes": 11453,
+      "sha256": "c0c186738c5bd74e7ec1ac835391e4f3dfbf77079cd3e9f0dfd998176bdfe26e"
+    },
+    {
+      "path": "code/test_independent.py",
+      "size_bytes": 12772,
+      "sha256": "e209853d6a10d300b11883798ba2f02367f3b89b00a8263734fb04625011a6be"
+    },
+    {
+      "path": "code/test_load_data.py",
+      "size_bytes": 13061,
+      "sha256": "f2ba2d47b61a8bbc189cd820830f5d9701e2b13879b3cfca7fe0ac6911569442"
+    },
+    {
+      "path": "code/test_run_analysis.py",
+      "size_bytes": 11893,
+      "sha256": "983e9431261dc1a2975d3f6711b678b369d0c418b3c0ad9ce1224c6ccc0b0048"
+    },
+    {
+      "path": "code/test_statistics.py",
+      "size_bytes": 21056,
+      "sha256": "40c654dae26ff4aa1e17cefe9ddce77b920643b1130e23a69854f59229600138"
+    },
+    {
+      "path": "code/validate_independently.py",
+      "size_bytes": 54425,
+      "sha256": "c9447394f04ca0aabad7282c4f6af5e9775e39724453853bf97aa878be15743e"
+    },
+    {
+      "path": "evidence/analysis/bands.csv",
+      "size_bytes": 970782,
+      "sha256": "d5a0fa11eba280a22dd9908a3e5021d00e4d07d0f0b71c4ccbeb98031417bf16"
+    },
+    {
+      "path": "evidence/analysis/coverage.csv",
+      "size_bytes": 143897,
+      "sha256": "dd529595f540a0f46228c28628e1874b7cfa8fd9c9c152a9e84028c4f6e602a8"
+    },
+    {
+      "path": "evidence/analysis/curves.csv.gz",
+      "size_bytes": 1611595,
+      "sha256": "c9dd7abcab3cc9eaa7c844b7b703cf55271d4734bb42e745ffeb8b3aa40d9322"
+    },
+    {
+      "path": "evidence/analysis/eligibility.csv",
+      "size_bytes": 2523,
+      "sha256": "d92ffe541277a477c9a1594847e6d3969945a11a577917398ea6927b1ebde66a"
+    },
+    {
+      "path": "evidence/analysis/group-spans.csv",
+      "size_bytes": 2083,
+      "sha256": "71258084a12e557dcf72721fb2b8ce97450b68b3b4d1fa3f704b903a0de0513f"
+    },
+    {
+      "path": "evidence/analysis/group-totals.csv.gz",
+      "size_bytes": 6616759,
+      "sha256": "b433e147bb607d933ac17bb4784dffe69d6a778c932a36f83910d2ae36d0fe26"
+    },
+    {
+      "path": "evidence/analysis/manifest.json",
+      "size_bytes": 19588,
+      "sha256": "da44a049a5d8271bbe730a30add97e318fdf3cf4629a5d2a4a7fe4d9a6b9d308"
+    },
+    {
+      "path": "evidence/analysis/mc-quantiles.csv",
+      "size_bytes": 29532,
+      "sha256": "62743efef0fb01cfb45d07c695aa2ba777122f8770e56f63cf65c6502b46985d"
+    },
+    {
+      "path": "evidence/analysis/milestones.csv",
+      "size_bytes": 101537,
+      "sha256": "d973b6bc4232ab394b9c6916873f2453699158e464c91fbaf7c3d2d1f2933780"
+    },
+    {
+      "path": "evidence/analysis/sensitivity.csv",
+      "size_bytes": 29176,
+      "sha256": "3a71276a824f8fad7a33a719bf196c78b5a0da622c31a8832d0669a81239d5cb"
+    },
+    {
+      "path": "evidence/analysis/span-summary.csv",
+      "size_bytes": 605,
+      "sha256": "0f50b9e7833761f9d74458d921c841dc769ad60d15d7147b4e022dbd7703a2cd"
+    },
+    {
+      "path": "evidence/analysis/summary.json",
+      "size_bytes": 4740,
+      "sha256": "8f50931a990ae0ff24d4c3055bcff03a28a7976c9898dfb3a188f3957a2a2084"
+    },
+    {
+      "path": "evidence/analysis/tests.csv",
+      "size_bytes": 20145,
+      "sha256": "a127b4916f9b37c951d72a2211b65164a51b8acce2e8c4b440da0afd6e9ba936"
+    },
+    {
+      "path": "evidence/analysis/uf-summary.csv",
+      "size_bytes": 287958,
+      "sha256": "b58331bb0ff68ba06824335740244836fe5cf3eb70325dadf49ae9c5b8672e7c"
+    },
+    {
+      "path": "evidence/independent-validation.json",
+      "size_bytes": 4674,
+      "sha256": "d462a105d9dc35989b5a2d4dc2da30fe2494505371c46a78c93207b006958645"
+    },
+    {
+      "path": "evidence/test-results.txt",
+      "size_bytes": 9256,
+      "sha256": "7ffb3115ad2a8eb9a5871b90bdd6fa6aa59cde5088afcaad0d0eaa9c714eb906"
+    },
+    {
+      "path": "figures/conditional-residuals.png",
+      "size_bytes": 283107,
+      "sha256": "c5812f8b64afed4ffa2e5340001368aaa2fb84b236bd04f78d35e08165f90fb9"
+    },
+    {
+      "path": "figures/conditional-residuals.svg",
+      "size_bytes": 95962,
+      "sha256": "30a6d2ecdbd235beed04d201f767970bbca671d9ec1ce7caa0a85ed7edc92a50"
+    },
+    {
+      "path": "figures/manifest.json",
+      "size_bytes": 2507,
+      "sha256": "fa00110082da46ef0ca7cd29369f51530c4c3d2a423d85af09c6f4f0c0d45c31"
+    },
+    {
+      "path": "figures/observed-composition.png",
+      "size_bytes": 259047,
+      "sha256": "9c4e9eb1bf34af23431171adb40e78dea5b598ce1e1f90ee371e1dd73ddb092b"
+    },
+    {
+      "path": "figures/observed-composition.svg",
+      "size_bytes": 64269,
+      "sha256": "e0db73f221636a6c9a8ea841e5f3ee17aba666b134ce0230b3b8dfe7f473f3ac"
+    },
+    {
+      "path": "figures/temporal-reference-support.png",
+      "size_bytes": 142201,
+      "sha256": "a3e699823d900f720fe71ec96c4bd40bcff1291e6fc0bd51935599b9457560b4"
+    },
+    {
+      "path": "figures/temporal-reference-support.svg",
+      "size_bytes": 20047,
+      "sha256": "6cfabc5b63b394dc29c1595c8c276f3217fc23633371f34d5d1b58dd1afa4eb3"
+    },
+    {
+      "path": "figures/temporal-test-reference.png",
+      "size_bytes": 220171,
+      "sha256": "95586742c646c3b647ba98cd7ec3e924892a083e1fa177c47b3d36ad459cb612"
+    },
+    {
+      "path": "figures/temporal-test-reference.svg",
+      "size_bytes": 55749,
+      "sha256": "d1791aae7743591eb9fb33bbdaab65f96c9ebc521ae805cb830c4116361bc5e0"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+model,election_code,turno,source,nonsingleton_groups,span_min,span_q25,span_median,span_q75,span_q95,span_max
+zone_size,6257,1,first_time,19526,0.0,8.0,47.0,101.0,186.75,519.0
+zone_size,6257,1,bu_time,19526,0.0,9.0,47.0,100.0,188.0,520.0
+place_size,6257,1,first_time,73939,0.0,0.0,1.0,10.0,64.0,339.0
+place_size,6257,1,bu_time,73939,0.0,1.0,2.0,10.0,64.0,339.0
+zone_size,6258,2,first_time,19546,0.0,2.0,18.0,42.0,97.0,272.0
+zone_size,6258,2,bu_time,19546,0.0,2.0,18.0,42.0,97.0,272.0
+place_size,6258,2,first_time,73932,0.0,0.0,1.0,6.0,31.0,217.0
+place_size,6258,2,bu_time,73932,0.0,0.0,1.0,6.0,31.0,217.0
