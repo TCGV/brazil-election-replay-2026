@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-28T02:56:22.889862+00:00",
+  "script_sha256": "99cc6a68f25a0cfcbe8c8c472b0801770b491a35af9b9ae42222e7f33eb4c28a",
+  "comparisons": {
+    "inventory": 17,
+    "artifact_integrity": 7,
+    "source_link": 4,
+    "uf_summary": 3360,
+    "aggregate_link": 840,
+    "association_link": 90,
+    "summary_coverage": 1,
+    "summary_tests": 1,
+    "summary_counts": 3,
+    "summary_configuration": 1,
+    "figure_integrity": 21
+  },
+  "mismatches": 0,
+  "failures": [],
+  "independently_audited_input_sha256": {
+    "strata.csv": "30172247fe8ea443e5bfcbff2920101f9960155d289cf9495b1acc08bc70bedb",
+    "cases.csv": "5956fa45659113cb303fbce75dfe3efa401983a73ae5c9e1bc3b64006d06cd6c",
+    "coverage.csv": "f7bb3a0d5b1f8ce302de9c2e83b70aac6bd810016deae257fb5d47795271dccc",
+    "association-tests.csv": "c72fa334414105ed32b8467066259824a4123144e10eec00d5f3d6f1016cf226"
+  },
+  "independent_validation_sha256": "9d64e0996e4d1ced428bca6d6b36d1d878c760def8832b23762b1ad2bebd2001",
+  "derived_counts": {
+    "joint_cases": 9165,
+    "distinct_joint_section_rounds": 7867,
+    "priority_cases": 2046,
+    "distinct_priority_section_rounds": 2046,
+    "uf_summary_rows": 420,
+    "local_context": {
+      "persists_both": 165,
+      "attenuated_one_or_both": 991,
+      "insufficient_peers": 890,
+      "not_priority_not_assessed": 7119
+    }
+  },
+  "scope": "Transitive consistency checks from independently audited primary tables; no new original-source scan, Monte Carlo regeneration, sensitivity-model recomputation, or external authentication."
+}

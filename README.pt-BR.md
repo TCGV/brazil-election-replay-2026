@@ -72,9 +72,9 @@ Esse fluxo opcional utiliza Matplotlib e NumPy para figuras, controles descritiv
 
 ## Etapa 3 — Testes de hipóteses
 
-O [índice de hipóteses](reports/2026/hypothesis-tests/README.pt-BR.md) registra as sete questões propostas e a dificuldade de identificação. Apenas a **H1 — integridade contábil** foi avaliada até aqui. O [relatório principal em Markdown](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) cobre os dois turnos e distingue a consistência dos votos/comparecimento das exceções documentadas na identidade do eleitorado em seções não instaladas do exterior. A hipótese não é declarada integralmente refutada.
+O [índice de hipóteses](reports/2026/hypothesis-tests/README.pt-BR.md) registra as sete questões propostas e a dificuldade de identificação. Foram avaliadas a **H1 — integridade contábil** e a **H2 — comparecimento e concentração de votos**. O [relatório da H1](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) cobre os dois turnos e distingue a consistência dos votos/comparecimento das exceções documentadas na identidade do eleitorado em seções não instaladas do exterior. A H1 não é declarada integralmente refutada. O [relatório da H2](reports/2026/hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md) documenta comparações entre pares locais, testes de associação para todas as candidaturas, cobertura e limites de interpretação; associação, isoladamente, não é evidência de manipulação.
 
-Cada hipótese reúne código, testes, evidências e relatório em sua própria subpasta. As [instruções de reprodução da H1](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) usam apenas a biblioteca padrão do Python e leem os CSVs originais com duas implementações separadas. Não exigem a base já processada do replay. As hipóteses 2–7 não foram analisadas.
+Cada hipótese reúne código, testes, evidências e relatório em sua própria subpasta. As [instruções de reprodução da H1](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) usam apenas a biblioteca padrão do Python; a [H2](reports/2026/hypothesis-tests/02-turnout-concentration/README.md) acrescenta NumPy e Matplotlib de `requirements-analysis.txt`. Ambas leem os CSVs originais sem exigir a base já processada do replay. As hipóteses 3–7 não foram analisadas.
 
 ## Saídas
 

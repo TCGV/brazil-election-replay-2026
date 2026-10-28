@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-28T02:46:15.074800+00:00",
+  "code_sha256": "5617d8d5c29f915a7e398c7c18c01b587b91a9aa9d3d8eaf4cf989beba277a89",
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "2.3.5",
+  "input_sha256": {
+    "coverage.csv": "f7bb3a0d5b1f8ce302de9c2e83b70aac6bd810016deae257fb5d47795271dccc",
+    "association-tests.csv": "c72fa334414105ed32b8467066259824a4123144e10eec00d5f3d6f1016cf226",
+    "cases.csv": "5956fa45659113cb303fbce75dfe3efa401983a73ae5c9e1bc3b64006d06cd6c"
+  },
+  "figures": [
+    {
+      "path": "coverage-by-uf.png",
+      "size_bytes": 218846,
+      "sha256": "519d75f7a33033010a2307e53eff8f80685032942869bf2f734953e243a72bed"
+    },
+    {
+      "path": "coverage-by-uf.svg",
+      "size_bytes": 63449,
+      "sha256": "169937c69409b0b98f1ffe439af79e991aef690ea7e78c4a64d72a291f5ee582"
+    },
+    {
+      "path": "association-reference.png",
+      "size_bytes": 212513,
+      "sha256": "12302362c8d2c9d1a842209512a7b372e207ec3fc4f7e3ad493d3b4a1f6a27f5"
+    },
+    {
+      "path": "association-reference.svg",
+      "size_bytes": 33913,
+      "sha256": "12fc6489e671b4aab67224eb417f66bc4dd8c9d9dbbaebef62fcc15f268e47e4"
+    },
+    {
+      "path": "joint-tail-magnitudes.png",
+      "size_bytes": 347625,
+      "sha256": "f6f350e720ed2d803df4e3fdf01f2adac45c94cf6ec9cb139cb95c315004c13d"
+    },
+    {
+      "path": "joint-tail-magnitudes.svg",
+      "size_bytes": 1024497,
+      "sha256": "54aeb39f9102043ef823f1b6b67b96d832bb78693984e63416df11fd0e830b0d"
+    },
+    {
+      "path": "priority-local-context.png",
+      "size_bytes": 201217,
+      "sha256": "dfcf9f4c7d736de8a949d072f75fd7cddfa66575ecc8d283cd606f64e01ad161"
+    },
+    {
+      "path": "priority-local-context.svg",
+      "size_bytes": 28016,
+      "sha256": "713f24bc740807e87855d33db9cc9db35f75952eec3c54da699c5251737ecfe6"
+    }
+  ],
+  "conventions": {
+    "candidate_13": "#c62828",
+    "candidate_22": "#1565c0",
+    "other_candidates": "#737b83",
+    "language": "pt-BR",
+    "reference_band": "Total joint count under conditional independence; not an election confidence interval"
+  }
+}

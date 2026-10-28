@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-28T02:47:15.534578+00:00",
+  "script_sha256": "47f6a0730069abedeaaa1ca44ab6d516a3403f8776464f04024d8c2a614350f6",
+  "reference_implementation_fingerprint": "c0dde7721c4ab61174ff7f25f175da486693aab26dfcad7b0aed1a81f0b69a9d",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd",
+      "size_bytes": 350832764
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8",
+      "size_bytes": 1572813473
+    }
+  },
+  "independent_source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "comparisons": {
+    "source_provenance": 5,
+    "code_provenance": 2,
+    "artifact_integrity": 7,
+    "configuration": 4,
+    "source_counts": 4,
+    "inventory": 11,
+    "stratum_integer": 407085,
+    "stratum_numeric": 232620,
+    "case_integer": 100815,
+    "case_numeric": 73320,
+    "local_context": 15835,
+    "coverage": 580,
+    "association_integer": 105,
+    "association_numeric": 90,
+    "simulation_integrity": 120,
+    "simulation_regeneration": 15,
+    "simulation_count_values_regenerated": 299985,
+    "p_value": 30,
+    "decision": 15
+  },
+  "mismatches": 0,
+  "maximum_numeric_error": 6.821210263296962e-13,
+  "numeric_tolerances": {
+    "ratios_and_stratum_moments": 1e-12,
+    "case_percentage_points": 1e-10,
+    "aggregate_moments": 1e-09
+  },
+  "failures": [],
+  "failure_examples_limit": 100,
+  "scope": {
+    "source_data": "Original nationwide CSVs re-read independently; no primary parser/model imports",
+    "primary_reference": "Every primary stratum/candidate, every joint-tail case, magnitudes, local peers and exclusive coverage",
+    "ratios": "Fraction-based exact ties, medians and practical-effect thresholds",
+    "simulations": "All 19999 draws regenerated for each of the 15 independent seeded streams; every cached count audited",
+    "p_values": "Exceedance counts, plus-one raw p-values, linear quantiles, 15-member Holm family and decisions",
+    "sensitivities": "Alternative descriptive scenarios are not independently recomputed here",
+    "interpretation": "Conditional independence benchmark is not a null of natural elections; consistency does not authenticate the sources"
+  }
+}

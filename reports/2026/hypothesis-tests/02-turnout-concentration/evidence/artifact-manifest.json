@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-28T02:57:43.921307+00:00",
+  "scope": "All published H2 files except this inventory; local .work and Python caches excluded",
+  "nature": "Integrity inventory, not an external authenticity signature",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 7,
+      "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
+    },
+    {
+      "path": "METHOD.pt-BR.md",
+      "size_bytes": 6291,
+      "sha256": "76beba7c85c0c4aa0d0a05abb4fd93e571beecb1d49ce03548722a89d61d6e4a"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5944,
+      "sha256": "eb72fc13a77304f00e135286a6add840c8fba1448270f8c7c7a143e9b733e6e1"
+    },
+    {
+      "path": "REPORT.pt-BR.md",
+      "size_bytes": 15662,
+      "sha256": "ea6dceb0a0ae634525d37a7e4d9b2fd6cdb9986108b8842bc9eaa3548b0ba97c"
+    },
+    {
+      "path": "code/generate_figures.py",
+      "size_bytes": 16170,
+      "sha256": "5617d8d5c29f915a7e398c7c18c01b587b91a9aa9d3d8eaf4cf989beba277a89"
+    },
+    {
+      "path": "code/inventory_artifacts.py",
+      "size_bytes": 2138,
+      "sha256": "3af89d76116fe4ea179576038a83765633f63644e3cbe54f17a24e504aaf7be6"
+    },
+    {
+      "path": "code/load_data.py",
+      "size_bytes": 21022,
+      "sha256": "18e7bf318f8eec1e07a16ef6d4f11307588e6d10485c2b4ea5cecdc3fbed6687"
+    },
+    {
+      "path": "code/run_analysis.py",
+      "size_bytes": 21764,
+      "sha256": "f33673e1979bf45618e309df728264f4d914e730f37a1602e75c2f31639e3fee"
+    },
+    {
+      "path": "code/test_analysis.py",
+      "size_bytes": 13960,
+      "sha256": "3673e5b3ec70d8487e7ae2e410e4501b601ed4da8f1e9af0a3c2223f64bbd6e9"
+    },
+    {
+      "path": "code/test_independent.py",
+      "size_bytes": 4257,
+      "sha256": "171984a88c9ad989f69d4454802977fe29bac5c09cebedc85be47b935e5e86a5"
+    },
+    {
+      "path": "code/test_load_data.py",
+      "size_bytes": 7858,
+      "sha256": "f5d4f9924f4f2a925c5301a3c3a44d909a25a4971a36fd6e62dfd9fb166a1f94"
+    },
+    {
+      "path": "code/test_publication.py",
+      "size_bytes": 2870,
+      "sha256": "990653af98a5fa0b58ea7d32f304f68b91d5d09666325f55903fd3df4a07abf8"
+    },
+    {
+      "path": "code/validate_independently.py",
+      "size_bytes": 32557,
+      "sha256": "47f6a0730069abedeaaa1ca44ab6d516a3403f8776464f04024d8c2a614350f6"
+    },
+    {
+      "path": "code/validate_publication.py",
+      "size_bytes": 11859,
+      "sha256": "99cc6a68f25a0cfcbe8c8c472b0801770b491a35af9b9ae42222e7f33eb4c28a"
+    },
+    {
+      "path": "evidence/analysis/association-tests.csv",
+      "size_bytes": 2630,
+      "sha256": "c72fa334414105ed32b8467066259824a4123144e10eec00d5f3d6f1016cf226"
+    },
+    {
+      "path": "evidence/analysis/cases.csv",
+      "size_bytes": 2421205,
+      "sha256": "5956fa45659113cb303fbce75dfe3efa401983a73ae5c9e1bc3b64006d06cd6c"
+    },
+    {
+      "path": "evidence/analysis/coverage.csv",
+      "size_bytes": 2970,
+      "sha256": "f7bb3a0d5b1f8ce302de9c2e83b70aac6bd810016deae257fb5d47795271dccc"
+    },
+    {
+      "path": "evidence/analysis/manifest.json",
+      "size_bytes": 11978,
+      "sha256": "03567621313a24eb996127066681b981b799fbcee02e122d7c5ad4c15f8d24d5"
+    },
+    {
+      "path": "evidence/analysis/sensitivity.csv",
+      "size_bytes": 8799,
+      "sha256": "a9e75ca26a807ae0189b2031fc3c5833cdb8a251ff16a9780b3429293e051c5f"
+    },
+    {
+      "path": "evidence/analysis/strata.csv",
+      "size_bytes": 6379632,
+      "sha256": "30172247fe8ea443e5bfcbff2920101f9960155d289cf9495b1acc08bc70bedb"
+    },
+    {
+      "path": "evidence/analysis/summary.json",
+      "size_bytes": 11803,
+      "sha256": "633ba91334ed3d9bdcb7e1d70e7f2db40589f3bfea18f0bb787e51707ecd5332"
+    },
+    {
+      "path": "evidence/analysis/uf-summary.csv",
+      "size_bytes": 21563,
+      "sha256": "927cef843033f4308930b36dc904441e7b09c8348f27df90e18b734d97ddfae4"
+    },
+    {
+      "path": "evidence/independent-validation.json",
+      "size_bytes": 2537,
+      "sha256": "9d64e0996e4d1ced428bca6d6b36d1d878c760def8832b23762b1ad2bebd2001"
+    },
+    {
+      "path": "evidence/publication-validation.json",
+      "size_bytes": 1589,
+      "sha256": "6826f7ebf7ab8b31ff2496b1caa3b20bb3b421bf2b43f5ff4ee90fa9dcfc4171"
+    },
+    {
+      "path": "evidence/test-results.txt",
+      "size_bytes": 4563,
+      "sha256": "0156023ba05ec6d4cd61ad15ded6df293f4d79de6da54024a9bbff2d957a8075"
+    },
+    {
+      "path": "figures/association-reference.png",
+      "size_bytes": 212513,
+      "sha256": "12302362c8d2c9d1a842209512a7b372e207ec3fc4f7e3ad493d3b4a1f6a27f5"
+    },
+    {
+      "path": "figures/association-reference.svg",
+      "size_bytes": 33913,
+      "sha256": "12fc6489e671b4aab67224eb417f66bc4dd8c9d9dbbaebef62fcc15f268e47e4"
+    },
+    {
+      "path": "figures/coverage-by-uf.png",
+      "size_bytes": 218846,
+      "sha256": "519d75f7a33033010a2307e53eff8f80685032942869bf2f734953e243a72bed"
+    },
+    {
+      "path": "figures/coverage-by-uf.svg",
+      "size_bytes": 63449,
+      "sha256": "169937c69409b0b98f1ffe439af79e991aef690ea7e78c4a64d72a291f5ee582"
+    },
+    {
+      "path": "figures/joint-tail-magnitudes.png",
+      "size_bytes": 347625,
+      "sha256": "f6f350e720ed2d803df4e3fdf01f2adac45c94cf6ec9cb139cb95c315004c13d"
+    },
+    {
+      "path": "figures/joint-tail-magnitudes.svg",
+      "size_bytes": 1024497,
+      "sha256": "54aeb39f9102043ef823f1b6b67b96d832bb78693984e63416df11fd0e830b0d"
+    },
+    {
+      "path": "figures/manifest.json",
+      "size_bytes": 2122,
+      "sha256": "19abd8dbe674aa825b6a1253e95a91780f32c2729f12c28a21c9bf30d1fcbceb"
+    },
+    {
+      "path": "figures/priority-local-context.png",
+      "size_bytes": 201217,
+      "sha256": "dfcf9f4c7d736de8a949d072f75fd7cddfa66575ecc8d283cd606f64e01ad161"
+    },
+    {
+      "path": "figures/priority-local-context.svg",
+      "size_bytes": 28016,
+      "sha256": "713f24bc740807e87855d33db9cc9db35f75952eec3c54da699c5251737ecfe6"
+    }
+  ]
+}

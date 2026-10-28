@@ -72,9 +72,9 @@ This optional workflow adds Matplotlib and NumPy for figures, descriptive contro
 
 ## Step 3 — Hypothesis tests
 
-The [hypothesis index](reports/2026/hypothesis-tests/README.md) records the seven proposed questions and their identification difficulty. Only **H1 — accounting integrity** has been evaluated so far. Its [primary Markdown report (Portuguese)](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) covers both rounds and distinguishes vote/turnout consistency from documented electorate-identity exceptions in uninstalled overseas sections. The hypothesis is not declared fully refuted.
+The [hypothesis index](reports/2026/hypothesis-tests/README.md) records the seven proposed questions and their identification difficulty. **H1 — accounting integrity** and **H2 — turnout and candidate concentration** have been evaluated. The [H1 report (Portuguese)](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) covers both rounds and distinguishes vote/turnout consistency from documented electorate-identity exceptions in uninstalled overseas sections. H1 is not declared fully refuted. The [H2 report](reports/2026/hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md) documents comparisons among local peers, all-candidate association tests, coverage, and contextual limits; an association is not evidence of manipulation by itself.
 
-Each hypothesis keeps its code, tests, evidence, and report in its own subfolder. The [H1 reproduction instructions](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) use only Python's standard library and scan the original CSVs with two separate implementations. No previously generated replay database is needed. Hypotheses 2–7 have not been analyzed.
+Each hypothesis keeps its code, tests, evidence, and report in its own subfolder. The [H1 reproduction instructions](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) use only Python's standard library; [H2](reports/2026/hypothesis-tests/02-turnout-concentration/README.md) adds NumPy and Matplotlib from `requirements-analysis.txt`. Both read the original CSVs without needing a previously generated replay database. Hypotheses 3–7 have not been analyzed.
 
 ## Outputs
 
