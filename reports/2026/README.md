@@ -8,11 +8,11 @@
 |---|---|---|
 | **1. Minute-by-minute reconstruction** | How can the supplied final section votes be associated retrospectively with recorded arrival times? | [Reconstruction report](report.md), [minute CSVs](replay-first-totalization-minute.csv), and [interactive chart](replay-report.html) |
 | **2. Counting composition and demographic patterns** | Which regions, states, capitals, and municipality-size groups entered first, and how did that composition relate to accumulated vote shares? | [Consolidated Markdown report (Portuguese)](geography/REPORT.pt-BR.md), with [evidence tables](geography/) |
-| **3. Hypothesis tests** | Are the proposed accounting and statistical anomalies present in the supplied records? | [Hypothesis index](hypothesis-tests/README.md); [H1 accounting report](hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md); [H2 turnout/concentration report](hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md) |
+| **3. Hypothesis tests** | Are the proposed accounting and statistical anomalies present in the supplied records? | [Hypothesis index](hypothesis-tests/README.md); [H1 accounting report](hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md); [H2 turnout/concentration report](hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md); [H3 repetition report](hypothesis-tests/03-result-repetition/REPORT.pt-BR.md) |
 
 Stage 2 includes formal section-order randomization benchmarks. Geography and registered electorate are observable proxies; individual demographic characteristics are not inferred. HTML and PDF are companion formats, while Markdown is the main repository record.
 
-Stage 3 evaluates hypotheses one at a time. H1 is complete, with documented electorate-identity exceptions. H2 adds local turnout/concentration screening and a conditional association benchmark; hypotheses 3–7 have not been analyzed. Each hypothesis contains its own code and evidence, and findings do not independently authenticate the original source snapshots.
+Stage 3 evaluates hypotheses one at a time. H1 documents electorate-identity exceptions; H2 adds local turnout/concentration screening; H3 inventories repeated complete vectors and evaluates a restricted local block-pairing reference. Hypotheses 4–7 have not been analyzed. Each hypothesis contains its own code and evidence, and findings do not independently authenticate the original source snapshots.
 
 ## Stage 1 artifacts
 

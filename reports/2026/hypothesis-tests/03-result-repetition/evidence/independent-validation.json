@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-28T14:31:06.914132+00:00",
+  "script_sha256": "99bcd9525f20d9d6fc2c9fdc540f00cec4d1b663a2aa84048e48a2050809d78d",
+  "reference_implementation_fingerprint": "52e392b8ec1d58e907df245df58fe30492fbbfd2deb9982c485be97ed6691fcf",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    }
+  },
+  "independent_source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "comparisons": {
+    "source_provenance": 4,
+    "method_provenance": 1,
+    "code_provenance": 3,
+    "artifact_integrity": 9,
+    "inventory": 30,
+    "configuration": 1,
+    "source_counts": 4,
+    "collision_inventory": 120,
+    "cluster_counts": 222640,
+    "cluster_identifiers": 351980,
+    "member_values": 1925280,
+    "cluster_geography": 445280,
+    "turnout_distribution": 27426,
+    "stratum_integer": 4790112,
+    "stratum_moments": 1197528,
+    "stratum_rational": 2395056,
+    "coverage_derivation": 4,
+    "coverage": 638,
+    "test_integer": 14,
+    "test_moments": 4,
+    "test_rational": 8,
+    "cantelli_bound": 2,
+    "cantelli_rational": 4,
+    "holm": 2,
+    "holm_rational": 4,
+    "decision": 2,
+    "summary_link": 531
+  },
+  "mismatches": 0,
+  "maximum_numeric_error": 0.0,
+  "numeric_tolerances": {
+    "stratum_moments": 1e-12,
+    "aggregate_moments": 1e-10,
+    "bounds": 1e-12
+  },
+  "failures": [],
+  "failure_examples_limit": 100,
+  "scope": {
+    "source_data": "Original national CSVs re-read independently; no imports of primary analysis helpers",
+    "inventory": "Full and extended signatures in every declared population, all repeated vectors and member keys",
+    "reference": "Every primary stratum, exact rational moments summed by round, Cantelli upper bounds and fixed two-member Holm family",
+    "sensitivities": "Alternative descriptive scenarios are not independently recomputed here",
+    "interpretation": "Conditional block-exchangeability reference, not a test of naturalness or external authenticity"
+  }
+}

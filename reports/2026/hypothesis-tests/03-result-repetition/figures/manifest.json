@@ -1,0 +1,50 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-28T14:27:49.411947+00:00",
+  "code_sha256": "15b73f3477d717bb087744860fe738bb6c1dedc2e0994252306c0e42f9fea67d",
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "2.3.5",
+  "input_sha256": {
+    "inventory.csv": "ffb5f1a202e3aa7f98a726b22dfa695f555f11c4b290e2cc2343ad982e9086dc",
+    "conditional-tests.csv": "d90dde2cb66fec7a915ca087f86a70f6d3ff4a6d859d51a054bc8e1de7f06da6"
+  },
+  "figures": [
+    {
+      "path": "repetition-inventory.png",
+      "size_bytes": 139638,
+      "sha256": "2cd30c4793a47d417a0f09ba4d15978c028b40be9a57ef132472c4228fd4b077"
+    },
+    {
+      "path": "repetition-inventory.svg",
+      "size_bytes": 21212,
+      "sha256": "044c09303e81c04d1a24a5ea975eecfacccdd0b969de5b333b5b887229721c12"
+    },
+    {
+      "path": "reference-coverage.png",
+      "size_bytes": 124938,
+      "sha256": "c183b3c63c3b0d9939add34c7d0f7b36f3eb868e164662e36f2e8f085596a668"
+    },
+    {
+      "path": "reference-coverage.svg",
+      "size_bytes": 39024,
+      "sha256": "5d181f18aa073a1df08df940422cabcd73d394c8f56f74464c0585f1cad22b85"
+    },
+    {
+      "path": "conditional-reference.png",
+      "size_bytes": 127442,
+      "sha256": "bf97b3e55d2a53b6c51aa583ad9531abdd6ad1e43ac3e4b2d5675730f70d018d"
+    },
+    {
+      "path": "conditional-reference.svg",
+      "size_bytes": 15744,
+      "sha256": "c2274224b0c29b5d5cc3457b726cacfe088d3b311311c2fe70a93a79eb7fde61"
+    }
+  ],
+  "conventions": {
+    "language": "pt-BR",
+    "units": "Unordered section-pair counts, never extra votes",
+    "formal_reference": "Within-stratum conditional block pairing only; conservative Cantelli bound, not naturalness",
+    "inventory_scale": "Linear to one, logarithmic above one",
+    "coverage_scale": "Logarithmic; exact counts and percentages labeled"
+  }
+}

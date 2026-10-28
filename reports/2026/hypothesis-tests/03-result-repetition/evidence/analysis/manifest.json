@@ -1,0 +1,240 @@
+{
+  "status": "completed",
+  "hypothesis": "H3",
+  "started_at_utc": "2026-10-28T14:24:55.638400+00:00",
+  "method_sha256": "ac94bcd7b71799d3f77339208e64b9cf88df33f4ba7583fb53ab05ddbdd20cfd",
+  "numpy_version": "2.3.5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "implementation_sha256": {
+    "run_analysis.py": "6a97eb65293842e9123d9fcea1e9f2be12d19157afec1b49b140c189d0e831cf",
+    "collision_statistics.py": "4aa6ec4d072a2b02dba3d4d3958cbc006b166135879a963126d1f8ef05f873d2",
+    "load_data.py": "488dd3545ec722b659557d1bd4b3c8f9526b74017220da14815016738acc7cb2"
+  },
+  "primary_family_size": 2,
+  "simulation": "None; exact rational moments and conservative Cantelli bounds",
+  "scenarios": [
+    {
+      "name": "primary",
+      "include_zone": true,
+      "include_size": true,
+      "ratio": 1.25,
+      "min_nominal": 50
+    },
+    {
+      "name": "no_size_band",
+      "include_zone": true,
+      "include_size": false,
+      "ratio": 1.25,
+      "min_nominal": 50
+    },
+    {
+      "name": "municipality_size",
+      "include_zone": false,
+      "include_size": true,
+      "ratio": 1.25,
+      "min_nominal": 50
+    },
+    {
+      "name": "municipality_only",
+      "include_zone": false,
+      "include_size": false,
+      "ratio": 1.25,
+      "min_nominal": 50
+    },
+    {
+      "name": "wider_size",
+      "include_zone": true,
+      "include_size": true,
+      "ratio": 1.5,
+      "min_nominal": 50
+    },
+    {
+      "name": "nominal_100",
+      "include_zone": true,
+      "include_size": true,
+      "ratio": 1.25,
+      "min_nominal": 100
+    }
+  ],
+  "signature_fields": "Sorted nominal candidate counts, blank, null, legend, separate, turnout; extended adds electorate and abstentions",
+  "git_base_commit": "e9f73dadf16dc56122e3cff6c2117066eb767d6a",
+  "source_inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "source_counts": {
+    "detail_key_uniqueness": "Checked directly during this source scan",
+    "details": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "rows_read": 998496,
+      "selected_rows": 998496
+    },
+    "missing_candidate_rows": "Zero-filled only for existing detail keys; all section/category totals reconciled exactly",
+    "missing_place_ids": "Represented as -1, never replaced by an existing polling place",
+    "rounds": [
+      {
+        "candidate_numbers": [
+          13,
+          14,
+          16,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          55,
+          70,
+          80
+        ],
+        "candidate_vote_totals": {
+          "13": 53879538,
+          "14": 2675887,
+          "16": 43103,
+          "21": 22693,
+          "22": 56104503,
+          "27": 40043,
+          "28": 5246,
+          "29": 15024,
+          "30": 326488,
+          "35": 16881,
+          "55": 2605148,
+          "70": 3448569,
+          "80": 122911
+        },
+        "detail_only_sections": 42,
+        "detail_rows": 499248,
+        "election_code": 6257,
+        "totals": {
+          "abstentions": 33469244,
+          "aptos": 158745502,
+          "blank": 2300798,
+          "legend": 0,
+          "nominal": 119306034,
+          "null_votes": 3669003,
+          "separate": 0,
+          "turnout": 125275835
+        },
+        "turno": 1,
+        "vote_rows": 3800511,
+        "vote_sections": 499206
+      },
+      {
+        "candidate_numbers": [
+          13,
+          22
+        ],
+        "candidate_vote_totals": {
+          "13": 64256232,
+          "22": 59826041
+        },
+        "detail_only_sections": 43,
+        "detail_rows": 499248,
+        "election_code": 6258,
+        "totals": {
+          "abstentions": 30509005,
+          "aptos": 158745502,
+          "blank": 1430496,
+          "legend": 0,
+          "nominal": 124082273,
+          "null_votes": 2723305,
+          "separate": 0,
+          "turnout": 128236074
+        },
+        "turno": 2,
+        "vote_rows": 1931103,
+        "vote_sections": 499205
+      }
+    ],
+    "vote_key_uniqueness": "Asserted from zero-violation completed H1 unique_vote_key checks for exactly these source hashes; not re-inferred from summed candidate vectors",
+    "votes": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "rows_read": 5731614,
+      "selected_rows": 5731614
+    }
+  },
+  "data_cache_fingerprint": {
+    "schema_version": 1,
+    "loader_code_sha256": "488dd3545ec722b659557d1bd4b3c8f9526b74017220da14815016738acc7cb2",
+    "numpy_version": "2.3.5",
+    "stage1_manifest_sha256": "73453028f4b5a3f255d8c3438ab69efbc536610cba0b81d4b1d7ff2dd3086837",
+    "h1_manifest_sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930",
+    "h1_artifacts": {
+      "checks.csv": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032",
+      "totals.csv": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f"
+    },
+    "source_inputs": {
+      "votes": {
+        "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+        "size_bytes": 1572813473,
+        "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+      },
+      "details": {
+        "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+        "size_bytes": 350832764,
+        "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "election_code": 6257,
+      "turno": 1,
+      "numbers": [
+        13,
+        14,
+        16,
+        21,
+        22,
+        27,
+        28,
+        29,
+        30,
+        35,
+        55,
+        70,
+        80
+      ]
+    },
+    {
+      "election_code": 6258,
+      "turno": 2,
+      "numbers": [
+        13,
+        22
+      ]
+    }
+  ],
+  "completed_at_utc": "2026-10-28T14:25:59.223025+00:00",
+  "artifact_sha256": {
+    "cluster-members.csv.gz": "c3a96a1e8bc8da05ba06a3f8d9ac8f224e37ba1b7c9496618a3de154937e8587",
+    "clusters.csv.gz": "1865c6b75b6b7c1b2b6f06007707f5e48d86b8ba85891a7199cec79c16ad9c0b",
+    "conditional-tests.csv": "d90dde2cb66fec7a915ca087f86a70f6d3ff4a6d859d51a054bc8e1de7f06da6",
+    "coverage.csv": "f05247b9d3f122a2302e3207eb266c8e2a7ba19a23bb372cfa31a02144476b0d",
+    "inventory.csv": "ffb5f1a202e3aa7f98a726b22dfa695f555f11c4b290e2cc2343ad982e9086dc",
+    "sensitivity.csv": "2da2326f7c3e19c590e5ecd8a08bc5e91fa24b477691f22354e790b614bd3674",
+    "strata.csv.gz": "687ff5d7b2763c5d57ad48bb655c107abdb4b37be75ebfcd1ab277c18dc60cf6",
+    "summary.json": "56a6592c0744b618fe31e47ff3c8bb7d3997797ec66faccbb02199cdc94a0cd2",
+    "turnout-distribution.csv": "490010788a9d0c2d9df7505009d2f01751ee849d236800cbe9e3d1714c469181"
+  },
+  "compressed_csvs": "gzip-compressed UTF-8 comma-delimited CSVs; full member and singleton-stratum inventories retained"
+}
