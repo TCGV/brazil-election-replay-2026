@@ -4,6 +4,8 @@
 
 This folder contains the first hypothesis test of stage 3, covering both presidential rounds and all 27 federative units (26 states and the Federal District) plus overseas sections (`ZZ`). The report distinguishes the absence of vote/turnout overflows and duplicate keys from 82 raw electorate-identity exceptions in uninstalled overseas sections. These are 41 physical sections appearing in both rounds, without votes or turnout. The exceptions remain documented; the hypothesis is not declared fully refuted.
 
+**Assessment: 1/10 — predominantly refuted, with an additional accounting qualification.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. No approved core signal appeared; the broader accounting scope retains 41 electorate-identity exceptions per round without an independently confirmed explanation. This is a qualitative, post-analysis assessment across both rounds, not a probability or measure of manipulation. See the [scale rubric](../README.md#assessment-scale) and the [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
+
 ## Contents
 
 | Path | Purpose |
@@ -50,4 +52,4 @@ The primary scanner reads both original files, fingerprints parsed records befor
 
 Numeric checks are exhaustive and use exact integers. `checks.csv` reports each denominator and unavailable comparison. `violations.csv` includes overlapping checks: the same electorate exception appears in the unconditional check and the uninstalled stratum; do not sum rows as distinct incidents. Empty exception files still contain their column headers.
 
-The Markdown report is a reviewed narrative of this published snapshot. Reproduction regenerates numerical evidence; applying the study to new data also requires reviewing and updating the narrative. No hypotheses beyond H1 have been analyzed here.
+The Markdown report is a reviewed narrative of this published snapshot. Reproduction regenerates numerical evidence; applying the study to new data also requires reviewing and updating the narrative.

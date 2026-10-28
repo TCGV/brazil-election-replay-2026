@@ -6,6 +6,14 @@
 
 Não cabe declarar a H2 integralmente refutada nem interpretar esses números como quantidade de seções manipuladas. A cobertura é parcial e parte importante dos contrastes se atenua com uma referência territorial mais próxima.
 
+## Avaliação na escala
+
+**6/10 — Apoio parcial à hipótese estatística.** Escala: **0 — Integralmente refutada → 10 — Integralmente confirmada**.
+
+O excesso de coincidências em cinco das 15 combinações candidato/turno e os 165 contrastes que persistem no mesmo local sustentam parte do padrão procurado. A nota não é maior porque 991 prioridades se atenuam nesse contexto, 890 ficam sem pares suficientes, a comparação principal cobre cerca de 70% das elegíveis e os resultados dependem da definição de extremo. Associação legítima e composição local continuam sendo explicações possíveis; não foi demonstrada uma origem artificial.
+
+A nota resume qualitativamente os dois turnos após a análise. Não equivale a 60% de probabilidade, não deriva dos valores-p e não mede manipulação ou votos suspeitos. A [rubrica da escala](../README.pt-BR.md#escala-de-avaliação) define as faixas; 5 representa conclusão inconclusiva, não 50% de chance.
+
 ## Hipótese e dificuldade
 
 **Hipótese:** algumas seções apresentam simultaneamente comparecimento e concentração de votos em um candidato muito diferentes das observadas em seções comparáveis.
@@ -150,4 +158,4 @@ Os **28 testes de implementação passaram**. Entre os controles estão empates,
 
 O [README](README.md) contém os comandos; [strata.csv](evidence/analysis/strata.csv) e os demais arquivos de [evidência](evidence/analysis/) permitem reproduzir a conclusão. Gráficos são formatos complementares; este Markdown é o registro principal.
 
-**Conclusão:** há perfis atípicos e associações de comparecimento/votação que impedem descartar a H2 como ausência geral de sinais. O estudo delimita onde esses sinais aparecem, sua magnitude, sua sensibilidade e onde o contexto é insuficiente. Não demonstra uma origem artificial para eles. Uma ação que afetasse a maioria de um estrato poderia deslocar a própria referência e permanecer invisível; cobertura parcial e características individuais não observadas também limitam a análise. Consistência com dados públicos não autentica as fontes externamente nem garante naturalidade. As hipóteses H3–H7 permanecem sem avaliação.
+**Conclusão:** há perfis atípicos e associações de comparecimento/votação que impedem descartar a H2 como ausência geral de sinais. O estudo delimita onde esses sinais aparecem, sua magnitude, sua sensibilidade e onde o contexto é insuficiente. Não demonstra uma origem artificial para eles. Uma ação que afetasse a maioria de um estrato poderia deslocar a própria referência e permanecer invisível; cobertura parcial e características individuais não observadas também limitam a análise. Consistência com dados públicos não autentica as fontes externamente nem garante naturalidade.

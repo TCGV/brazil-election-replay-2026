@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-28T14:33:37.939193+00:00",
+  "created_at_utc": "2026-10-28T17:24:32.452942+00:00",
   "scope": "All published H3 files except this inventory; local .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -16,13 +16,13 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 6698,
-      "sha256": "6f11467ee7fd0fa5735d25a4ff355df291f5b0e85040693f07fdd2091d072029"
+      "size_bytes": 7263,
+      "sha256": "8b3791bf66c06e9d2d52d1842d4e8828bffd3e69a9943e769b88ac99dcd8fe9b"
     },
     {
       "path": "REPORT.pt-BR.md",
-      "size_bytes": 13864,
-      "sha256": "b94a5815d880ea084c2c8e2c396295e6aa172867111d5a06d3f3fbbada553f1e"
+      "size_bytes": 14706,
+      "sha256": "3e95ac994cf824bfaaa4473d8dc5dbaa3031b0f2f66ab592dcd17ad1a31be2e7"
     },
     {
       "path": "code/collision_statistics.py",

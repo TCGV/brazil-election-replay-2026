@@ -6,6 +6,14 @@
 
 O inventário é exaustivo; o alcance inferencial é limitado. Esses dois resultados precisam ser lidos separadamente.
 
+## Avaliação na escala
+
+**5/10 — Inconclusiva.** Escala: **0 — Integralmente refutada → 10 — Integralmente confirmada**.
+
+Não houve detecção de excesso no emparelhamento condicional, mas apenas 7 seções no primeiro turno e 12.182 no segundo estão em estratos informativos. Além dessa cobertura restrita, a referência preserva as repetições de cada bloco e não testa todos os pares nacionais. Por isso, o resultado não permite posicionar a hipótese ampla como refutada ou confirmada.
+
+O ponto central é uma convenção editorial para **informação insuficiente**, sem representar 50% de probabilidade, evidência positiva de excesso ou medida de manipulação. A nota resume qualitativamente os dois turnos após a análise e não é calculada a partir de Cantelli ou Holm. A [rubrica da escala](../README.pt-BR.md#escala-de-avaliação) define as demais faixas.
+
 ## Hipótese e dificuldade
 
 **Hipótese:** combinações completas de votos por candidato, brancos, nulos e comparecimento se repetem entre seções com frequência superior à esperada para seu contexto.
@@ -16,7 +24,7 @@ A H1 procurou registros repetidos para a mesma chave. Aqui, as chaves são disti
 
 ## Dados, assinaturas e contagem
 
-Foram relidos os dois CSVs nacionais originais, preservando seus registros. Os hashes são conferidos com a etapa 1 e a H1 concluídas; votos e categorias reconciliam por seção. Ausência de linha de uma candidatura existente pode ser zero após essa conferência. Campo numérico ausente nunca vira zero.
+Foram relidos os dois CSVs nacionais originais, preservando seus registros. Os hashes são conferidos com os manifestos da etapa 1 e da H1; votos e categorias reconciliam por seção. Ausência de linha de uma candidatura existente pode ser zero após essa conferência. Campo numérico ausente nunca vira zero.
 
 A assinatura principal reúne **contagens inteiras**, em ordem fixa: todos os candidatos, brancos, nulos, legenda, anulados em separado e comparecimento. Não usa percentuais arredondados nem apenas o vencedor. Comparecimento é redundante depois da reconciliação, mas fica explícito. A assinatura estendida acrescenta aptos e abstenções.
 
@@ -130,4 +138,4 @@ Os testes artificiais ficam separados das observações eleitorais e cobrem empa
 
 Os **31 testes de implementação passaram**. Eles incluem conferência dos momentos e da validade conservadora de Cantelli por enumeração independente de pequenos exemplos, além de uma execução completa de fontes artificiais com gzip, manifestos e preservação das entradas. Não estimam a sensibilidade contra toda alteração possível. Semelhanças aproximadas entre resultados não são investigadas por este inventário de igualdade exata.
 
-**Conclusão:** o estudo documenta as repetições completas e não detecta excesso do emparelhamento condicional definido. Não determina que todas as coincidências sejam naturais, não estima votos artificiais e não permite refutar integralmente a H3. Repetições marginais preservadas pela referência, alterações que dominem um estrato, pares entre contextos e cobertura informativa limitada permanecem fora de uma conclusão ampla. As fontes também não foram autenticadas por boletins independentes. As hipóteses H4–H7 permanecem sem avaliação.
+**Conclusão:** o estudo documenta as repetições completas e não detecta excesso do emparelhamento condicional definido. Não determina que todas as coincidências sejam naturais, não estima votos artificiais e não permite refutar integralmente a H3. Repetições marginais preservadas pela referência, alterações que dominem um estrato, pares entre contextos e cobertura informativa limitada permanecem fora de uma conclusão ampla. As fontes também não foram autenticadas por boletins independentes.

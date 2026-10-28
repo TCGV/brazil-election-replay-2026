@@ -6,13 +6,21 @@
 
 As exceções correspondem às mesmas 41 seções do exterior, não instaladas, com 423 aptos por turno e nenhum voto. Os leiautes não explicam expressamente como contabilizar suas abstenções.
 
+## Avaliação na escala
+
+**1/10 — Predominantemente refutada, com ressalva contábil adicional.** Escala: **0 — Integralmente refutada → 10 — Integralmente confirmada**.
+
+Nenhum dos sinais centrais da hipótese aprovada apareceu na conferência exaustiva dos dois turnos: não há votos acima do comparecimento, comparecimento acima dos aptos ou chaves duplicadas. A nota considera também o escopo contábil ampliado: a identidade `aptos = comparecimento + abstenções` mantém 41 exceções por turno, sem votos e sem explicação externa confirmada. Essa ressalva impede atribuir 0 à avaliação ampliada; não confirma os sinais centrais nem indica votos artificiais.
+
+A nota é uma síntese qualitativa atribuída após a análise, não uma probabilidade, conversão de valor-p ou proporção de registros inconsistentes. Vale para os arquivos e relações verificados, sem autenticar as fontes externamente. A [rubrica da escala](../README.pt-BR.md#escala-de-avaliação) define as faixas; 5 representa conclusão inconclusiva, não 50% de chance.
+
 ## Hipótese e dificuldade
 
 **Hipótese aprovada:** “Existem seções com votos acima do comparecimento, comparecimento acima do eleitorado ou duplicação de registros.”
 
 **Dificuldade de identificação: baixa.** As relações contábeis são verificáveis diretamente; explicar diferenças pode exigir documentação adicional.
 
-O teste inclui `aptos = comparecimento + abstenções`, soma das categorias e concordância entre votação e detalhe. As hipóteses 2 a 7 permanecem sem avaliação.
+O teste inclui `aptos = comparecimento + abstenções`, soma das categorias e concordância entre votação e detalhe.
 
 ## Dados e cobertura
 
@@ -156,4 +164,4 @@ O [README](README.md) contém os comandos de reprodução. O código e os testes
 
 **Conclusão:** os sinais centrais da hipótese aprovada não apareceram nos arquivos fornecidos. A auditoria adicional encontrou a exceção de eleitorado descrita e, por isso, não permite afirmar que todas as relações contábeis fecham sem ressalvas. As exceções permanecem publicadas e sem explicação externa confirmada.
 
-O teste demonstra consistência interna nas relações efetivamente verificadas. Não confronta os registros com boletins de urna autenticados ou cadastro independente de eleitores, não reconstitui o histórico oficial de publicação e não detecta uma alteração coordenada que preserve todas essas relações. Também não avalia preferências eleitorais, padrões temporais ou transferências entre turnos: esses temas pertencem às hipóteses seguintes.
+O teste demonstra consistência interna nas relações efetivamente verificadas. Não confronta os registros com boletins de urna autenticados ou cadastro independente de eleitores, não reconstitui o histórico oficial de publicação e não detecta uma alteração coordenada que preserve todas essas relações. Também não avalia preferências eleitorais, padrões temporais ou transferências entre turnos.

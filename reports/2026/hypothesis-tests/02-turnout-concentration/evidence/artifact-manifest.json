@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-28T02:57:43.921307+00:00",
+  "created_at_utc": "2026-10-28T17:24:32.319818+00:00",
   "scope": "All published H2 files except this inventory; local .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -16,13 +16,13 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 5944,
-      "sha256": "eb72fc13a77304f00e135286a6add840c8fba1448270f8c7c7a143e9b733e6e1"
+      "size_bytes": 6530,
+      "sha256": "403649fea347c4427bccf27aecd091d1a490d392d8674e0c8cab18a380531b2a"
     },
     {
       "path": "REPORT.pt-BR.md",
-      "size_bytes": 15662,
-      "sha256": "ea6dceb0a0ae634525d37a7e4d9b2fd6cdb9986108b8842bc9eaa3548b0ba97c"
+      "size_bytes": 16593,
+      "sha256": "c893bdcf886238033e6405f4ebc77a1e719d4cb72fb7d1af56f93dc9e96048b4"
     },
     {
       "path": "code/generate_figures.py",

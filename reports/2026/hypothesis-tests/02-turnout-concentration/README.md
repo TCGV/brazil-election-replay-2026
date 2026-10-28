@@ -6,6 +6,8 @@ This hypothesis asks whether some polling sections combine unusually high turnou
 
 The formal benchmark concerns **conditional independence of two upper-tail indicators**. It does not test whether an election is natural or manipulated. Legitimate mobilization, social composition, and local geography can associate turnout and voting even within the comparison groups. The report separates aggregate statistical evidence, descriptive magnitude, local context, and limits of coverage.
 
+**Assessment: 6/10 — partial support for the statistical hypothesis.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. Five of 15 candidate/round combinations show excess association under the primary reference, and 165 priority contrasts persist within the polling place. Attenuation, insufficient peers, partial coverage, and sensitivity to the definition of an extreme limit the conclusion. This qualitative, post-analysis assessment across both rounds is not a 60% probability or evidence of an artificial cause. See the [scale rubric](../README.md#assessment-scale) and the [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
+
 ## Files
 
 | Path | Purpose |
@@ -28,7 +30,7 @@ The formal benchmark concerns **conditional independence of two upper-tail indic
 
 ## Reproduce
 
-Run from the repository root with Python 3.12+ and the versions of NumPy and Matplotlib in [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs with Git LFS as described in the [project README](../../../../README.md). The completed stage 1 and H1 manifests and their matching source snapshots are prerequisites; a replay SQLite database is not needed.
+Run from the repository root with Python 3.12+ and the versions of NumPy and Matplotlib in [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs with Git LFS as described in the [project README](../../../../README.md). The stage 1 and H1 manifests and their matching source snapshots are prerequisites; a replay SQLite database is not needed.
 
 Use a virtual environment if necessary:
 
@@ -68,8 +70,8 @@ python3 -m unittest discover -s "$H2_DIR/code" -p 'test_*.py' -v
 python3 "$H2_DIR/code/inventory_artifacts.py" --verify
 ```
 
-Source hashes are checked against stage 1 and the completed H1 audit. The loader also reconciles candidate and special-vote totals section by section. All detail records are retained in the cache; eligibility exclusions belong to the analysis. Missing source quantities never become zero. An absent candidate row can become zero only for an existing section after source reconciliation.
+Source hashes are checked against stage 1 and the H1 audit. The loader also reconciles candidate and special-vote totals section by section. All detail records are retained in the cache; eligibility exclusions belong to the analysis. Missing source quantities never become zero. An absent candidate row can become zero only for an existing section after source reconciliation.
 
 `.work/` is ignored by Git. Its compressed array cache and simulation vectors can be reused only when their fingerprints match. After a relevant code, protocol, source, or simulation-parameter change, use new cache directories if the existing cache is rejected. Preserve simulation vectors for the independent audit; the compact published CSVs do not replace them. A fresh run can take several minutes and requires sufficient memory for both original-source parsers.
 
-The final inventory command verifies the **published H2 files**. Reproduction regenerates numerical evidence and figures in `.work/reproduction/`; the Markdown report is a reviewed narrative of this snapshot and must be reviewed before applying it to new data. No HTML/PDF export is required. Hypotheses H3–H7 are outside this delivery.
+The final inventory command verifies the **published H2 files**. Reproduction regenerates numerical evidence and figures in `.work/reproduction/`; the Markdown report is a reviewed narrative of this snapshot and must be reviewed before applying it to new data. No HTML/PDF export is required.

@@ -6,6 +6,8 @@ This hypothesis examines identical integer result vectors in **different polling
 
 The exhaustive inventory and the conditional test answer different questions. The inventory records nationwide matches, including zero-activity and small sections. The formal reference tests repeated pairing between a complete candidate-count block and a special-vote/turnout block within strict local strata. It preserves the observed repetition of each block, so it cannot test every possible form of copying or establish that all nationwide matches are natural. Informative coverage and this limitation are central results, not exceptions to omit.
 
+**Assessment: 5/10 — inconclusive.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. No excess was detected under the restricted conditional reference, but informative strata cover only seven sections in round 1 and 12,182 in round 2, and the reference preserves each block's repetitions. Here, 5 is an editorial convention for insufficient information, not a 50% probability, positive evidence of excess, or a measure of manipulation. The assessment covers both rounds after analysis. See the [scale rubric](../README.md#assessment-scale) and the [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
+
 ## Files
 
 | Path | Purpose |
@@ -28,7 +30,7 @@ The `all_details` population overlaps the other populations. Full and extended s
 
 ## Reproduce
 
-Run from the repository root with Python 3.12+ and NumPy/Matplotlib from [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs through Git LFS as described in the [project README](../../../../README.md). The completed stage 1 and H1 manifests, their evidence files, and the matching original-source snapshot are prerequisites. A replay SQLite database is not required.
+Run from the repository root with Python 3.12+ and NumPy/Matplotlib from [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs through Git LFS as described in the [project README](../../../../README.md). The stage 1 and H1 manifests, their evidence files, and the matching original-source snapshot are prerequisites. A replay SQLite database is not required.
 
 ```bash
 python3 -m venv .venv
@@ -93,4 +95,4 @@ with gzip.open(source, "rb") as compressed, target.open("xb") as expanded:
     shutil.copyfileobj(compressed, expanded)
 ```
 
-The final inventory command verifies the **published H3 files**. Reproduction regenerates numerical evidence and figures in `.work/reproduction/`; the Markdown report remains a reviewed narrative of this source snapshot. No HTML/PDF export is required. Hypotheses H4–H7 are outside this delivery.
+The final inventory command verifies the **published H3 files**. Reproduction regenerates numerical evidence and figures in `.work/reproduction/`; the Markdown report remains a reviewed narrative of this source snapshot. No HTML/PDF export is required.
