@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "compared_at_utc": "2026-10-28T02:18:01.096474+00:00",
+  "script_sha256": "b721c258da6f6f1f2e59be8aea9f2b511987b90e8c3a63c3700eb7c62abb84bb",
+  "comparisons": {
+    "inventory": 5,
+    "status": 2,
+    "code_hash": 2,
+    "source_hash": 4,
+    "source_size": 2,
+    "artifact_hash": 10,
+    "section_check": 2784,
+    "duplicate_keys": 116,
+    "numeric_domain": 232,
+    "coverage": 448,
+    "totals": 870,
+    "exception_inventory": 2,
+    "source_scope": 1
+  },
+  "total_comparisons": 4478,
+  "mismatches": 0,
+  "failures": [],
+  "scope": "Exact comparisons between separate source parsers; primary SQLite vs independent dictionaries. Snapshot hashes also match stage 1.",
+  "independent_validation_sha256": "efdbe39213c09a0d72e7cbc26b4f7aa854a174a440b9f607d5e2eaa02ce529bf",
+  "primary_manifest_sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930"
+}

@@ -1,0 +1,1277 @@
+check,election_code,turno,uf,universe,eligible,compared,violations,not_comparable,definition
+abstentions_le_electorate,6257,1,AC,2270,2270,2270,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,AC,2270,2270,2270,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,AC,2270,2270,2270,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,AC,2270,2270,2270,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,AC,2270,2270,2270,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,AC,2270,2270,2270,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,AC,2270,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,AC,2270,2270,2270,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,AC,2270,2270,2270,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,AC,2270,2270,2270,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,AC,2270,2270,2270,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,AC,2270,2270,2270,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,AC,2270,2270,2270,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,AC,2270,2270,2270,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,AC,2270,2270,2270,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,AC,2270,2270,2270,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,AC,2270,2270,2270,0,0,Turnout <= electorate
+unique_detail_key,6257,1,AC,2270,2270,2270,0,0,One raw detail record per section key
+unique_vote_key,6257,1,AC,16145,16145,16145,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,AC,16145,16145,16145,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,AC,16145,16145,16145,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,AC,2270,2270,2270,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,AL,7101,7101,7101,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,AL,7101,7101,7101,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,AL,7101,7101,7101,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,AL,7101,7101,7101,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,AL,7101,7101,7101,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,AL,7101,7101,7101,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,AL,7101,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,AL,7101,7101,7101,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,AL,7101,7101,7101,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,AL,7101,7101,7101,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,AL,7101,7101,7101,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,AL,7101,7101,7101,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,AL,7101,7101,7101,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,AL,7101,7101,7101,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,AL,7101,7101,7101,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,AL,7101,7101,7101,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,AL,7101,7101,7101,0,0,Turnout <= electorate
+unique_detail_key,6257,1,AL,7101,7101,7101,0,0,One raw detail record per section key
+unique_vote_key,6257,1,AL,50972,50972,50972,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,AL,50972,50972,50972,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,AL,50972,50972,50972,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,AL,7101,7101,7101,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,AM,8157,8157,8157,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,AM,8157,8157,8157,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,AM,8157,8157,8157,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,AM,8157,8157,8157,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,AM,8157,8157,8157,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,AM,8157,8157,8157,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,AM,8157,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,AM,8157,8157,8157,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,AM,8157,8157,8157,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,AM,8157,8157,8157,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,AM,8157,8157,8157,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,AM,8157,8157,8157,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,AM,8157,8157,8157,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,AM,8157,8157,8157,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,AM,8157,8157,8157,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,AM,8157,8157,8157,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,AM,8157,8157,8157,0,0,Turnout <= electorate
+unique_detail_key,6257,1,AM,8157,8157,8157,0,0,One raw detail record per section key
+unique_vote_key,6257,1,AM,58575,58575,58575,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,AM,58575,58575,58575,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,AM,58575,58575,58575,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,AM,8157,8157,8157,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,AP,1914,1914,1914,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,AP,1914,1914,1914,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,AP,1914,1914,1914,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,AP,1914,1914,1914,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,AP,1914,1914,1914,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,AP,1914,1914,1914,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,AP,1914,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,AP,1914,1914,1914,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,AP,1914,1914,1914,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,AP,1914,1914,1914,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,AP,1914,1914,1914,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,AP,1914,1914,1914,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,AP,1914,1914,1914,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,AP,1914,1914,1914,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,AP,1914,1914,1914,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,AP,1914,1914,1914,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,AP,1914,1914,1914,0,0,Turnout <= electorate
+unique_detail_key,6257,1,AP,1914,1914,1914,0,0,One raw detail record per section key
+unique_vote_key,6257,1,AP,13996,13996,13996,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,AP,13996,13996,13996,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,AP,13996,13996,13996,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,AP,1914,1914,1914,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,BA,35476,35476,35476,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,BA,35476,35476,35476,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,BA,35476,35476,35476,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,BA,35476,35476,35476,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,BA,35476,35476,35476,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,BA,35476,35476,35476,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,BA,35476,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,BA,35476,35476,35476,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,BA,35476,35476,35476,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,BA,35476,35476,35476,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,BA,35476,35476,35476,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,BA,35476,35476,35476,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,BA,35476,35476,35476,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,BA,35476,35476,35476,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,BA,35476,35476,35476,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,BA,35476,35476,35476,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,BA,35476,35476,35476,0,0,Turnout <= electorate
+unique_detail_key,6257,1,BA,35476,35476,35476,0,0,One raw detail record per section key
+unique_vote_key,6257,1,BA,251417,251417,251417,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,BA,251417,251417,251417,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,BA,251417,251417,251417,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,BA,35476,35476,35476,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,BR,499248,499248,499248,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,BR,499248,499248,499248,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,BR,499248,499248,499248,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,BR,499248,499248,499248,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,BR,499248,499248,499248,41,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,BR,499248,499207,499207,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,BR,499248,41,41,41,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,BR,499248,499248,499248,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,BR,499248,499206,499206,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,BR,499248,499248,499248,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,BR,499248,499248,499248,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,BR,499248,499248,499248,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,BR,499248,499248,499248,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,BR,499248,499248,499248,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,BR,499248,499248,499248,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,BR,499248,499248,499248,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,BR,499248,499248,499248,0,0,Turnout <= electorate
+unique_detail_key,6257,1,BR,499248,499248,499248,0,0,One raw detail record per section key
+unique_vote_key,6257,1,BR,3800511,3800511,3800511,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,BR,3800511,3800511,3800511,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,BR,3800511,3800511,3800511,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,BR,499248,499206,499206,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,CE,23765,23765,23765,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,CE,23765,23765,23765,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,CE,23765,23765,23765,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,CE,23765,23765,23765,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,CE,23765,23765,23765,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,CE,23765,23765,23765,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,CE,23765,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,CE,23765,23765,23765,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,CE,23765,23765,23765,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,CE,23765,23765,23765,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,CE,23765,23765,23765,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,CE,23765,23765,23765,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,CE,23765,23765,23765,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,CE,23765,23765,23765,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,CE,23765,23765,23765,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,CE,23765,23765,23765,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,CE,23765,23765,23765,0,0,Turnout <= electorate
+unique_detail_key,6257,1,CE,23765,23765,23765,0,0,One raw detail record per section key
+unique_vote_key,6257,1,CE,167164,167164,167164,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,CE,167164,167164,167164,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,CE,167164,167164,167164,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,CE,23765,23765,23765,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,DF,6969,6969,6969,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,DF,6969,6969,6969,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,DF,6969,6969,6969,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,DF,6969,6969,6969,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,DF,6969,6969,6969,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,DF,6969,6969,6969,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,DF,6969,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,DF,6969,6969,6969,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,DF,6969,6969,6969,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,DF,6969,6969,6969,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,DF,6969,6969,6969,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,DF,6969,6969,6969,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,DF,6969,6969,6969,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,DF,6969,6969,6969,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,DF,6969,6969,6969,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,DF,6969,6969,6969,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,DF,6969,6969,6969,0,0,Turnout <= electorate
+unique_detail_key,6257,1,DF,6969,6969,6969,0,0,One raw detail record per section key
+unique_vote_key,6257,1,DF,55819,55819,55819,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,DF,55819,55819,55819,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,DF,55819,55819,55819,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,DF,6969,6969,6969,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,ES,9844,9844,9844,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,ES,9844,9844,9844,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,ES,9844,9844,9844,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,ES,9844,9844,9844,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,ES,9844,9844,9844,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,ES,9844,9844,9844,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,ES,9844,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,ES,9844,9844,9844,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,ES,9844,9844,9844,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,ES,9844,9844,9844,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,ES,9844,9844,9844,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,ES,9844,9844,9844,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,ES,9844,9844,9844,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,ES,9844,9844,9844,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,ES,9844,9844,9844,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,ES,9844,9844,9844,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,ES,9844,9844,9844,0,0,Turnout <= electorate
+unique_detail_key,6257,1,ES,9844,9844,9844,0,0,One raw detail record per section key
+unique_vote_key,6257,1,ES,75629,75629,75629,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,ES,75629,75629,75629,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,ES,75629,75629,75629,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,ES,9844,9844,9844,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,GO,15686,15686,15686,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,GO,15686,15686,15686,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,GO,15686,15686,15686,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,GO,15686,15686,15686,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,GO,15686,15686,15686,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,GO,15686,15686,15686,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,GO,15686,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,GO,15686,15686,15686,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,GO,15686,15686,15686,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,GO,15686,15686,15686,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,GO,15686,15686,15686,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,GO,15686,15686,15686,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,GO,15686,15686,15686,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,GO,15686,15686,15686,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,GO,15686,15686,15686,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,GO,15686,15686,15686,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,GO,15686,15686,15686,0,0,Turnout <= electorate
+unique_detail_key,6257,1,GO,15686,15686,15686,0,0,One raw detail record per section key
+unique_vote_key,6257,1,GO,112157,112157,112157,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,GO,112157,112157,112157,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,GO,112157,112157,112157,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,GO,15686,15686,15686,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,MA,18093,18093,18093,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,MA,18093,18093,18093,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,MA,18093,18093,18093,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,MA,18093,18093,18093,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,MA,18093,18093,18093,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,MA,18093,18093,18093,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,MA,18093,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,MA,18093,18093,18093,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,MA,18093,18093,18093,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,MA,18093,18093,18093,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,MA,18093,18093,18093,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,MA,18093,18093,18093,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,MA,18093,18093,18093,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,MA,18093,18093,18093,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,MA,18093,18093,18093,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,MA,18093,18093,18093,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,MA,18093,18093,18093,0,0,Turnout <= electorate
+unique_detail_key,6257,1,MA,18093,18093,18093,0,0,One raw detail record per section key
+unique_vote_key,6257,1,MA,124673,124673,124673,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,MA,124673,124673,124673,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,MA,124673,124673,124673,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,MA,18093,18093,18093,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,MG,52062,52062,52062,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,MG,52062,52062,52062,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,MG,52062,52062,52062,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,MG,52062,52062,52062,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,MG,52062,52062,52062,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,MG,52062,52062,52062,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,MG,52062,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,MG,52062,52062,52062,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,MG,52062,52062,52062,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,MG,52062,52062,52062,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,MG,52062,52062,52062,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,MG,52062,52062,52062,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,MG,52062,52062,52062,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,MG,52062,52062,52062,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,MG,52062,52062,52062,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,MG,52062,52062,52062,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,MG,52062,52062,52062,0,0,Turnout <= electorate
+unique_detail_key,6257,1,MG,52062,52062,52062,0,0,One raw detail record per section key
+unique_vote_key,6257,1,MG,415799,415799,415799,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,MG,415799,415799,415799,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,MG,415799,415799,415799,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,MG,52062,52062,52062,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,MS,7106,7106,7106,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,MS,7106,7106,7106,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,MS,7106,7106,7106,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,MS,7106,7106,7106,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,MS,7106,7106,7106,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,MS,7106,7106,7106,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,MS,7106,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,MS,7106,7106,7106,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,MS,7106,7106,7106,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,MS,7106,7106,7106,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,MS,7106,7106,7106,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,MS,7106,7106,7106,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,MS,7106,7106,7106,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,MS,7106,7106,7106,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,MS,7106,7106,7106,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,MS,7106,7106,7106,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,MS,7106,7106,7106,0,0,Turnout <= electorate
+unique_detail_key,6257,1,MS,7106,7106,7106,0,0,One raw detail record per section key
+unique_vote_key,6257,1,MS,52380,52380,52380,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,MS,52380,52380,52380,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,MS,52380,52380,52380,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,MS,7106,7106,7106,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,MT,8287,8287,8287,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,MT,8287,8287,8287,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,MT,8287,8287,8287,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,MT,8287,8287,8287,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,MT,8287,8287,8287,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,MT,8287,8287,8287,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,MT,8287,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,MT,8287,8287,8287,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,MT,8287,8287,8287,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,MT,8287,8287,8287,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,MT,8287,8287,8287,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,MT,8287,8287,8287,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,MT,8287,8287,8287,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,MT,8287,8287,8287,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,MT,8287,8287,8287,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,MT,8287,8287,8287,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,MT,8287,8287,8287,0,0,Turnout <= electorate
+unique_detail_key,6257,1,MT,8287,8287,8287,0,0,One raw detail record per section key
+unique_vote_key,6257,1,MT,60750,60750,60750,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,MT,60750,60750,60750,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,MT,60750,60750,60750,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,MT,8287,8287,8287,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,PA,20827,20827,20827,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,PA,20827,20827,20827,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,PA,20827,20827,20827,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,PA,20827,20827,20827,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,PA,20827,20827,20827,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,PA,20827,20827,20827,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,PA,20827,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,PA,20827,20827,20827,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,PA,20827,20827,20827,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,PA,20827,20827,20827,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,PA,20827,20827,20827,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,PA,20827,20827,20827,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,PA,20827,20827,20827,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,PA,20827,20827,20827,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,PA,20827,20827,20827,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,PA,20827,20827,20827,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,PA,20827,20827,20827,0,0,Turnout <= electorate
+unique_detail_key,6257,1,PA,20827,20827,20827,0,0,One raw detail record per section key
+unique_vote_key,6257,1,PA,143701,143701,143701,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,PA,143701,143701,143701,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,PA,143701,143701,143701,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,PA,20827,20827,20827,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,PB,10712,10712,10712,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,PB,10712,10712,10712,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,PB,10712,10712,10712,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,PB,10712,10712,10712,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,PB,10712,10712,10712,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,PB,10712,10712,10712,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,PB,10712,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,PB,10712,10712,10712,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,PB,10712,10712,10712,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,PB,10712,10712,10712,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,PB,10712,10712,10712,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,PB,10712,10712,10712,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,PB,10712,10712,10712,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,PB,10712,10712,10712,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,PB,10712,10712,10712,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,PB,10712,10712,10712,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,PB,10712,10712,10712,0,0,Turnout <= electorate
+unique_detail_key,6257,1,PB,10712,10712,10712,0,0,One raw detail record per section key
+unique_vote_key,6257,1,PB,76265,76265,76265,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,PB,76265,76265,76265,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,PB,76265,76265,76265,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,PB,10712,10712,10712,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,PE,21418,21418,21418,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,PE,21418,21418,21418,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,PE,21418,21418,21418,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,PE,21418,21418,21418,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,PE,21418,21418,21418,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,PE,21418,21418,21418,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,PE,21418,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,PE,21418,21418,21418,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,PE,21418,21418,21418,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,PE,21418,21418,21418,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,PE,21418,21418,21418,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,PE,21418,21418,21418,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,PE,21418,21418,21418,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,PE,21418,21418,21418,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,PE,21418,21418,21418,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,PE,21418,21418,21418,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,PE,21418,21418,21418,0,0,Turnout <= electorate
+unique_detail_key,6257,1,PE,21418,21418,21418,0,0,One raw detail record per section key
+unique_vote_key,6257,1,PE,156699,156699,156699,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,PE,156699,156699,156699,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,PE,156699,156699,156699,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,PE,21418,21418,21418,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,PI,10225,10225,10225,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,PI,10225,10225,10225,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,PI,10225,10225,10225,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,PI,10225,10225,10225,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,PI,10225,10225,10225,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,PI,10225,10225,10225,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,PI,10225,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,PI,10225,10225,10225,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,PI,10225,10225,10225,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,PI,10225,10225,10225,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,PI,10225,10225,10225,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,PI,10225,10225,10225,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,PI,10225,10225,10225,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,PI,10225,10225,10225,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,PI,10225,10225,10225,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,PI,10225,10225,10225,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,PI,10225,10225,10225,0,0,Turnout <= electorate
+unique_detail_key,6257,1,PI,10225,10225,10225,0,0,One raw detail record per section key
+unique_vote_key,6257,1,PI,69308,69308,69308,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,PI,69308,69308,69308,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,PI,69308,69308,69308,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,PI,10225,10225,10225,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,PR,27142,27142,27142,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,PR,27142,27142,27142,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,PR,27142,27142,27142,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,PR,27142,27142,27142,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,PR,27142,27142,27142,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,PR,27142,27142,27142,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,PR,27142,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,PR,27142,27142,27142,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,PR,27142,27142,27142,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,PR,27142,27142,27142,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,PR,27142,27142,27142,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,PR,27142,27142,27142,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,PR,27142,27142,27142,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,PR,27142,27142,27142,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,PR,27142,27142,27142,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,PR,27142,27142,27142,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,PR,27142,27142,27142,0,0,Turnout <= electorate
+unique_detail_key,6257,1,PR,27142,27142,27142,0,0,One raw detail record per section key
+unique_vote_key,6257,1,PR,211052,211052,211052,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,PR,211052,211052,211052,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,PR,211052,211052,211052,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,PR,27142,27142,27142,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,RJ,37675,37675,37675,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,RJ,37675,37675,37675,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,RJ,37675,37675,37675,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,RJ,37675,37675,37675,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,RJ,37675,37675,37675,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,RJ,37675,37675,37675,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,RJ,37675,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,RJ,37675,37675,37675,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,RJ,37675,37675,37675,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,RJ,37675,37675,37675,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,RJ,37675,37675,37675,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,RJ,37675,37675,37675,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,RJ,37675,37675,37675,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,RJ,37675,37675,37675,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,RJ,37675,37675,37675,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,RJ,37675,37675,37675,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,RJ,37675,37675,37675,0,0,Turnout <= electorate
+unique_detail_key,6257,1,RJ,37675,37675,37675,0,0,One raw detail record per section key
+unique_vote_key,6257,1,RJ,301535,301535,301535,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,RJ,301535,301535,301535,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,RJ,301535,301535,301535,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,RJ,37675,37675,37675,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,RN,8115,8115,8115,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,RN,8115,8115,8115,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,RN,8115,8115,8115,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,RN,8115,8115,8115,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,RN,8115,8115,8115,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,RN,8115,8115,8115,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,RN,8115,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,RN,8115,8115,8115,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,RN,8115,8115,8115,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,RN,8115,8115,8115,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,RN,8115,8115,8115,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,RN,8115,8115,8115,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,RN,8115,8115,8115,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,RN,8115,8115,8115,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,RN,8115,8115,8115,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,RN,8115,8115,8115,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,RN,8115,8115,8115,0,0,Turnout <= electorate
+unique_detail_key,6257,1,RN,8115,8115,8115,0,0,One raw detail record per section key
+unique_vote_key,6257,1,RN,58164,58164,58164,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,RN,58164,58164,58164,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,RN,58164,58164,58164,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,RN,8115,8115,8115,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,RO,4698,4698,4698,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,RO,4698,4698,4698,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,RO,4698,4698,4698,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,RO,4698,4698,4698,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,RO,4698,4698,4698,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,RO,4698,4698,4698,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,RO,4698,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,RO,4698,4698,4698,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,RO,4698,4698,4698,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,RO,4698,4698,4698,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,RO,4698,4698,4698,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,RO,4698,4698,4698,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,RO,4698,4698,4698,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,RO,4698,4698,4698,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,RO,4698,4698,4698,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,RO,4698,4698,4698,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,RO,4698,4698,4698,0,0,Turnout <= electorate
+unique_detail_key,6257,1,RO,4698,4698,4698,0,0,One raw detail record per section key
+unique_vote_key,6257,1,RO,33649,33649,33649,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,RO,33649,33649,33649,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,RO,33649,33649,33649,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,RO,4698,4698,4698,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,RR,1519,1519,1519,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,RR,1519,1519,1519,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,RR,1519,1519,1519,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,RR,1519,1519,1519,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,RR,1519,1519,1519,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,RR,1519,1519,1519,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,RR,1519,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,RR,1519,1519,1519,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,RR,1519,1519,1519,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,RR,1519,1519,1519,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,RR,1519,1519,1519,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,RR,1519,1519,1519,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,RR,1519,1519,1519,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,RR,1519,1519,1519,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,RR,1519,1519,1519,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,RR,1519,1519,1519,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,RR,1519,1519,1519,0,0,Turnout <= electorate
+unique_detail_key,6257,1,RR,1519,1519,1519,0,0,One raw detail record per section key
+unique_vote_key,6257,1,RR,10588,10588,10588,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,RR,10588,10588,10588,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,RR,10588,10588,10588,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,RR,1519,1519,1519,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,RS,27547,27547,27547,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,RS,27547,27547,27547,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,RS,27547,27547,27547,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,RS,27547,27547,27547,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,RS,27547,27547,27547,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,RS,27547,27547,27547,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,RS,27547,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,RS,27547,27547,27547,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,RS,27547,27547,27547,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,RS,27547,27547,27547,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,RS,27547,27547,27547,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,RS,27547,27547,27547,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,RS,27547,27547,27547,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,RS,27547,27547,27547,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,RS,27547,27547,27547,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,RS,27547,27547,27547,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,RS,27547,27547,27547,0,0,Turnout <= electorate
+unique_detail_key,6257,1,RS,27547,27547,27547,0,0,One raw detail record per section key
+unique_vote_key,6257,1,RS,213540,213540,213540,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,RS,213540,213540,213540,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,RS,213540,213540,213540,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,RS,27547,27547,27547,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,SC,17326,17326,17326,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,SC,17326,17326,17326,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,SC,17326,17326,17326,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,SC,17326,17326,17326,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,SC,17326,17326,17326,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,SC,17326,17326,17326,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,SC,17326,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,SC,17326,17326,17326,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,SC,17326,17326,17326,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,SC,17326,17326,17326,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,SC,17326,17326,17326,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,SC,17326,17326,17326,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,SC,17326,17326,17326,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,SC,17326,17326,17326,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,SC,17326,17326,17326,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,SC,17326,17326,17326,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,SC,17326,17326,17326,0,0,Turnout <= electorate
+unique_detail_key,6257,1,SC,17326,17326,17326,0,0,One raw detail record per section key
+unique_vote_key,6257,1,SC,136979,136979,136979,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,SC,136979,136979,136979,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,SC,136979,136979,136979,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,SC,17326,17326,17326,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,SE,5923,5923,5923,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,SE,5923,5923,5923,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,SE,5923,5923,5923,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,SE,5923,5923,5923,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,SE,5923,5923,5923,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,SE,5923,5923,5923,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,SE,5923,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,SE,5923,5923,5923,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,SE,5923,5923,5923,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,SE,5923,5923,5923,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,SE,5923,5923,5923,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,SE,5923,5923,5923,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,SE,5923,5923,5923,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,SE,5923,5923,5923,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,SE,5923,5923,5923,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,SE,5923,5923,5923,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,SE,5923,5923,5923,0,0,Turnout <= electorate
+unique_detail_key,6257,1,SE,5923,5923,5923,0,0,One raw detail record per section key
+unique_vote_key,6257,1,SE,43373,43373,43373,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,SE,43373,43373,43373,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,SE,43373,43373,43373,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,SE,5923,5923,5923,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,SP,103656,103656,103656,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,SP,103656,103656,103656,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,SP,103656,103656,103656,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,SP,103656,103656,103656,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,SP,103656,103656,103656,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,SP,103656,103656,103656,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,SP,103656,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,SP,103656,103656,103656,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,SP,103656,103656,103656,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,SP,103656,103656,103656,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,SP,103656,103656,103656,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,SP,103656,103656,103656,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,SP,103656,103656,103656,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,SP,103656,103656,103656,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,SP,103656,103656,103656,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,SP,103656,103656,103656,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,SP,103656,103656,103656,0,0,Turnout <= electorate
+unique_detail_key,6257,1,SP,103656,103656,103656,0,0,One raw detail record per section key
+unique_vote_key,6257,1,SP,848063,848063,848063,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,SP,848063,848063,848063,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,SP,848063,848063,848063,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,SP,103656,103656,103656,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,TO,4384,4384,4384,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,TO,4384,4384,4384,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,TO,4384,4384,4384,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,TO,4384,4384,4384,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,TO,4384,4384,4384,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,TO,4384,4384,4384,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,TO,4384,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,TO,4384,4384,4384,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,TO,4384,4384,4384,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,TO,4384,4384,4384,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,TO,4384,4384,4384,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,TO,4384,4384,4384,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,TO,4384,4384,4384,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,TO,4384,4384,4384,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,TO,4384,4384,4384,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,TO,4384,4384,4384,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,TO,4384,4384,4384,0,0,Turnout <= electorate
+unique_detail_key,6257,1,TO,4384,4384,4384,0,0,One raw detail record per section key
+unique_vote_key,6257,1,TO,30084,30084,30084,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,TO,30084,30084,30084,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,TO,30084,30084,30084,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,TO,4384,4384,4384,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6257,1,ZZ,1351,1351,1351,0,0,Abstentions <= electorate
+detail_quantities_complete,6257,1,ZZ,1351,1351,1351,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6257,1,ZZ,1351,1351,1351,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6257,1,ZZ,1351,1351,1351,0,0,Five detail vote categories = turnout
+electorate_identity,6257,1,ZZ,1351,1351,1351,41,0,Electorate = turnout + abstentions
+electorate_identity_installed,6257,1,ZZ,1351,1310,1310,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6257,1,ZZ,1351,41,41,41,0,"Same identity, uninstalled sections only"
+installation_status_known,6257,1,ZZ,1351,1351,1351,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6257,1,ZZ,1351,1309,1309,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6257,1,ZZ,1351,1351,1351,0,0,No party-list vote in presidential office
+reconcile_blank,6257,1,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6257,1,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6257,1,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6257,1,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6257,1,ZZ,1351,1351,1351,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6257,1,ZZ,1351,1351,1351,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6257,1,ZZ,1351,1351,1351,0,0,Turnout <= electorate
+unique_detail_key,6257,1,ZZ,1351,1351,1351,0,0,One raw detail record per section key
+unique_vote_key,6257,1,ZZ,12035,12035,12035,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6257,1,ZZ,12035,12035,12035,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6257,1,ZZ,12035,12035,12035,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6257,1,ZZ,1351,1309,1309,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,AC,2270,2270,2270,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,AC,2270,2270,2270,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,AC,2270,2270,2270,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,AC,2270,2270,2270,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,AC,2270,2270,2270,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,AC,2270,2270,2270,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,AC,2270,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,AC,2270,2270,2270,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,AC,2270,2270,2270,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,AC,2270,2270,2270,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,AC,2270,2270,2270,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,AC,2270,2270,2270,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,AC,2270,2270,2270,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,AC,2270,2270,2270,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,AC,2270,2270,2270,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,AC,2270,2270,2270,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,AC,2270,2270,2270,0,0,Turnout <= electorate
+unique_detail_key,6258,2,AC,2270,2270,2270,0,0,One raw detail record per section key
+unique_vote_key,6258,2,AC,8697,8697,8697,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,AC,8697,8697,8697,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,AC,8697,8697,8697,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,AC,2270,2270,2270,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,AL,7101,7101,7101,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,AL,7101,7101,7101,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,AL,7101,7101,7101,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,AL,7101,7101,7101,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,AL,7101,7101,7101,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,AL,7101,7101,7101,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,AL,7101,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,AL,7101,7101,7101,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,AL,7101,7101,7101,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,AL,7101,7101,7101,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,AL,7101,7101,7101,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,AL,7101,7101,7101,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,AL,7101,7101,7101,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,AL,7101,7101,7101,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,AL,7101,7101,7101,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,AL,7101,7101,7101,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,AL,7101,7101,7101,0,0,Turnout <= electorate
+unique_detail_key,6258,2,AL,7101,7101,7101,0,0,One raw detail record per section key
+unique_vote_key,6258,2,AL,27419,27419,27419,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,AL,27419,27419,27419,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,AL,27419,27419,27419,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,AL,7101,7101,7101,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,AM,8157,8157,8157,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,AM,8157,8157,8157,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,AM,8157,8157,8157,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,AM,8157,8157,8157,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,AM,8157,8157,8157,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,AM,8157,8157,8157,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,AM,8157,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,AM,8157,8157,8157,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,AM,8157,8157,8157,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,AM,8157,8157,8157,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,AM,8157,8157,8157,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,AM,8157,8157,8157,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,AM,8157,8157,8157,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,AM,8157,8157,8157,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,AM,8157,8157,8157,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,AM,8157,8157,8157,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,AM,8157,8157,8157,0,0,Turnout <= electorate
+unique_detail_key,6258,2,AM,8157,8157,8157,0,0,One raw detail record per section key
+unique_vote_key,6258,2,AM,30991,30991,30991,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,AM,30991,30991,30991,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,AM,30991,30991,30991,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,AM,8157,8157,8157,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,AP,1914,1914,1914,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,AP,1914,1914,1914,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,AP,1914,1914,1914,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,AP,1914,1914,1914,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,AP,1914,1914,1914,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,AP,1914,1914,1914,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,AP,1914,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,AP,1914,1914,1914,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,AP,1914,1914,1914,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,AP,1914,1914,1914,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,AP,1914,1914,1914,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,AP,1914,1914,1914,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,AP,1914,1914,1914,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,AP,1914,1914,1914,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,AP,1914,1914,1914,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,AP,1914,1914,1914,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,AP,1914,1914,1914,0,0,Turnout <= electorate
+unique_detail_key,6258,2,AP,1914,1914,1914,0,0,One raw detail record per section key
+unique_vote_key,6258,2,AP,6973,6973,6973,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,AP,6973,6973,6973,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,AP,6973,6973,6973,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,AP,1914,1914,1914,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,BA,35476,35476,35476,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,BA,35476,35476,35476,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,BA,35476,35476,35476,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,BA,35476,35476,35476,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,BA,35476,35476,35476,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,BA,35476,35476,35476,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,BA,35476,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,BA,35476,35476,35476,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,BA,35476,35476,35476,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,BA,35476,35476,35476,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,BA,35476,35476,35476,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,BA,35476,35476,35476,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,BA,35476,35476,35476,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,BA,35476,35476,35476,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,BA,35476,35476,35476,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,BA,35476,35476,35476,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,BA,35476,35476,35476,0,0,Turnout <= electorate
+unique_detail_key,6258,2,BA,35476,35476,35476,0,0,One raw detail record per section key
+unique_vote_key,6258,2,BA,137040,137040,137040,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,BA,137040,137040,137040,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,BA,137040,137040,137040,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,BA,35476,35476,35476,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,BR,499248,499248,499248,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,BR,499248,499248,499248,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,BR,499248,499248,499248,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,BR,499248,499248,499248,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,BR,499248,499248,499248,41,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,BR,499248,499207,499207,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,BR,499248,41,41,41,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,BR,499248,499248,499248,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,BR,499248,499205,499205,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,BR,499248,499248,499248,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,BR,499248,499248,499248,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,BR,499248,499248,499248,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,BR,499248,499248,499248,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,BR,499248,499248,499248,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,BR,499248,499248,499248,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,BR,499248,499248,499248,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,BR,499248,499248,499248,0,0,Turnout <= electorate
+unique_detail_key,6258,2,BR,499248,499248,499248,0,0,One raw detail record per section key
+unique_vote_key,6258,2,BR,1931103,1931103,1931103,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,BR,1931103,1931103,1931103,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,BR,1931103,1931103,1931103,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,BR,499248,499205,499205,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,CE,23765,23765,23765,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,CE,23765,23765,23765,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,CE,23765,23765,23765,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,CE,23765,23765,23765,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,CE,23765,23765,23765,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,CE,23765,23765,23765,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,CE,23765,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,CE,23765,23765,23765,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,CE,23765,23765,23765,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,CE,23765,23765,23765,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,CE,23765,23765,23765,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,CE,23765,23765,23765,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,CE,23765,23765,23765,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,CE,23765,23765,23765,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,CE,23765,23765,23765,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,CE,23765,23765,23765,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,CE,23765,23765,23765,0,0,Turnout <= electorate
+unique_detail_key,6258,2,CE,23765,23765,23765,0,0,One raw detail record per section key
+unique_vote_key,6258,2,CE,91087,91087,91087,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,CE,91087,91087,91087,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,CE,91087,91087,91087,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,CE,23765,23765,23765,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,DF,6969,6969,6969,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,DF,6969,6969,6969,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,DF,6969,6969,6969,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,DF,6969,6969,6969,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,DF,6969,6969,6969,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,DF,6969,6969,6969,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,DF,6969,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,DF,6969,6969,6969,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,DF,6969,6969,6969,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,DF,6969,6969,6969,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,DF,6969,6969,6969,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,DF,6969,6969,6969,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,DF,6969,6969,6969,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,DF,6969,6969,6969,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,DF,6969,6969,6969,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,DF,6969,6969,6969,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,DF,6969,6969,6969,0,0,Turnout <= electorate
+unique_detail_key,6258,2,DF,6969,6969,6969,0,0,One raw detail record per section key
+unique_vote_key,6258,2,DF,27453,27453,27453,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,DF,27453,27453,27453,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,DF,27453,27453,27453,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,DF,6969,6969,6969,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,ES,9844,9844,9844,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,ES,9844,9844,9844,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,ES,9844,9844,9844,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,ES,9844,9844,9844,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,ES,9844,9844,9844,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,ES,9844,9844,9844,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,ES,9844,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,ES,9844,9844,9844,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,ES,9844,9844,9844,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,ES,9844,9844,9844,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,ES,9844,9844,9844,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,ES,9844,9844,9844,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,ES,9844,9844,9844,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,ES,9844,9844,9844,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,ES,9844,9844,9844,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,ES,9844,9844,9844,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,ES,9844,9844,9844,0,0,Turnout <= electorate
+unique_detail_key,6258,2,ES,9844,9844,9844,0,0,One raw detail record per section key
+unique_vote_key,6258,2,ES,38829,38829,38829,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,ES,38829,38829,38829,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,ES,38829,38829,38829,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,ES,9844,9844,9844,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,GO,15686,15686,15686,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,GO,15686,15686,15686,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,GO,15686,15686,15686,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,GO,15686,15686,15686,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,GO,15686,15686,15686,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,GO,15686,15686,15686,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,GO,15686,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,GO,15686,15686,15686,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,GO,15686,15686,15686,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,GO,15686,15686,15686,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,GO,15686,15686,15686,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,GO,15686,15686,15686,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,GO,15686,15686,15686,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,GO,15686,15686,15686,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,GO,15686,15686,15686,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,GO,15686,15686,15686,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,GO,15686,15686,15686,0,0,Turnout <= electorate
+unique_detail_key,6258,2,GO,15686,15686,15686,0,0,One raw detail record per section key
+unique_vote_key,6258,2,GO,61031,61031,61031,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,GO,61031,61031,61031,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,GO,61031,61031,61031,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,GO,15686,15686,15686,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,MA,18093,18093,18093,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,MA,18093,18093,18093,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,MA,18093,18093,18093,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,MA,18093,18093,18093,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,MA,18093,18093,18093,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,MA,18093,18093,18093,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,MA,18093,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,MA,18093,18093,18093,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,MA,18093,18093,18093,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,MA,18093,18093,18093,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,MA,18093,18093,18093,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,MA,18093,18093,18093,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,MA,18093,18093,18093,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,MA,18093,18093,18093,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,MA,18093,18093,18093,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,MA,18093,18093,18093,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,MA,18093,18093,18093,0,0,Turnout <= electorate
+unique_detail_key,6258,2,MA,18093,18093,18093,0,0,One raw detail record per section key
+unique_vote_key,6258,2,MA,66190,66190,66190,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,MA,66190,66190,66190,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,MA,66190,66190,66190,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,MA,18093,18093,18093,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,MG,52062,52062,52062,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,MG,52062,52062,52062,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,MG,52062,52062,52062,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,MG,52062,52062,52062,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,MG,52062,52062,52062,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,MG,52062,52062,52062,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,MG,52062,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,MG,52062,52062,52062,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,MG,52062,52062,52062,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,MG,52062,52062,52062,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,MG,52062,52062,52062,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,MG,52062,52062,52062,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,MG,52062,52062,52062,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,MG,52062,52062,52062,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,MG,52062,52062,52062,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,MG,52062,52062,52062,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,MG,52062,52062,52062,0,0,Turnout <= electorate
+unique_detail_key,6258,2,MG,52062,52062,52062,0,0,One raw detail record per section key
+unique_vote_key,6258,2,MG,203235,203235,203235,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,MG,203235,203235,203235,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,MG,203235,203235,203235,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,MG,52062,52062,52062,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,MS,7106,7106,7106,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,MS,7106,7106,7106,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,MS,7106,7106,7106,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,MS,7106,7106,7106,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,MS,7106,7106,7106,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,MS,7106,7106,7106,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,MS,7106,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,MS,7106,7106,7106,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,MS,7106,7106,7106,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,MS,7106,7106,7106,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,MS,7106,7106,7106,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,MS,7106,7106,7106,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,MS,7106,7106,7106,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,MS,7106,7106,7106,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,MS,7106,7106,7106,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,MS,7106,7106,7106,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,MS,7106,7106,7106,0,0,Turnout <= electorate
+unique_detail_key,6258,2,MS,7106,7106,7106,0,0,One raw detail record per section key
+unique_vote_key,6258,2,MS,26734,26734,26734,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,MS,26734,26734,26734,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,MS,26734,26734,26734,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,MS,7106,7106,7106,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,MT,8287,8287,8287,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,MT,8287,8287,8287,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,MT,8287,8287,8287,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,MT,8287,8287,8287,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,MT,8287,8287,8287,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,MT,8287,8287,8287,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,MT,8287,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,MT,8287,8287,8287,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,MT,8287,8287,8287,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,MT,8287,8287,8287,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,MT,8287,8287,8287,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,MT,8287,8287,8287,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,MT,8287,8287,8287,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,MT,8287,8287,8287,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,MT,8287,8287,8287,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,MT,8287,8287,8287,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,MT,8287,8287,8287,0,0,Turnout <= electorate
+unique_detail_key,6258,2,MT,8287,8287,8287,0,0,One raw detail record per section key
+unique_vote_key,6258,2,MT,30873,30873,30873,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,MT,30873,30873,30873,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,MT,30873,30873,30873,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,MT,8287,8287,8287,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,PA,20827,20827,20827,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,PA,20827,20827,20827,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,PA,20827,20827,20827,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,PA,20827,20827,20827,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,PA,20827,20827,20827,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,PA,20827,20827,20827,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,PA,20827,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,PA,20827,20827,20827,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,PA,20827,20827,20827,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,PA,20827,20827,20827,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,PA,20827,20827,20827,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,PA,20827,20827,20827,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,PA,20827,20827,20827,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,PA,20827,20827,20827,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,PA,20827,20827,20827,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,PA,20827,20827,20827,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,PA,20827,20827,20827,0,0,Turnout <= electorate
+unique_detail_key,6258,2,PA,20827,20827,20827,0,0,One raw detail record per section key
+unique_vote_key,6258,2,PA,76003,76003,76003,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,PA,76003,76003,76003,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,PA,76003,76003,76003,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,PA,20827,20827,20827,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,PB,10712,10712,10712,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,PB,10712,10712,10712,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,PB,10712,10712,10712,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,PB,10712,10712,10712,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,PB,10712,10712,10712,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,PB,10712,10712,10712,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,PB,10712,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,PB,10712,10712,10712,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,PB,10712,10712,10712,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,PB,10712,10712,10712,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,PB,10712,10712,10712,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,PB,10712,10712,10712,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,PB,10712,10712,10712,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,PB,10712,10712,10712,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,PB,10712,10712,10712,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,PB,10712,10712,10712,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,PB,10712,10712,10712,0,0,Turnout <= electorate
+unique_detail_key,6258,2,PB,10712,10712,10712,0,0,One raw detail record per section key
+unique_vote_key,6258,2,PB,41416,41416,41416,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,PB,41416,41416,41416,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,PB,41416,41416,41416,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,PB,10712,10712,10712,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,PE,21418,21418,21418,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,PE,21418,21418,21418,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,PE,21418,21418,21418,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,PE,21418,21418,21418,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,PE,21418,21418,21418,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,PE,21418,21418,21418,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,PE,21418,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,PE,21418,21418,21418,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,PE,21418,21418,21418,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,PE,21418,21418,21418,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,PE,21418,21418,21418,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,PE,21418,21418,21418,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,PE,21418,21418,21418,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,PE,21418,21418,21418,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,PE,21418,21418,21418,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,PE,21418,21418,21418,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,PE,21418,21418,21418,0,0,Turnout <= electorate
+unique_detail_key,6258,2,PE,21418,21418,21418,0,0,One raw detail record per section key
+unique_vote_key,6258,2,PE,83243,83243,83243,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,PE,83243,83243,83243,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,PE,83243,83243,83243,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,PE,21418,21418,21418,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,PI,10225,10225,10225,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,PI,10225,10225,10225,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,PI,10225,10225,10225,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,PI,10225,10225,10225,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,PI,10225,10225,10225,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,PI,10225,10225,10225,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,PI,10225,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,PI,10225,10225,10225,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,PI,10225,10225,10225,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,PI,10225,10225,10225,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,PI,10225,10225,10225,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,PI,10225,10225,10225,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,PI,10225,10225,10225,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,PI,10225,10225,10225,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,PI,10225,10225,10225,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,PI,10225,10225,10225,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,PI,10225,10225,10225,0,0,Turnout <= electorate
+unique_detail_key,6258,2,PI,10225,10225,10225,0,0,One raw detail record per section key
+unique_vote_key,6258,2,PI,37819,37819,37819,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,PI,37819,37819,37819,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,PI,37819,37819,37819,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,PI,10225,10225,10225,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,PR,27142,27142,27142,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,PR,27142,27142,27142,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,PR,27142,27142,27142,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,PR,27142,27142,27142,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,PR,27142,27142,27142,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,PR,27142,27142,27142,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,PR,27142,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,PR,27142,27142,27142,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,PR,27142,27142,27142,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,PR,27142,27142,27142,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,PR,27142,27142,27142,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,PR,27142,27142,27142,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,PR,27142,27142,27142,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,PR,27142,27142,27142,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,PR,27142,27142,27142,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,PR,27142,27142,27142,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,PR,27142,27142,27142,0,0,Turnout <= electorate
+unique_detail_key,6258,2,PR,27142,27142,27142,0,0,One raw detail record per section key
+unique_vote_key,6258,2,PR,105761,105761,105761,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,PR,105761,105761,105761,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,PR,105761,105761,105761,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,PR,27142,27142,27142,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,RJ,37675,37675,37675,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,RJ,37675,37675,37675,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,RJ,37675,37675,37675,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,RJ,37675,37675,37675,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,RJ,37675,37675,37675,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,RJ,37675,37675,37675,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,RJ,37675,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,RJ,37675,37675,37675,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,RJ,37675,37675,37675,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,RJ,37675,37675,37675,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,RJ,37675,37675,37675,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,RJ,37675,37675,37675,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,RJ,37675,37675,37675,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,RJ,37675,37675,37675,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,RJ,37675,37675,37675,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,RJ,37675,37675,37675,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,RJ,37675,37675,37675,0,0,Turnout <= electorate
+unique_detail_key,6258,2,RJ,37675,37675,37675,0,0,One raw detail record per section key
+unique_vote_key,6258,2,RJ,147600,147600,147600,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,RJ,147600,147600,147600,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,RJ,147600,147600,147600,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,RJ,37675,37675,37675,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,RN,8115,8115,8115,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,RN,8115,8115,8115,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,RN,8115,8115,8115,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,RN,8115,8115,8115,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,RN,8115,8115,8115,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,RN,8115,8115,8115,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,RN,8115,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,RN,8115,8115,8115,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,RN,8115,8115,8115,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,RN,8115,8115,8115,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,RN,8115,8115,8115,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,RN,8115,8115,8115,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,RN,8115,8115,8115,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,RN,8115,8115,8115,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,RN,8115,8115,8115,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,RN,8115,8115,8115,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,RN,8115,8115,8115,0,0,Turnout <= electorate
+unique_detail_key,6258,2,RN,8115,8115,8115,0,0,One raw detail record per section key
+unique_vote_key,6258,2,RN,31496,31496,31496,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,RN,31496,31496,31496,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,RN,31496,31496,31496,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,RN,8115,8115,8115,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,RO,4698,4698,4698,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,RO,4698,4698,4698,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,RO,4698,4698,4698,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,RO,4698,4698,4698,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,RO,4698,4698,4698,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,RO,4698,4698,4698,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,RO,4698,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,RO,4698,4698,4698,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,RO,4698,4698,4698,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,RO,4698,4698,4698,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,RO,4698,4698,4698,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,RO,4698,4698,4698,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,RO,4698,4698,4698,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,RO,4698,4698,4698,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,RO,4698,4698,4698,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,RO,4698,4698,4698,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,RO,4698,4698,4698,0,0,Turnout <= electorate
+unique_detail_key,6258,2,RO,4698,4698,4698,0,0,One raw detail record per section key
+unique_vote_key,6258,2,RO,17265,17265,17265,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,RO,17265,17265,17265,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,RO,17265,17265,17265,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,RO,4698,4698,4698,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,RR,1519,1519,1519,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,RR,1519,1519,1519,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,RR,1519,1519,1519,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,RR,1519,1519,1519,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,RR,1519,1519,1519,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,RR,1519,1519,1519,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,RR,1519,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,RR,1519,1519,1519,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,RR,1519,1519,1519,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,RR,1519,1519,1519,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,RR,1519,1519,1519,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,RR,1519,1519,1519,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,RR,1519,1519,1519,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,RR,1519,1519,1519,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,RR,1519,1519,1519,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,RR,1519,1519,1519,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,RR,1519,1519,1519,0,0,Turnout <= electorate
+unique_detail_key,6258,2,RR,1519,1519,1519,0,0,One raw detail record per section key
+unique_vote_key,6258,2,RR,5332,5332,5332,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,RR,5332,5332,5332,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,RR,5332,5332,5332,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,RR,1519,1519,1519,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,RS,27547,27547,27547,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,RS,27547,27547,27547,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,RS,27547,27547,27547,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,RS,27547,27547,27547,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,RS,27547,27547,27547,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,RS,27547,27547,27547,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,RS,27547,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,RS,27547,27547,27547,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,RS,27547,27547,27547,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,RS,27547,27547,27547,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,RS,27547,27547,27547,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,RS,27547,27547,27547,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,RS,27547,27547,27547,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,RS,27547,27547,27547,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,RS,27547,27547,27547,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,RS,27547,27547,27547,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,RS,27547,27547,27547,0,0,Turnout <= electorate
+unique_detail_key,6258,2,RS,27547,27547,27547,0,0,One raw detail record per section key
+unique_vote_key,6258,2,RS,106789,106789,106789,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,RS,106789,106789,106789,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,RS,106789,106789,106789,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,RS,27547,27547,27547,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,SC,17326,17326,17326,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,SC,17326,17326,17326,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,SC,17326,17326,17326,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,SC,17326,17326,17326,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,SC,17326,17326,17326,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,SC,17326,17326,17326,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,SC,17326,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,SC,17326,17326,17326,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,SC,17326,17326,17326,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,SC,17326,17326,17326,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,SC,17326,17326,17326,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,SC,17326,17326,17326,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,SC,17326,17326,17326,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,SC,17326,17326,17326,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,SC,17326,17326,17326,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,SC,17326,17326,17326,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,SC,17326,17326,17326,0,0,Turnout <= electorate
+unique_detail_key,6258,2,SC,17326,17326,17326,0,0,One raw detail record per section key
+unique_vote_key,6258,2,SC,67266,67266,67266,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,SC,67266,67266,67266,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,SC,67266,67266,67266,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,SC,17326,17326,17326,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,SE,5923,5923,5923,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,SE,5923,5923,5923,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,SE,5923,5923,5923,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,SE,5923,5923,5923,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,SE,5923,5923,5923,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,SE,5923,5923,5923,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,SE,5923,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,SE,5923,5923,5923,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,SE,5923,5923,5923,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,SE,5923,5923,5923,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,SE,5923,5923,5923,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,SE,5923,5923,5923,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,SE,5923,5923,5923,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,SE,5923,5923,5923,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,SE,5923,5923,5923,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,SE,5923,5923,5923,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,SE,5923,5923,5923,0,0,Turnout <= electorate
+unique_detail_key,6258,2,SE,5923,5923,5923,0,0,One raw detail record per section key
+unique_vote_key,6258,2,SE,22732,22732,22732,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,SE,22732,22732,22732,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,SE,22732,22732,22732,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,SE,5923,5923,5923,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,SP,103656,103656,103656,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,SP,103656,103656,103656,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,SP,103656,103656,103656,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,SP,103656,103656,103656,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,SP,103656,103656,103656,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,SP,103656,103656,103656,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,SP,103656,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,SP,103656,103656,103656,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,SP,103656,103656,103656,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,SP,103656,103656,103656,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,SP,103656,103656,103656,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,SP,103656,103656,103656,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,SP,103656,103656,103656,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,SP,103656,103656,103656,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,SP,103656,103656,103656,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,SP,103656,103656,103656,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,SP,103656,103656,103656,0,0,Turnout <= electorate
+unique_detail_key,6258,2,SP,103656,103656,103656,0,0,One raw detail record per section key
+unique_vote_key,6258,2,SP,410145,410145,410145,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,SP,410145,410145,410145,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,SP,410145,410145,410145,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,SP,103656,103656,103656,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,TO,4384,4384,4384,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,TO,4384,4384,4384,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,TO,4384,4384,4384,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,TO,4384,4384,4384,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,TO,4384,4384,4384,0,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,TO,4384,4384,4384,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,TO,4384,0,0,0,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,TO,4384,4384,4384,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,TO,4384,4384,4384,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,TO,4384,4384,4384,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,TO,4384,4384,4384,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,TO,4384,4384,4384,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,TO,4384,4384,4384,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,TO,4384,4384,4384,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,TO,4384,4384,4384,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,TO,4384,4384,4384,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,TO,4384,4384,4384,0,0,Turnout <= electorate
+unique_detail_key,6258,2,TO,4384,4384,4384,0,0,One raw detail record per section key
+unique_vote_key,6258,2,TO,16709,16709,16709,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,TO,16709,16709,16709,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,TO,16709,16709,16709,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,TO,4384,4384,4384,0,0,Every vote section has exactly one detail record
+abstentions_le_electorate,6258,2,ZZ,1351,1351,1351,0,0,Abstentions <= electorate
+detail_quantities_complete,6258,2,ZZ,1351,1351,1351,0,0,All eight detail quantities present and parseable
+detail_quantities_nonnegative,6258,2,ZZ,1351,1351,1351,0,0,Detail quantities >= 0
+detail_votes_equal_turnout,6258,2,ZZ,1351,1351,1351,0,0,Five detail vote categories = turnout
+electorate_identity,6258,2,ZZ,1351,1351,1351,41,0,Electorate = turnout + abstentions
+electorate_identity_installed,6258,2,ZZ,1351,1310,1310,0,0,"Same identity, installed sections only"
+electorate_identity_not_installed,6258,2,ZZ,1351,41,41,41,0,"Same identity, uninstalled sections only"
+installation_status_known,6258,2,ZZ,1351,1351,1351,0,0,Installation flag recognized; context check
+positive_detail_has_votes,6258,2,ZZ,1351,1308,1308,0,0,No positive-turnout/vote detail without vote rows
+presidential_legend_zero,6258,2,ZZ,1351,1351,1351,0,0,No party-list vote in presidential office
+reconcile_blank,6258,2,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail blank
+reconcile_nominal,6258,2,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail nominal
+reconcile_null_votes,6258,2,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail null_votes
+reconcile_separate,6258,2,ZZ,1351,1351,1351,0,0,Source vote rows agree with detail separate
+source_votes_equal_turnout,6258,2,ZZ,1351,1351,1351,0,0,Sum of source vote rows = turnout
+source_votes_le_turnout,6258,2,ZZ,1351,1351,1351,0,0,Sum of source vote rows <= turnout
+turnout_le_electorate,6258,2,ZZ,1351,1351,1351,0,0,Turnout <= electorate
+unique_detail_key,6258,2,ZZ,1351,1351,1351,0,0,One raw detail record per section key
+unique_vote_key,6258,2,ZZ,4975,4975,4975,0,0,One raw vote record per section/votable key
+vote_quantities_complete,6258,2,ZZ,4975,4975,4975,0,0,Vote quantities present and parseable
+vote_quantities_nonnegative,6258,2,ZZ,4975,4975,4975,0,0,Vote quantities >= 0
+vote_section_has_unique_detail,6258,2,ZZ,1351,1308,1308,0,0,Every vote section has exactly one detail record

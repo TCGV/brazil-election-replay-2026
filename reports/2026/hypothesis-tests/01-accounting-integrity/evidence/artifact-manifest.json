@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-28T02:20:35.222128+00:00",
+  "scope": "All published H1 files except this inventory; local .work and Python caches excluded",
+  "nature": "Integrity inventory, not an external authenticity signature",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 7,
+      "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4924,
+      "sha256": "0ee11519edb9805b4707556173e5702d49d3111022d7e01c3922edf6f21ed69a"
+    },
+    {
+      "path": "REPORT.pt-BR.md",
+      "size_bytes": 13654,
+      "sha256": "56d0d8ad0c98614dff3d23c52c3f5925ab09e030326c2b31430e7c3594e3ee2f"
+    },
+    {
+      "path": "code/compare_validations.py",
+      "size_bytes": 10110,
+      "sha256": "b721c258da6f6f1f2e59be8aea9f2b511987b90e8c3a63c3700eb7c62abb84bb"
+    },
+    {
+      "path": "code/inventory_artifacts.py",
+      "size_bytes": 2138,
+      "sha256": "f157526b484a8096442852cb53ce286a05b45090acd732c8d29a4767df7bea52"
+    },
+    {
+      "path": "code/run_audit.py",
+      "size_bytes": 23328,
+      "sha256": "dba84ec269475157fffd2e0dd2353012be5c6622c15adeba441578ceca5050e6"
+    },
+    {
+      "path": "code/test_audit.py",
+      "size_bytes": 11890,
+      "sha256": "7a9cef394f5e1bcb09688beaf76063d2db0fd24e4c9be379209472f477255042"
+    },
+    {
+      "path": "code/test_comparison.py",
+      "size_bytes": 4614,
+      "sha256": "c3f18ed7e9a87ed37b9b4b4a0adfdcda811bca941c772a5bd849b6aeeb52998d"
+    },
+    {
+      "path": "code/test_independent.py",
+      "size_bytes": 5105,
+      "sha256": "f1bd350e0418f09027f872792a0817c8a35eb90f885eb6896776661203e5fcda"
+    },
+    {
+      "path": "code/validate_independently.py",
+      "size_bytes": 18501,
+      "sha256": "e056392c943829f875d1a6d90c9268aa5f74d0d3f0dfc47fece7217093fffa66"
+    },
+    {
+      "path": "evidence/accounting/checks.csv",
+      "size_bytes": 119533,
+      "sha256": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032"
+    },
+    {
+      "path": "evidence/accounting/coverage.csv",
+      "size_bytes": 3105,
+      "sha256": "4decb75d4301abe41c22fd9c620eb0b8945121a044c577b2375db8ac01096603"
+    },
+    {
+      "path": "evidence/accounting/detail-context.csv",
+      "size_bytes": 7549,
+      "sha256": "1be141e17c26b1edc52d31b3eceaa86e7ea0fe0867c11a551785c91ec503cfd4"
+    },
+    {
+      "path": "evidence/accounting/duplicate-details.csv",
+      "size_bytes": 202,
+      "sha256": "33e7290e07dac8e89307afbf65f79b1e863524c4429e42d0952e885033c8feef"
+    },
+    {
+      "path": "evidence/accounting/duplicate-votes.csv",
+      "size_bytes": 105,
+      "sha256": "b2ad52594ac735952091e729d954b1dafdbcd864a7e408f69f37a332008c7632"
+    },
+    {
+      "path": "evidence/accounting/input-issues.csv",
+      "size_bytes": 90,
+      "sha256": "98c8661679a7815fc3f094dfdbaed27a9bc63de5b35e5f02d40d329ff5b29c02"
+    },
+    {
+      "path": "evidence/accounting/manifest.json",
+      "size_bytes": 2396,
+      "sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930"
+    },
+    {
+      "path": "evidence/accounting/summary.json",
+      "size_bytes": 14884,
+      "sha256": "346c60f6f828e397322e2b059c8b8b0ab4fd35372ced3a27fdd04e2a205e73f3"
+    },
+    {
+      "path": "evidence/accounting/totals.csv",
+      "size_bytes": 6071,
+      "sha256": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f"
+    },
+    {
+      "path": "evidence/accounting/violations.csv",
+      "size_bytes": 82780,
+      "sha256": "a0895c72b458010ee7c0060572e71c71d9a53f29377198321c2eb2c08d7f36cb"
+    },
+    {
+      "path": "evidence/accounting/zero-vote-details-only.csv",
+      "size_bytes": 6288,
+      "sha256": "0f38936b016baf8e70dc7e67908fa89fbe1aeec3001b2f90c0f999f4d520698b"
+    },
+    {
+      "path": "evidence/independent-validation.json",
+      "size_bytes": 439250,
+      "sha256": "efdbe39213c09a0d72e7cbc26b4f7aa854a174a440b9f607d5e2eaa02ce529bf"
+    },
+    {
+      "path": "evidence/test-results.txt",
+      "size_bytes": 3308,
+      "sha256": "02dae19fab40d0778808d752d81101e143c2d6704a854277f0e22af4b2da1ff9"
+    },
+    {
+      "path": "evidence/validation-comparison.json",
+      "size_bytes": 903,
+      "sha256": "2671248ccee2f310be05516105b7fa67037f679c4f206d0b97cfd6274ac7ac8c"
+    }
+  ]
+}

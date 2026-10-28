@@ -4,7 +4,7 @@
 
 Reconstrução **retrospectiva e aproximada** da evolução minuto a minuto a partir dos dois CSVs nacionais presentes em `data/`. Os votos disponíveis na extração são atribuídos ao horário da seção: isso não reproduz necessariamente revisões nem a sequência de publicações do painel do TSE.
 
-O estudo está dividido em [reconstrução](#etapa-1--reconstrução-minuto-a-minuto) e [análise da composição](#etapa-2--composição-das-seções-e-evolução-da-apuração).
+O estudo está dividido em [reconstrução](#etapa-1--reconstrução-minuto-a-minuto), [análise da composição](#etapa-2--composição-das-seções-e-evolução-da-apuração) e [testes de hipóteses](#etapa-3--testes-de-hipóteses).
 
 O processamento identifica os turnos e códigos de eleição presentes, inclui o exterior (`ZZ`) e produz duas séries separadas: **primeira totalização parcial** e **recebimento do BU**. Não cria um turno que não exista nos arquivos.
 
@@ -69,6 +69,12 @@ PYTHONPATH=src python3 -m election_replay.geography_run --output output/geograph
 ```
 
 Esse fluxo opcional utiliza Matplotlib e NumPy para figuras, controles descritivos e testes formais de aleatoriedade da ordem de entrada. O Markdown é o registro principal da etapa 2; HTML e PDF são formatos complementares. Ele verifica os hashes das fontes, reutiliza `output/replay/replay.sqlite` somente para leitura e gera uma base separada, CSVs de evidências, figuras PNG/SVG, Markdown e HTML autônomo. Pastas anteriores não vazias são preservadas. Os embaralhamentos são opcionais (`--randomizations 0` por padrão). A execução publicada usa 4.999 permutações, semente `20261027`, referências nacional e dentro de cada UF, e ajuste de Holm nos testes primários. Não rejeitar o teste não prova ordem aleatória; a evidência estatística é apresentada separadamente da magnitude. Após instalar as dependências de análise, rode a suíte completa com `PYTHONPATH=src python3 -m unittest discover -s tests -v`. O relatório versionado registra esta execução; em fontes atualizadas, refaça os cálculos e revise as conclusões.
+
+## Etapa 3 — Testes de hipóteses
+
+O [índice de hipóteses](reports/2026/hypothesis-tests/README.pt-BR.md) registra as sete questões propostas e a dificuldade de identificação. Apenas a **H1 — integridade contábil** foi avaliada até aqui. O [relatório principal em Markdown](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) cobre os dois turnos e distingue a consistência dos votos/comparecimento das exceções documentadas na identidade do eleitorado em seções não instaladas do exterior. A hipótese não é declarada integralmente refutada.
+
+Cada hipótese reúne código, testes, evidências e relatório em sua própria subpasta. As [instruções de reprodução da H1](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) usam apenas a biblioteca padrão do Python e leem os CSVs originais com duas implementações separadas. Não exigem a base já processada do replay. As hipóteses 2–7 não foram analisadas.
 
 ## Saídas
 

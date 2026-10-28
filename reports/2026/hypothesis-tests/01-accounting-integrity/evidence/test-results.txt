@@ -1,0 +1,25 @@
+test_both_rounds_normalized_keys_and_separate_votes_are_not_duplicates (test_audit.AccountingAuditTests.test_both_rounds_normalized_keys_and_separate_votes_are_not_duplicates) ... ok
+test_coverage_separates_zero_details_positive_missing_votes_and_votes_only (test_audit.AccountingAuditTests.test_coverage_separates_zero_details_positive_missing_votes_and_votes_only) ... ok
+test_duplicate_keys_are_detected_before_aggregation (test_audit.AccountingAuditTests.test_duplicate_keys_are_detected_before_aggregation) ... ok
+test_empty_or_out_of_scope_sources_fail_instead_of_completing_empty_audit (test_audit.AccountingAuditTests.test_empty_or_out_of_scope_sources_fail_instead_of_completing_empty_audit) ... ok
+test_existing_empty_output_is_allowed_nonempty_output_is_preserved (test_audit.AccountingAuditTests.test_existing_empty_output_is_allowed_nonempty_output_is_preserved) ... ok
+test_malformed_source_key_fails_instead_of_dropping_record (test_audit.AccountingAuditTests.test_malformed_source_key_fails_instead_of_dropping_record) ... ok
+test_missing_quantities_are_not_silently_replaced_with_zero (test_audit.AccountingAuditTests.test_missing_quantities_are_not_silently_replaced_with_zero) ... ok
+test_negative_votes_and_legend_are_reported_not_absorbed (test_audit.AccountingAuditTests.test_negative_votes_and_legend_are_reported_not_absorbed) ... ok
+test_opposite_section_errors_do_not_cancel_in_national_totals (test_audit.AccountingAuditTests.test_opposite_section_errors_do_not_cancel_in_national_totals) ... ok
+test_overflow_of_electorate_and_source_votes_is_detected (test_audit.AccountingAuditTests.test_overflow_of_electorate_and_source_votes_is_detected) ... ok
+test_changed_numeric_result_fails_independent_section_comparison (test_comparison.EvidenceComparisonTests.test_changed_numeric_result_fails_independent_section_comparison) ... ok
+test_current_published_evidence_passes (test_comparison.EvidenceComparisonTests.test_current_published_evidence_passes) ... ok
+test_duplicate_primary_check_fails_inventory_even_with_consistent_manifest (test_comparison.EvidenceComparisonTests.test_duplicate_primary_check_fails_inventory_even_with_consistent_manifest) ... ok
+test_missing_primary_check_fails_inventory_even_with_consistent_manifest (test_comparison.EvidenceComparisonTests.test_missing_primary_check_fails_inventory_even_with_consistent_manifest) ... ok
+test_running_manifest_is_rejected_before_comparison (test_comparison.EvidenceComparisonTests.test_running_manifest_is_rejected_before_comparison) ... ok
+test_duplicate_and_zero_activity_detail_denominators (test_independent.IndependentGuardTests.test_duplicate_and_zero_activity_detail_denominators) ... ok
+test_empty_detail_scope_rejected (test_independent.IndependentGuardTests.test_empty_detail_scope_rejected) ... ok
+test_empty_vote_scope_rejected (test_independent.IndependentGuardTests.test_empty_vote_scope_rejected) ... ok
+test_negative_votes_fail_domain_and_are_not_comparable (test_independent.IndependentGuardTests.test_negative_votes_fail_domain_and_are_not_comparable) ... ok
+test_unknown_installation_is_not_treated_as_no (test_independent.IndependentGuardTests.test_unknown_installation_is_not_treated_as_no) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.205s
+
+OK

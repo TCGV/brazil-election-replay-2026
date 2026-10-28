@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "hypothesis": "H1",
+  "year": 2026,
+  "started_at_utc": "2026-10-28T02:12:21.830837+00:00",
+  "method": "Exhaustive exact integer checks; no sampling, p-values or statistical null model.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sqlite": "3.53.1",
+  "code_sha256": "dba84ec269475157fffd2e0dd2353012be5c6622c15adeba441578ceca5050e6",
+  "inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "git_base_commit": "5f1de849ef628e88f6c9cfa4cd2a0acc83005d12",
+  "ingestion": {
+    "details": {
+      "counts": {
+        "rows_read": 998496,
+        "selected_rows": 998496
+      },
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ]
+    },
+    "votes": {
+      "counts": {
+        "rows_read": 5731614,
+        "selected_rows": 5731614
+      },
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ]
+    }
+  },
+  "completed_at_utc": "2026-10-28T02:16:06.014817+00:00",
+  "artifact_sha256": {
+    "checks.csv": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032",
+    "coverage.csv": "4decb75d4301abe41c22fd9c620eb0b8945121a044c577b2375db8ac01096603",
+    "detail-context.csv": "1be141e17c26b1edc52d31b3eceaa86e7ea0fe0867c11a551785c91ec503cfd4",
+    "duplicate-details.csv": "33e7290e07dac8e89307afbf65f79b1e863524c4429e42d0952e885033c8feef",
+    "duplicate-votes.csv": "b2ad52594ac735952091e729d954b1dafdbcd864a7e408f69f37a332008c7632",
+    "input-issues.csv": "98c8661679a7815fc3f094dfdbaed27a9bc63de5b35e5f02d40d329ff5b29c02",
+    "summary.json": "346c60f6f828e397322e2b059c8b8b0ab4fd35372ced3a27fdd04e2a205e73f3",
+    "totals.csv": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f",
+    "violations.csv": "a0895c72b458010ee7c0060572e71c71d9a53f29377198321c2eb2c08d7f36cb",
+    "zero-vote-details-only.csv": "0f38936b016baf8e70dc7e67908fa89fbe1aeec3001b2f90c0f999f4d520698b"
+  },
+  "scratch_database_retained": false
+}

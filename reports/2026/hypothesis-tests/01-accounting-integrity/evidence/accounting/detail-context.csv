@@ -1,0 +1,90 @@
+election_code,turno,uf,installed,cancelled,origin,section_records,electorate,turnout,abstentions,votes,electorate_identity_residual
+6257,1,AC,Sim,Não,Urna Eletrônica,2270,613742,488330,125412,488330,0
+6257,1,AL,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,720,567,153,567,0
+6257,1,AL,Sim,Não,Urna Eletrônica,7099,2441406,1937861,503545,1937861,0
+6257,1,AM,Sim,Não,Urna Eletrônica,8157,2798611,2234549,564062,2234549,0
+6257,1,AP,Sim,Não,Urna Eletrônica,1914,576988,476562,100426,476562,0
+6257,1,BA,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,5,1351,1059,292,1059,0
+6257,1,BA,Sim,Não,Urna Eletrônica,35471,11311401,9052542,2258859,9052542,0
+6257,1,CE,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,180,113,67,113,0
+6257,1,CE,Sim,Não,Urna Eletrônica,23764,6996365,5910358,1086007,5910358,0
+6257,1,DF,Sim,Não,Urna Eletrônica,6969,2258320,1831396,426924,1831396,0
+6257,1,ES,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,7,1924,1514,410,1514,0
+6257,1,ES,Sim,Não,Urna Eletrônica,9837,2989726,2350768,638958,2350768,0
+6257,1,GO,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,288,205,83,205,0
+6257,1,GO,Sim,Não,Urna Eletrônica,15685,5080302,3971382,1108920,3971382,0
+6257,1,MA,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,3,979,825,154,825,0
+6257,1,MA,Sim,Não,Urna Eletrônica,18090,5182136,4159518,1022618,4159518,0
+6257,1,MG,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,654,548,106,548,0
+6257,1,MG,Sim,Não,Sistema de apuração,2,880,559,321,559,0
+6257,1,MG,Sim,Não,Urna Eletrônica,52058,16370838,12636167,3734671,12636167,0
+6257,1,MS,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,626,472,154,472,0
+6257,1,MS,Sim,Não,Urna Eletrônica,7104,2023804,1540748,483056,1540748,0
+6257,1,MT,Sim,Não,Urna Eletrônica,8287,2637801,2052133,585668,2052133,0
+6257,1,PA,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,6,1329,1090,239,1090,0
+6257,1,PA,Sim,Não,Urna Eletrônica,20821,6261068,5065414,1195654,5065414,0
+6257,1,PB,Sim,Não,Urna Eletrônica,10712,3248531,2683988,564543,2683988,0
+6257,1,PE,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,226,158,68,158,0
+6257,1,PE,Sim,Não,Urna Eletrônica,21417,7223224,5910904,1312320,5910904,0
+6257,1,PI,Sim,Não,Urna Eletrônica,10225,2704758,2240883,463875,2240883,0
+6257,1,PR,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,3,866,694,172,694,0
+6257,1,PR,Sim,Não,Urna Eletrônica,27139,8612791,6840763,1772028,6840763,0
+6257,1,RJ,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,3,1074,852,222,852,0
+6257,1,RJ,Sim,Não,Urna Eletrônica,37672,12856574,9858950,2997624,9858950,0
+6257,1,RN,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,370,293,77,293,0
+6257,1,RN,Sim,Não,Urna Eletrônica,8114,2659455,2170720,488735,2170720,0
+6257,1,RO,Sim,Não,Urna Eletrônica,4698,1265893,991080,274813,991080,0
+6257,1,RR,Sim,Não,Urna Eletrônica,1519,401521,332772,68749,332772,0
+6257,1,RS,Sim,Não,Urna Eletrônica,27547,8522545,6702903,1819642,6702903,0
+6257,1,SC,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,725,541,184,541,0
+6257,1,SC,Sim,Não,Urna Eletrônica,17324,5733926,4647618,1086308,4647618,0
+6257,1,SE,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,3,904,736,168,736,0
+6257,1,SE,Sim,Não,Urna Eletrônica,5920,1739231,1438346,300885,1438346,0
+6257,1,SP,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,7,2650,1975,675,1975,0
+6257,1,SP,Sim,Não,Urna Eletrônica,103649,34120242,26430017,7690225,26430017,0
+6257,1,TO,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,309,239,70,239,0
+6257,1,TO,Sim,Não,Urna Eletrônica,4383,1181714,964957,216757,964957,0
+6257,1,ZZ,Não,Não,Totalização,41,423,0,0,0,423
+6257,1,ZZ,Sim,Não,Sistema de apuração,29,2053,789,1264,789,0
+6257,1,ZZ,Sim,Não,Urna Eletrônica,1281,914058,340977,573081,340977,0
+6258,2,AC,Sim,Não,Urna Eletrônica,2270,613715,453654,160061,453654,0
+6258,2,AL,Sim,Não,Urna Eletrônica,7101,2442081,1951632,490449,1951632,0
+6258,2,AM,Sim,Não,Urna Eletrônica,8157,2798661,2192059,606602,2192059,0
+6258,2,AP,Sim,Não,Urna Eletrônica,1914,576910,429975,146935,429975,0
+6258,2,BA,Sim,Não,Urna Eletrônica,35476,11312891,9422047,1890844,9422047,0
+6258,2,CE,Sim,Não,Urna Eletrônica,23765,6996521,6024843,971678,6024843,0
+6258,2,DF,Sim,Não,Urna Eletrônica,6969,2258995,1868280,390715,1868280,0
+6258,2,ES,Sim,Não,BU gerado por RED em urna de contingência,1,340,304,36,304,0
+6258,2,ES,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,608,472,136,472,0
+6258,2,ES,Sim,Não,Urna Eletrônica,9841,2990567,2408438,582129,2408438,0
+6258,2,GO,Sim,Não,Urna Eletrônica,15686,5080385,4047280,1033105,4047280,0
+6258,2,MA,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,326,254,72,254,0
+6258,2,MA,Sim,Não,Urna Eletrônica,18092,5182723,4127517,1055206,4127517,0
+6258,2,MG,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,4,1160,913,247,913,0
+6258,2,MG,Sim,Não,Urna Eletrônica,52058,16370984,13043290,3327694,13043290,0
+6258,2,MS,Sim,Não,Urna Eletrônica,7106,2024437,1594460,429977,1594460,0
+6258,2,MT,Sim,Não,Urna Eletrônica,8287,2637879,2085334,552545,2085334,0
+6258,2,PA,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,125,96,29,96,0
+6258,2,PA,Sim,Não,Urna Eletrônica,20826,6261938,4989477,1272461,4989477,0
+6258,2,PB,Sim,Não,Urna Eletrônica,10712,3248434,2743560,504874,2743560,0
+6258,2,PE,Sim,Não,Urna Eletrônica,21418,7223227,6126467,1096760,6126467,0
+6258,2,PI,Sim,Não,Urna Eletrônica,10225,2704695,2239830,464865,2239830,0
+6258,2,PR,Sim,Não,Urna Eletrônica,27142,8613628,7059339,1554289,7059339,0
+6258,2,RJ,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,304,249,55,249,0
+6258,2,RJ,Sim,Não,Urna Eletrônica,37674,12857222,10077200,2780022,10077200,0
+6258,2,RN,Sim,Não,Urna Eletrônica,8115,2659867,2232823,427044,2232823,0
+6258,2,RO,Sim,Não,Urna Eletrônica,4698,1265926,988489,277437,988489,0
+6258,2,RR,Sim,Não,Urna Eletrônica,1519,401540,308597,92943,308597,0
+6258,2,RS,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,329,260,69,260,0
+6258,2,RS,Sim,Não,Urna Eletrônica,27546,8521989,6889378,1632611,6889378,0
+6258,2,SC,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,370,290,80,290,0
+6258,2,SC,Sim,Não,Urna Eletrônica,17325,5734317,4762013,972304,4762013,0
+6258,2,SE,Sim,Não,Urna Eletrônica,5923,1740093,1466659,273434,1466659,0
+6258,2,SP,Sim,Não,BU gerado por RED em urna de contingência,1,341,259,82,259,0
+6258,2,SP,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,2,651,524,127,524,0
+6258,2,SP,Sim,Não,Urna Eletrônica,103653,34122599,27363606,6758993,27363606,0
+6258,2,TO,Sim,Não,Urna Eletrônica,4384,1182041,954763,227278,954763,0
+6258,2,ZZ,Não,Não,Totalização,41,423,0,0,0,423
+6258,2,ZZ,Sim,Não,BU gerado por RED em urna de seção *** RED - Recuperador de dados,1,399,208,191,208,0
+6258,2,ZZ,Sim,Não,Sistema de apuração,29,2054,831,1223,831,0
+6258,2,ZZ,Sim,Não,Urna Eletrônica,1280,913807,380404,533403,380404,0

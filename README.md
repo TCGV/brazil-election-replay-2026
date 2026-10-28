@@ -4,7 +4,7 @@
 
 A **retrospective, approximate reconstruction** of the minute-by-minute vote count using the two nationwide CSV files in `data/`. Votes available in the source snapshot are assigned to each polling section's recorded timestamp. This does not necessarily reproduce revisions or the sequence of updates published on the TSE dashboard.
 
-The study has two stages: [reconstruction](#step-1--minute-by-minute-reconstruction) and [composition analysis](#step-2--counting-composition-and-demographic-patterns).
+The study has three stages: [reconstruction](#step-1--minute-by-minute-reconstruction), [composition analysis](#step-2--counting-composition-and-demographic-patterns), and [hypothesis tests](#step-3--hypothesis-tests).
 
 The pipeline discovers the rounds and election codes present in the files, includes overseas voting (`ZZ`), and produces two separate timelines: **first partial totalization** and **ballot report (BU) receipt**. It does not create rounds absent from the input.
 
@@ -69,6 +69,12 @@ PYTHONPATH=src python3 -m election_replay.geography_run --output output/geograph
 ```
 
 This optional workflow adds Matplotlib and NumPy for figures, descriptive controls, and formal section-order randomization tests. The Markdown report is the primary record of step 2; HTML and PDF are companion formats. It validates source hashes, reuses `output/replay/replay.sqlite` read-only, and writes a separate analysis database, evidence CSVs, PNG/SVG figures, Markdown, and a self-contained HTML report. Previous nonempty output folders are preserved. Randomization is opt-in (`--randomizations 0` is the default). The published run uses 4,999 permutations, seed `20261027`, global and within-state references, and Holm-adjusted primary tests. Non-rejection is not proof of random ordering; statistical detection and effect magnitude are reported separately. Run the full suite after installing analysis dependencies: `PYTHONPATH=src python3 -m unittest discover -s tests -v`. The versioned report records this particular run; rerun the calculations and review conclusions before applying them to updated source files.
+
+## Step 3 — Hypothesis tests
+
+The [hypothesis index](reports/2026/hypothesis-tests/README.md) records the seven proposed questions and their identification difficulty. Only **H1 — accounting integrity** has been evaluated so far. Its [primary Markdown report (Portuguese)](reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md) covers both rounds and distinguishes vote/turnout consistency from documented electorate-identity exceptions in uninstalled overseas sections. The hypothesis is not declared fully refuted.
+
+Each hypothesis keeps its code, tests, evidence, and report in its own subfolder. The [H1 reproduction instructions](reports/2026/hypothesis-tests/01-accounting-integrity/README.md) use only Python's standard library and scan the original CSVs with two separate implementations. No previously generated replay database is needed. Hypotheses 2–7 have not been analyzed.
 
 ## Outputs
 
