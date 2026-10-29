@@ -1,0 +1,279 @@
+{
+  "status": "completed",
+  "hypothesis": "H6",
+  "started_at_utc": "2026-10-29T20:52:40.096502+00:00",
+  "method_sha256": "6a63f96ead6de3641c53cc123d7258282b506f160494fd228b257a02dba51687",
+  "implementation_sha256": {
+    "load_data.py": "ad80e2a5e298f739a13fef424cf1fc6603310fde33bf623ba07b478c443587f2",
+    "turnout_statistics.py": "343182b1027e437a3969cec6e07be8a5cbb8fce8b9878fdb70d09afa76051388",
+    "run_analysis.py": "c85097fbb478966aa291588872c1a5bfeda05ae0549533e1f5238bd4151a27c4"
+  },
+  "git_base": "a3362b3ec72c0c567fcf80c5b6761b6cc1cc52c2",
+  "parameters": {
+    "simulations": 4999,
+    "seed": 20261029,
+    "workers": 4,
+    "models": {
+      "zone_baseline": 0,
+      "place_baseline": 1
+    },
+    "statistics": [
+      "linear",
+      "rank"
+    ],
+    "family_size": 4,
+    "epsilon_correlation": 1e-12,
+    "baseline_bins": 20,
+    "score_cache": "signed correlations; tests use absolute values",
+    "trajectory_permutation": "Preference trajectories reassigned to turnout slots; not physically feasible synthetic ballot reports",
+    "rng": "PCG64; SeedSequence([seed,6,model_id],spawn_key=(repetition,))"
+  },
+  "simulation_caches": [
+    {
+      "path": "reports/2026/hypothesis-tests/06-turnout-gains/.work/simulations/zone_baseline",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "f98b5c34a1296542f3b5bbc543fca48e2cb88e07b2070f7176a6c43843308810",
+        "model": "zone_baseline",
+        "model_id": 0,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "linear",
+          "rank"
+        ],
+        "score_representation": "signed correlations; formal tests use absolute values",
+        "assignment_prefix": {
+          "0": "03525016711a9a1533c277870fa8f267c6c5994f3cf1e1af85590be51fa90172",
+          "1": "82929b1c1b9b27c73e405e28aa74304d98cd7e7cd32fec0cc59cb8e02cddbfb6"
+        },
+        "scores_sha256": "35ede538a5923f216d070c1eac22e3976176fcce9aba53ee495d8ea80eed081b"
+      },
+      "metadata_sha256": "e10db23979592c045a88771a9bc61687cc92fcaa33d15aa9a76ed60536180cda"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/06-turnout-gains/.work/simulations/place_baseline",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "39b0192340e6959a3ba9fb91b9fd31e1c24df9d45a77fd228b73670365f406c4",
+        "model": "place_baseline",
+        "model_id": 1,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "linear",
+          "rank"
+        ],
+        "score_representation": "signed correlations; formal tests use absolute values",
+        "assignment_prefix": {
+          "0": "d28af998d83035c40af7ac69ecec7e99d401c00921429258da01a0c3f2059d8a",
+          "1": "c5696d8de4d089f04eabc318c2fd3097779dea79bd7271d778dbe8e6930db397"
+        },
+        "scores_sha256": "aa7b9fa4bbd828209bc69b4ba716d53fdbc3990eed562da23d2586eaa130a239"
+      },
+      "metadata_sha256": "7bd38a1cba35989ed30e74590fd0a1884267134f8fb24afd23eddd792523107e"
+    }
+  ],
+  "source_inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "source_counts": {
+    "detail_key_uniqueness": "Checked directly during this source scan",
+    "details": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "rows_read": 998496,
+      "selected_rows": 998496
+    },
+    "missing_candidate_rows": "Zero-filled only for existing detail keys; all section/category totals reconciled exactly",
+    "missing_place_ids": "Represented as -1, never replaced by an existing polling place",
+    "rounds": [
+      {
+        "candidate_numbers": [
+          13,
+          14,
+          16,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          55,
+          70,
+          80
+        ],
+        "candidate_vote_totals": {
+          "13": 53879538,
+          "14": 2675887,
+          "16": 43103,
+          "21": 22693,
+          "22": 56104503,
+          "27": 40043,
+          "28": 5246,
+          "29": 15024,
+          "30": 326488,
+          "35": 16881,
+          "55": 2605148,
+          "70": 3448569,
+          "80": 122911
+        },
+        "detail_only_sections": 42,
+        "detail_rows": 499248,
+        "election_code": 6257,
+        "totals": {
+          "abstentions": 33469244,
+          "aptos": 158745502,
+          "blank": 2300798,
+          "legend": 0,
+          "nominal": 119306034,
+          "null_votes": 3669003,
+          "separate": 0,
+          "turnout": 125275835
+        },
+        "turno": 1,
+        "vote_rows": 3800511,
+        "vote_sections": 499206
+      },
+      {
+        "candidate_numbers": [
+          13,
+          22
+        ],
+        "candidate_vote_totals": {
+          "13": 64256232,
+          "22": 59826041
+        },
+        "detail_only_sections": 43,
+        "detail_rows": 499248,
+        "election_code": 6258,
+        "totals": {
+          "abstentions": 30509005,
+          "aptos": 158745502,
+          "blank": 1430496,
+          "legend": 0,
+          "nominal": 124082273,
+          "null_votes": 2723305,
+          "separate": 0,
+          "turnout": 128236074
+        },
+        "turno": 2,
+        "vote_rows": 1931103,
+        "vote_sections": 499205
+      }
+    ],
+    "vote_key_uniqueness": "Asserted from zero-violation completed H1 unique_vote_key checks for exactly these source hashes; not re-inferred from summed candidate vectors",
+    "votes": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "rows_read": 5731614,
+      "selected_rows": 5731614
+    }
+  },
+  "data_fingerprint": {
+    "hypothesis": "H6",
+    "schema_version": 1,
+    "loader_code_sha256": "ad80e2a5e298f739a13fef424cf1fc6603310fde33bf623ba07b478c443587f2",
+    "numpy_version": "2.3.5",
+    "stage1_manifest_sha256": "73453028f4b5a3f255d8c3438ab69efbc536610cba0b81d4b1d7ff2dd3086837",
+    "h1_manifest_sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930",
+    "h1_artifacts": {
+      "checks.csv": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032",
+      "totals.csv": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f"
+    },
+    "source_inputs": {
+      "votes": {
+        "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+        "size_bytes": 1572813473,
+        "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+      },
+      "details": {
+        "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+        "size_bytes": 350832764,
+        "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+      }
+    }
+  },
+  "completed_at_utc": "2026-10-29T20:55:27.015779+00:00",
+  "numpy_version": "2.3.5",
+  "artifacts": {
+    "association-groups.csv.gz": {
+      "size_bytes": 18875658,
+      "sha256": "618725f7fa944fdf2ef3ac8138637d65d56f97751d2ef0d18561f5581770b2b9"
+    },
+    "coverage.csv": {
+      "size_bytes": 3824,
+      "sha256": "dfdda8a6752227559e67f8b50ff9c6278df1434037fb5c5bd3609b8ac267076a"
+    },
+    "descriptive.csv": {
+      "size_bytes": 29784,
+      "sha256": "332e5947cb691ee6707cfc9316cbd27a4ddc814f53755e847d611486e9fff6b6"
+    },
+    "eligibility.csv": {
+      "size_bytes": 1490,
+      "sha256": "cab9a50a68d77edc36b87e78775b35b24bd5f65baedbbd55d866f106736870b4"
+    },
+    "heatmap.csv": {
+      "size_bytes": 2841,
+      "sha256": "7381fb0cfc79dc9a5f77de7ca6c58ce177dcd30be7a728a8818c5b05fd16b3c5"
+    },
+    "paired-sections.csv.gz": {
+      "size_bytes": 20019231,
+      "sha256": "7594cad849ec772e3b019c3050ef985d5ecf390f5ac7d362bf6fa7dfd8f9441a"
+    },
+    "pairing.csv": {
+      "size_bytes": 760,
+      "sha256": "bffc9758586508a94008587993ef26df647f76ca7ac518a2654d329c486b25a6"
+    },
+    "permutation-scores.csv.gz": {
+      "size_bytes": 217611,
+      "sha256": "aecc74af8e656eef1bcf873902bc9811552b4dc6e4a26e875f9316cabef70a34"
+    },
+    "section-measures.csv.gz": {
+      "size_bytes": 93432776,
+      "sha256": "51aa869b8d1ad3262533d3dc93dfc3eeae0a14106deb879e4b349ffdc619d984"
+    },
+    "sensitivity.csv": {
+      "size_bytes": 2151,
+      "sha256": "880f028c3fd18fb18886839e467275b9b14604622a463b2a70c8499ce43990a4"
+    },
+    "summary.json": {
+      "size_bytes": 4057,
+      "sha256": "d03ba1a825303df238e257b7290007657f315e63aa79d3f7d881152c3581c850"
+    },
+    "tests.csv": {
+      "size_bytes": 968,
+      "sha256": "919ebe50a53daef4433db0a8b48600ff3d47799919e59633cfb48ab376252f34"
+    },
+    "totals.csv": {
+      "size_bytes": 10898,
+      "sha256": "02bbed308a2a6708942a24bca6b9ecce37b7c8acec5b6a68f869fbb060307d53"
+    },
+    "unmatched.csv": {
+      "size_bytes": 58,
+      "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    },
+    "x-bins.csv": {
+      "size_bytes": 81971,
+      "sha256": "a01fcae96bf09de6ab66b487b5920297608cb3f69f27c2771249f51c833ea072"
+    }
+  }
+}

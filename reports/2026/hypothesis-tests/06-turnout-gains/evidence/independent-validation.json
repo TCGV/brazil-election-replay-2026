@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "hypothesis": "H6",
+  "started_at_utc": "2026-10-29T21:04:12.601372+00:00",
+  "completed_at_utc": "2026-10-29T21:09:47.600508+00:00",
+  "script_sha256": "ff549d68e6050b11d59260a0eb79e7a76a69ca47146cb92b0e2ee0e682f63d3d",
+  "method_sha256": "6a63f96ead6de3641c53cc123d7258282b506f160494fd228b257a02dba51687",
+  "primary_manifest_sha256": "53a94c441f08e5ee6fcb985a5cac97d2c1cc65788165a202e8b0d129bd24207e",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    }
+  },
+  "independent_parser_sha256": "521406dc990dfbf7ce82c4b63644c0226c4856c82c2a0b7f6eaf46d8db4f6473",
+  "source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "independent_source_cache": {
+    "path": "reports/2026/hypothesis-tests/06-turnout-gains/.work/independent-source",
+    "arrays_sha256": "e6eb45fd6487e3ff8eb7db94961135b75ef5ba81263fadf24e6feae2f98807d4",
+    "fingerprint": "faa70ab587d115d3ed44e22ece4309de50c57fe2b0be64fed6c35ce2334351af"
+  },
+  "comparisons": 51488243,
+  "mismatches": 0,
+  "checks_by_category": {
+    "provenance": 18,
+    "artifact_integrity": 45,
+    "pairing": 203,
+    "eligibility": 406,
+    "all_paired_sections": 19969920,
+    "all_section_measures": 19415487,
+    "raw_totals": 1610,
+    "cohort_descriptive": 1855,
+    "turnout_bins": 7140,
+    "heatmap": 1152,
+    "all_association_groups": 12039140,
+    "coverage": 870,
+    "simulation_integrity": 15,
+    "repeated_assignments": 12,
+    "formal_tests": 64,
+    "published_simulation_scores": 49990,
+    "sensitivity": 210,
+    "summary": 106
+  },
+  "maximum_absolute_numerical_difference": 4.656612873077393e-10,
+  "failures": [],
+  "numerical_csv_files_checked": 14,
+  "sensitivity_rows_recomputed": 14,
+  "independently_regenerated_full_assignments": [
+    {
+      "model": "zone_baseline",
+      "repetition": 0,
+      "assignment_sha256": "03525016711a9a1533c277870fa8f267c6c5994f3cf1e1af85590be51fa90172",
+      "independently_recomputed_signed_scores": [
+        0.0032745639456547124,
+        -0.0023360850203386413
+      ]
+    },
+    {
+      "model": "zone_baseline",
+      "repetition": 1,
+      "assignment_sha256": "82929b1c1b9b27c73e405e28aa74304d98cd7e7cd32fec0cc59cb8e02cddbfb6",
+      "independently_recomputed_signed_scores": [
+        -0.003067769826129393,
+        -0.0010945195612450853
+      ]
+    },
+    {
+      "model": "place_baseline",
+      "repetition": 0,
+      "assignment_sha256": "d28af998d83035c40af7ac69ecec7e99d401c00921429258da01a0c3f2059d8a",
+      "independently_recomputed_signed_scores": [
+        0.00010240172055903559,
+        4.7689393480581624e-05
+      ]
+    },
+    {
+      "model": "place_baseline",
+      "repetition": 1,
+      "assignment_sha256": "c5696d8de4d089f04eabc318c2fd3097779dea79bd7271d778dbe8e6930db397",
+      "independently_recomputed_signed_scores": [
+        -0.001575594033890929,
+        -0.0028613636088348974
+      ]
+    }
+  ],
+  "retained_signed_score_rows_audited": 9998,
+  "limits": "All original-source numerical CSVs are reconstructed. Realizations 0 and 1 per model are independently regenerated; all remaining retained Monte Carlo scores are audited for publication, ranks, moments and multiplicity, not independently regenerated. Check counts are integrity comparisons, not independent statistical observations."
+}
