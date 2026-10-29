@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-29T22:15:47.467538+00:00",
+  "generator_sha256": "244ea269c241e059b2f565941d9eacff043e6687af3a5a515ba6439be27c80f5",
+  "analysis_manifest_sha256": "d8fe54a57f41315acd2462ea21e0e95681c25c05b1008fabfc9de20c761853cf",
+  "inputs": [
+    {
+      "path": "municipal-census.csv",
+      "sha256": "6a670948cded8de16dd19d1bdde612bb0943d4c50bcedf94a1b33e11b9813b66",
+      "size_bytes": 6037593
+    },
+    {
+      "path": "gain-directions.csv",
+      "sha256": "92c3640a2745756fda6fcfea302d07f2661fad8f335c3065c8c084f135c5d993",
+      "size_bytes": 48267
+    },
+    {
+      "path": "tests.csv",
+      "sha256": "cccf66d3adf663389915383ce76f9e074c278826ec72483a56fac2c76f5aceef",
+      "size_bytes": 1749
+    },
+    {
+      "path": "coverage.csv",
+      "sha256": "3dec33c51a54e504c85fc8d8daafe129aded46cb1ce619459219466539029d6d",
+      "size_bytes": 4556
+    },
+    {
+      "path": "adjacent-profiles.csv",
+      "sha256": "7bbce7f75ee416697bec0af37691c821c224379a5f9631bb4e9311e5e200aeaf",
+      "size_bytes": 2189082
+    }
+  ],
+  "source_inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "source_verification": "Numerical inputs verified against completed analysis manifest; original source hashes carried from that manifest.",
+  "figures": [
+    {
+      "path": "municipal-improvement-definitions.png",
+      "sha256": "90cc6ed10da92d37ae562744ad25fb1bbadf75374a6b2f5e82e3e5754559b326",
+      "size_bytes": 214375
+    },
+    {
+      "path": "municipal-improvement-definitions.svg",
+      "sha256": "9a4cca83c01443ed815fdff340d23b5f4df92f1ff3165948afa9363296e7ae5d",
+      "size_bytes": 22108
+    },
+    {
+      "path": "initial-composition-identity.png",
+      "sha256": "43aebf301b36a69df21155525ad8c4383a809c77a64877b82bf4a6b0458a7416",
+      "size_bytes": 560793
+    },
+    {
+      "path": "initial-composition-identity.svg",
+      "sha256": "97d483e004997f46832f2926c5d4cbd2f95160ded0488dc3cb39955032ee56e9",
+      "size_bytes": 430464
+    },
+    {
+      "path": "conditional-allocation-reference.png",
+      "sha256": "10d918889a23386e4d10f9bc6ed957f4efc50d425b6c4f383bb24acb6c0be50a",
+      "size_bytes": 337077
+    },
+    {
+      "path": "conditional-allocation-reference.svg",
+      "sha256": "c83d7b1fd743f1c5ee48602957a0411d1299957fd8aa23a522d733d90a29a306",
+      "size_bytes": 42276
+    },
+    {
+      "path": "allocation-coverage.png",
+      "sha256": "c2edb71d8bd1a4a719539d13889e8a118c3c0b9728cca09a0a64b849846330ad",
+      "size_bytes": 473358
+    },
+    {
+      "path": "allocation-coverage.svg",
+      "sha256": "9c7a411e320ff35a3503f2aa9ee0995ebc05d18746923a249c255aa5f497214d",
+      "size_bytes": 396160
+    }
+  ],
+  "scope": "Municipal improvement definitions, exact initial-composition identities, fixed ten-test allocation references, and structural support/profile contrasts.",
+  "interpretation": "No individual voter flows, causal attribution, natural-election certification, geographic or temporal ordering of adjacent profiles, or independent external source authentication."
+}

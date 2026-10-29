@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "hypothesis": "H7",
+  "started_at_utc": "2026-10-29T22:14:37.035295+00:00",
+  "completed_at_utc": "2026-10-29T22:19:46.087969+00:00",
+  "script_sha256": "b30732cc96ac35eb82ffcbc634bade2839b87469a9921dbf0f72558a3977c70e",
+  "method_sha256": "7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066",
+  "primary_manifest_sha256": "d8fe54a57f41315acd2462ea21e0e95681c25c05b1008fabfc9de20c761853cf",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    }
+  },
+  "independent_parser_sha256": "7ad18b7237eb90e5839e3af2dbd90e8e353c0f0f30099fd0a5ca9a5218396542",
+  "source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "independent_source_cache": {
+    "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/.work/independent-source",
+    "arrays_sha256": "e6eb45fd6487e3ff8eb7db94961135b75ef5ba81263fadf24e6feae2f98807d4",
+    "fingerprint": "8753d6a617dd7f06b902adcc1e7d00eb60f08145e686124e97ea54279e4aeb0d"
+  },
+  "comparisons": 47764799,
+  "mismatches": 0,
+  "checks_by_category": {
+    "provenance": 17,
+    "artifact_integrity": 36,
+    "pairing": 203,
+    "eligibility": 435,
+    "municipal_census": 886578,
+    "all_candidate_totals": 1554390,
+    "gain_directions": 6720,
+    "all_cohort_sections": 18419821,
+    "all_allocation_units": 24774246,
+    "all_allocation_groups": 814032,
+    "all_municipal_results": 690804,
+    "all_profile_pairs": 188258,
+    "coverage": 952,
+    "all_distributions": 5355,
+    "exact_repetition_inventories": 332270,
+    "simulation_integrity": 14,
+    "repeated_assignments": 24,
+    "formal_tests": 150,
+    "published_score_rows": 79984,
+    "published_score_bitwise": 9998,
+    "sensitivity": 308,
+    "summary": 204
+  },
+  "maximum_absolute_numerical_difference": 1.4551915228366852e-10,
+  "failures": [],
+  "numerical_csv_files_checked": 17,
+  "sensitivity_rows_recomputed": 14,
+  "independently_regenerated_full_assignments": [
+    {
+      "model": "section",
+      "repetition": 0,
+      "assignment_sha256": "a55f5af6d74856dbba371eadf08bc0f3cdad0f7a5e5ad38f8f13018d18a6735d",
+      "independently_recomputed_scores": [
+        0.9687275341480949,
+        0.9920920201294033,
+        0.9920920201294033,
+        0.2091777871440914,
+        7.617559909572603
+      ]
+    },
+    {
+      "model": "section",
+      "repetition": 1,
+      "assignment_sha256": "f1cc60d21fe7210accee2dcb383645af3fab43ba98be54a193d4639d61b84fa0",
+      "independently_recomputed_scores": [
+        0.9701653486700216,
+        0.9933501078360891,
+        0.992451473759885,
+        0.20292498863596378,
+        7.881504620006576
+      ]
+    },
+    {
+      "model": "place_block",
+      "repetition": 0,
+      "assignment_sha256": "6d71983c0f701cae10fe3f134218f70f91e842122ea1bf453414916964f25f1d",
+      "independently_recomputed_scores": [
+        0.9608195542774982,
+        0.983824586628325,
+        0.988138030194105,
+        0.2450534486751172,
+        12.391594364792446
+      ]
+    },
+    {
+      "model": "place_block",
+      "repetition": 1,
+      "assignment_sha256": "c1e6da52bc195099339568bb296ff232967a50dd168bd797a8fa1755c2a1af01",
+      "independently_recomputed_scores": [
+        0.9547088425593099,
+        0.9823867721063982,
+        0.9875988497483824,
+        0.24401788439495836,
+        10.617130978503534
+      ]
+    }
+  ],
+  "retained_score_rows_audited": 9998,
+  "limits": "All original-source numerical CSVs are reconstructed. Realizations 0 and 1 per model are independently regenerated; remaining retained Monte Carlo scores are audited for bitwise publication, ranks, moments and multiplicity, not independently regenerated. Check counts are integrity comparisons, not independent statistical observations."
+}

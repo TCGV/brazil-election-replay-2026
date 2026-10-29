@@ -1,0 +1,324 @@
+{
+  "status": "completed",
+  "hypothesis": "H7",
+  "started_at_utc": "2026-10-29T22:10:42.072857+00:00",
+  "method_sha256": "7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066",
+  "implementation_sha256": {
+    "load_data.py": "5ec33b40dab41687f58e3eea9ea7d98b30b8cc2b65c12532db84e815621df9df",
+    "regularity_statistics.py": "8a84faec7eebc10d92dcc951d732a75978104fa92e7717717f9068cc1d79c5f4",
+    "run_analysis.py": "44aeb2064189a82f63282c9ed67a1a52d5f9161820b15f18ea2a359bba146deb"
+  },
+  "git_base": "cb32076a0eea70a35782fbabba7777a5e49c94fc",
+  "parameters": {
+    "simulations": 4999,
+    "seed": 20261029,
+    "workers": 4,
+    "models": {
+      "section": 0,
+      "place_block": 1
+    },
+    "statistics": [
+      "Ucount",
+      "Unominal",
+      "Uconditional",
+      "Rlow",
+      "Jhigh"
+    ],
+    "tails": [
+      "upper",
+      "upper",
+      "upper",
+      "lower",
+      "upper"
+    ],
+    "family_size": 10,
+    "epsilon": 1e-12,
+    "baseline_bins": 20,
+    "min_target": 5,
+    "domestic_formal": true,
+    "score_cache": "Natural nonnegative scores; Rlow lower tail and all other scores upper tail",
+    "rng": "PCG64; SeedSequence([seed,7,model_id],spawn_key=(repetition,))",
+    "target_policy": "Original domestic municipalities with at least five cohort sections; target set fixed under assignments",
+    "census_BR": "Domestic municipal source units only; overseas ZZ units kept separately"
+  },
+  "simulation_caches": [
+    {
+      "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/.work/simulations/section",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "90011cd6f73a576915e8dcacf489458546a7c8671735b6f4f8fc3e1e8ffbfab2",
+        "model": "section",
+        "model_id": 0,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "Ucount",
+          "Unominal",
+          "Uconditional",
+          "Rlow",
+          "Jhigh"
+        ],
+        "tails": [
+          "upper",
+          "upper",
+          "upper",
+          "lower",
+          "upper"
+        ],
+        "score_representation": "natural nonnegative scores; Rlow uses lower tail",
+        "assignment_prefix": {
+          "0": "a55f5af6d74856dbba371eadf08bc0f3cdad0f7a5e5ad38f8f13018d18a6735d",
+          "1": "f1cc60d21fe7210accee2dcb383645af3fab43ba98be54a193d4639d61b84fa0"
+        },
+        "scores_sha256": "c4911256eb14b9eaeb803c406b792f351d5d8df2c0294c5ed68cb98c7404705f"
+      },
+      "metadata_sha256": "2b39e82f9c6a058a4df3dee6ae4b8b2e6c54689cee27a5f88ddce64d857796af"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/.work/simulations/place_block",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "d7a549d03190a86c81180100f96a6e13beb081bfd294e6f865d53a5b9a604a05",
+        "model": "place_block",
+        "model_id": 1,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "Ucount",
+          "Unominal",
+          "Uconditional",
+          "Rlow",
+          "Jhigh"
+        ],
+        "tails": [
+          "upper",
+          "upper",
+          "upper",
+          "lower",
+          "upper"
+        ],
+        "score_representation": "natural nonnegative scores; Rlow uses lower tail",
+        "assignment_prefix": {
+          "0": "6d71983c0f701cae10fe3f134218f70f91e842122ea1bf453414916964f25f1d",
+          "1": "c1e6da52bc195099339568bb296ff232967a50dd168bd797a8fa1755c2a1af01"
+        },
+        "scores_sha256": "26ad1004033517ad1cf60280f6fd78490fb3da507123c0f760ab24b21dfd4152"
+      },
+      "metadata_sha256": "7c6774b5067cfdb1d5195da4ab1a71652d91c2ec00b08846407d96b21fc6231b"
+    }
+  ],
+  "source_inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "source_counts": {
+    "detail_key_uniqueness": "Checked directly during this source scan",
+    "details": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "rows_read": 998496,
+      "selected_rows": 998496
+    },
+    "missing_candidate_rows": "Zero-filled only for existing detail keys; all section/category totals reconciled exactly",
+    "missing_place_ids": "Represented as -1, never replaced by an existing polling place",
+    "rounds": [
+      {
+        "candidate_numbers": [
+          13,
+          14,
+          16,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          55,
+          70,
+          80
+        ],
+        "candidate_vote_totals": {
+          "13": 53879538,
+          "14": 2675887,
+          "16": 43103,
+          "21": 22693,
+          "22": 56104503,
+          "27": 40043,
+          "28": 5246,
+          "29": 15024,
+          "30": 326488,
+          "35": 16881,
+          "55": 2605148,
+          "70": 3448569,
+          "80": 122911
+        },
+        "detail_only_sections": 42,
+        "detail_rows": 499248,
+        "election_code": 6257,
+        "totals": {
+          "abstentions": 33469244,
+          "aptos": 158745502,
+          "blank": 2300798,
+          "legend": 0,
+          "nominal": 119306034,
+          "null_votes": 3669003,
+          "separate": 0,
+          "turnout": 125275835
+        },
+        "turno": 1,
+        "vote_rows": 3800511,
+        "vote_sections": 499206
+      },
+      {
+        "candidate_numbers": [
+          13,
+          22
+        ],
+        "candidate_vote_totals": {
+          "13": 64256232,
+          "22": 59826041
+        },
+        "detail_only_sections": 43,
+        "detail_rows": 499248,
+        "election_code": 6258,
+        "totals": {
+          "abstentions": 30509005,
+          "aptos": 158745502,
+          "blank": 1430496,
+          "legend": 0,
+          "nominal": 124082273,
+          "null_votes": 2723305,
+          "separate": 0,
+          "turnout": 128236074
+        },
+        "turno": 2,
+        "vote_rows": 1931103,
+        "vote_sections": 499205
+      }
+    ],
+    "vote_key_uniqueness": "Asserted from zero-violation completed H1 unique_vote_key checks for exactly these source hashes; not re-inferred from summed candidate vectors",
+    "votes": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "rows_read": 5731614,
+      "selected_rows": 5731614
+    }
+  },
+  "data_fingerprint": {
+    "hypothesis": "H7",
+    "schema_version": 1,
+    "loader_code_sha256": "5ec33b40dab41687f58e3eea9ea7d98b30b8cc2b65c12532db84e815621df9df",
+    "numpy_version": "2.3.5",
+    "stage1_manifest_sha256": "73453028f4b5a3f255d8c3438ab69efbc536610cba0b81d4b1d7ff2dd3086837",
+    "h1_manifest_sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930",
+    "h1_artifacts": {
+      "checks.csv": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032",
+      "totals.csv": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f"
+    },
+    "source_inputs": {
+      "votes": {
+        "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+        "size_bytes": 1572813473,
+        "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+      },
+      "details": {
+        "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+        "size_bytes": 350832764,
+        "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+      }
+    }
+  },
+  "completed_at_utc": "2026-10-29T22:14:06.193087+00:00",
+  "numpy_version": "2.3.5",
+  "artifacts": {
+    "adjacent-profiles.csv": {
+      "size_bytes": 2189082,
+      "sha256": "7bbce7f75ee416697bec0af37691c821c224379a5f9631bb4e9311e5e200aeaf"
+    },
+    "allocation-groups.csv.gz": {
+      "size_bytes": 913011,
+      "sha256": "9a1188e5a034bbdfc699f2935e2960dbeefd485a249b69195a95a6be87c4864a"
+    },
+    "allocation-units.csv.gz": {
+      "size_bytes": 39679135,
+      "sha256": "ce2d5a5c89ba5ff400d234b4db8fdb07e2dd67c3516c0e4c0345b3f8950b0b00"
+    },
+    "candidate-totals.csv.gz": {
+      "size_bytes": 833282,
+      "sha256": "612a019f98b79a91177d01b548c95ac9bbdcff113010b2eb5619634bdc7a481a"
+    },
+    "cohort-sections.csv.gz": {
+      "size_bytes": 33610988,
+      "sha256": "de6500c5496c37c991edb37969a290a1d3178490b9fbc620c5700f7008177cd4"
+    },
+    "coverage.csv": {
+      "size_bytes": 4556,
+      "sha256": "3dec33c51a54e504c85fc8d8daafe129aded46cb1ce619459219466539029d6d"
+    },
+    "distribution.csv": {
+      "size_bytes": 54907,
+      "sha256": "167327ada832758e649ae01ca22bfad5c966449fd72d4ce6fa3f06c6c2b17482"
+    },
+    "eligibility.csv": {
+      "size_bytes": 1671,
+      "sha256": "ffebcc1c494114992bace738245cc0c7369e5aea7efd6b5a58acf9b9989e6321"
+    },
+    "exact-repetitions.csv.gz": {
+      "size_bytes": 405469,
+      "sha256": "975a74fd60be49bdb0e8f5097f638461e653dcd1044d1e89a3583860b540a953"
+    },
+    "gain-directions.csv": {
+      "size_bytes": 48267,
+      "sha256": "92c3640a2745756fda6fcfea302d07f2661fad8f335c3065c8c084f135c5d993"
+    },
+    "municipal-census.csv": {
+      "size_bytes": 6037593,
+      "sha256": "6a670948cded8de16dd19d1bdde612bb0943d4c50bcedf94a1b33e11b9813b66"
+    },
+    "municipality-results.csv": {
+      "size_bytes": 5271207,
+      "sha256": "f6ffbd2e6d54cfccffd5c29cc9cf2967397d738a333572d33a1133ffb87cde8e"
+    },
+    "pairing.csv": {
+      "size_bytes": 760,
+      "sha256": "bffc9758586508a94008587993ef26df647f76ca7ac518a2654d329c486b25a6"
+    },
+    "permutation-scores.csv.gz": {
+      "size_bytes": 267791,
+      "sha256": "7b04972fc151ca3e9fbaec0ded47dc5f6cf11e344d8accd312cb361a4497f5c9"
+    },
+    "sensitivity.csv": {
+      "size_bytes": 2911,
+      "sha256": "c144c9c6a9124625cf6e97acdf71f8b401ee402a8033b52c02807db73952cb17"
+    },
+    "summary.json": {
+      "size_bytes": 7242,
+      "sha256": "02678f785bf51db227676ef7dcb4ec05508ddf000cf068676462894341b0b860"
+    },
+    "tests.csv": {
+      "size_bytes": 1749,
+      "sha256": "cccf66d3adf663389915383ce76f9e074c278826ec72483a56fac2c76f5aceef"
+    },
+    "unmatched.csv": {
+      "size_bytes": 58,
+      "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    }
+  }
+}

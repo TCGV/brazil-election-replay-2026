@@ -1,0 +1,157 @@
+# H7 — Inter-round regularity and profile contrasts
+
+[Main report (Portuguese)](REPORT.pt-BR.md) · [Frozen method (Portuguese)](METHOD.pt-BR.md) · [Hypothesis index](../README.md)
+
+H7 separates a census of municipal improvement frequencies from conditional territorial-allocation tests. The statement that one finalist improved more in 99% of municipalities is treated as a hypothesis to measure under explicit definitions, not as an established fact or an automatic anomaly.
+
+Absolute vote gains, gains in nominal-vote percentage points, and growth relative to each candidate's first-round base are different comparisons. Relative-growth direction coincides exactly with conditional-finalist-share change where both measures are defined and the initial candidate counts are positive; it is not an independent fourth source of evidence.
+
+The two references reassign complete paired-section trajectories or whole paired polling-place blocks within initial-composition strata, then reaggregate municipalities. They preserve the empirical marginal trajectories and test their allocation; neither is a complete model of a natural election or a reconstruction of individual voter transitions.
+
+**Assessment: 6/10 — partial support for the statistical hypothesis.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. Both profile-contrast tests (`Jhigh`) reject their allocation reference after Holm (`p=0.002`); the eight planned excess-prevalence/lower-dispersion tests do not. The score is qualitative and ordinal, not a 60% probability of manipulation, a suspicious-vote proportion, or a p-value transformation; see the [scale rubric](../README.md#assessment-scale) and [report rationale](REPORT.pt-BR.md#avaliação-na-escala). No artificial cause is established.
+
+The supplied raw domestic snapshot contains **5,571 source municipal codes**. Candidate 13 has greater improvement in **5,228/5,571 (93.8431%)** by absolute gain, **5,389/5,571 (96.7331%)** by nominal-share gain, and **5,411/5,571 (97.1280%)** by relative growth/conditional direction. None reaches the hypothetical nationwide 99% municipality threshold. These are the codes present in the supplied sources, not an independently authenticated municipal register. The 186 overseas source units are separate.
+
+Formal scores use **5,564 fixed target municipalities**. All six prevalence statistics are lower than every retained allocation; both observed dispersion statistics are higher than every allocation, while their planned tail tests excessive *low* dispersion. Thus the eight `p=1` results mean no detection in the planned excess/uniformity tails, not that observations lie inside conditional intervals or that naturalness is certified. Both significant maxima concern the same initial-profile pair, Belo Monte/AL–Quebrangulo/AL; they are global search results, not individual-city p-values or a causal discontinuity.
+
+## Files
+
+| Path | Purpose |
+|---|---|
+| [REPORT.pt-BR.md](REPORT.pt-BR.md) | Hypothesis, difficulty, assessment, findings, figures, and limits |
+| [METHOD.pt-BR.md](METHOD.pt-BR.md) | Protocol fixed before H7 municipal calculations and tests |
+| [code/load_data.py](code/load_data.py) | Original-source parsing, provenance checks, and category reconciliation |
+| [code/regularity_statistics.py](code/regularity_statistics.py) | Pairing, exact municipal measures, allocation references, and scores |
+| [code/run_analysis.py](code/run_analysis.py) | Census, deterministic simulations, evidence tables, and sensitivities |
+| [code/validate_independently.py](code/validate_independently.py) | Separate original-source parser and independent numerical audit |
+| [code/generate_figures.py](code/generate_figures.py) | Scientific PNG/SVG figures from completed evidence |
+| [code/inventory_artifacts.py](code/inventory_artifacts.py) | Create or verify the complete published-file inventory |
+| [code/](code/) | Analysis code and explicitly artificial implementation tests |
+| [evidence/analysis/](evidence/analysis/) | Complete numerical evidence, compressed where large |
+| [municipal-census.csv](evidence/analysis/municipal-census.csv) | Raw and cohort aggregates for every source municipal unit, including undefined cases and separate overseas units |
+| [candidate-totals.csv.gz](evidence/analysis/candidate-totals.csv.gz) | All nominal candidacies aggregated by municipal unit and round |
+| [gain-directions.csv](evidence/analysis/gain-directions.csv) | Exact directional frequencies, ties, undefined cases, and 99% threshold comparisons |
+| [cohort-sections.csv.gz](evidence/analysis/cohort-sections.csv.gz) | Eligible physical pairs, original counts, conditional changes, and support |
+| [allocation-units.csv.gz](evidence/analysis/allocation-units.csv.gz) | Paired section/place-block numerical representations in both references |
+| [allocation-groups.csv.gz](evidence/analysis/allocation-groups.csv.gz) | All initial-composition strata and structural mobility |
+| [municipality-results.csv](evidence/analysis/municipality-results.csv) | Municipal counts, residual means, targets, and score components by reference |
+| [adjacent-profiles.csv](evidence/analysis/adjacent-profiles.csv) | Every fixed profile-adjacent pair and its residual contrast |
+| [coverage.csv](evidence/analysis/coverage.csv) | Target, unit, stratum, and mobility denominators |
+| [distribution.csv](evidence/analysis/distribution.csv) | Full-distribution descriptive summaries |
+| [exact-repetitions.csv.gz](evidence/analysis/exact-repetitions.csv.gz) | Repeated exact rational changes, with counts and scope |
+| [pairing.csv](evidence/analysis/pairing.csv), [eligibility.csv](evidence/analysis/eligibility.csv), [unmatched.csv](evidence/analysis/unmatched.csv) | Physical join, exclusions, and keys without a counterpart |
+| [tests.csv](evidence/analysis/tests.csv) | Ten predeclared tests, tails, applicability, and Holm adjustment |
+| [permutation-scores.csv.gz](evidence/analysis/permutation-scores.csv.gz) | All 9,998 retained five-score rows |
+| [sensitivity.csv](evidence/analysis/sensitivity.csv) | Fourteen descriptive model/scenario combinations |
+| [evidence/independent-validation.json](evidence/independent-validation.json) | Independent audit result and exact verification scope |
+| [evidence/test-results.txt](evidence/test-results.txt) | Automated implementation-test results |
+| [evidence/artifact-manifest.json](evidence/artifact-manifest.json) | Published-file integrity inventory |
+| [figures/](figures/) | Four standalone figures in PNG and SVG |
+
+Brazilian municipalities and `ZZ` source-coded overseas units are separate populations. Raw-source aggregates and sums over the paired eligible cohort are also distinct universes. National, regional, and UF summaries overlap the same records and must not be added as independent municipalities or voters.
+
+## Reproduce
+
+Use Python 3.12+ and the pinned NumPy/Matplotlib dependencies in [requirements-analysis.txt](../../../../requirements-analysis.txt). Run from the repository root and hydrate the original nationwide files through Git LFS as described in the [project README](../../../../README.md). No existing replay or geography database is required.
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-analysis.txt
+
+H7_DIR=reports/2026/hypothesis-tests/07-inter-round-regularity
+
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+python3 "$H7_DIR/code/run_analysis.py" \
+  --output "$H7_DIR/.work/reproduction/analysis" \
+  --cache "$H7_DIR/.work/data" \
+  --simulation-cache "$H7_DIR/.work/reproduction/simulations" \
+  --simulations 4999 --seed 20261029 --workers 4
+
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+python3 "$H7_DIR/code/validate_independently.py" \
+  --analysis "$H7_DIR/.work/reproduction/analysis" \
+  --cache "$H7_DIR/.work/independent-source" \
+  --output "$H7_DIR/.work/reproduction/independent-validation.json"
+
+python3 "$H7_DIR/code/generate_figures.py" \
+  --analysis-dir "$H7_DIR/.work/reproduction/analysis" \
+  --output "$H7_DIR/.work/reproduction/figures"
+
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+python3 -m unittest discover -s "$H7_DIR/code" -p 'test_*.py' -v
+
+python3 "$H7_DIR/code/inventory_artifacts.py" --verify
+```
+
+Choose new output paths to preserve the published evidence. Single-threaded BLAS avoids nested numerical threads competing with analysis workers. Source and simulation caches are fingerprinted; incompatible or incomplete caches must not be silently reused.
+
+The inventory command verifies the published H7 folder, including documents and code. It is separate from reproducing numerical evidence under a new `.work/` directory.
+
+The source files are Latin-1, semicolon-delimited CSVs:
+
+| Source | SHA-256 |
+|---|---|
+| `data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv` | `9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8` |
+| `data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv` | `bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd` |
+
+The local loader is attributed to commit `cb32076a0eea70a35782fbabba7777a5e49c94fc`. It verifies source hashes/totals, checks detail-key uniqueness directly, and relies explicitly on the completed hash-matched accounting audit for vote-row uniqueness. It does not consume prior hypotheses' numerical results. Hash continuity does not independently authenticate external bulletins.
+
+Raw totals preserve the electorate-identity residual of 423 registered voters per round in the same 41 overseas uninstalled sections, with zero recorded turnout, abstentions, and votes. These sections are excluded by cohort status, and all included records satisfy the identity. Values are not silently normalized.
+
+## Census and measures
+
+The municipal key is `UF + source municipality code`, not the name. Publish both raw round aggregates and sums over the same eligible physical section pairs. Municipalities with no eligible cohort remain in the inventory, with undefined measures where needed. A zero first-round candidate count produces undefined relative growth, without pseudocounts.
+
+For candidate `c`, absolute gain is `G_c=V_c,2−V_c,1`; nominal-share gain is `P_c=100*(V_c,2/N_2−V_c,1/N_1)`; relative growth is `R_c=100*(V_c,2/V_c,1−1)`. Conditional share is `q=V13/(V13+V22)`. Where both measures are defined with positive initial candidate counts, `sign(R13−R22)=sign(q2−q1)`. Published `q1`/`q2` fields are percentages on a 0–100 scale, and `delta` is their difference in percentage points.
+
+Direction frequencies retain exact integer numerators, denominators, ties, and undefined cases. Test the hypothetical 99% threshold using `100*k >= 99*M`; do not round 98.995% into 99%. Municipalities have equal weight in this census. There is no assumed 50%/50% sign null: initial composition and the disappearance of other candidates affect the comparison.
+
+The optional `nominal2_weight_*` and `fraction*_vote_weighted_defined` fields weight municipal classifications by their second-round nominal-vote totals. They describe votes located in municipalities with the specified direction among defined cases; they are not candidate vote shares, shares of individual voters changing preference, or an alternative count of municipalities.
+
+The frozen source cohort pairs `UF + municipality + zone + section` across rounds and retains provenance. It requires installation, no cancellation, at least 50 registered voters and nominal votes, positive turnout, at least 50 first-round finalist votes combined, the same known polling place, and an electorate ratio no greater than 1.25. Identical keys and electorate counts do not identify identical individual voters. The formal allocation references use only domestic municipalities.
+
+## Conditional references and scores
+
+`section` moves the full pair of one section. `place_block` moves all eligible sections belonging to the same original UF/municipality/zone/polling-place key as one indivisible block. Strata use UF, initial electorate bands of ratio 1.25, and five-percentage-point bands of initial turnout, finalist preference, and other-candidate share of turnout. Block controls use aggregated counts. Only strata containing at least two origin municipalities are shuffled.
+
+The loader reads and reconciles every original candidacy. Published allocation-unit fields and score calculations represent nonfinalists through the aggregate `O=N−F`; their municipal candidate totals are published separately. One assignment index applies to the entire paired record/block, never to separate candidates. Original physical keys and block membership link this reduced numerical representation back to the full source records; the allocation-unit table does not claim to publish every individual nonfinalist vector.
+
+The target set is fixed before simulation: municipalities with at least five original domestic-cohort sections. Units in smaller cohort municipalities still participate as donors/destinations; municipalities with no eligible units remain census-only. Section assignments preserve municipal section counts; whole-block assignments preserve place-slot counts but can change section counts and municipal totals. Targets are not reselected after an assignment. These references differ in conditioning and coverage as well as retained local dependence; comparing them is not a causal isolation of clustering.
+
+| Score | Meaning | Formal tail | Unit |
+|---|---|---|---|
+| `Ucount` | Larger directional fraction for absolute-gain advantage | Upper | Municipal fraction |
+| `Unominal` | Larger directional fraction for nominal-share-gain advantage | Upper | Municipal fraction |
+| `Uconditional` | Larger directional fraction for conditional-share change | Upper | Municipal fraction |
+| `Rlow` | Weighted RMS of municipal residual mean section changes | Lower, for excessive uniformity | Percentage points |
+| `Jhigh` | Maximum residual contrast between adjacent initial-preference profiles | Upper | Percentage points × square root of section |
+
+Prevalence is symmetric: `max(n_direction13,n_direction22)/M`, with ties in the fixed denominator. `Rlow` concerns equal-section changes, not changes calculated from aggregate municipal vote shares. `Jhigh` orders targets within UF by original aggregate initial preference, with exact-ratio ordering and code tie-breaks; adjacency is neither geographic nor temporal. It is not a z-score, a causal regression discontinuity, or a test at a selected threshold. Its global p-value does not belong to the single edge attaining the maximum.
+
+Each model uses 4,999 NumPy/PCG64 assignments, with `SeedSequence([20261029,7,model_id], spawn_key=(rep,))`. Model IDs are 0/1. A realization computes all five scores; every retained five-score row is published. Plus-one p-values have minimum resolution 0.0002 and are never zero. Holm controls the fixed family of ten dependent tests at 5%; there are no additional municipality, UF, edge, or sensitivity p-values.
+
+Simulation quantiles are conditional references, not election confidence intervals. Score variability must be demonstrated or resolved by structural/exact finite checks. Proven constancy and unresolved variability are distinct nonapplicable outcomes; neither is nondetection or proof of naturalness. They use p=1 only internally for conservative family adjustment.
+
+Fourteen descriptive sensitivity rows combine both primary models with six prespecified alternatives: initial bands of 2.5 or 10 points; unchanged electorate; at least 100 first-round finalist votes; targets with one section; and targets with ten sections. They introduce no new formal p-values. Changed cohorts/thresholds require recomputing targets and profile order.
+
+## Reading compressed evidence
+
+```python
+import csv
+import gzip
+
+with gzip.open("path/to/table.csv.gz", "rt", encoding="utf-8", newline="") as stream:
+    for row in csv.DictReader(stream):
+        pass
+```
+
+Generated CSVs use UTF-8, commas, and full stored numerical precision. Compressed evidence preserves all rows rather than a sample. Private caches and scratch work belong in `.work/`, excluded from publication.
+
+The references retain observed section/block trajectories. They cannot certify the naturalness of all marginal changes or exclude effects conditioned out of the design. Geography, campaign, turnout selection, and unobserved composition can produce allocation differences. Rejection does not identify an artificial cause; nonrejection does not establish naturalness, and aggregates do not identify individual vote transfers.
+
+## Validation
+
+The published run passes **65 implementation tests** and an independent original-source audit with **47,764,799 integrity comparisons and zero mismatches**. Maximum absolute numerical difference is `1.4551915228366852e-10`. The independent parser reconstructs all **17 numerical CSVs**, the **14 descriptive sensitivity rows**, the summary, and provenance without importing primary calculation helpers. Check counts are overlapping integrity comparisons, not independent statistical observations.
+
+Realizations 0 and 1 were independently regenerated for each model: **four complete assignments**, with hashes and all five scores checked. All **9,998 retained five-score vectors** were audited for publication, moments, quantiles, exceedances, and Holm; the public CSV scores round-trip bitwise to the numerical caches. All 9,998 assignments were **not** independently regenerated. Exact scope and implementation/source fingerprints appear in [independent-validation.json](evidence/independent-validation.json).
