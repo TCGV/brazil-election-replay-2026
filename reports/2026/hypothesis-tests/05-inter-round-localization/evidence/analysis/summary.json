@@ -1,0 +1,26 @@
+{
+  "matched_pairs": 499248,
+  "cohort_pairs": 497833,
+  "family_size": 4,
+  "primary_detected": 4,
+  "primary_not_detected": 0,
+  "primary_not_applicable": 0,
+  "case_summary": {
+    "uf": "BR",
+    "cohort_pairs": 497833,
+    "strict_supported": 152003,
+    "strict_priorities": 2,
+    "strict_priorities_13": 2,
+    "strict_priorities_22": 0,
+    "broad_supported": 363150,
+    "broad_priorities": 16,
+    "broad_priorities_13": 12,
+    "broad_priorities_22": 4
+  },
+  "paired_elections": [
+    6257,
+    6258
+  ],
+  "interpretation": "Section screening is descriptive; formal tests concern allocation between places and preserve marginal changes",
+  "sensitivity_validation": "See independent-validation.json for separate verification scope"
+}

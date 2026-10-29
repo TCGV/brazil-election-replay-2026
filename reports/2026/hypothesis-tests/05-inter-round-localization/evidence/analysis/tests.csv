@@ -1,0 +1,5 @@
+model,statistic,observed,simulation_mean,simulation_q025,simulation_q975,exceedances,simulations,p_raw,p_holm,detected,status,applicability_reason
+zone_size,RMS,0.7410759175281739,0.5867254130428233,0.5823579869591481,0.5909359384775283,0,4999,0.0002,0.0008,True,detected,sampled_distinct_scores
+zone_size,MAX,24.55387550834823,11.294305429366048,8.147040031310658,15.330428836478683,0,4999,0.0002,0.0008,True,detected,sampled_distinct_scores
+zone_size_baseline,RMS,0.6656876951663692,0.5149938716963063,0.5111313209732745,0.5187688556138805,0,4999,0.0002,0.0008,True,detected,sampled_distinct_scores
+zone_size_baseline,MAX,20.91394738552696,8.227964583761036,7.185250077832685,9.92514487923786,0,4999,0.0002,0.0008,True,detected,sampled_distinct_scores

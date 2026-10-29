@@ -1,0 +1,79 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-29T12:50:33.759755+00:00",
+  "extractor_sha256": "d64174def3bf94b07e60e6cf0b8e8e52a45e6012a485a213fc6944254f6a00f6",
+  "inputs": {
+    "analysis_manifest": {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/analysis/manifest.json",
+      "size_bytes": 9110,
+      "sha256": "ddb62ccd6889d2442450a0ca509a5be46af3c83fd05784821fdd6bf397578453"
+    },
+    "tests.csv": {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/analysis/tests.csv",
+      "size_bytes": 754,
+      "sha256": "e554d1e5ae050c84d227e746dc43d04800405f819b1822335bf20c397c754c42"
+    },
+    "place-results.csv.gz": {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/analysis/place-results.csv.gz",
+      "size_bytes": 11567221,
+      "sha256": "1cb150e8e2a4a9de73535a53ace56e9dfb82508133853c8ee9d81bf0dbcbb37e"
+    },
+    "section-screening.csv.gz": {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/analysis/section-screening.csv.gz",
+      "size_bytes": 30097686,
+      "sha256": "b88def25c749cd1f9550bb7eb7149fe24509b3734e7fc8f0e6c2484edb845d4c"
+    },
+    "paired-sections.csv.gz": {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/analysis/paired-sections.csv.gz",
+      "size_bytes": 38364070,
+      "sha256": "2a1f19360e3d62d147372106598f0770cbb1236622a6f31a5cbac59fe5d22b61"
+    },
+    "accounting_manifest": {
+      "path": "reports/2026/hypothesis-tests/01-accounting-integrity/evidence/accounting/manifest.json",
+      "size_bytes": 2396,
+      "sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930"
+    }
+  },
+  "source_input": {
+    "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+    "size_bytes": 350832764,
+    "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+  },
+  "selection": {
+    "rule": "All strict priorities, plus every cohort section in every target attaining the published MAX for either reference",
+    "MAX_matching_tolerance": 1e-12,
+    "strict_priority_sections": 2,
+    "MAX_target_selections": [
+      {
+        "model": "zone_size",
+        "uf": "SP",
+        "municipality": 71072,
+        "zone": 2,
+        "place": 1546,
+        "cohort_sections": 7,
+        "observed_MAX": 24.55387550834823,
+        "max_component": 24.55387550834823
+      },
+      {
+        "model": "zone_size_baseline",
+        "uf": "SP",
+        "municipality": 71072,
+        "zone": 2,
+        "place": 1546,
+        "cohort_sections": 7,
+        "observed_MAX": 20.91394738552696,
+        "max_component": 20.91394738552696
+      }
+    ],
+    "distinct_selected_sections": 9
+  },
+  "original_rows_scanned": 998496,
+  "selected_original_rows": 18,
+  "source_unchanged": true,
+  "output": {
+    "path": "reports/2026/hypothesis-tests/05-inter-round-localization/evidence/selected-source-context.csv",
+    "size_bytes": 6119,
+    "sha256": "3fa6a2c51ba9a1ecc8a1e2ceef758771178cf14b7727b11db2bf8748d0f8d0ea"
+  },
+  "interpretation": "Descriptive original-source context only; no additional statistical test, causal inference, or classification of manipulation"
+}

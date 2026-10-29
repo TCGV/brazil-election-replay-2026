@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-29T12:47:05.015772+00:00",
+  "generator_sha256": "b03ff26721492f652952d89cf2b0fadbcddc82ffcdff5eaabda4477d8e0e845e",
+  "analysis_manifest_sha256": "ddb62ccd6889d2442450a0ca509a5be46af3c83fd05784821fdd6bf397578453",
+  "inputs": [
+    {
+      "path": "transition-grid.csv",
+      "sha256": "c901e1afa1f065a33239ec86ccd9586e41f66b8e23141632451ec1aa79724b44",
+      "size_bytes": 138517
+    },
+    {
+      "path": "histograms.csv",
+      "sha256": "91eae64fcb625e9bd4383d3dbad2055c290c60ee1f44c7c50c51ddf69a4ab4f6",
+      "size_bytes": 40799
+    },
+    {
+      "path": "tests.csv",
+      "sha256": "e554d1e5ae050c84d227e746dc43d04800405f819b1822335bf20c397c754c42",
+      "size_bytes": 754
+    },
+    {
+      "path": "coverage.csv",
+      "sha256": "059a9fd6d5a607334ebcb6cecaa19bed6d04b77e5cf5f798a665e8abe6c672f7",
+      "size_bytes": 4937
+    },
+    {
+      "path": "case-summary.csv",
+      "sha256": "0521116430928ff73accc06e0ef2fd2fa84a98bed818f1a92696d65a07727026",
+      "size_bytes": 1065
+    }
+  ],
+  "figures": [
+    {
+      "path": "paired-change-distribution.png",
+      "sha256": "bb69d3f6ba65e44ca0080ee6a6425d06543bfe7306b6ecbfb759de40edd58da4",
+      "size_bytes": 215517
+    },
+    {
+      "path": "paired-change-distribution.svg",
+      "sha256": "31588846bf85169127cf02e9dc62157c59e6abdf65d6b1486a7c19a023ac9329",
+      "size_bytes": 61794
+    },
+    {
+      "path": "local-peer-contrasts.png",
+      "sha256": "0c67fde067337246b4d5fe20bdb88ce6965679a29fe58a0cd03f05f071ac9312",
+      "size_bytes": 162785
+    },
+    {
+      "path": "local-peer-contrasts.svg",
+      "sha256": "459dd99d349c90690aa5d356bd6cbc5e925ccd94d94c27feb671f50323b82ec2",
+      "size_bytes": 24147
+    },
+    {
+      "path": "concentration-reference.png",
+      "sha256": "4d89b6455efb5b47dcfb1a7af6d8ed3e784264816796aa73d1e86007747c2f2e",
+      "size_bytes": 138057
+    },
+    {
+      "path": "concentration-reference.svg",
+      "sha256": "28fcfcbe17f72961d7ee422cf38889e70276a57654e9f36571cf8ed4741a75fc",
+      "size_bytes": 18195
+    },
+    {
+      "path": "comparison-coverage.png",
+      "sha256": "c26ce9f522e7a434fa41f4a4a5a8821cefc6c6b14d0f0163e736f2ce9c5b1faf",
+      "size_bytes": 168543
+    },
+    {
+      "path": "comparison-coverage.svg",
+      "sha256": "28600f3160928bb9aacbb76b702a288a0f79fbf8c8de721fba014370204c6e2e",
+      "size_bytes": 17861
+    }
+  ],
+  "scope": "Paired sections; descriptive section screening and four formal tests of allocation between polling places.",
+  "interpretation": "Formal references preserve marginal section changes; no causal attribution, individual voter transitions, or external source authentication."
+}

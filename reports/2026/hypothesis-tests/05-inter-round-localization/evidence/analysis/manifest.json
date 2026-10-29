@@ -1,0 +1,278 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-29T12:44:05.176266+00:00",
+  "method_sha256": "b654515cd18021c05fd855d4c01dc0cf976299ebe247446fd5828b30d5bd843f",
+  "implementation_sha256": {
+    "load_data.py": "67edf418059822dfa5f5072f5ce78f585216e9fadc8b4c7199fead0e8ca1f8cf",
+    "pair_statistics.py": "87c39a5fc56b67fe5ab27749023d785c818ab59d978c412c0713f19c708f6756",
+    "run_analysis.py": "0720a1783d2746051b9510433f6cb3bd66b93bc35edcfd007dca0ccabc895a75"
+  },
+  "git_base": "1434b43d40fb4594b2b16aefd5468b7f4b4b7ff3",
+  "parameters": {
+    "simulations": 4999,
+    "seed": 20261029,
+    "workers": 4,
+    "models": {
+      "zone_size": 0,
+      "zone_size_baseline": 1
+    },
+    "statistics": [
+      "RMS",
+      "MAX"
+    ],
+    "family_size": 4,
+    "epsilon_pp": 1e-12,
+    "priority_pp": 10.0,
+    "min_other_peers": 4,
+    "baseline_bins": 20,
+    "min_target": 5,
+    "paired_payload": "Both rounds move together; observed marginal changes are preserved",
+    "rng": "PCG64; SeedSequence([seed,model_id],spawn_key=(repetition,))"
+  },
+  "simulation_caches": [
+    {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/.work/simulations/zone_size",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "da81b77e6222c91b25086efc3790bcfb414ce96a8f5461117f42b7f18154b843",
+        "model": "zone_size",
+        "model_id": 0,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "RMS",
+          "MAX"
+        ],
+        "assignment_prefix": {
+          "0": "101170f62563f70d012ebd1dfcfc4d55a27a2cc262e29442df14cc629fe090be",
+          "1": "9240f1ebf856cc8c359b2086c5a4ca98170e488d51ea4edd01d3b44f3180b905"
+        },
+        "scores_sha256": "d4e34d6d4c039e5ca004c40f2a5e8573b175ba38d3cc5b94b948ce7065b6a3ec"
+      },
+      "metadata_sha256": "62db1bb58565c05db110c57ecda9f57852fbe3b9902065b108b5b84ff7a51c45"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/.work/simulations/zone_size_baseline",
+      "metadata": {
+        "status": "completed",
+        "fingerprint": "5bc4b0db10467fb349248ad2f09a5bf28c5765fbbd9e57ff22174095cfe23bdf",
+        "model": "zone_size_baseline",
+        "model_id": 1,
+        "simulations": 4999,
+        "seed": 20261029,
+        "statistics": [
+          "RMS",
+          "MAX"
+        ],
+        "assignment_prefix": {
+          "0": "b78fd7cc3ce480d3bdd2dcea7a0bba6fe36ff0a5a953c8ddbea5e2bc879c4241",
+          "1": "6f4ee35a3891108731c02832351779ecb4e856017b90e64d9e3f9953cf4404bb"
+        },
+        "scores_sha256": "5c66ec28265146a00991b1e81e6a4e5e3461cab581d68c36c3937648dc61444f"
+      },
+      "metadata_sha256": "a9c49ae1f33c1e37e5612c78f2b950e2c1564f660d18fc9a16ce1c2e5f2f1a01"
+    }
+  ],
+  "source_inputs": {
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    },
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    }
+  },
+  "source_counts": {
+    "detail_key_uniqueness": "Checked directly during this source scan",
+    "details": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "09:49:06"
+        ]
+      ],
+      "rows_read": 998496,
+      "selected_rows": 998496
+    },
+    "missing_candidate_rows": "Zero-filled only for existing detail keys; all section/category totals reconciled exactly",
+    "missing_place_ids": "Represented as -1, never replaced by an existing polling place",
+    "rounds": [
+      {
+        "candidate_numbers": [
+          13,
+          14,
+          16,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          55,
+          70,
+          80
+        ],
+        "candidate_vote_totals": {
+          "13": 53879538,
+          "14": 2675887,
+          "16": 43103,
+          "21": 22693,
+          "22": 56104503,
+          "27": 40043,
+          "28": 5246,
+          "29": 15024,
+          "30": 326488,
+          "35": 16881,
+          "55": 2605148,
+          "70": 3448569,
+          "80": 122911
+        },
+        "detail_only_sections": 42,
+        "detail_rows": 499248,
+        "election_code": 6257,
+        "totals": {
+          "abstentions": 33469244,
+          "aptos": 158745502,
+          "blank": 2300798,
+          "legend": 0,
+          "nominal": 119306034,
+          "null_votes": 3669003,
+          "separate": 0,
+          "turnout": 125275835
+        },
+        "turno": 1,
+        "vote_rows": 3800511,
+        "vote_sections": 499206
+      },
+      {
+        "candidate_numbers": [
+          13,
+          22
+        ],
+        "candidate_vote_totals": {
+          "13": 64256232,
+          "22": 59826041
+        },
+        "detail_only_sections": 43,
+        "detail_rows": 499248,
+        "election_code": 6258,
+        "totals": {
+          "abstentions": 30509005,
+          "aptos": 158745502,
+          "blank": 1430496,
+          "legend": 0,
+          "nominal": 124082273,
+          "null_votes": 2723305,
+          "separate": 0,
+          "turnout": 128236074
+        },
+        "turno": 2,
+        "vote_rows": 1931103,
+        "vote_sections": 499205
+      }
+    ],
+    "vote_key_uniqueness": "Asserted from zero-violation completed H1 unique_vote_key checks for exactly these source hashes; not re-inferred from summed candidate vectors",
+    "votes": {
+      "extraction_values": [
+        [
+          "26/10/2026",
+          "12:07:25"
+        ]
+      ],
+      "rows_read": 5731614,
+      "selected_rows": 5731614
+    }
+  },
+  "data_fingerprint": {
+    "hypothesis": "H5",
+    "schema_version": 1,
+    "loader_code_sha256": "67edf418059822dfa5f5072f5ce78f585216e9fadc8b4c7199fead0e8ca1f8cf",
+    "numpy_version": "2.3.5",
+    "stage1_manifest_sha256": "73453028f4b5a3f255d8c3438ab69efbc536610cba0b81d4b1d7ff2dd3086837",
+    "h1_manifest_sha256": "48fa5afd3ede39895bc3d07f71375a08e63797646f567acffc01228ddf4cc930",
+    "h1_artifacts": {
+      "checks.csv": "97c9ae3603e698aa99257ae8424bcf03d9be279290ad50d4c23fcb65fbd22032",
+      "totals.csv": "0352cc91a7bed0e1b518a028e6ad52a290dd78eebd61eb8dea5cd13e2582e27f"
+    },
+    "source_inputs": {
+      "votes": {
+        "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+        "size_bytes": 1572813473,
+        "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+      },
+      "details": {
+        "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+        "size_bytes": 350832764,
+        "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+      }
+    }
+  },
+  "completed_at_utc": "2026-10-29T12:46:03.619143+00:00",
+  "numpy_version": "2.3.5",
+  "artifacts": {
+    "case-summary.csv": {
+      "size_bytes": 1065,
+      "sha256": "0521116430928ff73accc06e0ef2fd2fa84a98bed818f1a92696d65a07727026"
+    },
+    "concentration-groups.csv.gz": {
+      "size_bytes": 3247709,
+      "sha256": "654aa630fb47bf7ff5d337a4d97e70299b08b11c6e71c5a9f06b0fe772f7cb44"
+    },
+    "coverage.csv": {
+      "size_bytes": 4937,
+      "sha256": "059a9fd6d5a607334ebcb6cecaa19bed6d04b77e5cf5f798a665e8abe6c672f7"
+    },
+    "distribution.csv": {
+      "size_bytes": 24950,
+      "sha256": "270f58b15f24e4a0ebb6482f5102037d5ccfd7d8e221450c647c5b2da0112d12"
+    },
+    "eligibility.csv": {
+      "size_bytes": 1970,
+      "sha256": "54d6fa98b3176031669a25c31c0cd82ce289cf2e9fed309fda1af87e6a8407e8"
+    },
+    "histograms.csv": {
+      "size_bytes": 40799,
+      "sha256": "91eae64fcb625e9bd4383d3dbad2055c290c60ee1f44c7c50c51ddf69a4ab4f6"
+    },
+    "paired-sections.csv.gz": {
+      "size_bytes": 38364070,
+      "sha256": "2a1f19360e3d62d147372106598f0770cbb1236622a6f31a5cbac59fe5d22b61"
+    },
+    "pairing.csv": {
+      "size_bytes": 760,
+      "sha256": "bffc9758586508a94008587993ef26df647f76ca7ac518a2654d329c486b25a6"
+    },
+    "place-results.csv.gz": {
+      "size_bytes": 11567221,
+      "sha256": "1cb150e8e2a4a9de73535a53ace56e9dfb82508133853c8ee9d81bf0dbcbb37e"
+    },
+    "section-screening.csv.gz": {
+      "size_bytes": 30097686,
+      "sha256": "b88def25c749cd1f9550bb7eb7149fe24509b3734e7fc8f0e6c2484edb845d4c"
+    },
+    "sensitivity.csv": {
+      "size_bytes": 1549,
+      "sha256": "26ee006417eeaad5e45b58fa0d94b0056c2576c6d477fd0ce7e0d2078f620634"
+    },
+    "summary.json": {
+      "size_bytes": 748,
+      "sha256": "01f3ca2efa8e020e4d4f192bace6c5c5c874f6177945e07c21da1429e07b5abf"
+    },
+    "tests.csv": {
+      "size_bytes": 754,
+      "sha256": "e554d1e5ae050c84d227e746dc43d04800405f819b1822335bf20c397c754c42"
+    },
+    "transition-grid.csv": {
+      "size_bytes": 138517,
+      "sha256": "c901e1afa1f065a33239ec86ccd9586e41f66b8e23141632451ec1aa79724b44"
+    },
+    "unmatched.csv": {
+      "size_bytes": 58,
+      "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    }
+  }
+}

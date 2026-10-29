@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-29T13:04:43.222532+00:00",
+  "script_sha256": "b24914034f5e2b701f6f6ea369228c8fa9a1efa6c6e8cfce834bf9de1a923795",
+  "independent_parser_fingerprint": "368b12005650b69826e6adc91d6dbdc6b25cecbcc81896eb1b3eee676c157132",
+  "source_inputs": {
+    "details": {
+      "path": "data/detalhe_votacao_secao_2026/detalhe_votacao_secao_2026_BR.csv",
+      "size_bytes": 350832764,
+      "sha256": "bb25a47159af3c628e3e7d0b78819f9c43a11eda66ed36f22ef0a2c2d5caf5bd"
+    },
+    "votes": {
+      "path": "data/votacao_secao_2026_BR/votacao_secao_2026_BR.csv",
+      "size_bytes": 1572813473,
+      "sha256": "9c35200e1c613d8cc76b255a1d6c824cf5dba63a995c1e86b893c348722fcad8"
+    }
+  },
+  "independent_source_counts": {
+    "detail_rows_read": 998496,
+    "detail_rows_selected": 998496,
+    "vote_rows_read": 5731614,
+    "vote_rows_selected": 5731614
+  },
+  "parameters": {
+    "simulations": 4999,
+    "seed": 20261029,
+    "primary_family_size": 4,
+    "p_resolution": 0.0002
+  },
+  "comparisons": {
+    "provenance": 6,
+    "publication_integrity": 32,
+    "configuration": 8,
+    "source_counts": 4,
+    "paired-sections.csv.gz": 16475185,
+    "section-screening.csv.gz": 10454494,
+    "simulation_cache": 24,
+    "simulation_assignment": 12,
+    "pairing.csv": 233,
+    "eligibility.csv": 494,
+    "unmatched.csv": 1,
+    "case-summary.csv": 349,
+    "distribution.csv": 1886,
+    "histograms.csv": 9801,
+    "transition-grid.csv": 70001,
+    "concentration-groups.csv.gz": 1812465,
+    "place-results.csv.gz": 3737241,
+    "coverage.csv": 987,
+    "tests.csv": 61,
+    "sensitivity.csv": 191,
+    "summary": 8,
+    "source_immutability": 2
+  },
+  "mismatches": 0,
+  "maximum_absolute_numeric_difference": 4.831690603168681e-13,
+  "numeric_tolerances": {
+    "shares_residuals_scores_and_summaries": 1e-09,
+    "p_value_comparisons": 1e-09
+  },
+  "rows_validated": {
+    "paired-sections.csv.gz": 499248,
+    "section-screening.csv.gz": 497833,
+    "pairing.csv": 29,
+    "eligibility.csv": 29,
+    "unmatched.csv": 0,
+    "case-summary.csv": 29,
+    "distribution.csv": 145,
+    "histograms.csv": 1400,
+    "transition-grid.csv": 10000,
+    "concentration-groups.csv.gz": 113279,
+    "place-results.csv.gz": 186862,
+    "coverage.csv": 58,
+    "tests.csv": 4,
+    "sensitivity.csv": 10
+  },
+  "failures": [],
+  "simulation_scope": {
+    "all_retained_scores": "SHA-256 checked; every rank, mean, quantile and Holm adjustment recomputed",
+    "assignment_generation": "Realizations 0 and 1 independently repeated per reference, with full paired-payload assignment hashes",
+    "repeated_assignments": [
+      {
+        "model": "zone_size",
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_scores_differ_between_independently_repeated_assignments": true
+      },
+      {
+        "model": "zone_size_baseline",
+        "repetitions": [
+          0,
+          1
+        ],
+        "all_scores_differ_between_independently_repeated_assignments": true
+      }
+    ],
+    "full_simulation_repeated": false
+  },
+  "sensitivity_scope": "All predeclared descriptive alternatives independently reconstructed",
+  "interpretation": "Section screens and conditional place allocation; no external authenticity, individual vote transfers, or causal attribution"
+}
