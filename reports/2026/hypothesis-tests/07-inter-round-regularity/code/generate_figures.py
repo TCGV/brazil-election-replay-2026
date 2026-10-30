@@ -117,9 +117,8 @@ def definitions_figure(directions, output):
             if total <= 0 or n13+n22+ties != defined or defined+undefined != total:
                 raise ValueError('Municipal direction counts do not reconcile')
             for candidate, count in ((13, n13), (22, n22)):
-                if (abs(float(row[f'fraction{candidate}_all'])-count/total) > 1e-12 or
-                        boolean(row[f'reaches99_{candidate}_all']) != (100*count >= 99*total)):
-                    raise ValueError('Municipal fraction or exact 99% threshold differs from its counts')
+                if abs(float(row[f'fraction{candidate}_all'])-count/total) > 1e-12:
+                    raise ValueError('Municipal fraction differs from its counts')
             for offset, count, color in [(-.16, n13, RED), (.16, n22, BLUE)]:
                 pct = 100*count/total
                 ax.barh(position+offset, pct, height=.27, color=color)
@@ -127,9 +126,8 @@ def definitions_figure(directions, output):
                             xytext=(5, 0), textcoords='offset points', va='center', fontsize=9, color=DARK)
             ax.text(1.03, position, f'Empates: {integer(ties)}\nIndef.: {integer(undefined)}',
                     transform=ax.get_yaxis_transform(), va='center', fontsize=8, color=GRAY)
-        ax.axvline(99, color=GRAY, ls='--', lw=1)
         ax.set_xlim(0, 126)
-        ax.set_xticks([0, 25, 50, 75, 99], ['0', '25', '50', '75', '99'])
+        ax.set_xticks([0, 25, 50, 75, 100])
         ax.set_ylim(2.55, -.55)
         ax.set_yticks(range(3), labels, fontsize=9)
         ax.set_xlabel('Municípios com maior melhora para o candidato (% de todos)')
@@ -137,13 +135,12 @@ def definitions_figure(directions, output):
         style(ax, 'x')
     fig.suptitle('“Melhorou mais” depende da definição', x=.12, y=.99, ha='left', fontsize=16)
     fig.legend(handles=[Line2D([0], [0], color=RED, lw=7, label='Lula'),
-                        Line2D([0], [0], color=BLUE, lw=7, label='Flávio Bolsonaro'),
-                        Line2D([0], [0], color=GRAY, ls='--', label='Limiar hipotético de 99%')],
-               loc='lower center', bbox_to_anchor=(.56, .125), ncol=3, frameon=False, fontsize=9)
+                        Line2D([0], [0], color=BLUE, lw=7, label='Flávio Bolsonaro')],
+               loc='lower center', bbox_to_anchor=(.56, .125), ncol=2, frameon=False, fontsize=9)
     fig.text(.12, .018,
              'Um município, um peso; somente território nacional. Empates e indefinições permanecem no denominador.\n'
              'Crescimento relativo é indefinido com base inicial zero. Onde as duas medidas são definidas, sua direção coincide com a mudança condicional entre finalistas.\n'
-             'A linha de 99% não é um teste de anomalia. Não se pressupõe que a frequência esperada seja 50% para cada candidato.',
+             'Percentuais descritivos: a avaliação estatística depende das referências de alocação, apresentadas em gráfico separado.',
              fontsize=8.3, color='#515c65')
     fig.subplots_adjust(left=.12, right=.89, top=.86, bottom=.30, wspace=.47)
     return save(fig, output, 'municipal-improvement-definitions')
@@ -374,6 +371,8 @@ def generate(analysis, output):
     figures += coverage_figure(coverage, edges, output)
     result = dict(status='completed', created_at_utc=datetime.now(timezone.utc).isoformat(),
         generator_sha256=digest(Path(__file__)), analysis_manifest_sha256=digest(analysis/'manifest.json'),
+        presentation_revision=dict(path='METHOD-REVISION.pt-BR.md',
+                                   sha256=digest(HERE/'METHOD-REVISION.pt-BR.md')),
         inputs=[dict(path=path.name, sha256=digest(path), size_bytes=path.stat().st_size) for path in paths],
         source_inputs=manifest.get('source_inputs', {}),
         source_verification='Numerical inputs verified against completed analysis manifest; original source hashes carried from that manifest.',

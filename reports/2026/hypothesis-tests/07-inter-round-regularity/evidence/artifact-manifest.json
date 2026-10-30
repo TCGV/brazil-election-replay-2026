@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-29T22:22:32.473946+00:00",
+  "created_at_utc": "2026-10-30T11:04:28.489013+00:00",
   "scope": "All published H7 files except this inventory; .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -10,24 +10,29 @@
       "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
     },
     {
+      "path": "METHOD-REVISION.pt-BR.md",
+      "size_bytes": 3146,
+      "sha256": "b3b9789dcc398cc7fdf6ae0bd95f838301168d401132ab2ec1dc0b9c847bb6a7"
+    },
+    {
       "path": "METHOD.pt-BR.md",
       "size_bytes": 15092,
       "sha256": "7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066"
     },
     {
       "path": "README.md",
-      "size_bytes": 17587,
-      "sha256": "97ce275406e329259106d4021b7eeba27f25af925830e5ba76788fdce53a282e"
+      "size_bytes": 18658,
+      "sha256": "0d460a81e3a5041d0a98a85b5e3efe323201df35e7d0b11b079e7ccd329d4b52"
     },
     {
       "path": "REPORT.pt-BR.md",
-      "size_bytes": 34147,
-      "sha256": "6cbd0b506dbcd534a0f42be35e0a9d17887aca8178e6b83912243ebb5deecad3"
+      "size_bytes": 34789,
+      "sha256": "2236bb49590e596ae624884b0812bb44d568e390bf6b1894bb3340fdaab9fa4d"
     },
     {
       "path": "code/generate_figures.py",
-      "size_bytes": 23502,
-      "sha256": "244ea269c241e059b2f565941d9eacff043e6687af3a5a515ba6439be27c80f5"
+      "size_bytes": 23360,
+      "sha256": "100f50b6d60edf0e37f8ba599620d4c555aa1c1794d0f295eabbfa2a0f5c9b85"
     },
     {
       "path": "code/inventory_artifacts.py",
@@ -175,6 +180,11 @@
       "sha256": "01faad857cab4102a278737849c8489c1a60322e8478a1a27f84be601f2105d0"
     },
     {
+      "path": "evidence/revision-validation.json",
+      "size_bytes": 2929,
+      "sha256": "31859d94f21c58efb7e98d9a317d020aeef3f3c90a4b7937a849e0009038dd86"
+    },
+    {
       "path": "evidence/test-results.txt",
       "size_bytes": 10993,
       "sha256": "c54b579ef199bd7d6c1c06fffcef48e7fd51513c7e89d4235a6173c23ac4e74f"
@@ -187,7 +197,7 @@
     {
       "path": "figures/allocation-coverage.svg",
       "size_bytes": 396160,
-      "sha256": "9c7a411e320ff35a3503f2aa9ee0995ebc05d18746923a249c255aa5f497214d"
+      "sha256": "40ae6cb3956edf91b4a329450faab96b36c13c166d234bb55e919d32286c00d6"
     },
     {
       "path": "figures/conditional-allocation-reference.png",
@@ -197,7 +207,7 @@
     {
       "path": "figures/conditional-allocation-reference.svg",
       "size_bytes": 42276,
-      "sha256": "c83d7b1fd743f1c5ee48602957a0411d1299957fd8aa23a522d733d90a29a306"
+      "sha256": "fc36fc365778d264fa188de30ae90aee2f96139f0cd7bf0f4b9df2992ef06954"
     },
     {
       "path": "figures/initial-composition-identity.png",
@@ -207,22 +217,22 @@
     {
       "path": "figures/initial-composition-identity.svg",
       "size_bytes": 430464,
-      "sha256": "97d483e004997f46832f2926c5d4cbd2f95160ded0488dc3cb39955032ee56e9"
+      "sha256": "7bd974c03c62e4238f3f6a02185382344ee80fdeadbfa07290fa995da14884e5"
     },
     {
       "path": "figures/manifest.json",
-      "size_bytes": 3452,
-      "sha256": "ba021cb25af2d60040f84ad49062a6f4b68277e79ec48236463d59b198fe1407"
+      "size_bytes": 3607,
+      "sha256": "42c1b79152f097f9823c2de33737347b88978ace3321101075cccff56204dab5"
     },
     {
       "path": "figures/municipal-improvement-definitions.png",
-      "size_bytes": 214375,
-      "sha256": "90cc6ed10da92d37ae562744ad25fb1bbadf75374a6b2f5e82e3e5754559b326"
+      "size_bytes": 202960,
+      "sha256": "7ba71bda6b86eb396f828742619a84b51a493d2dfef4b8c620c544332267c480"
     },
     {
       "path": "figures/municipal-improvement-definitions.svg",
-      "size_bytes": 22108,
-      "sha256": "9a4cca83c01443ed815fdff340d23b5f4df92f1ff3165948afa9363296e7ae5d"
+      "size_bytes": 21254,
+      "sha256": "9ec1f6fa5d2087edb8f07f260777b987636bcb4ab3dcf8a609306b5881575bbb"
     }
   ]
 }

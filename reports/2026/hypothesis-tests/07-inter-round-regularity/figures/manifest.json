@@ -1,8 +1,12 @@
 {
   "status": "completed",
-  "created_at_utc": "2026-10-29T22:15:47.467538+00:00",
-  "generator_sha256": "244ea269c241e059b2f565941d9eacff043e6687af3a5a515ba6439be27c80f5",
+  "created_at_utc": "2026-10-30T11:03:23.737867+00:00",
+  "generator_sha256": "100f50b6d60edf0e37f8ba599620d4c555aa1c1794d0f295eabbfa2a0f5c9b85",
   "analysis_manifest_sha256": "d8fe54a57f41315acd2462ea21e0e95681c25c05b1008fabfc9de20c761853cf",
+  "presentation_revision": {
+    "path": "METHOD-REVISION.pt-BR.md",
+    "sha256": "b3b9789dcc398cc7fdf6ae0bd95f838301168d401132ab2ec1dc0b9c847bb6a7"
+  },
   "inputs": [
     {
       "path": "municipal-census.csv",
@@ -46,13 +50,13 @@
   "figures": [
     {
       "path": "municipal-improvement-definitions.png",
-      "sha256": "90cc6ed10da92d37ae562744ad25fb1bbadf75374a6b2f5e82e3e5754559b326",
-      "size_bytes": 214375
+      "sha256": "7ba71bda6b86eb396f828742619a84b51a493d2dfef4b8c620c544332267c480",
+      "size_bytes": 202960
     },
     {
       "path": "municipal-improvement-definitions.svg",
-      "sha256": "9a4cca83c01443ed815fdff340d23b5f4df92f1ff3165948afa9363296e7ae5d",
-      "size_bytes": 22108
+      "sha256": "9ec1f6fa5d2087edb8f07f260777b987636bcb4ab3dcf8a609306b5881575bbb",
+      "size_bytes": 21254
     },
     {
       "path": "initial-composition-identity.png",
@@ -61,7 +65,7 @@
     },
     {
       "path": "initial-composition-identity.svg",
-      "sha256": "97d483e004997f46832f2926c5d4cbd2f95160ded0488dc3cb39955032ee56e9",
+      "sha256": "7bd974c03c62e4238f3f6a02185382344ee80fdeadbfa07290fa995da14884e5",
       "size_bytes": 430464
     },
     {
@@ -71,7 +75,7 @@
     },
     {
       "path": "conditional-allocation-reference.svg",
-      "sha256": "c83d7b1fd743f1c5ee48602957a0411d1299957fd8aa23a522d733d90a29a306",
+      "sha256": "fc36fc365778d264fa188de30ae90aee2f96139f0cd7bf0f4b9df2992ef06954",
       "size_bytes": 42276
     },
     {
@@ -81,7 +85,7 @@
     },
     {
       "path": "allocation-coverage.svg",
-      "sha256": "9c7a411e320ff35a3503f2aa9ee0995ebc05d18746923a249c255aa5f497214d",
+      "sha256": "40ae6cb3956edf91b4a329450faab96b36c13c166d234bb55e919d32286c00d6",
       "size_bytes": 396160
     }
   ],

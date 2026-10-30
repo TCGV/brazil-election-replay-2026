@@ -1,12 +1,12 @@
 # H7 — Regularidade e contrastes da redistribuição entre turnos
 
-[Índice de hipóteses](../README.pt-BR.md) · [Protocolo](METHOD.pt-BR.md) · [Reprodução em inglês](README.md)
+[Índice de hipóteses](../README.pt-BR.md) · [Revisão vigente](METHOD-REVISION.pt-BR.md) · [Protocolo da execução](METHOD.pt-BR.md) · [Reprodução em inglês](README.md)
 
 **Hipótese:** a redistribuição entre turnos apresenta regularidades ou contrastes abruptos além das referências de composição territorial definidas nesta análise. **Dificuldade de identificação: muito alta.**
 
-**Resultado:** o padrão hipotético nacional de “99% dos municípios” **não se verifica nas definições avaliadas neste snapshot**. Entre os 5.571 códigos municipais domésticos presentes nas fontes, Lula tem melhora maior em **93,8431%** por ganho absoluto, **96,7331%** por ganho nominal e **97,1280%** por crescimento relativo. Há frequências regionais acima de 99%, mas são outros recortes.
+**Resultado descritivo:** entre os 5.571 códigos municipais domésticos presentes nas fontes, Lula tem melhora maior em **93,8431%** por ganho absoluto, **96,7331%** por ganho nominal e **97,1280%** por crescimento relativo. Esses percentuais descrevem os arquivos; isoladamente, não medem raridade estatística nem identificam a causa do movimento.
 
-Os testes não detectam excesso de prevalência ou uniformidade nas caudas previstas. Detectam **contrastes residuais entre perfis iniciais adjacentes** nas duas referências, com Holm de **0,002**. Esses contrastes dão apoio parcial à hipótese estatística e não demonstram causa artificial.
+**Resultado estatístico:** no conjunto formal de 5.564 municípios-alvo, a direção condicional favorece Lula em **97,1064%**, diante de médias simuladas de **99,2273%** na referência por seção e **98,8869%** na de blocos. O teste de excesso de prevalência tem valor-p ajustado por Holm **1,000** nas duas referências. Elas preservam as mudanças observadas e avaliam sua alocação territorial; não determinam a raridade global dos ganhos nem um efeito de campanha. Há **contrastes residuais entre perfis iniciais adjacentes** além das duas referências, com Holm de **0,002**, sem causa artificial demonstrada.
 
 ## Avaliação na escala
 
@@ -14,11 +14,11 @@ Os testes não detectam excesso de prevalência ou uniformidade nas caudas previ
 
 A avaliação considera o alcance parcial das referências, a heterogeneidade territorial preservada ou rompida por cada desenho e a ausência de identificação causal. Não confirma a naturalidade das mudanças marginais nem uma origem artificial dos contrastes. A nota é uma síntese qualitativa ordinal atribuída após os resultados; **não significa 60% de chance de manipulação**, parcela de votos suspeitos ou transformação de valor-p. Veja a [rubrica do índice](../README.pt-BR.md#escala-de-avaliação).
 
-## A pergunta dos 99%
+## Como interpretar as frequências municipais
 
-“Um candidato melhorou mais que o outro em 99% dos municípios” é uma afirmação que depende da medida usada. Ganhar mais votos absolutos, ganhar mais pontos percentuais e crescer mais em relação à própria votação inicial são comparações diferentes. A H7 calcula essas frequências antes de interpretá-las e separa o censo municipal dos testes de alocação territorial.
+Ganhar mais votos absolutos, ganhar mais pontos percentuais e crescer mais em relação à própria votação inicial são comparações diferentes. A H7 calcula essas frequências e separa o censo municipal dos testes de alocação territorial. Nenhum percentual fixo de municípios funciona como limite de normalidade ou anomalia: a inferência depende da distribuição produzida pela referência estatística definida.
 
-Não se adota a expectativa de que cada candidato deva melhorar mais em metade dos municípios. A posição inicial e a saída das demais candidaturas tornam uma referência de 50%/50% inadequada. Tampouco se trata uma frequência elevada, isoladamente, como demonstração de origem artificial.
+Não se adota a expectativa de que cada candidato deva melhorar mais em metade dos municípios. A posição inicial e a saída das demais candidaturas tornam uma referência de 50%/50% inadequada. A frequência observada, isoladamente, não demonstra origem natural ou artificial.
 
 Cada município brasileiro recebe peso um nesse censo. As unidades cadastrais do exterior, identificadas por `ZZ`, aparecem separadamente e não entram no denominador de municípios brasileiros. Os números de municípios, regiões e UFs resumem os mesmos registros em diferentes níveis e não devem ser somados como observações independentes.
 
@@ -28,18 +28,18 @@ O universo nacional bruto contém **5.571 códigos municipais das 27 UFs domést
 
 Em todas as medidas abaixo, os 5.571 casos domésticos são definidos: o denominador de todos os municípios coincide com o de casos definidos. A direção condicional tem os mesmos números do crescimento relativo, sem constituir um teste ou achado independente.
 
-| Universo | Definição de melhora maior | Lula | Flávio Bolsonaro | Empates | Lula sobre 5.571 | Algum sentido atinge 99%? |
-|---|---|---:|---:|---:|---:|---|
-| Bruto | Ganho absoluto | 5.228 | 339 | 4 | 93,8431% | Não |
-| Bruto | Ganho de participação nominal | 5.389 | 182 | 0 | 96,7331% | Não |
-| Bruto | Crescimento relativo / direção condicional | 5.411 | 160 | 0 | 97,1280% | Não |
-| Coorte pareada | Ganho absoluto | 5.230 | 337 | 4 | 93,8790% | Não |
-| Coorte pareada | Ganho de participação nominal | 5.390 | 181 | 0 | 96,7510% | Não |
-| Coorte pareada | Crescimento relativo / direção condicional | 5.410 | 161 | 0 | 97,1100% | Não |
+| Universo | Definição de melhora maior | Lula | Flávio Bolsonaro | Empates | Lula sobre 5.571 |
+|---|---|---:|---:|---:|---:|
+| Bruto | Ganho absoluto | 5.228 | 339 | 4 | 93,8431% |
+| Bruto | Ganho de participação nominal | 5.389 | 182 | 0 | 96,7331% |
+| Bruto | Crescimento relativo / direção condicional | 5.411 | 160 | 0 | 97,1280% |
+| Coorte pareada | Ganho absoluto | 5.230 | 337 | 4 | 93,8790% |
+| Coorte pareada | Ganho de participação nominal | 5.390 | 181 | 0 | 96,7510% |
+| Coorte pareada | Crescimento relativo / direção condicional | 5.410 | 161 | 0 | 97,1100% |
 
-O recorte da coorte altera poucos sinais, mas deve continuar identificado. Nenhuma das três definições nacionais chega ao limiar de 99%. As contagens e as verificações inteiras do limiar estão em [gain-directions.csv](evidence/analysis/gain-directions.csv), e cada unidade pode ser conferida em [municipal-census.csv](evidence/analysis/municipal-census.csv).
+Os dois universos têm o mesmo denominador, mas contagens diferentes em cada definição; por isso, o recorte deve continuar identificado. As contagens completas estão em [gain-directions.csv](evidence/analysis/gain-directions.csv), e cada unidade pode ser conferida em [municipal-census.csv](evidence/analysis/municipal-census.csv).
 
-Uma ponderação diferente pode ultrapassar 99%: os municípios onde Lula tem maior ganho nominal reúnem **122.927.338 dos 123.710.622 votos nominais domésticos do segundo turno**, ou **99,3668%**. Pelo crescimento relativo, reúnem 122.520.362 desses votos, ou 99,0379%. Isso mede o peso eleitoral dos municípios classificados naquele sentido; **não significa 99% dos municípios, votos do candidato ou pessoas que mudaram de preferência**.
+Uma ponderação diferente mede o peso eleitoral dos municípios classificados em cada sentido: aqueles onde Lula tem maior ganho nominal reúnem **122.927.338 dos 123.710.622 votos nominais domésticos do segundo turno**, ou **99,3668%**. Pelo crescimento relativo, reúnem 122.520.362 desses votos, ou 99,0379%. Esses percentuais ponderados **não são frequências de municípios, participações de votos do candidato ou proporções de pessoas que mudaram de preferência**.
 
 ![Frequências municipais por definição, com denominadores explícitos](figures/municipal-improvement-definitions.png)
 
@@ -55,7 +55,7 @@ A tabela mostra, no universo bruto, o número de códigos municipais em que Lula
 | Sudeste | 1.668 | 1.644/1.668 (98,56%) | 1.659/1.668 (99,46%) | 1.652/1.668 (99,04%) |
 | Sul | 1.191 | 941/1.191 (79,01%) | 1.072/1.191 (90,01%) | 1.182/1.191 (99,24%) |
 
-Por exemplo, o Nordeste supera 99% pelo ganho absoluto, enquanto Norte, Sudeste e Sul superam 99% pelo crescimento relativo. Isso não transforma esses percentuais em uma frequência nacional nem estabelece uma causa. Os recortes completos por UF e região estão no CSV, incluindo os dois sentidos e empates.
+São descrições regionais das mesmas unidades municipais, sem teste adicional que estabeleça raridade ou causa em cada região. Os recortes completos por UF e região estão no CSV, incluindo os dois sentidos e empates.
 
 <details>
 <summary>Todas as UFs domésticas: frequência de melhora maior para Lula no universo bruto</summary>
@@ -108,6 +108,8 @@ Os totais brutos preservam a ressalva contábil de **423 aptos por turno** nas m
 
 O protocolo foi fixado antes dos cálculos municipais e testes desta entrega, quando os totais nacionais e a estrutura pareada já eram conhecidos. Não é pré-registro externo. Seu SHA-256 é `7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066`.
 
+A [revisão vigente de interpretação](METHOD-REVISION.pt-BR.md) retira o exemplo de 99% de qualquer função de referência ou conclusão. O protocolo original, os códigos executados e as evidências permanecem preservados para rastreabilidade. Os campos históricos `reaches99_*` são verificações descritivas retiradas da avaliação; não integram os dez testes, a nota ou os gráficos revisados.
+
 ### Cobertura do pareamento e do recorte
 
 As mesmas **499.248 chaves físicas** aparecem nos dois turnos, sem chaves exclusivas. A coorte inclui **497.833 pares**, dos quais **496.565 domésticos** e 1.268 do exterior. O recorte formal usa os domésticos; as unidades do exterior continuam no censo separado.
@@ -138,7 +140,7 @@ Para um município, sejam `Vc,t` os votos do candidato `c`, `N_t` todos os votos
 
 Onde ambas as medidas estão definidas, com bases iniciais positivas, **crescimento relativo e mudança condicional têm exatamente o mesmo sentido**. Ambos dependem do sinal de `V13,2*V22,1−V22,2*V13,1`; não representam evidências independentes. Os valores e unidades, porém, são diferentes. Bases zero não recebem pseudocontagem.
 
-O censo conserva os números inteiros de municípios em cada sentido, empates e indefinições. O limiar hipotético é verificado por `100*k >= 99*M`, sem transformar 98,995% em 99% por arredondamento. São apresentados denominadores de todas as unidades e das que têm a medida definida.
+O censo conserva os números inteiros de municípios em cada sentido, empates e indefinições. Sinais e empates são calculados com aritmética exata, sem depender de percentuais arredondados. São apresentados denominadores de todas as unidades e das que têm a medida definida.
 
 Como o segundo turno contém apenas os dois finalistas, nas unidades com denominadores positivos valem, em proporções:
 
@@ -164,7 +166,7 @@ O carregador lê e reconcilia todas as candidaturas originais. Nos campos numér
 | `section` | Par completo de uma seção | UF; aptos em faixa de razão 1,25; faixas de 5 p.p. de comparecimento, preferência entre finalistas e participação das demais candidaturas |
 | `place_block` | Todas as seções da coorte do mesmo UF/município/zona/local, como bloco indivisível | Os mesmos controles, calculados pelas contagens agregadas do bloco |
 
-As proporções iniciais são `T1/A1`, `V13,1/F1` e `(N1−F1)/T1`. Suas faixas são calculadas com inteiros; 100% entra na última faixa. Só se permutam estratos com pelo menos dois municípios de origem. A permutação de municípios já agregados conservaria a frequência de sinais e não responderia à pergunta dos 99%; por isso, a alocação é feita antes da reagregação municipal.
+As proporções iniciais são `T1/A1`, `V13,1/F1` e `(N1−F1)/T1`. Suas faixas são calculadas com inteiros; 100% entra na última faixa. Só se permutam estratos com pelo menos dois municípios de origem. A permutação de municípios já agregados conservaria a frequência de sinais e impediria testar sua prevalência; por isso, a alocação é feita antes da reagregação municipal.
 
 A referência por seção mantém o número de seções de cada município. A de blocos mantém o número de slots de locais, mas pode mudar quantidades de seções e totais municipais; tudo é recalculado em cada atribuição. Os controles por faixas não preservam exatamente os totais municipais iniciais. A segunda referência conserva a dependência dentro do local observado; a primeira a rompe. Ambas deixam fora parte da heterogeneidade municipal legítima.
 
@@ -289,7 +291,7 @@ Os escores de prevalência observados coincidem entre as duas referências em ca
 | Alvos com uma seção | 496.565 | 5.571 | 93,8790% | 96,7510% | 97,1100% |
 | Alvos com dez seções | 496.565 | 5.235 | 95,0525% | 97,5549% | 97,0583% |
 
-Nenhuma dessas prevalências chega a 99% no respectivo conjunto de alvos. Alterar o piso ou a coorte muda o denominador; isso não é um novo teste nacional de todos os municípios.
+Alterar o piso ou a coorte muda o denominador; essas frequências descritivas não constituem novos testes nacionais de todos os municípios nem recebem uma qualificação de raridade estatística.
 
 | Cenário | `Rlow` seção, p.p. | `Rlow` bloco, p.p. | `Jhigh` seção, p.p. × raiz de seção | `Jhigh` bloco, p.p. × raiz de seção |
 |---|---:|---:|---:|---:|
@@ -305,7 +307,7 @@ As faixas mais estreitas reduzem as magnitudes residuais, sobretudo no modelo de
 
 ## Validação e reprodução
 
-Os **65 testes de implementação passaram**, com controles artificiais de chaves físicas, exclusões, agregação, bases zero, identidade dos ganhos, direção equivalente entre crescimento relativo e mudança condicional, empates exatos e limiar de 99%. Eles também verificam movimentos de composição, alvos fixos, preservação dos blocos, uniformidade e contrastes construídos, constância/variabilidade, enumeração finita, proteção dos caches e resultados determinísticos com quantidades diferentes de processos. São verificações do desenho implementado, sem uma estimativa de poder contra toda alteração possível. Veja [test-results.txt](evidence/test-results.txt).
+Os **65 testes de implementação passaram** na execução publicada, com controles artificiais de chaves físicas, exclusões, agregação, bases zero, identidade dos ganhos, direção equivalente entre crescimento relativo e mudança condicional e empates exatos. Eles também verificam movimentos de composição, alvos fixos, preservação dos blocos, uniformidade e contrastes construídos, constância/variabilidade, enumeração finita, proteção dos caches e resultados determinísticos com quantidades diferentes de processos. São verificações do desenho implementado, sem uma estimativa de poder contra toda alteração possível. Veja [test-results.txt](evidence/test-results.txt).
 
 Uma implementação independente relê as fontes com parser próprio, sem importar os cálculos primários. A auditoria **passou em 47.764.799 verificações, com zero divergências**, e diferença numérica absoluta máxima de `1,4551915228366852e−10`. Reconstrói os **17 CSVs numéricos**, o censo bruto e da coorte, categorias, pareamento, unidades/blocos, estratos, alvos, perfis, escores, as **14 sensibilidades**, o resumo e a procedência. As contagens se sobrepõem sobre arquivos e cálculos e não representam observações estatísticas independentes. Consulte [independent-validation.json](evidence/independent-validation.json).
 

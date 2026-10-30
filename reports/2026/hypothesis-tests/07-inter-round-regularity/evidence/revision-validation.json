@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T11:04:16.824919+00:00",
+  "baseline_commit": "c632074dca55adf984f4ea8f2be4e43dd8e674a2",
+  "scope": "Interpretation and presentation revision; no new statistical tests or simulations.",
+  "unchanged_original_files": [
+    "METHOD.pt-BR.md",
+    "code/inventory_artifacts.py",
+    "code/load_data.py",
+    "code/regularity_statistics.py",
+    "code/run_analysis.py",
+    "code/test_independent.py",
+    "code/test_load_data.py",
+    "code/test_run_analysis.py",
+    "code/test_statistics.py",
+    "code/validate_independently.py",
+    "evidence/analysis/adjacent-profiles.csv",
+    "evidence/analysis/allocation-groups.csv.gz",
+    "evidence/analysis/allocation-units.csv.gz",
+    "evidence/analysis/candidate-totals.csv.gz",
+    "evidence/analysis/cohort-sections.csv.gz",
+    "evidence/analysis/coverage.csv",
+    "evidence/analysis/distribution.csv",
+    "evidence/analysis/eligibility.csv",
+    "evidence/analysis/exact-repetitions.csv.gz",
+    "evidence/analysis/gain-directions.csv",
+    "evidence/analysis/manifest.json",
+    "evidence/analysis/municipal-census.csv",
+    "evidence/analysis/municipality-results.csv",
+    "evidence/analysis/pairing.csv",
+    "evidence/analysis/permutation-scores.csv.gz",
+    "evidence/analysis/sensitivity.csv",
+    "evidence/analysis/summary.json",
+    "evidence/analysis/tests.csv",
+    "evidence/analysis/unmatched.csv",
+    "evidence/independent-validation.json",
+    "evidence/test-results.txt"
+  ],
+  "original_numeric_protocol_and_validation_integrity": "passed",
+  "descriptive_frequencies": {
+    "count": {
+      "numerator": 5228,
+      "denominator": 5571,
+      "percent": 93.84311613713875
+    },
+    "nominal": {
+      "numerator": 5389,
+      "denominator": 5571,
+      "percent": 96.73308203195117
+    },
+    "relative": {
+      "numerator": 5411,
+      "denominator": 5571,
+      "percent": 97.12798420391312
+    }
+  },
+  "formal_prevalence": {
+    "section": {
+      "target_municipalities": 5564,
+      "observed_percent": 97.10639827462258,
+      "reference_mean_percent": 99.22729333789131,
+      "upper_tail_p_holm": 1.0,
+      "Jhigh_p_holm": 0.002,
+      "simulations": 4999
+    },
+    "place_block": {
+      "target_municipalities": 5564,
+      "observed_percent": 97.10639827462258,
+      "reference_mean_percent": 98.88693770386035,
+      "upper_tail_p_holm": 1.0,
+      "Jhigh_p_holm": 0.002,
+      "simulations": 4999
+    }
+  },
+  "figure_integrity": "passed; eight files verified; descriptive benchmark removed",
+  "legacy_threshold_fields": "Preserved only as historical descriptive output; excluded from inference and revised figures.",
+  "local_document_links_checked": 133,
+  "prior_implementation_tests": "65 passed in original publication; not rerun for this presentation revision.",
+  "prior_independent_audit": "Original audit and all numerical evidence preserved byte-for-byte; not rerun."
+}
