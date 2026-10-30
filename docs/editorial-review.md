@@ -11,7 +11,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 3 | Hypothesis index | One result/limit row per analysis; repeated summaries removed and labels aligned with the questions actually tested. |
 | 4 | H1 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 5 | H2 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 6 | H3 | Scheduled |
+| 6 | H3 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 7 | H4 | Scheduled |
 | 8 | H5 | Scheduled |
 | 9 | H6 | Scheduled |
@@ -45,3 +45,7 @@ Core vote/turnout/duplicate checks are separated from the additional electorate 
 ## H2
 
 Formal aggregate tests, descriptive magnitude screening, and closer local comparisons remain distinct. Candidate coverage means every nominal candidacy in each round, not the same roster in both rounds. Persistent flags are not individual significant-test results. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H3
+
+The national inventory is distinguished from the restricted local statistic and its informative support. Cantelli outputs are conservative bounds rather than exact p-values. The broad assessment remains inconclusive; nondetection is not treated as evidence of naturalness. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.

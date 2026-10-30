@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-28T17:24:32.452942+00:00",
+  "created_at_utc": "2026-10-30T14:37:00.119773+00:00",
   "scope": "All published H3 files except this inventory; local .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -10,14 +10,24 @@
       "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
     },
     {
+      "path": "METHOD.md",
+      "size_bytes": 5636,
+      "sha256": "9feed8dc61771bf98739e39fbab8635a30a9f2d51cdc92fe86f3f5f9442313b4"
+    },
+    {
       "path": "METHOD.pt-BR.md",
       "size_bytes": 6438,
       "sha256": "ac94bcd7b71799d3f77339208e64b9cf88df33f4ba7583fb53ab05ddbdd20cfd"
     },
     {
       "path": "README.md",
-      "size_bytes": 7263,
-      "sha256": "8b3791bf66c06e9d2d52d1842d4e8828bffd3e69a9943e769b88ac99dcd8fe9b"
+      "size_bytes": 4262,
+      "sha256": "92d9de8aed2aed9e6485cf01ccc16c00a3261b4ba887be16429e40ac81446694"
+    },
+    {
+      "path": "REPORT.md",
+      "size_bytes": 7600,
+      "sha256": "9504d4e16851b97889fc773164393eba91412458825509da34f4a3c56d36ef77"
     },
     {
       "path": "REPORT.pt-BR.md",
@@ -123,6 +133,11 @@
       "path": "evidence/analysis/turnout-distribution.csv",
       "size_bytes": 225698,
       "sha256": "490010788a9d0c2d9df7505009d2f01751ee849d236800cbe9e3d1714c469181"
+    },
+    {
+      "path": "evidence/artifact-manifest.pre-editorial.json",
+      "size_bytes": 5818,
+      "sha256": "ba513d43eb52c6521438e2359f929b3901c5e3c1f0526efe3b4a9f0833490c46"
     },
     {
       "path": "evidence/independent-validation.json",

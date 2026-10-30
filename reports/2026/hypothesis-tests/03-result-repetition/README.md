@@ -1,46 +1,35 @@
-# H3 — Repetition of complete section results
+# H3 — Evidence and reproduction
 
-[Main report (Portuguese)](REPORT.pt-BR.md) · [Method (Portuguese)](METHOD.pt-BR.md) · [Hypothesis index](../README.md)
+[Main report](REPORT.md) · [Method guide](METHOD.md) · [Hypothesis index](../README.md)
 
-This hypothesis examines identical integer result vectors in **different polling-section keys**. It differs from H1, which checked repeated records for the same key. Both rounds are processed separately, including all nominal candidates: 13 in the first round and two in the second.
+Start with the report for findings and the method guide for technical interpretation. This directory contains the original-source analysis, exact-match inventory, restricted conditional reference, validation, and figures for both rounds.
 
-The exhaustive inventory and the conditional test answer different questions. The inventory records nationwide matches, including zero-activity and small sections. The formal reference tests repeated pairing between a complete candidate-count block and a special-vote/turnout block within strict local strata. It preserves the observed repetition of each block, so it cannot test every possible form of copying or establish that all nationwide matches are natural. Informative coverage and this limitation are central results, not exceptions to omit.
+## Evidence map
 
-**Assessment: 5/10 — inconclusive.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. No excess was detected under the restricted conditional reference, but informative strata cover only seven sections in round 1 and 12,182 in round 2, and the reference preserves each block's repetitions. Here, 5 is an editorial convention for insufficient information, not a 50% probability, positive evidence of excess, or a measure of manipulation. The assessment covers both rounds after analysis. See the [scale rubric](../README.md#assessment-scale) and the [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
-
-## Files
-
-| Path | Purpose |
+| File | Purpose |
 |---|---|
-| [REPORT.pt-BR.md](REPORT.pt-BR.md) | Hypothesis, identification difficulty, method, results, figures, and limits |
-| [METHOD.pt-BR.md](METHOD.pt-BR.md) | Protocol fixed before counting H3 repetitions; not an external preregistration |
-| [code/load_data.py](code/load_data.py) | Original-source parsing, per-section reconciliation, and fingerprinted array cache |
-| [code/collision_statistics.py](code/collision_statistics.py) | Complete signatures, exact rational moments, Cantelli bounds, and Holm adjustment |
-| [code/run_analysis.py](code/run_analysis.py) | Primary inventories, conditional analysis, and descriptive sensitivities |
-| [code/validate_independently.py](code/validate_independently.py) | Separate original-source parser and independent collision/moment calculations |
-| [code/generate_figures.py](code/generate_figures.py) | Three companion PNG/SVG figures |
-| [code/](code/) | Implementation and tests with artificial controls |
-| [evidence/analysis/](evidence/analysis/) | Inventories, repeated-vector memberships, local strata, tests, and sensitivities |
-| [evidence/independent-validation.json](evidence/independent-validation.json) | Independent validation of the published primary calculations |
-| [evidence/test-results.txt](evidence/test-results.txt) | Automated implementation-test output |
-| [evidence/artifact-manifest.json](evidence/artifact-manifest.json) | SHA-256 inventory of published files |
-| [figures/](figures/) | Repetition inventory, informative coverage, and conditional-reference figures |
+| [inventory.csv](evidence/analysis/inventory.csv) | Section, group, pair, and multiplicity counts by round, population, and signature |
+| [clusters.csv.gz](evidence/analysis/clusters.csv.gz) and [cluster-members.csv.gz](evidence/analysis/cluster-members.csv.gz) | Repeated signatures, source keys, and original line references |
+| [turnout-distribution.csv](evidence/analysis/turnout-distribution.csv) | Inventory by exact turnout |
+| [coverage.csv](evidence/analysis/coverage.csv) and [strata.csv.gz](evidence/analysis/strata.csv.gz) | Local reference groups and informative support |
+| [conditional-tests.csv](evidence/analysis/conditional-tests.csv) | Observed pairs, exact moments, conservative bounds, and Holm adjustment |
+| [sensitivity.csv](evidence/analysis/sensitivity.csv) | Predefined descriptive alternatives |
+| [independent-validation.json](evidence/independent-validation.json) | Independent primary-calculation audit |
+| [test-results.txt](evidence/test-results.txt) | Published implementation-test output |
+| [figures/](figures/) | Three companion PNG/SVG figures |
+| [code/](code/) | Source loaders, primary and independent calculations, figure generator, and tests |
 
-The `all_details` population overlaps the other populations. Full and extended signatures are two views of the same section records. A repeated vector with multiplicity `m` contributes `m*(m-1)/2` unordered pairs; those pairs overlap and are not additional votes or independent incidents. Do not sum populations, signature types, or turns as distinct physical sections.
+Large CSVs use gzip without sampling. Read them with `gzip.open(path, "rt", encoding="utf-8", newline="")` and `csv.DictReader`. The `all_details` population overlaps the others; full and extended signatures are views of the same sections. Matching pairs can overlap within a group. Do not add these categories as independent sections or incidents.
 
 ## Reproduce
 
-Run from the repository root with Python 3.12+ and NumPy/Matplotlib from [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs through Git LFS as described in the [project README](../../../../README.md). The stage 1 and H1 manifests, their evidence files, and the matching original-source snapshot are prerequisites. A replay SQLite database is not required.
+Run from the repository root with Python 3.12+ and the pinned packages in [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original CSVs through Git LFS using the [project instructions](../../../../README.md). Source-matching stage 1 and accounting-audit manifests are prerequisites; a replay SQLite database is not required.
 
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
-```
 
-Choose **new output directories and files**; the published results are preserved:
-
-```bash
 H3_DIR=reports/2026/hypothesis-tests/03-result-repetition
 
 python3 "$H3_DIR/code/run_analysis.py" \
@@ -60,39 +49,10 @@ python3 -m unittest discover -s "$H3_DIR/code" -p 'test_*.py' -v
 python3 "$H3_DIR/code/inventory_artifacts.py" --verify
 ```
 
-The primary calculations use exact integer signatures and rational moments. Cantelli supplies a conservative upper bound on a conditional tail probability, followed by Holm for the fixed two-round family. There is no Monte Carlo run, seed, or simulation error. The bound can have substantially less power than an exact tail distribution.
+Use new output paths to preserve the publication. `.work/` is ignored by Git; parsing and inventories may take several minutes and several GB of memory. Caches are reusable only when their fingerprints match. The published calculation uses exact rational moments and conservative bounds, not Monte Carlo simulation.
 
-Both implementations read the original CSVs independently. Sources are pinned to the stage 1/H1 hashes; quantities and candidate/category totals reconcile before the inventory. Missing source quantities never become zero. Zero-filling an absent candidate row applies only to an existing section and an actual candidate in that round. H1 establishes section/votable-key uniqueness for these exact source hashes; the H3 loader checks detail-key uniqueness directly.
+## Publication records
 
-`.work/` is ignored by Git. Array and independent-reference caches are reusable only when their fingerprints match. After a relevant source or code change, choose a new cache path if an existing one is refused. Source parsing and exact inventories may take several minutes and need several GB of memory. Original files and earlier study outputs remain read-only inputs.
+The current English [report](REPORT.md) and [method guide](METHOD.md) are editorial reading versions. They introduce no new analysis. The hash-recorded [execution protocol](METHOD.pt-BR.md), [original report](REPORT.pt-BR.md), numerical evidence, code, and figures are preserved historical records; original figure labels remain in Portuguese. Reproduction regenerates numerical evidence and figures, rather than the reviewed English narrative.
 
-## Reading compressed evidence
-
-Large tables use CSV compressed with gzip (`.csv.gz`). They retain every row; compression is not sampling. Download a file from GitHub and read it directly with Python's standard library:
-
-```python
-import csv
-import gzip
-
-path = "reports/2026/hypothesis-tests/03-result-repetition/evidence/analysis/clusters.csv.gz"
-with gzip.open(path, "rt", encoding="utf-8", newline="") as stream:
-    for row in csv.DictReader(stream):
-        print(row)
-        break
-```
-
-To create an uncompressed local copy without replacing published evidence:
-
-```python
-from pathlib import Path
-import gzip
-import shutil
-
-source = Path("reports/2026/hypothesis-tests/03-result-repetition/evidence/analysis/clusters.csv.gz")
-target = Path("reports/2026/hypothesis-tests/03-result-repetition/.work/clusters.csv")
-target.parent.mkdir(parents=True, exist_ok=True)
-with gzip.open(source, "rb") as compressed, target.open("xb") as expanded:
-    shutil.copyfileobj(compressed, expanded)
-```
-
-The final inventory command verifies the **published H3 files**. Reproduction regenerates numerical evidence and figures in `.work/reproduction/`; the Markdown report remains a reviewed narrative of this source snapshot. No HTML/PDF export is required.
+The [artifact inventory](evidence/artifact-manifest.json) records current publication-file integrity; [the pre-editorial inventory](evidence/artifact-manifest.pre-editorial.json) preserves the earlier publication snapshot. The [analysis manifest](evidence/analysis/manifest.json) and independent audit record the numerical execution's provenance; hashes do not independently authenticate election results.
