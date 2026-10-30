@@ -10,7 +10,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 2 | Stage 2 counting composition | English narrative centers regional weights, state differences, capital/size patterns, and São Paulo; no material inconsistency identified. |
 | 3 | Hypothesis index | One result/limit row per analysis; repeated summaries removed and labels aligned with the questions actually tested. |
 | 4 | H1 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 5 | H2 | Scheduled |
+| 5 | H2 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 6 | H3 | Scheduled |
 | 7 | H4 | Scheduled |
 | 8 | H5 | Scheduled |
@@ -41,3 +41,7 @@ The index separates findings from limitations and preserves the requested ordina
 ## H1
 
 Core vote/turnout/duplicate checks are separated from the additional electorate identity. The exception concerns 41 physical overseas sections, repeated in both rounds, and registered voters rather than candidate votes. Overlapping violation rows are not described as separate sections. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H2
+
+Formal aggregate tests, descriptive magnitude screening, and closer local comparisons remain distinct. Candidate coverage means every nominal candidacy in each round, not the same roster in both rounds. Persistent flags are not individual significant-test results. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
