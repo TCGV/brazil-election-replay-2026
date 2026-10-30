@@ -14,12 +14,12 @@ The compact results from the validated two-round run are versioned in [reports/2
 
 - [Interactive report](reports/2026/replay-report.html): download the HTML file and open it in a browser. It is self-contained; GitHub's file viewer does not run the interactive page.
 - [First-totalization minute CSV](reports/2026/replay-first-totalization-minute.csv) and [BU-receipt minute CSV](reports/2026/replay-bu-received-minute.csv).
-- [Final totals](reports/2026/final-results.csv), [run report (Portuguese)](reports/2026/report.md), and [input manifest](reports/2026/input-manifest.json).
+- [Final totals](reports/2026/final-results.csv), [reconstruction report](reports/2026/REPORT.md), and [input manifest](reports/2026/input-manifest.json).
 - Exportable charts: [round 1](reports/2026/charts/election-6257-turn-1-first_partial_totalization.svg) and [round 2](reports/2026/charts/election-6258-turn-2-first_partial_totalization.svg).
 
 Candidate **13 (Lula) is red** and candidate **22 (Flávio Bolsonaro) is blue**, consistently across rounds, timestamp references, and chart metrics. Other candidates use a separate palette. Colors are explicitly mapped to candidate numbers; the software does not infer political affiliation.
 
-The findings and validation evidence are summarized in [docs/results-2026.md (Portuguese)](docs/results-2026.md).
+The findings and validation evidence are summarized in [docs/results-2026.md](docs/results-2026.md).
 
 ## Run locally
 

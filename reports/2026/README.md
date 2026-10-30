@@ -6,7 +6,7 @@
 
 | Stage | Question | Primary record |
 |---|---|---|
-| **1. Minute-by-minute reconstruction** | How can the supplied final section votes be associated retrospectively with recorded arrival times? | [Reconstruction report](report.md), [minute CSVs](replay-first-totalization-minute.csv), and [interactive chart](replay-report.html) |
+| **1. Minute-by-minute reconstruction** | How can the supplied final section votes be associated retrospectively with recorded arrival times? | [Reconstruction report](REPORT.md), [minute CSVs](replay-first-totalization-minute.csv), and [interactive chart](replay-report.html) |
 | **2. Counting composition and demographic patterns** | Which regions, states, capitals, and municipality-size groups entered first, and how did that composition relate to accumulated vote shares? | [Consolidated Markdown report (Portuguese)](geography/REPORT.pt-BR.md), with [evidence tables](geography/) |
 | **3. Hypothesis tests** | Are the proposed accounting and statistical anomalies present in the supplied records? | [Hypothesis index](hypothesis-tests/README.md); [H1 accounting report](hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md); [H2 turnout/concentration report](hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md); [H3 repetition report](hypothesis-tests/03-result-repetition/REPORT.pt-BR.md); [H4 temporal report](hypothesis-tests/04-temporal-residuals/REPORT.pt-BR.md); [H5 inter-round report](hypothesis-tests/05-inter-round-localization/REPORT.pt-BR.md); [H6 turnout/gains report](hypothesis-tests/06-turnout-gains/REPORT.pt-BR.md); [H7 municipal regularity report](hypothesis-tests/07-inter-round-regularity/REPORT.pt-BR.md) |
 
@@ -25,7 +25,7 @@ Candidate 13 (Lula) is red; candidate 22 (Flávio Bolsonaro) is blue in HTML and
 - [First-totalization timeline](replay-first-totalization-minute.csv)
 - [BU-receipt timeline](replay-bu-received-minute.csv)
 - [Final totals](final-results.csv)
-- [Run report (Portuguese)](report.md)
+- [Current reconstruction report](REPORT.md)
 - [Input provenance and full-run artifact inventory](input-manifest.json)
 - [Charts](charts/)
 - [Browser preview](report-preview.png)
