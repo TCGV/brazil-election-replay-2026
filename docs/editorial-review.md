@@ -13,7 +13,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 5 | H2 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 6 | H3 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 7 | H4 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 8 | H5 | Scheduled |
+| 8 | H5 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 9 | H6 | Scheduled |
 | 10 | H7 | Scheduled |
 | 11 | Repository-wide navigation and consistency | Scheduled |
@@ -53,3 +53,7 @@ The national inventory is distinguished from the restricted local statistic and 
 ## H4
 
 The report distinguishes residual magnitude, formal detection, and temporal support. A broad interpretation of São Paulo as following finer composition is replaced with the measured reference-specific reductions; no causal explanatory percentage is claimed. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H5
+
+Strict local screening and between-place allocation tests answer different questions. The two overseas flags are reported against their prespecified magnitude thresholds and partial coverage. The São Paulo maximum is not conflated with those flags or assigned a causal interpretation. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
