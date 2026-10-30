@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-29T21:10:59.377881+00:00",
+  "scope": "All published H6 files except this inventory; .work and Python caches excluded",
+  "nature": "Integrity inventory, not an external authenticity signature",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 7,
+      "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
+    },
+    {
+      "path": "METHOD.pt-BR.md",
+      "size_bytes": 11905,
+      "sha256": "6a63f96ead6de3641c53cc123d7258282b506f160494fd228b257a02dba51687"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 13885,
+      "sha256": "3d015522bb65968bb1c046a63a613ecc24a6455f5005ac1d54cc1258d8d001be"
+    },
+    {
+      "path": "REPORT.pt-BR.md",
+      "size_bytes": 26268,
+      "sha256": "81f83998d9fcdc6e9fa188fa37ae5c2d039655232909951604bb9541c4835c29"
+    },
+    {
+      "path": "code/generate_figures.py",
+      "size_bytes": 20924,
+      "sha256": "5f56fa04f7dfad011bc3ac09665d0d06a330b840d0cce994a19edaa70b61752f"
+    },
+    {
+      "path": "code/inventory_artifacts.py",
+      "size_bytes": 2849,
+      "sha256": "2832f73903d15f2b611e6df67b191af8219dc242f214128f336c88b8282fe963"
+    },
+    {
+      "path": "code/load_data.py",
+      "size_bytes": 21270,
+      "sha256": "ad80e2a5e298f739a13fef424cf1fc6603310fde33bf623ba07b478c443587f2"
+    },
+    {
+      "path": "code/run_analysis.py",
+      "size_bytes": 30133,
+      "sha256": "c85097fbb478966aa291588872c1a5bfeda05ae0549533e1f5238bd4151a27c4"
+    },
+    {
+      "path": "code/test_independent.py",
+      "size_bytes": 12528,
+      "sha256": "e891899f510ae6d1a80d80831aa1d1180203caf33e191e975ab0466cd4225643"
+    },
+    {
+      "path": "code/test_load_data.py",
+      "size_bytes": 10252,
+      "sha256": "f330a79830a86f40efe0fe9b886cbe3a30db959cc1d699aa0d66cd28b59449cb"
+    },
+    {
+      "path": "code/test_run_analysis.py",
+      "size_bytes": 15461,
+      "sha256": "7ac99f157ca85f45638c34ad52d22f9e0562b1ce38778d3d371b6fad1b1ed917"
+    },
+    {
+      "path": "code/test_statistics.py",
+      "size_bytes": 22882,
+      "sha256": "123fc2da198c3f5c4a4dac00437d330ffd80fa39a67b38a41ed4c3a7e2a3cc3e"
+    },
+    {
+      "path": "code/turnout_statistics.py",
+      "size_bytes": 19377,
+      "sha256": "343182b1027e437a3969cec6e07be8a5cbb8fce8b9878fdb70d09afa76051388"
+    },
+    {
+      "path": "code/validate_independently.py",
+      "size_bytes": 55528,
+      "sha256": "ff549d68e6050b11d59260a0eb79e7a76a69ca47146cb92b0e2ee0e682f63d3d"
+    },
+    {
+      "path": "evidence/analysis/association-groups.csv.gz",
+      "size_bytes": 18875658,
+      "sha256": "618725f7fa944fdf2ef3ac8138637d65d56f97751d2ef0d18561f5581770b2b9"
+    },
+    {
+      "path": "evidence/analysis/coverage.csv",
+      "size_bytes": 3824,
+      "sha256": "dfdda8a6752227559e67f8b50ff9c6278df1434037fb5c5bd3609b8ac267076a"
+    },
+    {
+      "path": "evidence/analysis/descriptive.csv",
+      "size_bytes": 29784,
+      "sha256": "332e5947cb691ee6707cfc9316cbd27a4ddc814f53755e847d611486e9fff6b6"
+    },
+    {
+      "path": "evidence/analysis/eligibility.csv",
+      "size_bytes": 1490,
+      "sha256": "cab9a50a68d77edc36b87e78775b35b24bd5f65baedbbd55d866f106736870b4"
+    },
+    {
+      "path": "evidence/analysis/heatmap.csv",
+      "size_bytes": 2841,
+      "sha256": "7381fb0cfc79dc9a5f77de7ca6c58ce177dcd30be7a728a8818c5b05fd16b3c5"
+    },
+    {
+      "path": "evidence/analysis/manifest.json",
+      "size_bytes": 9336,
+      "sha256": "53a94c441f08e5ee6fcb985a5cac97d2c1cc65788165a202e8b0d129bd24207e"
+    },
+    {
+      "path": "evidence/analysis/paired-sections.csv.gz",
+      "size_bytes": 20019231,
+      "sha256": "7594cad849ec772e3b019c3050ef985d5ecf390f5ac7d362bf6fa7dfd8f9441a"
+    },
+    {
+      "path": "evidence/analysis/pairing.csv",
+      "size_bytes": 760,
+      "sha256": "bffc9758586508a94008587993ef26df647f76ca7ac518a2654d329c486b25a6"
+    },
+    {
+      "path": "evidence/analysis/permutation-scores.csv.gz",
+      "size_bytes": 217611,
+      "sha256": "aecc74af8e656eef1bcf873902bc9811552b4dc6e4a26e875f9316cabef70a34"
+    },
+    {
+      "path": "evidence/analysis/section-measures.csv.gz",
+      "size_bytes": 93432776,
+      "sha256": "51aa869b8d1ad3262533d3dc93dfc3eeae0a14106deb879e4b349ffdc619d984"
+    },
+    {
+      "path": "evidence/analysis/sensitivity.csv",
+      "size_bytes": 2151,
+      "sha256": "880f028c3fd18fb18886839e467275b9b14604622a463b2a70c8499ce43990a4"
+    },
+    {
+      "path": "evidence/analysis/summary.json",
+      "size_bytes": 4057,
+      "sha256": "d03ba1a825303df238e257b7290007657f315e63aa79d3f7d881152c3581c850"
+    },
+    {
+      "path": "evidence/analysis/tests.csv",
+      "size_bytes": 968,
+      "sha256": "919ebe50a53daef4433db0a8b48600ff3d47799919e59633cfb48ab376252f34"
+    },
+    {
+      "path": "evidence/analysis/totals.csv",
+      "size_bytes": 10898,
+      "sha256": "02bbed308a2a6708942a24bca6b9ecce37b7c8acec5b6a68f869fbb060307d53"
+    },
+    {
+      "path": "evidence/analysis/unmatched.csv",
+      "size_bytes": 58,
+      "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    },
+    {
+      "path": "evidence/analysis/x-bins.csv",
+      "size_bytes": 81971,
+      "sha256": "a01fcae96bf09de6ab66b487b5920297608cb3f69f27c2771249f51c833ea072"
+    },
+    {
+      "path": "evidence/independent-validation.json",
+      "size_bytes": 3768,
+      "sha256": "b6f21a699a289dae74a5f6f2cfa023b021eb117b07c59d30f88dbb2f78284009"
+    },
+    {
+      "path": "evidence/test-results.txt",
+      "size_bytes": 11043,
+      "sha256": "72c36d73a3a017e3a9ab5d29828f8661cb125f75c705e830dbe9101b6b5f7a0e"
+    },
+    {
+      "path": "figures/comparison-coverage.png",
+      "size_bytes": 227600,
+      "sha256": "9ea784092a58bd162eebbb957b20a1810e1203dbe2dcfebf35ea6c0a626439c1"
+    },
+    {
+      "path": "figures/comparison-coverage.svg",
+      "size_bytes": 35827,
+      "sha256": "a487fc31c17a39b47b9e6012136e6206acb261d632e1470536b167022f7bc2ee"
+    },
+    {
+      "path": "figures/conditional-association-reference.png",
+      "size_bytes": 172002,
+      "sha256": "8c839a83d9421e9d617c446d3db86ccc05d70d92d978fc71015ca622346a7904"
+    },
+    {
+      "path": "figures/conditional-association-reference.svg",
+      "size_bytes": 17629,
+      "sha256": "e235b30968f4af1e8cdb22bb564a08ee0224fce3deabba22156e4ddb67430ad3"
+    },
+    {
+      "path": "figures/manifest.json",
+      "size_bytes": 3338,
+      "sha256": "effde305f9a7cbdeb662336d45dbee8e1c63f5bffcae7a42593b9529d610b719"
+    },
+    {
+      "path": "figures/national-vote-balance.png",
+      "size_bytes": 176589,
+      "sha256": "0f2c23f1b3cdc49a018f89595115f4522773d872a080107ebc6ac292a02c55b7"
+    },
+    {
+      "path": "figures/national-vote-balance.svg",
+      "size_bytes": 18916,
+      "sha256": "a08a1b07d7c610012c65b6e9292e1138b95276be983d02015e5da61eea91fe9e"
+    },
+    {
+      "path": "figures/turnout-preference-association.png",
+      "size_bytes": 255817,
+      "sha256": "05bc71c892f9fcc1c54c66241a63ea8119e1cdb4ca5abdd114ead47c1edc77ac"
+    },
+    {
+      "path": "figures/turnout-preference-association.svg",
+      "size_bytes": 51257,
+      "sha256": "3051e1b4f7d4041e6874c9534f068571ce2512abe864b359457e678be0ed8426"
+    }
+  ]
+}

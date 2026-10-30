@@ -14,7 +14,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 6 | H3 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 7 | H4 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 8 | H5 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 9 | H6 | Scheduled |
+| 9 | H6 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 10 | H7 | Scheduled |
 | 11 | Repository-wide navigation and consistency | Scheduled |
 
@@ -57,3 +57,7 @@ The report distinguishes residual magnitude, formal detection, and temporal supp
 ## H5
 
 Strict local screening and between-place allocation tests answer different questions. The two overseas flags are reported against their prespecified magnitude thresholds and partial coverage. The São Paulo maximum is not conflated with those flags or assigned a causal interpretation. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H6
+
+The national count balance is arithmetic, not an individual voter-flow reconstruction. Small conditional correlations, supported populations, and the difference between count gains and equally weighted section changes are explicit. Slopes do not estimate new-voter preferences. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.

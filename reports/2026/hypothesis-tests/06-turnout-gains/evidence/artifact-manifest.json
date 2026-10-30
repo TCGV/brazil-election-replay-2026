@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-29T21:10:59.377881+00:00",
+  "created_at_utc": "2026-10-30T14:37:59.476475+00:00",
   "scope": "All published H6 files except this inventory; .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -10,14 +10,24 @@
       "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
     },
     {
+      "path": "METHOD.md",
+      "size_bytes": 8266,
+      "sha256": "29d26f6c454f1087f5c38fa441816693cb32ff55dbb8a05d0a3b99a5b8be8db3"
+    },
+    {
       "path": "METHOD.pt-BR.md",
       "size_bytes": 11905,
       "sha256": "6a63f96ead6de3641c53cc123d7258282b506f160494fd228b257a02dba51687"
     },
     {
       "path": "README.md",
-      "size_bytes": 13885,
-      "sha256": "3d015522bb65968bb1c046a63a613ecc24a6455f5005ac1d54cc1258d8d001be"
+      "size_bytes": 5081,
+      "sha256": "c95796b62fa5d56d311204797363acf864aa9b8cac8d1303e7d570ddab5bb770"
+    },
+    {
+      "path": "REPORT.md",
+      "size_bytes": 7215,
+      "sha256": "71bfab13dad63b52cab4236849dbc362bce2d01a080006f684a96f717ea50f32"
     },
     {
       "path": "REPORT.pt-BR.md",
@@ -153,6 +163,11 @@
       "path": "evidence/analysis/x-bins.csv",
       "size_bytes": 81971,
       "sha256": "a01fcae96bf09de6ab66b487b5920297608cb3f69f27c2771249f51c833ea072"
+    },
+    {
+      "path": "evidence/artifact-manifest.pre-editorial.json",
+      "size_bytes": 7242,
+      "sha256": "624d321c879ba5c3d611d5fb52b86cfdfce1ae3add5eedb293be64cba39871bc"
     },
     {
       "path": "evidence/independent-validation.json",
