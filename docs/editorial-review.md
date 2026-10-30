@@ -8,7 +8,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 |---|---|---|
 | 1 | Stage 1 reconstruction | English report and method; duplicate execution narrative consolidated. No material inconsistency identified. |
 | 2 | Stage 2 counting composition | English narrative centers regional weights, state differences, capital/size patterns, and São Paulo; no material inconsistency identified. |
-| 3 | Hypothesis index | Scheduled |
+| 3 | Hypothesis index | One result/limit row per analysis; repeated summaries removed and labels aligned with the questions actually tested. |
 | 4 | H1 | Scheduled |
 | 5 | H2 | Scheduled |
 | 6 | H3 | Scheduled |
@@ -33,3 +33,7 @@ Coverage, candidate counts, time windows, and validation statements were reviewe
 ## Stage 2
 
 The revision separates clock time from section progress, section completion from nominal-vote weights, and municipality-weighted correlations from section-weighted curves. State examples retain the variation hidden by regional averages. Accounting components are described without causal explanatory percentages; non-detection is not labeled randomness. Original figures and HTML/PDF remain historical companions with their original labels. Complete state tables remain accessible in the preserved report and existing CSVs. No numerical processing was needed.
+
+## Hypothesis index
+
+The index separates findings from limitations and preserves the requested ordinal rubric. Hypothesis labels now describe the measured question instead of implying that rejection establishes an implausible or artificial outcome. Per-analysis links use stable folder READMEs during migration. No scores were changed.

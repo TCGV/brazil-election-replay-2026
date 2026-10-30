@@ -1,51 +1,41 @@
 # Stage 3 — Hypothesis tests
 
-**English (US)** · [Português (Brasil)](README.pt-BR.md) · [Study stages](../README.md)
+[Study index](../README.md) · [Editorial review](../../../docs/editorial-review.md)
 
-Each hypothesis has its own folder containing a primary Markdown report, analysis code, tests, and evidence. Hypotheses are evaluated one at a time. A result may identify an inconsistency, find no signal under the stated checks, or remain inconclusive; refutation is not assumed in advance.
+The seven analyses ask whether the supplied records contain specified accounting inconsistencies or departures from explicit statistical references. They do not assume refutation in advance. A detected association does not identify manipulation, and a nondetection does not certify naturalness.
 
-| ID | Hypothesis | Identification difficulty | Assessment (0–10) | Status and result |
+## Findings at a glance
+
+| Analysis | Main finding | Main limit | Identification difficulty | Assessment |
 |---|---|---|---|---|
-| **H1** | Inconsistencies between votes, turnout, and registered electorate; duplicate records | Low | **1/10** | [Completed: no core signals, with electorate-identity exceptions](01-accounting-integrity/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H2** | Atypical combinations of turnout and candidate concentration in comparable sections | Medium | **6/10** | [Completed: partial support for statistical association, without an established artificial cause](02-turnout-concentration/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H3** | Excessive repetition of complete section results | Medium | **5/10 — inconclusive** | [Completed: no local detection with limited informative support](03-result-repetition/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H4** | Counting trends unexplained by section composition, including subtle, gradual residual drift | High | **6/10** | [Completed: partial support for residual patterns; polling-place controls attenuate deviations](04-temporal-residuals/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H5** | Exceptionally concentrated changes in particular sections between rounds | High | **6/10** | [Completed: local contrasts and between-place concentration; incomplete screening coverage](05-inter-round-localization/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H6** | Exceptional association between increased turnout and a finalist's gains | High | **6/10** | [Completed: weak positive conditional association, without an established artificial cause](06-turnout-gains/REPORT.pt-BR.md#avaliação-na-escala) |
-| **H7** | Inter-round vote redistribution with implausible regularities or discontinuities | Very high | **6/10** | [Completed: no detected excess prevalence/uniformity; initial-profile contrasts detected](07-inter-round-regularity/REPORT.pt-BR.md#avaliação-na-escala) |
+| [H1 — Accounting integrity](01-accounting-integrity/README.md) | No core vote/turnout/duplicate signals; 41 additional electorate-identity exceptions per round | Uninstalled overseas sections with no votes; recording convention not independently resolved | Low | **1/10** |
+| [H2 — Turnout and candidate concentration](02-turnout-concentration/README.md) | Excess overlap in 5 of 15 candidate/round tests; local screening separates persistence, attenuation, and missing peers | Association and descriptive flags do not identify artificial votes; primary peer coverage is about 70% | Medium | **6/10** |
+| [H3 — Repeated complete results](03-result-repetition/README.md) | National repetitions inventoried; restricted local reference detects no excess | Informative support is too limited to settle the broad hypothesis | Medium | **5/10 — inconclusive** |
+| [H4 — Residual counting trends](04-temporal-residuals/README.md) | Some residual patterns persist in round 1; none detected under the polling-place reference in round 2 after Holm | Small magnitudes, limited within-place time variation, and dependence on the reference | High | **6/10** |
+| [H5 — Localized inter-round changes](05-inter-round-localization/README.md) | Two strict local screening cases and separately detected concentration between polling places | Strict screening covers 30.53% of paired sections; allocation tests preserve observed changes | High | **6/10** |
+| [H6 — Turnout and inter-round gains](06-turnout-gains/README.md) | A weak positive conditional association is detected between turnout and preference changes | No individual voter flows or causal source of gains can be inferred | High | **6/10** |
+| [H7 — Municipal gains and territorial regularity](07-inter-round-regularity/README.md) | No detected excess directional prevalence or uniformity in the planned tails; initial-profile contrasts detected | Conditional allocation references do not establish the global rarity or origin of the gains | Very high | **6/10** |
 
-Difficulty means the effort needed to identify and interpret a signal from the available data. It does not estimate the likelihood of manipulation. Internal consistency does not independently authenticate the source files or establish individual voter transitions.
+Each link leads to that analysis's report, method, and evidence. Identification difficulty describes how hard it is to detect and interpret the proposed signal from these data; it is not the likelihood of manipulation. The results are dependent and must not be added as independent incidents.
 
 ## Assessment scale
 
-**0 — Fully refuted → 10 — Fully confirmed.** The score is a qualitative, ordinal summary of support for the stated statistical hypothesis, considering findings, coverage, and limitations across both rounds. It was assigned after the analyses; it is not a statistic computed by the protocols, a probability of manipulation, a share of suspicious votes, or a transformation of a p-value.
+**0 — Fully refuted → 10 — Fully confirmed.** Scores are qualitative, ordinal summaries of support for the stated statistical hypothesis within its verifiable scope. They were assigned after analysis; they are not statistics produced by the protocols.
 
 | Score | Interpretation |
 |---|---|
-| 0 | Fully refuted within the defined, verifiable scope |
+| 0 | Fully refuted within the defined scope |
 | 1–2 | Predominantly refuted, with qualifications or bounded exceptions |
-| 3–4 | Weak or inconsistent support for the hypothesis |
+| 3–4 | Weak or inconsistent support |
 | 5 | Inconclusive: insufficient information to place the conclusion in either direction |
-| 6–7 | Partial support for the statistical hypothesis, with material limitations |
-| 8–9 | Strong support for the statistical hypothesis within the analyzed scope |
-| 10 | Fully confirmed within the defined, verifiable scope |
+| 6–7 | Partial support, with material limitations |
+| 8–9 | Strong support within the analyzed scope |
+| 10 | Fully confirmed within the defined scope |
 
-**5 means neither a 50% probability nor positive evidence of an anomaly.** Each score requires its explanation; differences between scores have no comparable statistical magnitude and must not be added or averaged into a “risk” measure. Unevaluated hypotheses receive no score. The endpoints concern the tested hypothesis and scope, without independently authenticating the sources or establishing the cause of a pattern.
+**A score is not a probability of manipulation, a share of suspicious votes, or a p-value conversion.** In particular, 5 does not mean 50%. Scores cannot be averaged into a risk measure. Each report gives its own justification and limits; the endpoints do not authenticate the sources externally or establish a cause.
 
-The H1 score also includes the additional identity between electorate, turnout, and abstentions: no approved core signal appeared, but that relation retains 41 exceptions per round. H2 finds the anticipated associations in some tests and persistent local contrasts, without establishing an artificial cause. H3 detects no excess under its reference, but restricted informative support prevents a conclusion about the broad hypothesis. H4 finds small gradual and cumulative signals under the polling-place reference in round 1; no signal is detected under that reference in round 2 after Holm. H5 finds two large descriptive contrasts among comparable sections and formal between-place concentration, without testing the naturalness of the marginal distribution of changes. H6 finds a weak positive association between increased turnout and relative preference change toward Lula, with four rejections after Holm; its reference neither distinguishes legitimate mobilization from an artificial cause nor identifies voter transitions. H7's raw 97.1280% relative-growth frequency is descriptive; its allocation tests detect no excess directional prevalence or uniformity in the planned tails, but find adjacent initial-profile contrasts, without an established artificial cause. Each report provides its own rationale.
+## Reading the evidence
 
-## Reports and reproduction
+The main reports lead with the answer and the supporting numbers. Method guides define populations, denominators, references, and test families; folder READMEs contain reproduction commands and evidence maps. Hypothesis tests concern the supplied snapshot, rather than a certified history of public updates or observed individual voting transitions.
 
-Start with the [H1 report in Portuguese](01-accounting-integrity/REPORT.pt-BR.md). Its [reproduction instructions](01-accounting-integrity/README.md) require only Python's standard library and the two original nationwide CSVs; neither a previously generated replay database nor the stage 2 numerical libraries are required.
-
-The [H2 report](02-turnout-concentration/REPORT.pt-BR.md) adds comparisons within municipality, electoral zone, and section-electorate bands, across all candidates in both rounds. Its [protocol](02-turnout-concentration/METHOD.pt-BR.md) distinguishes descriptive cases from a formal conditional-independence benchmark. H2 uses NumPy and Matplotlib, reports incomplete peer coverage, and does not equate statistical association with manipulation.
-
-The [H3 report](03-result-repetition/REPORT.pt-BR.md) inventories identical complete result vectors on distinct section keys, with a separate local block-pairing reference. Its [protocol](03-result-repetition/METHOD.pt-BR.md) uses exact rational moments and conservative Cantelli bounds, reports extremely limited informative support in round 1, and does not certify naturalness. Large evidence tables are supplied as compressed CSVs.
-
-The [H4 report](04-temporal-residuals/REPORT.pt-BR.md) examines gradual trends, cumulative excursions, and abrupt minute-level contributions after conditioning on electoral zone, polling place, and section electorate. Its [protocol](04-temporal-residuals/METHOD.pt-BR.md) defines two references, 4,999 permutations per round/reference, and Holm across the fixed family of 90 tests covering all candidates. The report distinguishes magnitude, significance, and coverage without assigning an artificial cause; its [reproduction commands](04-temporal-residuals/README.md) preserve published evidence.
-
-The [H5 report](05-inter-round-localization/REPORT.pt-BR.md) pairs the same section keys across rounds and separates changes conditional on the finalists from the effect of other candidates leaving the race. Its [protocol](05-inter-round-localization/METHOD.pt-BR.md) distinguishes local-peer screening from a between-place concentration reference, with 4,999 permutations per reference and Holm across four tests. Permutations preserve the observed changes: the test does not establish whether their nationwide count or magnitude is natural. Its [reproduction instructions](05-inter-round-localization/README.md) include complete compressed evidence.
-
-The [H6 report](06-turnout-gains/REPORT.pt-BR.md) separates net turnout growth, vote gains, and preference changes between finalists. Its [protocol](06-turnout-gains/METHOD.pt-BR.md) defines linear and pooled-rank correlations under two baseline-controlled references, with 4,999 permutations per reference and Holm across four tests. Count balances and decomposition are arithmetic and do not attribute gains to individual voters. Its [reproduction instructions](06-turnout-gains/README.md) include every section, 14 descriptive sensitivity rows, and all 9,998 published simulation scores.
-
-The [H7 report](07-inter-round-regularity/REPORT.pt-BR.md) distinguishes absolute gains, nominal-share gains, and relative growth in a municipal census. Its [execution protocol](07-inter-round-regularity/METHOD.pt-BR.md) defines section and whole-polling-place territorial-allocation references, with ten Holm-adjusted tests of prevalence, low residual dispersion, and adjacent initial-profile contrasts. The [current revision](07-inter-round-regularity/METHOD-REVISION.pt-BR.md) retires the illustrative percentage benchmark and grounds interpretation in the statistical references, without a 50%/50% sign assumption or a conclusion about the global rarity of the gains. Its [reproduction instructions](07-inter-round-regularity/README.md) include complete evidence and all 9,998 simulated score sets.
+Current reading documents are being standardized in English. Original Portuguese execution protocols and generated reports are retained as historical evidence, with their original hashes. Publication inventories distinguish the original snapshot from current editorial documents. This review introduces no new calculations or statistical tests.
