@@ -1,46 +1,48 @@
-# H4 — Temporal evolution after accounting for composition
+# H4 — Evidence and reproduction
 
-[Main report (Portuguese)](REPORT.pt-BR.md) · [Method (Portuguese)](METHOD.pt-BR.md) · [Hypothesis index](../README.md)
+[Report](REPORT.md) · [Method guide](METHOD.md) · [Hypothesis index](../README.md)
 
-This analysis asks whether candidate votes retain gradual or abrupt associations with counting order after conditioning on observed local composition. Both presidential rounds are processed separately, including all 13 nominal candidates in round 1 and both candidates in round 2. The procedure treats either direction and every candidate consistently.
+Start with the report for findings and interpretation. This page maps the published evidence and documents how to reproduce the original execution. The English narrative is an editorial review; no calculations were rerun for this edition.
 
-Two references are evaluated together: municipality/electoral zone/section-electorate band (`zone_size`), and the same grouping with polling place added (`place_size`). The latter controls polling-place composition more closely, but can also condition an entire place's movement out of the comparison. Neither reference supplies an external prediction of voter preferences.
+## Evidence map
 
-**Assessment: 6/10 — partial support for the statistical hypothesis.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. Forty of the 90 predeclared tests detect residual time-order association after Holm. For the finalists, gradual and cumulative associations persist within polling places in round 1, with small national magnitudes. In round 2, all three zone-level signals cease to be detected after conditioning on polling place. Local temporal support is incomplete and legitimate unobserved factors may generate association; no artificial cause has been established. The qualitative score is not a 60% probability of manipulation or a transformation of a p-value. See the [scale rubric](../README.md#assessment-scale) and [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
-
-## Files
-
-| Path | Purpose |
+| File | What it records |
 |---|---|
-| [REPORT.pt-BR.md](REPORT.pt-BR.md) | Hypothesis, difficulty, assessment, results, figures, and interpretation |
-| [METHOD.pt-BR.md](METHOD.pt-BR.md) | Protocol fixed before comparing candidate votes with counting order |
-| [code/load_data.py](code/load_data.py) | Direct original-source parsing, timestamp handling, reconciliation, and array cache |
-| [code/temporal_statistics.py](code/temporal_statistics.py) | Cohort, local residuals, temporal scores, permutation assignments, and Holm adjustment |
-| [code/run_analysis.py](code/run_analysis.py) | Primary analysis, simulation, coverage, curves, and descriptive sensitivities |
-| [code/validate_independently.py](code/validate_independently.py) | Separate original-source parser and independent numerical audit |
-| [code/generate_figures.py](code/generate_figures.py) | Companion PNG/SVG figures from published evidence |
-| [code/](code/) | Implementation and tests using artificial controls |
-| [evidence/analysis/](evidence/analysis/) | Group totals, minute curves, reference tests, coverage, and sensitivities |
-| [evidence/independent-validation.json](evidence/independent-validation.json) | Independent verification of the primary calculations |
-| [evidence/test-results.txt](evidence/test-results.txt) | Automated implementation-test output |
-| [evidence/artifact-manifest.json](evidence/artifact-manifest.json) | SHA-256 inventory of published files |
-| [figures/](figures/) | Composition curves, residual references, and score comparisons |
+| [tests.csv](evidence/analysis/tests.csv) | All 90 primary scores, signs, reference summaries, p-values, and Holm decisions |
+| [eligibility.csv](evidence/analysis/eligibility.csv) | Cohort inclusions and exclusive exclusions by round and state |
+| [coverage.csv](evidence/analysis/coverage.csv) | Groups and informative sections for each candidate/reference |
+| [group-spans.csv](evidence/analysis/group-spans.csv), [span-summary.csv](evidence/analysis/span-summary.csv) | Temporal reach of the comparisons |
+| [group-totals.csv.gz](evidence/analysis/group-totals.csv.gz) | Complete group inventory, including singletons |
+| [curves.csv.gz](evidence/analysis/curves.csv.gz), [milestones.csv](evidence/analysis/milestones.csv) | Minute curves and fixed section-progress milestones |
+| [uf-summary.csv](evidence/analysis/uf-summary.csv) | Descriptive state-level scores and denominators |
+| [sensitivity.csv](evidence/analysis/sensitivity.csv) | Predefined descriptive alternatives for every candidate |
+| [summary.json](evidence/analysis/summary.json), [execution manifest](evidence/analysis/manifest.json) | Results, original sources, parameters, and fingerprints |
+| [figures/](figures/) | Original composition, residual, score, and support figures; original labels are preserved |
+| [code/](code/) | Original implementation and artificial controls |
 
-The unit is a section within one round. National (`BR`) coverage rows summarize the UF rows; do not sum them as additional sections. The two grouping references and two timestamp sources describe the same cohort. Candidates and rounds must not be counted as distinct physical sections or voters.
+National (`BR`) rows summarize state rows and must not be summed as additional sections. References and timestamp sources reuse the same cohort. Counts of candidate/round comparisons do not represent distinct voters. Compressed CSVs retain every row; compression is not sampling.
 
-## Reproduce
+## Validation already completed
 
-Run from the repository root with Python 3.12+ and NumPy/Matplotlib from [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two original nationwide CSVs with Git LFS as described in the [project README](../../../../README.md). The stage 1 and accounting-audit manifests, their evidence, and the same source snapshot are prerequisites. Neither the replay SQLite database nor a processed geographic database is required.
+The published execution passed **55 implementation tests** and an independent original-source audit with **6,676,231 checks and zero mismatches**; the maximum absolute numerical difference was **3.33e-16**. These are overlapping integrity comparisons, not independent statistical observations.
+
+The independent implementation reconstructs all numerical tables, including descriptive alternatives, and checks scores, quantiles, exceedances, and Holm against retained simulation arrays. It independently repeats realizations 0 and 1 of each round/reference: **eight complete assignments**, rather than all **19,996 assignments**.
+
+- [Independent validation record](evidence/independent-validation.json)
+- [Implementation test output](evidence/test-results.txt)
+- [Current publication inventory](evidence/artifact-manifest.json)
+
+## Reproduce the original analysis
+
+Use Python 3.12+ and NumPy/Matplotlib from [requirements-analysis.txt](../../../../requirements-analysis.txt). Retrieve the two nationwide CSVs through Git LFS using the [project instructions](../../../../README.md). The stage 1 and accounting-audit records for the same source snapshot are prerequisites; neither a replay SQLite database nor a processed geographic database is required.
+
+From the repository root, choose new output paths to preserve published evidence:
 
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-analysis.txt
-```
 
-Choose **new output directories and files** so the published evidence remains preserved:
-
-```bash
 H4_DIR=reports/2026/hypothesis-tests/04-temporal-residuals
 
 python3 "$H4_DIR/code/run_analysis.py" \
@@ -63,46 +65,18 @@ python3 -m unittest discover -s "$H4_DIR/code" -p 'test_*.py' -v
 python3 "$H4_DIR/code/inventory_artifacts.py" --verify
 ```
 
-For each group, `p = group candidate votes / group nominal votes` and `r = section candidate votes - p * section nominal votes`. These final observed group preferences are reused retrospectively; they are not estimates learned independently of the analyzed results. Their sums, every candidate's votes, nominal totals, and special-vote categories remain fixed under complete-section assignments within each group.
+`.work/` is ignored by Git. Source and simulation caches are reused only when fingerprints match. Retain the simulation arrays for the independent audit; published quantiles do not replace them. A fresh reproduction writes new numerical artifacts and figures, without regenerating the reviewed English report.
 
-Three two-sided scores summarize each national residual curve: `G` measures gradual association with the tied counting-order rank; `C` is the maximum absolute cumulative residual; `M` is the largest absolute contribution of one minute. They are normalized by the cohort's final nominal total. `G` is a normalized covariance score, not an ordinary slope or a start-to-finish percentage-point change. Current-share residuals in the descriptive curves instead use the current cumulative nominal denominator.
-
-In round 2, the two candidate residuals are exact opposites because they exhaust nominal votes. Their absolute scores therefore coincide; these are dependent tests rather than separate independent findings. This complementarity does not hold for the finalists among 13 round 1 candidates. Holm does not require independence.
-
-There are 4,999 permutations per round/reference, with deterministic per-realization child streams from seed `20261028`. The same complete-section assignment is applied to all candidates and the paired first-totalization/BU-receipt slots. First totalization is primary: plus-one p-values and Holm at 5% cover the fixed family of 90 comparisons. BU receipt is a paired descriptive sensitivity, without a second selected p-value family.
-
-`.work/` is ignored by Git. Array and simulation caches are reused only when fingerprints match. Retain the simulation files for the independent audit; published quantiles do not replace their underlying vectors. Fresh parsing and permutations require several minutes, memory, and local disk. The numerical outputs preserve source hashes and do not modify the original files or earlier study artifacts.
-
-Timestamp seconds are truncated to whole minutes, with all tied sections included together. The source convention is retained as “Hora TSE” without an unverified timezone conversion. The reconstruction uses the final snapshots' first-totalization and BU-receipt fields; it is not a complete history of publicly displayed updates or intermediate edits to section records.
-
-## Reading compressed evidence
-
-Large `.csv.gz` tables contain all rows with gzip compression, without sampling. Read them with Python's standard library:
+Read a compressed table with the standard library:
 
 ```python
 import csv
 import gzip
 
-path = "reports/2026/hypothesis-tests/04-temporal-residuals/evidence/analysis/curves.csv.gz"
-with gzip.open(path, "rt", encoding="utf-8", newline="") as stream:
+with gzip.open("path/to/curves.csv.gz", "rt", encoding="utf-8", newline="") as stream:
     row = next(csv.DictReader(stream))
-    print(row)
 ```
 
-For an uncompressed local copy, write into the ignored `.work/` directory and use exclusive creation to avoid overwriting a published artifact:
+## Frozen execution records
 
-```python
-from pathlib import Path
-import gzip
-import shutil
-
-source = Path("reports/2026/hypothesis-tests/04-temporal-residuals/evidence/analysis/curves.csv.gz")
-target = source.parents[2] / ".work" / "curves.csv"
-target.parent.mkdir(parents=True, exist_ok=True)
-with gzip.open(source, "rb") as compressed, target.open("xb") as expanded:
-    shutil.copyfileobj(compressed, expanded)
-```
-
-The inventory command verifies the **published H4 files**. Reproduction writes new numerical evidence and figures into `.work/reproduction/`; the report remains a reviewed narrative of this source snapshot. Pointwise simulation envelopes are neither simultaneous bands nor confidence intervals for the election. Association beyond a conditional reference does not identify an artificial cause, and non-detection does not certify naturalness or externally authenticate the sources.
-
-The published run passed 55 implementation tests and an independent original-source audit with 6,676,231 checks and zero mismatches. The audit reconstructs all numerical tables, including descriptive alternatives, and recomputes ranks, quantiles, and Holm from retained simulation arrays. It also repeats eight complete assignments independently: realizations 0 and 1 for each round/reference. It does **not** independently repeat all 19,996 assignments. Check counts are integrity comparisons, not independent statistical observations.
+The [original Portuguese protocol](METHOD.pt-BR.md) and [original Portuguese report](REPORT.pt-BR.md) are retained unchanged as historical records. The protocol's hash is pinned by the original code and manifests. Current reading and navigation use [REPORT.md](REPORT.md) and [METHOD.md](METHOD.md); the original documents do not override editorial clarifications in this edition. Existing figures are also preserved rather than presented as regenerated results. The publication inventory covers the current files; the pre-editorial inventory is retained separately when the edition is published.

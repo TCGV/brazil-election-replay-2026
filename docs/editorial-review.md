@@ -12,7 +12,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 4 | H1 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 5 | H2 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 6 | H3 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 7 | H4 | Scheduled |
+| 7 | H4 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 8 | H5 | Scheduled |
 | 9 | H6 | Scheduled |
 | 10 | H7 | Scheduled |
@@ -49,3 +49,7 @@ Formal aggregate tests, descriptive magnitude screening, and closer local compar
 ## H3
 
 The national inventory is distinguished from the restricted local statistic and its informative support. Cantelli outputs are conservative bounds rather than exact p-values. The broad assessment remains inconclusive; nondetection is not treated as evidence of naturalness. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H4
+
+The report distinguishes residual magnitude, formal detection, and temporal support. A broad interpretation of São Paulo as following finer composition is replaced with the measured reference-specific reductions; no causal explanatory percentage is claimed. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
