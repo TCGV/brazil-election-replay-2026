@@ -1,16 +1,15 @@
 # H1 — Accounting integrity
 
-[Main report (Portuguese)](REPORT.pt-BR.md) · [Hypothesis index](../README.md) · [Índice em português](../README.pt-BR.md)
+[Main report](REPORT.md) · [Method](METHOD.md) · [Hypothesis index](../README.md)
 
-This folder contains the first hypothesis test of stage 3, covering both presidential rounds and all 27 federative units (26 states and the Federal District) plus overseas sections (`ZZ`). The report distinguishes the absence of vote/turnout overflows and duplicate keys from 82 raw electorate-identity exceptions in uninstalled overseas sections. These are 41 physical sections appearing in both rounds, without votes or turnout. The exceptions remain documented; the hypothesis is not declared fully refuted.
-
-**Assessment: 1/10 — predominantly refuted, with an additional accounting qualification.** Scale: **0 — Fully refuted → 10 — Fully confirmed**. No approved core signal appeared; the broader accounting scope retains 41 electorate-identity exceptions per round without an independently confirmed explanation. This is a qualitative, post-analysis assessment across both rounds, not a probability or measure of manipulation. See the [scale rubric](../README.md#assessment-scale) and the [report rationale](REPORT.pt-BR.md#avaliação-na-escala).
+Start with the report for findings and the method guide for definitions. This page lists the published evidence and reproduction commands. The English editorial edition uses the existing results without recalculating them. The [original Portuguese report](REPORT.pt-BR.md) and original execution evidence remain frozen historical records.
 
 ## Contents
 
 | Path | Purpose |
 |---|---|
-| [REPORT.pt-BR.md](REPORT.pt-BR.md) | Hypothesis, difficulty, method, results, exceptions, and limits |
+| [REPORT.md](REPORT.md) | Question, findings, accounting exception, assessment, and limits |
+| [METHOD.md](METHOD.md) | Source interpretation, exact checks, exception handling, and validation |
 | [code/run_audit.py](code/run_audit.py) | Primary original-CSV scan, disk-backed joins, exact integer checks |
 | [code/validate_independently.py](code/validate_independently.py) | Separate original-CSV parser using dictionaries; no primary/replay imports |
 | [code/compare_validations.py](code/compare_validations.py) | Compare both implementations, input/code hashes, and stage 1 snapshot hashes |
@@ -21,7 +20,8 @@ This folder contains the first hypothesis test of stage 3, covering both preside
 | [evidence/independent-validation.json](evidence/independent-validation.json) | Independent counts, checks, flags, and exception examples |
 | [evidence/validation-comparison.json](evidence/validation-comparison.json) | Exact agreement of the two scans |
 | [evidence/test-results.txt](evidence/test-results.txt) | Automated test output |
-| [evidence/artifact-manifest.json](evidence/artifact-manifest.json) | SHA-256 inventory of the published H1 report, code, and evidence |
+| [evidence/artifact-manifest.json](evidence/artifact-manifest.json) | Current publication inventory, including the English editorial documents |
+| [evidence/artifact-manifest.pre-editorial.json](evidence/artifact-manifest.pre-editorial.json) | Preserved inventory of the original H1 publication |
 
 ## Reproduce
 
@@ -48,8 +48,8 @@ python3 reports/2026/hypothesis-tests/01-accounting-integrity/code/inventory_art
 
 The primary scanner accepts `--votes`, `--details`, and `--year`; the independent validator accepts `--root` and is intentionally fixed to the study's 2026 nationwide files. The comparison verifies that the inputs still match the stage 1 manifest. If the source snapshot changes, it must be reviewed as a new study run rather than silently compared with this report.
 
-The primary scanner reads both original files, fingerprints parsed records before aggregation, and builds a temporary SQLite database in this hypothesis's ignored `.work/` folder. That temporary database is removed after processing. Reserve several GB for temporary disk use. The independent implementation uses in-memory dictionaries and needs several GB of RAM. Both scans can take several minutes. Original CSVs and earlier study outputs are read-only inputs.
+The primary scanner fingerprints parsed records before aggregation and uses a temporary SQLite database in this hypothesis's ignored `.work/` folder; the database is removed afterward. Reserve several GB of temporary disk space. The independent scan requires several GB of RAM. Both read the original CSVs without modifying them.
 
-Numeric checks are exhaustive and use exact integers. `checks.csv` reports each denominator and unavailable comparison. `violations.csv` includes overlapping checks: the same electorate exception appears in the unconditional check and the uninstalled stratum; do not sum rows as distinct incidents. Empty exception files still contain their column headers.
+Numeric checks are exhaustive and use exact integers. `checks.csv` retains denominators and unavailable comparisons; `violations.csv` includes overlapping checks, so rows are not distinct incidents. Header-only exception files record that no cases were found. See the method guide for interpretation.
 
-The Markdown report is a reviewed narrative of this published snapshot. Reproduction regenerates numerical evidence; applying the study to new data also requires reviewing and updating the narrative.
+The preserved pre-editorial inventory describes the original publication, including its original README. The current inventory covers the English editorial edition as well. Reproduction regenerates numerical evidence. New source data require a new run and review of the narrative.

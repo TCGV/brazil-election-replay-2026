@@ -9,7 +9,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 1 | Stage 1 reconstruction | English report and method; duplicate execution narrative consolidated. No material inconsistency identified. |
 | 2 | Stage 2 counting composition | English narrative centers regional weights, state differences, capital/size patterns, and São Paulo; no material inconsistency identified. |
 | 3 | Hypothesis index | One result/limit row per analysis; repeated summaries removed and labels aligned with the questions actually tested. |
-| 4 | H1 | Scheduled |
+| 4 | H1 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 5 | H2 | Scheduled |
 | 6 | H3 | Scheduled |
 | 7 | H4 | Scheduled |
@@ -37,3 +37,7 @@ The revision separates clock time from section progress, section completion from
 ## Hypothesis index
 
 The index separates findings from limitations and preserves the requested ordinal rubric. Hypothesis labels now describe the measured question instead of implying that rejection establishes an implausible or artificial outcome. Per-analysis links use stable folder READMEs during migration. No scores were changed.
+
+## H1
+
+Core vote/turnout/duplicate checks are separated from the additional electorate identity. The exception concerns 41 physical overseas sections, repeated in both rounds, and registered voters rather than candidate votes. Overlapping violation rows are not described as separate sections. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
