@@ -57,7 +57,7 @@ PYTHONPATH=src python3 -m election_replay --year 2026 \
 
 ## Step 2 — Counting composition and demographic patterns
 
-The analysis of regions, states, capitals, municipality size, and São Paulo is consolidated in [the Portuguese report](reports/2026/geography/REPORT.pt-BR.md), with [figures and evidence tables](reports/2026/geography/). It compares both rounds at equivalent national/state section-count progress and at fixed clock times. Municipality size means **registered electorate**, not resident population; the analysis does not infer individual demographics or causal mechanisms.
+The analysis of regions, states, capitals, municipality size, and São Paulo is consolidated in [the composition report](reports/2026/geography/REPORT.md), with [figures and evidence tables](reports/2026/geography/). It compares both rounds at equivalent national/state section-count progress and at fixed clock times. Municipality size means **registered electorate**, not resident population; the analysis does not infer individual demographics or causal mechanisms.
 
 Reproduce the analysis after generating the replay database above:
 

@@ -7,7 +7,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | Delivery | Scope | Review outcome |
 |---|---|---|
 | 1 | Stage 1 reconstruction | English report and method; duplicate execution narrative consolidated. No material inconsistency identified. |
-| 2 | Stage 2 counting composition | Scheduled |
+| 2 | Stage 2 counting composition | English narrative centers regional weights, state differences, capital/size patterns, and São Paulo; no material inconsistency identified. |
 | 3 | Hypothesis index | Scheduled |
 | 4 | H1 | Scheduled |
 | 5 | H2 | Scheduled |
@@ -29,3 +29,7 @@ Where an inventory includes an edited README, its original bytes are retained as
 ## Stage 1
 
 Coverage, candidate counts, time windows, and validation statements were reviewed against existing execution documents and compact evidence. The English text distinguishes nominal from all-class votes, section-round keys from physical sections, BU receipt from publication, and reconstruction from public-update history. A generic duplicate-handling rule is no longer presented as an observed exception when the duplicate count is zero. No material numerical or methodological correction was identified.
+
+## Stage 2
+
+The revision separates clock time from section progress, section completion from nominal-vote weights, and municipality-weighted correlations from section-weighted curves. State examples retain the variation hidden by regional averages. Accounting components are described without causal explanatory percentages; non-detection is not labeled randomness. Original figures and HTML/PDF remain historical companions with their original labels. Complete state tables remain accessible in the preserved report and existing CSVs. No numerical processing was needed.
