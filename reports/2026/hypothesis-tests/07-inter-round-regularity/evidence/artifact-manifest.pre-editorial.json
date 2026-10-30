@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-30T11:04:28.489013+00:00",
+  "scope": "All published H7 files except this inventory; .work and Python caches excluded",
+  "nature": "Integrity inventory, not an external authenticity signature",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 7,
+      "sha256": "035be897b00b2e4df85234618e91ae2c91213ba53b2bf492fc890efec505f2ae"
+    },
+    {
+      "path": "METHOD-REVISION.pt-BR.md",
+      "size_bytes": 3146,
+      "sha256": "b3b9789dcc398cc7fdf6ae0bd95f838301168d401132ab2ec1dc0b9c847bb6a7"
+    },
+    {
+      "path": "METHOD.pt-BR.md",
+      "size_bytes": 15092,
+      "sha256": "7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 18658,
+      "sha256": "0d460a81e3a5041d0a98a85b5e3efe323201df35e7d0b11b079e7ccd329d4b52"
+    },
+    {
+      "path": "REPORT.pt-BR.md",
+      "size_bytes": 34789,
+      "sha256": "2236bb49590e596ae624884b0812bb44d568e390bf6b1894bb3340fdaab9fa4d"
+    },
+    {
+      "path": "code/generate_figures.py",
+      "size_bytes": 23360,
+      "sha256": "100f50b6d60edf0e37f8ba599620d4c555aa1c1794d0f295eabbfa2a0f5c9b85"
+    },
+    {
+      "path": "code/inventory_artifacts.py",
+      "size_bytes": 2935,
+      "sha256": "b9a28513713d3436795dd3f424134307d07f51264322a3e37fb434a45545aca6"
+    },
+    {
+      "path": "code/load_data.py",
+      "size_bytes": 21259,
+      "sha256": "5ec33b40dab41687f58e3eea9ea7d98b30b8cc2b65c12532db84e815621df9df"
+    },
+    {
+      "path": "code/regularity_statistics.py",
+      "size_bytes": 29420,
+      "sha256": "8a84faec7eebc10d92dcc951d732a75978104fa92e7717717f9068cc1d79c5f4"
+    },
+    {
+      "path": "code/run_analysis.py",
+      "size_bytes": 40086,
+      "sha256": "44aeb2064189a82f63282c9ed67a1a52d5f9161820b15f18ea2a359bba146deb"
+    },
+    {
+      "path": "code/test_independent.py",
+      "size_bytes": 12101,
+      "sha256": "5adc33df5b1200afa741ee2c2d782afe20f119498bc269c9f25ca271bc1e8d5a"
+    },
+    {
+      "path": "code/test_load_data.py",
+      "size_bytes": 10241,
+      "sha256": "d89fe22e0c4e15f0953091867a1197cb8c47352afc19b3661256b3d51cb44ed4"
+    },
+    {
+      "path": "code/test_run_analysis.py",
+      "size_bytes": 22093,
+      "sha256": "809d521d9e64563a213d80af15e027d9f351e71a45fb99baf3854674b9fc4adf"
+    },
+    {
+      "path": "code/test_statistics.py",
+      "size_bytes": 22120,
+      "sha256": "be75e294980584c55d3b3760bae29d5c6933b89c6781352e36120378899d9d47"
+    },
+    {
+      "path": "code/validate_independently.py",
+      "size_bytes": 71070,
+      "sha256": "b30732cc96ac35eb82ffcbc634bade2839b87469a9921dbf0f72558a3977c70e"
+    },
+    {
+      "path": "evidence/analysis/adjacent-profiles.csv",
+      "size_bytes": 2189082,
+      "sha256": "7bbce7f75ee416697bec0af37691c821c224379a5f9631bb4e9311e5e200aeaf"
+    },
+    {
+      "path": "evidence/analysis/allocation-groups.csv.gz",
+      "size_bytes": 913011,
+      "sha256": "9a1188e5a034bbdfc699f2935e2960dbeefd485a249b69195a95a6be87c4864a"
+    },
+    {
+      "path": "evidence/analysis/allocation-units.csv.gz",
+      "size_bytes": 39679135,
+      "sha256": "ce2d5a5c89ba5ff400d234b4db8fdb07e2dd67c3516c0e4c0345b3f8950b0b00"
+    },
+    {
+      "path": "evidence/analysis/candidate-totals.csv.gz",
+      "size_bytes": 833282,
+      "sha256": "612a019f98b79a91177d01b548c95ac9bbdcff113010b2eb5619634bdc7a481a"
+    },
+    {
+      "path": "evidence/analysis/cohort-sections.csv.gz",
+      "size_bytes": 33610988,
+      "sha256": "de6500c5496c37c991edb37969a290a1d3178490b9fbc620c5700f7008177cd4"
+    },
+    {
+      "path": "evidence/analysis/coverage.csv",
+      "size_bytes": 4556,
+      "sha256": "3dec33c51a54e504c85fc8d8daafe129aded46cb1ce619459219466539029d6d"
+    },
+    {
+      "path": "evidence/analysis/distribution.csv",
+      "size_bytes": 54907,
+      "sha256": "167327ada832758e649ae01ca22bfad5c966449fd72d4ce6fa3f06c6c2b17482"
+    },
+    {
+      "path": "evidence/analysis/eligibility.csv",
+      "size_bytes": 1671,
+      "sha256": "ffebcc1c494114992bace738245cc0c7369e5aea7efd6b5a58acf9b9989e6321"
+    },
+    {
+      "path": "evidence/analysis/exact-repetitions.csv.gz",
+      "size_bytes": 405469,
+      "sha256": "975a74fd60be49bdb0e8f5097f638461e653dcd1044d1e89a3583860b540a953"
+    },
+    {
+      "path": "evidence/analysis/gain-directions.csv",
+      "size_bytes": 48267,
+      "sha256": "92c3640a2745756fda6fcfea302d07f2661fad8f335c3065c8c084f135c5d993"
+    },
+    {
+      "path": "evidence/analysis/manifest.json",
+      "size_bytes": 10495,
+      "sha256": "d8fe54a57f41315acd2462ea21e0e95681c25c05b1008fabfc9de20c761853cf"
+    },
+    {
+      "path": "evidence/analysis/municipal-census.csv",
+      "size_bytes": 6037593,
+      "sha256": "6a670948cded8de16dd19d1bdde612bb0943d4c50bcedf94a1b33e11b9813b66"
+    },
+    {
+      "path": "evidence/analysis/municipality-results.csv",
+      "size_bytes": 5271207,
+      "sha256": "f6ffbd2e6d54cfccffd5c29cc9cf2967397d738a333572d33a1133ffb87cde8e"
+    },
+    {
+      "path": "evidence/analysis/pairing.csv",
+      "size_bytes": 760,
+      "sha256": "bffc9758586508a94008587993ef26df647f76ca7ac518a2654d329c486b25a6"
+    },
+    {
+      "path": "evidence/analysis/permutation-scores.csv.gz",
+      "size_bytes": 267791,
+      "sha256": "7b04972fc151ca3e9fbaec0ded47dc5f6cf11e344d8accd312cb361a4497f5c9"
+    },
+    {
+      "path": "evidence/analysis/sensitivity.csv",
+      "size_bytes": 2911,
+      "sha256": "c144c9c6a9124625cf6e97acdf71f8b401ee402a8033b52c02807db73952cb17"
+    },
+    {
+      "path": "evidence/analysis/summary.json",
+      "size_bytes": 7242,
+      "sha256": "02678f785bf51db227676ef7dcb4ec05508ddf000cf068676462894341b0b860"
+    },
+    {
+      "path": "evidence/analysis/tests.csv",
+      "size_bytes": 1749,
+      "sha256": "cccf66d3adf663389915383ce76f9e074c278826ec72483a56fac2c76f5aceef"
+    },
+    {
+      "path": "evidence/analysis/unmatched.csv",
+      "size_bytes": 58,
+      "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    },
+    {
+      "path": "evidence/independent-validation.json",
+      "size_bytes": 4201,
+      "sha256": "01faad857cab4102a278737849c8489c1a60322e8478a1a27f84be601f2105d0"
+    },
+    {
+      "path": "evidence/revision-validation.json",
+      "size_bytes": 2929,
+      "sha256": "31859d94f21c58efb7e98d9a317d020aeef3f3c90a4b7937a849e0009038dd86"
+    },
+    {
+      "path": "evidence/test-results.txt",
+      "size_bytes": 10993,
+      "sha256": "c54b579ef199bd7d6c1c06fffcef48e7fd51513c7e89d4235a6173c23ac4e74f"
+    },
+    {
+      "path": "figures/allocation-coverage.png",
+      "size_bytes": 473358,
+      "sha256": "c2edb71d8bd1a4a719539d13889e8a118c3c0b9728cca09a0a64b849846330ad"
+    },
+    {
+      "path": "figures/allocation-coverage.svg",
+      "size_bytes": 396160,
+      "sha256": "40ae6cb3956edf91b4a329450faab96b36c13c166d234bb55e919d32286c00d6"
+    },
+    {
+      "path": "figures/conditional-allocation-reference.png",
+      "size_bytes": 337077,
+      "sha256": "10d918889a23386e4d10f9bc6ed957f4efc50d425b6c4f383bb24acb6c0be50a"
+    },
+    {
+      "path": "figures/conditional-allocation-reference.svg",
+      "size_bytes": 42276,
+      "sha256": "fc36fc365778d264fa188de30ae90aee2f96139f0cd7bf0f4b9df2992ef06954"
+    },
+    {
+      "path": "figures/initial-composition-identity.png",
+      "size_bytes": 560793,
+      "sha256": "43aebf301b36a69df21155525ad8c4383a809c77a64877b82bf4a6b0458a7416"
+    },
+    {
+      "path": "figures/initial-composition-identity.svg",
+      "size_bytes": 430464,
+      "sha256": "7bd974c03c62e4238f3f6a02185382344ee80fdeadbfa07290fa995da14884e5"
+    },
+    {
+      "path": "figures/manifest.json",
+      "size_bytes": 3607,
+      "sha256": "42c1b79152f097f9823c2de33737347b88978ace3321101075cccff56204dab5"
+    },
+    {
+      "path": "figures/municipal-improvement-definitions.png",
+      "size_bytes": 202960,
+      "sha256": "7ba71bda6b86eb396f828742619a84b51a493d2dfef4b8c620c544332267c480"
+    },
+    {
+      "path": "figures/municipal-improvement-definitions.svg",
+      "size_bytes": 21254,
+      "sha256": "9ec1f6fa5d2087edb8f07f260777b987636bcb4ab3dcf8a609306b5881575bbb"
+    }
+  ]
+}

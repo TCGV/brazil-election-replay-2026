@@ -15,7 +15,7 @@ Baseline: `f267004bf2aebdd086a3177098a21c42604f6563`. The review standardizes cu
 | 7 | H4 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 8 | H5 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 9 | H6 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
-| 10 | H7 | Scheduled |
+| 10 | H7 | English report, method, and evidence guide; scope and numerical wording reviewed without recalculation. |
 | 11 | Repository-wide navigation and consistency | Scheduled |
 
 Each delivery has its own commit followed by a push. Unsupported conclusions are narrowed in the text; no additional tests are generated to rescue them.
@@ -61,3 +61,7 @@ Strict local screening and between-place allocation tests answer different quest
 ## H6
 
 The national count balance is arithmetic, not an individual voter-flow reconstruction. Small conditional correlations, supported populations, and the difference between count gains and equally weighted section changes are explicit. Slopes do not estimate new-voter preferences. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.
+
+## H7
+
+The descriptive municipal census and the fixed-target formal population remain separate. No illustrative percentage becomes a benchmark. Planned test tails, observed values outside the retained reference intervals, and the inability to establish global naturalness are preserved. No material numerical inconsistency requiring recalculation was identified. The pre-editorial inventory was archived, and the current publication inventory was verified.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-10-30T11:04:28.489013+00:00",
+  "created_at_utc": "2026-10-30T14:38:28.287587+00:00",
   "scope": "All published H7 files except this inventory; .work and Python caches excluded",
   "nature": "Integrity inventory, not an external authenticity signature",
   "files": [
@@ -15,14 +15,24 @@
       "sha256": "b3b9789dcc398cc7fdf6ae0bd95f838301168d401132ab2ec1dc0b9c847bb6a7"
     },
     {
+      "path": "METHOD.md",
+      "size_bytes": 9192,
+      "sha256": "d56baaaa0311d0f8ee3aec2209a2b25af3ea9a55887b82351241475bb1fad5c2"
+    },
+    {
       "path": "METHOD.pt-BR.md",
       "size_bytes": 15092,
       "sha256": "7212a1f6941c2357b751bb3b44dae60e931e2cdba5801c7dc231bd86bcb44066"
     },
     {
       "path": "README.md",
-      "size_bytes": 18658,
-      "sha256": "0d460a81e3a5041d0a98a85b5e3efe323201df35e7d0b11b079e7ccd329d4b52"
+      "size_bytes": 5350,
+      "sha256": "62ec679caadff057fa020290f2dbdea57c7d196027dc0e61b0a2be08ee477e75"
+    },
+    {
+      "path": "REPORT.md",
+      "size_bytes": 10168,
+      "sha256": "458e16d991d0ff78f48862136c0525521e6401b3f86ce887abe0bff179e2906d"
     },
     {
       "path": "REPORT.pt-BR.md",
@@ -173,6 +183,11 @@
       "path": "evidence/analysis/unmatched.csv",
       "size_bytes": 58,
       "sha256": "badbd599aee5d8ab9c994e5cebec0c80c10b3c5bcc367ebc0cb755a59dd5eb27"
+    },
+    {
+      "path": "evidence/artifact-manifest.pre-editorial.json",
+      "size_bytes": 8188,
+      "sha256": "7ccd54bc596dc966b46270927e6fc66c5a6588bfa02d00a1e6735f14902c5790"
     },
     {
       "path": "evidence/independent-validation.json",
