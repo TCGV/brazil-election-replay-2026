@@ -29,3 +29,9 @@ The [independent aggregation](independent-validation.json), [output validation](
 The compact repository snapshot contains selected outputs. The manifest describes the full historical run, including large intermediates not committed here. Original report hashes identify that execution's documents, not the current English editorial report.
 
 Reproduce the computation in a new output directory with the project README commands. The generator retains its original report format; its output must not overwrite the curated English report. No code or numerical computation changed in this editorial revision.
+
+## Output schema notes
+
+Input CSVs use Latin-1 and semicolons; generated CSVs use UTF-8 and commas. `election_code` maps to source `CD_ELEICAO`, and `turno` to `NR_TURNO`. Numeric location and section codes are normalized. Timeline `uf_scope=BR` denotes a nationwide aggregate, not an input-state filter.
+
+`sections_in_minute` and `cumulative_sections` are global section counts repeated for each candidate: do not sum them across candidates. `percentage_valid_votes` is the candidate's accumulated nominal-vote share within that timeline; it is blank for special categories or a zero nominal denominator. Votes without usable times remain outside that denominator and inside final totals.

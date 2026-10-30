@@ -38,4 +38,4 @@ Each link leads to that analysis's report, method, and evidence. Identification 
 
 The main reports lead with the answer and the supporting numbers. Method guides define populations, denominators, references, and test families; folder READMEs contain reproduction commands and evidence maps. Hypothesis tests concern the supplied snapshot, rather than a certified history of public updates or observed individual voting transitions.
 
-Current reading documents are being standardized in English. Original Portuguese execution protocols and generated reports are retained as historical evidence, with their original hashes. Publication inventories distinguish the original snapshot from current editorial documents. This review introduces no new calculations or statistical tests.
+Current reading documents are maintained in US English. Original Portuguese execution protocols and generated reports are retained as historical evidence, with their original hashes. Publication inventories distinguish the original snapshot from current editorial documents. This review introduces no new calculations or statistical tests.

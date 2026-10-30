@@ -1,37 +1,27 @@
-# 2026 study — stages and evidence
+# 2026 study — Reports and evidence
 
-[English project README](../../README.md) · [Leia em português](../../README.pt-BR.md)
+[Project README](../../README.md) · [Editorial review](../../docs/editorial-review.md)
 
-## Study stages
+Read the three stages in order, or open an individual report. Current reports are in US English and describe the supplied source snapshots.
 
-| Stage | Question | Primary record |
+| Stage | Main report | Method and evidence |
 |---|---|---|
-| **1. Minute-by-minute reconstruction** | How can the supplied final section votes be associated retrospectively with recorded arrival times? | [Reconstruction report](REPORT.md), [minute CSVs](replay-first-totalization-minute.csv), and [interactive chart](replay-report.html) |
-| **2. Counting composition and demographic patterns** | Which regions, states, capitals, and municipality-size groups entered first, and how did that composition relate to accumulated vote shares? | [Composition report](geography/REPORT.md), with [evidence tables](geography/) |
-| **3. Hypothesis tests** | Are the proposed accounting and statistical anomalies present in the supplied records? | [Hypothesis index](hypothesis-tests/README.md); [H1 accounting report](hypothesis-tests/01-accounting-integrity/REPORT.pt-BR.md); [H2 turnout/concentration report](hypothesis-tests/02-turnout-concentration/REPORT.pt-BR.md); [H3 repetition report](hypothesis-tests/03-result-repetition/REPORT.pt-BR.md); [H4 temporal report](hypothesis-tests/04-temporal-residuals/REPORT.pt-BR.md); [H5 inter-round report](hypothesis-tests/05-inter-round-localization/REPORT.pt-BR.md); [H6 turnout/gains report](hypothesis-tests/06-turnout-gains/REPORT.pt-BR.md); [H7 municipal regularity report](hypothesis-tests/07-inter-round-regularity/REPORT.pt-BR.md) |
+| 1 — Minute-by-minute reconstruction | [What the replay recovers](REPORT.md) | [Method](METHOD.md) · [Validation](../../docs/results-2026.md) |
+| 2 — Counting composition | [Regions, states, capitals, size, and vote-share changes](geography/REPORT.md) | [Method](geography/METHOD.md) · [Evidence and reproduction](geography/README.md) |
+| 3 — Hypothesis tests | [Seven questions, findings, limits, and assessments](hypothesis-tests/README.md) | Each hypothesis has its own report, method, code, and evidence folder |
 
-Stage 2 includes formal section-order randomization benchmarks. Geography and registered electorate are observable proxies; individual demographic characteristics are not inferred. HTML and PDF are companion formats, while Markdown is the main repository record.
+## Explore the reconstruction
 
-Stage 3 evaluates hypotheses one at a time. H1 documents electorate-identity exceptions; H2 adds local turnout/concentration screening; H3 inventories repeated complete vectors and evaluates a restricted local block-pairing reference; H4 tests gradual and abrupt residual associations with minute-level counting order under two local references; H5 compares paired inter-round changes with local peers and tests their allocation between polling places; H6 distinguishes net turnout growth from vote gains and tests conditional turnout/preference associations; H7 compares municipal growth definitions and tests territorial prevalence, residual uniformity, and initial-profile contrasts. Each hypothesis contains its own code and evidence. The index records progress and qualitative assessments; findings do not independently authenticate the original source snapshots.
+- [Interactive replay](replay-report.html): download and open locally; GitHub does not run the HTML. Original interface labels remain in Portuguese.
+- [First-totalization minute CSV](replay-first-totalization-minute.csv) and [BU-receipt minute CSV](replay-bu-received-minute.csv): complete series for both rounds.
+- [Final candidate/class totals](final-results.csv): the supplied counts that anchor the replay.
+- [Exportable charts](charts/): candidate 13 in red and candidate 22 in blue.
+- [Input manifest](input-manifest.json): original source fingerprints and full execution inventory.
 
-## Stage 1 artifacts
+The manifest describes the full historical run. Large intermediates and some listed exports are not committed in this compact snapshot; reproduction commands remain in the project README. It does not inventory the later English editorial edition.
 
-This directory contains selected outputs from the validated two-round replay of the repository's nationwide input CSVs. It includes the minute timelines, final nationwide totals, data-quality summaries, provenance manifest, validation evidence, and charts. The full generated run remains in the Git-ignored `output/replay/` directory.
+## Current reports and historical records
 
-**Download [replay-report.html](replay-report.html) and open it in a browser** to explore the interactive report. The page is self-contained. GitHub's file viewer displays its source rather than running it; no GitHub Pages deployment is required to view the downloaded report. Download the accompanying CSVs as well if you want to use the report's download links locally.
+English `REPORT.md` files are the current narrative. `METHOD.md` guides carry definitions and technical scope; folder READMEs map evidence and reproduction commands. The [original generated reconstruction report](report.md), original Portuguese reports/protocols, and companion formats remain preserved execution records. Their original labels and hashes do not imply a second current-language edition.
 
-Candidate 13 (Lula) is red; candidate 22 (Flávio Bolsonaro) is blue in HTML and SVG charts. These presentation changes do not alter any vote totals or timeline CSVs.
-
-- [First-totalization timeline](replay-first-totalization-minute.csv)
-- [BU-receipt timeline](replay-bu-received-minute.csv)
-- [Final totals](final-results.csv)
-- [Current reconstruction report](REPORT.md)
-- [Input provenance and full-run artifact inventory](input-manifest.json)
-- [Charts](charts/)
-- [Browser preview](report-preview.png)
-
-The manifest describes the **full original processing run**, including its original commit/dirty-state observations and artifacts. Large intermediates, section-level exports, and the complete section-coverage and latency files listed there are not part of this compact snapshot. They can be reproduced using the commands in the project README. Chart colors and the browser validation/preview were refreshed after that processing run.
-
-For **stage 2**, start with the [Markdown report](geography/REPORT.md). The [PDF](geography/REPORT.pt-BR.pdf), [HTML](geography/report.html), figures, and CSVs are complementary reading and audit formats.
-
-The timelines are retrospective approximations based on the supplied snapshots, not a certified history of TSE public updates. Independent validation checks file integrity and arithmetic, not external authenticity of the election results.
+The replay is retrospective, geographic composition does not identify individual demographics, and statistical tests concern specified references. None of the stages independently authenticates the source snapshots or reconstructs individual voter transitions.

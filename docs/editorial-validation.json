@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T14:41:45.590243+00:00",
+  "baseline_commit": "f267004bf2aebdd086a3177098a21c42604f6563",
+  "scope": "Textual editorial review and documentation integrity only; no election-data recalculation.",
+  "current_english_reports": 9,
+  "current_reading_documents_checked": 34,
+  "local_file_links_checked": 421,
+  "local_heading_links_checked": 13,
+  "current_publication_inventories": [
+    {
+      "hypothesis": "01-accounting-integrity",
+      "files": 27,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "02-turnout-concentration",
+      "files": 37,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "03-result-repetition",
+      "files": 36,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "04-temporal-residuals",
+      "files": 42,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "05-inter-round-localization",
+      "files": 47,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "06-turnout-gains",
+      "files": 44,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    },
+    {
+      "hypothesis": "07-inter-round-regularity",
+      "files": 49,
+      "status": "passed",
+      "pre_editorial_snapshot_matches_baseline": true
+    }
+  ],
+  "frozen_execution_documents_unchanged": 16,
+  "source_code_numerical_evidence_and_figures": "No baseline changes; only Markdown reading material and publication inventories changed.",
+  "statistical_recalculations": 0,
+  "simulations_regenerated": 0,
+  "previous_numerical_audits_rerun": false,
+  "textual_review_outcome": "No material numerical contradiction requiring recalculation identified. Interpretive claims narrowed to their published support.",
+  "document_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "8057b2fa749683b9d176640cd7144ab4e0159c29e0a4621ddaa3fd97b93d54ca"
+    },
+    {
+      "path": "README.pt-BR.md",
+      "sha256": "c2181279816bda3e9a560ac782279dbf02c3cdd674d72ef8b9ea469c1fb3607f"
+    },
+    {
+      "path": "docs/decisions.md",
+      "sha256": "236fd64789fa20b26509fd21818fa26119d1135319edc0113360d3a6931b004b"
+    },
+    {
+      "path": "docs/results-2026.md",
+      "sha256": "52bfb747a176349a2269f4715f57887e0189d7575e37c3bd1e4898fe11877f4f"
+    },
+    {
+      "path": "docs/editorial-review.md",
+      "sha256": "a0043e617f5a588307d5ed8e8fba63afc0dcc7f2d1691cadb779aa294cd07ec5"
+    },
+    {
+      "path": "reports/2026/README.md",
+      "sha256": "e69681ffbb01cfaf83523d1848da8f0449ef2f99854ec74eb7ebfbea02b670c0"
+    },
+    {
+      "path": "reports/2026/REPORT.md",
+      "sha256": "702d23ba3ed07340fb8988a085b830be8f2b8f7a4b46c038ffc9a8f5e50cb258"
+    },
+    {
+      "path": "reports/2026/METHOD.md",
+      "sha256": "201247b71197e25db547ae71e95bffe7018e21bc4fd2982be0a04f46aeebcff6"
+    },
+    {
+      "path": "reports/2026/geography/README.md",
+      "sha256": "f5270fab278c2add1de5e286b427c554bc5a1183aa6b70625568e26935c0c5f0"
+    },
+    {
+      "path": "reports/2026/geography/REPORT.md",
+      "sha256": "274a784914ec3ddd4391f0e99dc3f2ca429fa5a30e4820d097fcc98ef4b7fb85"
+    },
+    {
+      "path": "reports/2026/geography/METHOD.md",
+      "sha256": "856ef970c5d8c766497baf2688c4719f18f09f9d55d0785f39abdb10d2f38f8b"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/README.md",
+      "sha256": "57acc57453e8130c42ae2af75ecb80108491b48ddbded588a38a7bc1e4884db0"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/README.pt-BR.md",
+      "sha256": "60f2829c5a6a1d10fc62725e6526d79a565098088740eb8197d87242aae7d281"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/01-accounting-integrity/REPORT.md",
+      "sha256": "cca3913628caa8bc2f44afff0c75821a9d2d3f8b119a6360af9b297ccc55350e"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/01-accounting-integrity/METHOD.md",
+      "sha256": "cb93c7d653b5b28293a86403ac6daa6f480b83f1a97fe8db069bb55fea89397e"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/01-accounting-integrity/README.md",
+      "sha256": "4ee23837a1ab2b5173eb0e56be79aa1f48eb850e58f3f64607e118c7607c359d"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/02-turnout-concentration/REPORT.md",
+      "sha256": "dd87cc680b2b0d974d44178b179b3d93d310ad6c28057717a873a5093f150170"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/02-turnout-concentration/METHOD.md",
+      "sha256": "477f78d039439cc0962493700187bd3cc67e22fe7d819828e5466cff1afaf898"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/02-turnout-concentration/README.md",
+      "sha256": "501275d488dfc2283ba36233d621700516c267582563b5e80e1dd4b7352ccd9c"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/03-result-repetition/REPORT.md",
+      "sha256": "9504d4e16851b97889fc773164393eba91412458825509da34f4a3c56d36ef77"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/03-result-repetition/METHOD.md",
+      "sha256": "9feed8dc61771bf98739e39fbab8635a30a9f2d51cdc92fe86f3f5f9442313b4"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/03-result-repetition/README.md",
+      "sha256": "92d9de8aed2aed9e6485cf01ccc16c00a3261b4ba887be16429e40ac81446694"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/04-temporal-residuals/REPORT.md",
+      "sha256": "b886b731097a9379d1b7784a3dde8fca86fb4663885b6aebb7fdb96dc35a9326"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/04-temporal-residuals/METHOD.md",
+      "sha256": "2c8eec3208fcd38fdb4cd514088c93de28b6c239d6729310ded5a316f577d66d"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/04-temporal-residuals/README.md",
+      "sha256": "98ca279ce3243aaf3986beea3d01116ab11d589637d88644f7c4e1b3eadc9283"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/REPORT.md",
+      "sha256": "719b6a60b846ba9d9c6a2249ee0c6e0d2b74bd5c124ee1cf7a2e072ab55d79e5"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/METHOD.md",
+      "sha256": "04314ffe53243f6a67358ca921d6b03f52b6dbc351bd21fea0de21d331b1e06a"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/05-inter-round-localization/README.md",
+      "sha256": "54082115d101ab9eb27ff67c4fb64f65544adc6b8eba9e743aec5a0527d56668"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/06-turnout-gains/REPORT.md",
+      "sha256": "71bfab13dad63b52cab4236849dbc362bce2d01a080006f684a96f717ea50f32"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/06-turnout-gains/METHOD.md",
+      "sha256": "29d26f6c454f1087f5c38fa441816693cb32ff55dbb8a05d0a3b99a5b8be8db3"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/06-turnout-gains/README.md",
+      "sha256": "c95796b62fa5d56d311204797363acf864aa9b8cac8d1303e7d570ddab5bb770"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/REPORT.md",
+      "sha256": "458e16d991d0ff78f48862136c0525521e6401b3f86ce887abe0bff179e2906d"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/METHOD.md",
+      "sha256": "d56baaaa0311d0f8ee3aec2209a2b25af3ea9a55887b82351241475bb1fad5c2"
+    },
+    {
+      "path": "reports/2026/hypothesis-tests/07-inter-round-regularity/README.md",
+      "sha256": "62ec679caadff057fa020290f2dbdea57c7d196027dc0e61b0a2be08ee477e75"
+    }
+  ]
+}
